@@ -46,7 +46,15 @@ Les montants sont en francs, sans arrondi. Les codes de rubrique suivent le mod�
 
 ## Le tableau de bord
 
-- **Aperçu** : chiffres clés, trajectoire pluriannuelle, flux des revenus vers les départements, répartition par nature
+Conçu pour que n'importe qui puisse interroger le budget, sans connaissances en finances publiques. Deux niveaux de navigation :
+
+**Comprendre**
+- **Accueil** : le budget en langage simple, « sur 100 francs dépensés », d'où vient l'argent, et des questions fréquentes avec leur réponse chiffrée (« Combien coûte l'école obligatoire ? »)
+- **Explorer** et **Rechercher** : la recherche accepte les mots courants (école, hôpital, police, asile, crèche…) et les relie aux termes de l'administration
+- **Comment lire** : budget ou comptes, projet ou budget adopté, ce que les chiffres ne disent pas, glossaire
+
+**Approfondir**
+- **Vue d'ensemble** : chiffres clés, trajectoire pluriannuelle, flux des revenus vers les départements, répartition par nature
 - **Explorer** : carte proportionnelle, du département jusqu'à la ligne
 - **Recherche** : toutes les lignes, filtrables, y compris dans les commentaires
 - **Évolutions** : plus fortes hausses et baisses entre deux années
@@ -56,7 +64,7 @@ Les montants sont en francs, sans arrondi. Les codes de rubrique suivent le mod�
 - **Institutions** : budgets du CHUV et des hautes écoles, publiés en annexe
 - **Fiche service** et **Économies et investissements**, avec le suivi de chaque objet d'investissement d'un budget à l'autre
 
-Les comparaisons sont guidées : un badge indique si elle est standard (deux budgets successifs), de type prévision et réalisé, ou à interpréter avec prudence. Les montants qui apparaissent, disparaissent ou varient de plus de trois fois sont signalés « à vérifier ».
+Les termes techniques sont soulignés et expliqués au survol. Une option affiche tous les montants par habitant. Les comparaisons sont guidées : un badge indique si elle est standard (deux budgets successifs), de type prévision et réalisé, ou à interpréter avec prudence. Les montants qui apparaissent, disparaissent ou varient de plus de trois fois sont signalés « à vérifier ».
 
 ## Reconstruire les données
 
