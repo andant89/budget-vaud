@@ -13,6 +13,8 @@ Utilisation : python pipeline/parse_brochure.py sources/txt/budget-2026.txt
 Bibliothèque standard uniquement.
 """
 import re, json, sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from annexes import parse_annexes
 NUM=r"-?[\d'±]+(?:\.[\d±]{2})?|--"
 def num(tok):
     tok=tok.replace('±±','00').replace("'",'')
@@ -151,7 +153,7 @@ def parse_year(path, Y):
               "ok":(not bad) and gt is not None and abs(gt[0]-tc)<1 and abs(gt[1]-tr)<1}
     fm=lambda x:f"{x:,.0f}".replace(",","'")
     print(f"Brochure {Y} : {len(services)} services, {len(lines)} lignes, charges {fm(tc)}, revenus {fm(tr)}, contrôle {'OK' if controle['ok'] else 'ÉCHEC'}")
-    return {"controle":controle,"year":Y,"depts":depts,"services":services,"lines":lines,"comments":cm,"etp":etp,"inv":inv,"sav":sav,"crb":crb,"crc":crc,"tot":[tc,tr],"officiel":officiel}
+    return {"controle":controle,"year":Y,"depts":depts,"services":services,"lines":lines,"comments":cm,"etp":etp,"inv":inv,"sav":sav,"crb":crb,"crc":crc,"tot":[tc,tr],"officiel":officiel,"annexes":parse_annexes(pages)}
 
 def main(paths):
     os.makedirs("build/brochures",exist_ok=True)

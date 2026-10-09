@@ -81,6 +81,22 @@ et que la variation dépasse 500'000 francs. Ces sauts viennent souvent d'une r�
 | Même type, années éloignées | Écart de plusieurs années : montants non corrigés de l'inflation ni de la démographie |
 | Budget et comptes d'années différentes | À interpréter avec prudence |
 
+## Bénéficiaires des transferts
+
+Le plan comptable MCH2 code le type de bénéficiaire dans le dernier chiffre des rubriques 360x (parts de revenus), 361x (dédommagements), 362x (péréquation) et 363x (subventions) : 0 Confédération, 1 cantons et concordats, 2 communes, 3 assurances sociales publiques, 4 entreprises publiques, 5 entreprises privées, 6 organisations privées à but non lucratif, 7 ménages, 8 étranger. Les rubriques 366x (amortissements de subventions d'investissement) et 37x (subventions fédérales redistribuées) sont classées à part. Les subventions nommées proviennent des commentaires chiffrés des brochures.
+
+## Annexes des institutions
+
+Les comptes d'exploitation du CHUV, de l'UNIL, de la HEP, de la HEIG-VD, de l'ECAL et de HESAV sont extraits des annexes (`pipeline/annexes.py`). Les totaux d'exploitation et le résultat sont repris tels que publiés. Le détail des lignes est contrôlé contre ces totaux : 46 institutions-années sur 48 se rapprochent dans toutes les colonnes ; les écarts restants (100 fr. pour le CHUV 2024, 29'640 fr. pour la HEP 2026) sont signalés comme avertissements dans `data/controles.csv`. Le dashboard n'affiche que le détail de la brochure la plus récente dont le contrôle est complet.
+
+## Francs constants et par habitant
+
+Inflation : renchérissement annuel moyen de l'IPC (OFS). Population : population résidante permanente au 31 décembre (Statistique Vaud). Les années sans chiffre officiel utilisent des hypothèses déclarées dans `pipeline/indicateurs.json` (inflation nulle, population +1 %). La décomposition de la hausse des charges est multiplicative : (1 + inflation) × (1 + population) × (1 + hausse réelle par habitant) = 1 + hausse nominale.
+
+## Suivi des investissements
+
+Chaque objet d'investissement garde son numéro (I.xxxxxx.xx) d'un budget à l'autre. Le suivi additionne les dépenses nettes inscrites à chaque budget. Il montre combien de fois un objet a été inscrit, pas ce qui a été réellement dépensé : les comptes d'investissement ne figurent pas dans les brochures.
+
 ## Limites connues
 
 - Montants nominaux, non corrigés de l'inflation ni de la croissance de la population.

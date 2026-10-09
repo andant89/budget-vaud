@@ -15,7 +15,7 @@ class TestControlesCroises(unittest.TestCase):
     def test_tous_les_controles_croises_passent(self):
         lignes = lire("controles.csv")
         self.assertGreater(len(lignes), 100)
-        echecs = [l for l in lignes if l["ok"] != "1"]
+        echecs = [l for l in lignes if l["ok"] != "1" and l["bloquant"] == "1"]
         self.assertEqual(echecs, [], "contrôles en échec : voir data/controles.csv")
 
     def test_chaque_brochure_a_ses_controles(self):
@@ -23,8 +23,17 @@ class TestControlesCroises(unittest.TestCase):
         for l in lire("controles.csv"):
             types.setdefault(l["brochure"], set()).add(l["controle"].split(" ")[0])
         for b, t in types.items():
-            for attendu in ("charges", "revenus", "nature", "effectifs", "investissements,"):
+            for attendu in ("charges", "revenus", "nature", "effectifs", "investissements,", "annexe"):
                 self.assertIn(attendu, t, f"brochure {b} : contrôle « {attendu} » manquant")
+
+
+class TestAnnexes(unittest.TestCase):
+    def test_six_institutions_chaque_annee(self):
+        par_annee = {}
+        for l in lire("annexes_totaux.csv"):
+            par_annee.setdefault((l["type"], l["annee"]), set()).add(l["institution"])
+        for k, v in par_annee.items():
+            self.assertEqual(v, {"CHUV", "UNIL", "HEP", "HEIG-VD", "ECAL", "HESAV"}, k)
 
 
 class TestRapprochement(unittest.TestCase):

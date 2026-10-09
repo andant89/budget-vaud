@@ -207,27 +207,50 @@ def main():
                 for lab, a, b in it: w.writerow([y, s0, rub, lab, a, b, ""])
                 if tx: w.writerow([y, s0, rub, "", "", "", tx])
 
-    # ---------- données du dashboard ----------
-    lines = []
-    for k in keys:
-        s0, rub = k.split("|")
-        row = [s0, rub, labels[k].replace("’", "'"), [round(x, 2) if s[0] == "C" else round(x) for x, s in zip(vals[k], SER)]]
-        if k in cms: row.append(cms[k][:2])
-        lines.append(row)
-    out = {"ser": SER, "proj": proj, "dcodes": dcodes, "dnames": dnames,
-           "brochures": YEARS, "savYears": sav_years,
-           "svcs": [[c, s["n"], s["d"]] for c, s in svc.items()],
-           "etpY": EY, "etp": {c: [round(e.get(y, 0), 2) for y in EY] for c, e in etp.items()},
-           "lines": lines, "sav": {k: round(v) for k, v in sav.items()},
-           "meas": {c: sorted([[t, round(v)] for t, v in m.items()], key=lambda x: -x[1]) for c, m in meas.items()},
-           "inv": {str(y): A[y]["inv"] for y in YEARS}, "cr": {"res": res, "rex": rex}}
-    os.makedirs("site", exist_ok=True)
-    json.dump(out, open("site/data.json", "w"), ensure_ascii=False, separators=(",", ":"))
+    # ---------- annexes : UNIL, HEP, HEIG-VD, ECAL, HESAV, CHUV ----------
+    from annexes import NOMS
+    ann = {}
+    for y in YEARS:
+        N = y % 100
+        for code, a in A[y].get("annexes", {}).items():
+            t = a["totaux"]
+            if "charges" not in t or "revenus" not in t: continue
+            d = ann.setdefault(code, {"nom": NOMS.get(code, code), "C": {}, "R": {}, "res": {}})
+            def setv(ser, k, prio):
+                for key, src in (("C", "charges"), ("R", "revenus"), ("res", "resultat")):
+                    if src in t and (ser not in d.setdefault("_p" + key, {}) or prio < d["_p" + key][ser]):
+                        d[key][ser] = t[src][k]; d["_p" + key][ser] = prio
+            if y not in remplaces: setv(f"B{N}", 0, 0)
+            setv(f"C{N-2}", 2, 0)
+            if (y - 1) in remplaces: setv(f"B{N-1}", 1, 0)
+            elif y == first: setv(f"B{N-1}", 1, 1)
+    latest = {}
+    for code in ann:
+        for y in YEARS[::-1]:
+            a = A[y].get("annexes", {}).get(code)
+            if a and a.get("detail_ok"):
+                latest[code] = {"brochure": y, "lignes": a["lignes"]}; break
+        for k in [k for k in ann[code] if k.startswith("_p")]: del ann[code][k]
+    with open("data/annexes_totaux.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["institution", "nom", "type", "annee", "charges_exploitation", "revenus_exploitation", "resultat_exercice"])
+        for code, d in sorted(ann.items()):
+            for s0 in SER:
+                if s0 in d["C"]:
+                    typ, an, st = serie_info(s0)
+                    w.writerow([code, d["nom"], typ, an, d["C"][s0], d["R"].get(s0), d["res"].get(s0, "")])
+    with open("data/annexes_lignes.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["brochure", "institution", "type", "rubrique", "libelle", "budget_annee", "budget_annee_precedente", "comptes_annee_moins_2", "detail_controle"])
+        for y in YEARS:
+            for code, a in sorted(A[y].get("annexes", {}).items()):
+                for sec, rub, lab, v0, v1, v2 in a["lignes"]:
+                    w.writerow([y, code, "charge" if sec == "C" else "revenu", rub, lab, v0, v1, v2, int(a.get("detail_ok", False))])
+    indic = json.load(open("pipeline/indicateurs.json"))
+
     # ---------- contrôles croisés par brochure ----------
     rows = []
-    def chk(y, nom, calcule, officiel, tol=1):
+    def chk(y, nom, calcule, officiel, tol=1, bloquant=1):
         ok = officiel is not None and abs(calcule - officiel) <= tol
-        rows.append([y, nom, round(calcule, 2), officiel, int(ok)])
+        rows.append([y, nom, round(calcule, 2), officiel, int(ok), bloquant])
     for y in YEARS:
         b = A[y]; o = b["officiel"]
         rec = b["controle"]["recap_officielle"] or [None, None]
@@ -242,9 +265,16 @@ def main():
         if o["inv_total"]:
             for k, nom in ((4, "dépenses"), (5, "recettes"), (6, "dépenses nettes")):
                 chk(y, f"investissements, {nom} = total du budget", sum(x[k] for x in b["inv"]), o["inv_total"][k - 4])
+        for code, a in sorted(b.get("annexes", {}).items()):
+            if "somme_detail" not in a: continue
+            for j, (nom, key) in enumerate((("charges", "charges"), ("revenus", "revenus"))):
+                for k, col in enumerate(("budget", "budget précédent", "comptes")):
+                    chk(y, f"annexe {code}, {nom} {col} = total d'exploitation", a["somme_detail"][j][k], a["totaux"][key][k], tol=5, bloquant=0)
     with open("data/controles.csv", "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f); w.writerow(["brochure", "controle", "valeur_calculee", "valeur_officielle", "ok"]); w.writerows(rows)
-    nko = [r for r in rows if not r[4]]
+        w = csv.writer(f); w.writerow(["brochure", "controle", "valeur_calculee", "valeur_officielle", "ok", "bloquant"]); w.writerows(rows)
+    nko = [r for r in rows if not r[4] and r[5]]
+    nwarn = [r for r in rows if not r[4] and not r[5]]
+    for r in nwarn: print("  avertissement (non bloquant)", r)
     print(f"{len(rows)} contrôles croisés, {len(nko)} en échec")
     for r in nko: print("  ÉCHEC", r)
 
@@ -269,6 +299,28 @@ def main():
         w.writerows(ret)
     print(f"{len(ret)} retraitements de budget détectés entre brochures successives (data/retraitements.csv)")
     if nko: sys.exit("Des contrôles croisés ont échoué (voir data/controles.csv).")
+
+    # ---------- données du dashboard ----------
+    lines = []
+    for k in keys:
+        s0, rub = k.split("|")
+        row = [s0, rub, labels[k].replace("’", "'"), [round(x, 2) if s[0] == "C" else round(x) for x, s in zip(vals[k], SER)]]
+        if k in cms: row.append(cms[k][:2])
+        lines.append(row)
+    out = {"ser": SER, "proj": proj, "dcodes": dcodes, "dnames": dnames,
+           "brochures": YEARS, "savYears": sav_years,
+           "svcs": [[c, s["n"], s["d"]] for c, s in svc.items()],
+           "etpY": EY, "etp": {c: [round(e.get(y, 0), 2) for y in EY] for c, e in etp.items()},
+           "lines": lines, "sav": {k: round(v) for k, v in sav.items()},
+           "meas": {c: sorted([[t, round(v)] for t, v in m.items()], key=lambda x: -x[1]) for c, m in meas.items()},
+           "inv": {str(y): A[y]["inv"] for y in YEARS}, "cr": {"res": res, "rex": rex},
+           "annexes": {c: {**d, "detail": latest.get(c)} for c, d in ann.items()},
+           "indic": {"inflation": {**indic["inflation"]["valeurs"], **indic["inflation"]["hypotheses"]},
+                     "inflHyp": list(indic["inflation"]["hypotheses"]), "refYear": indic["inflation"]["annee_de_reference"],
+                     "pop": {**indic["population"]["valeurs"], **indic["population"]["hypotheses"]},
+                     "popHyp": list(indic["population"]["hypotheses"])}}
+    os.makedirs("site", exist_ok=True)
+    json.dump(out, open("site/data.json", "w"), ensure_ascii=False, separators=(",", ":"))
     print(f"{len(lines)} lignes, {len(SER)} séries ({SER[0]} à {SER[-1]}), données écrites dans data/ et site/data.json")
 
 

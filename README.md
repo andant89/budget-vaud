@@ -39,6 +39,8 @@ L'outil décrit ce que montrent les chiffres. Il ne dit pas ce qu'il faudrait en
 | `resultats.csv` | série | résultat officiel, opérations extraordinaires, résultat recalculé et contrôle |
 | `controles.csv` | contrôle | 185 contrôles croisés avec les totaux officiels de chaque brochure |
 | `retraitements.csv` | service et budget | différences entre un budget et sa reprise dans la brochure suivante |
+| `annexes_totaux.csv` | institution et année | charges, revenus et résultat du CHUV, de l'UNIL, de la HEP, de la HEIG-VD, de l'ECAL et de HESAV |
+| `annexes_lignes.csv` | ligne d'annexe | détail du compte d'exploitation de chaque institution, par brochure |
 
 Les montants sont en francs, sans arrondi. Les codes de rubrique suivent le modèle comptable harmonisé MCH2 : 3xxx pour les charges, 4xxx pour les revenus ; les deux premiers chiffres donnent la nature (30 personnel, 36 transferts, 40 impôts, etc.).
 
@@ -49,14 +51,16 @@ Les montants sont en francs, sans arrondi. Les codes de rubrique suivent le mod�
 - **Recherche** : toutes les lignes, filtrables, y compris dans les commentaires
 - **Évolutions** : plus fortes hausses et baisses entre deux années
 - **Budget vs comptes** : écarts entre prévision et réalisation
-- **Analyses** : dix analyses (effet ciseaux, précision des prévisions, biais systématiques, concentration, personnel, contrôle de qualité…)
-- **Fiche service** et **Économies et investissements**
+- **Analyses** : onze analyses (effet ciseaux, précision des prévisions, biais systématiques, concentration, personnel, francs constants et par habitant, contrôle de qualité…)
+- **Bénéficiaires** : à qui vont les transferts (ménages, communes, entreprises publiques…) et les subventions nommées dans les commentaires
+- **Institutions** : budgets du CHUV et des hautes écoles, publiés en annexe
+- **Fiche service** et **Économies et investissements**, avec le suivi de chaque objet d'investissement d'un budget à l'autre
 
 Les comparaisons sont guidées : un badge indique si elle est standard (deux budgets successifs), de type prévision et réalisé, ou à interpréter avec prudence. Les montants qui apparaissent, disparaissent ou varient de plus de trois fois sont signalés « à vérifier ».
 
 ## Reconstruire les données
 
-Prérequis : Python 3.9 ou plus récent. Pour repartir des PDF : `pdftotext` (paquet `poppler-utils`).
+Prérequis : Python 3.9 ou plus récent. Les indicateurs externes (inflation, population) sont dans `pipeline/indicateurs.json` et doivent être mis à jour chaque année. Pour repartir des PDF : `pdftotext` (paquet `poppler-utils`).
 
 ```sh
 make rebuild   # depuis le texte déjà extrait dans sources/txt/

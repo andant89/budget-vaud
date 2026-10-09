@@ -190,6 +190,13 @@ footer{margin-top:44px;padding-top:14px;border-top:1px solid var(--line);font-si
 
 /* multi-year additions */
 [hidden]{display:none!important}
+.bfbars{display:grid;gap:14px}
+.bfrow .bfh{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
+.bfrow .t{height:12px;background:var(--surface-2);border-radius:0 3px 3px 0;margin:5px 0 4px;position:relative}
+.bfrow .t i{position:absolute;left:0;top:0;bottom:0;border-radius:0 3px 3px 0}
+.bft{font-size:12.5px;color:var(--fg-2)}
+.lnk{all:unset;cursor:pointer;color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+.lnk:focus-visible{outline:2px solid var(--accent)}
 .badge{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:99px;border:1px solid var(--line);background:var(--surface);color:var(--fg-2)}
 .badge::before{content:"";width:8px;height:8px;border-radius:99px;background:var(--b,var(--muted))}
 .badge.ok{--b:#0ca30c}.badge.info{--b:var(--s1)}.badge.warn{--b:#fab219}
@@ -241,6 +248,8 @@ table.mini tr[data-i]{cursor:pointer} table.mini tr[data-i]:hover{background:var
     <button class="tab" role="tab" id="t-ev" aria-selected="false" aria-controls="p-ev">Évolutions</button>
     <button class="tab" role="tab" id="t-bc" aria-selected="false" aria-controls="p-bc">Budget vs comptes</button>
     <button class="tab" role="tab" id="t-an" aria-selected="false" aria-controls="p-an">Analyses</button>
+    <button class="tab" role="tab" id="t-bf" aria-selected="false" aria-controls="p-bf">Bénéficiaires</button>
+    <button class="tab" role="tab" id="t-in" aria-selected="false" aria-controls="p-in">Institutions</button>
     <button class="tab" role="tab" id="t-sv" aria-selected="false" aria-controls="p-sv">Fiche service</button>
     <button class="tab" role="tab" id="t-ec" aria-selected="false" aria-controls="p-ec">Économies et investissements</button>
   </nav>
@@ -334,8 +343,29 @@ table.mini tr[data-i]{cursor:pointer} table.mini tr[data-i]:hover{background:var
 
   <!-- ANALYSES -->
   <section class="panel" id="p-an" role="tabpanel" aria-labelledby="t-an" hidden>
-    <p class="lede">Dix analyses telles qu'un auditeur des finances publiques les mènerait sur ces données. Chaque graphique est accompagné d'une lecture chiffrée calculée sur les données, et d'une note de méthode. Les lectures décrivent ce que montrent les chiffres ; elles ne disent pas ce qu'il faudrait en conclure, ce qui relève d'un choix politique. Les montants sont nominaux (non corrigés de l'inflation) et hors opérations extraordinaires.</p>
+    <p class="lede">Onze analyses telles qu'un auditeur des finances publiques les mènerait sur ces données. Chaque graphique est accompagné d'une lecture chiffrée calculée sur les données, et d'une note de méthode. Les lectures décrivent ce que montrent les chiffres ; elles ne disent pas ce qu'il faudrait en conclure, ce qui relève d'un choix politique. Les montants sont nominaux (non corrigés de l'inflation) et hors opérations extraordinaires.</p>
     <div id="anBody"></div>
+  </section>
+
+  <!-- BENEFICIAIRES -->
+  <section class="panel" id="p-bf" role="tabpanel" aria-labelledby="t-bf" hidden>
+    <p class="lede">Les transferts (nature 36) et les subventions à redistribuer (nature 37) représentent environ deux tiers des charges. Le plan comptable public (MCH2) indique, pour chaque rubrique, à quel type de bénéficiaire l'argent est versé : ménages, communes, entreprises publiques, organisations privées…</p>
+    <div class="controls"><div class="seg" id="bfType"></div></div>
+    <div class="card"><div class="sec-h"><h2>À qui vont les transferts</h2><p id="bfCap"></p></div><div id="bfBars" class="bfbars"></div></div>
+    <div class="card sec"><div class="sec-h"><h2>Évolution par bénéficiaire</h2><p>Budgets, en millions de francs</p></div><div id="bfTrend"></div></div>
+    <div class="card sec"><div class="sec-h"><h2>Bénéficiaire et département</h2><p>Année affichée, en millions</p></div><div class="heatwrap"><table class="heat" id="bfMat"></table></div></div>
+    <div class="sec"><div class="sec-h"><h2>Subventions et cotisations nommées</h2><p>Éléments détaillés dans les commentaires des brochures</p></div>
+      <div class="controls"><input type="search" id="bfQ" placeholder="Rechercher : FEDEVACO, festival, fondation…" aria-label="Rechercher une subvention"></div>
+      <p class="note" id="bfNamedInfo" style="margin:0 0 8px"></p>
+      <div class="tblwrap"><table class="data" id="bfNamed"><thead><tr><th>Élément</th><th class="r">Brochure</th><th class="r">Montant</th><th class="r">Année précédente</th></tr></thead><tbody></tbody></table></div></div>
+  </section>
+
+  <!-- INSTITUTIONS -->
+  <section class="panel" id="p-in" role="tabpanel" aria-labelledby="t-in" hidden>
+    <p class="lede">Le CHUV et les hautes écoles ont leur propre budget, publié en annexe de la brochure. Dans le budget de l'État, ils n'apparaissent que sous forme de subventions. Leurs comptes d'exploitation sont repris ici.</p>
+    <div class="card"><div class="sec-h"><h2>Charges d'exploitation par institution</h2><p>Dernier budget</p></div><div class="hbars" id="inAll"></div></div>
+    <div class="controls sec"><div class="seg" id="inSel"></div></div>
+    <div id="inSheet"></div>
   </section>
 
   <!-- FICHE SERVICE -->
@@ -355,6 +385,11 @@ table.mini tr[data-i]{cursor:pointer} table.mini tr[data-i]:hover{background:var
       <div class="card"><div class="sec-h"><h2>Économies par département</h2><p>Réduction nette, en millions</p></div><div class="hbars" id="savDept"></div></div>
       <div class="card"><div class="sec-h"><h2>Principales mesures d'économie</h2><p>Hors « pérennisation des mesures LAFin »</p></div><ul class="plain" id="savList"></ul></div>
     </div>
+    <div class="sec"><div class="sec-h"><h2>Suivi des objets d'investissement</h2><p>Chaque objet d'un budget à l'autre</p></div>
+      <div class="kpis" id="ivKpi"></div>
+      <div class="controls sec"><div class="seg" id="ivF"><button data-v="long" aria-pressed="true">Inscrits 5 budgets ou plus</button><button data-v="old" aria-pressed="false">Décret de 8 ans ou plus</button><button data-v="new" aria-pressed="false">Nouveaux</button><button data-v="all" aria-pressed="false">Tous</button></div></div>
+      <div class="tblwrap"><table class="data" id="ivTbl"><thead></thead><tbody></tbody></table></div>
+      <p class="note" id="ivInfo"></p></div>
   </section>
 
   <footer id="foot"></footer>
@@ -446,10 +481,10 @@ function tipRows(title,rows){return "<b>"+esc(title)+"</b>"+rows.map(r=>`<div cl
 // ---------- tabs ----------
 const tabs=$$(".tab");let curTab="t-ov";
 function openTab(id){curTab=id;tabs.forEach(t=>{const on=t.id===id;t.setAttribute("aria-selected",on);$("#"+t.getAttribute("aria-controls")).hidden=!on});store("bv-tab",id);
-  $("#yearbar").hidden=(id==="t-bc"||id==="t-an");if($("#cmpNote"))$("#cmpNote").hidden=$("#yearbar").hidden||!$("#cmpNote").textContent;renderTab()}
+  $("#yearbar").hidden=(id==="t-bc"||id==="t-an"||id==="t-in");if($("#cmpNote"))$("#cmpNote").hidden=$("#yearbar").hidden||!$("#cmpNote").textContent;renderTab()}
 tabs.forEach(t=>t.addEventListener("click",()=>openTab(t.id)));
 function segInit(id,cb){const el=$(id);el.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;el.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));cb(b.dataset.v)})}
-function renderTab(){({"t-ov":drawOverview,"t-ex":drawTM,"t-se":runSearch,"t-ev":drawEv,"t-bc":drawBC,"t-an":drawAnalyses,"t-sv":()=>renderSvc($("#svSel").value),"t-ec":drawEco})[curTab]()}
+function renderTab(){({"t-ov":drawOverview,"t-ex":drawTM,"t-se":runSearch,"t-ev":drawEv,"t-bc":drawBC,"t-an":drawAnalyses,"t-bf":drawBenef,"t-in":drawInst,"t-sv":()=>renderSvc($("#svSel").value),"t-ec":drawEco})[curTab]()}
 
 // ---------- year selectors ----------
 const ORDER=[...SER.filter(s=>s[0]==="B").reverse(),...SER.filter(s=>s[0]==="C").reverse()];
@@ -532,7 +567,8 @@ function drawKPIs(){
   const o=opTot(cur),ob=opTot(base);const op=o.R-o.C;const res=D.cr.res[cur],rex=D.cr.rex[cur]||0;
   const yr=yearOf(cur);const etp=SVCS.reduce((a,s)=>a+(s.etp[D.etpY.indexOf(yr)]||0),0),etpb=SVCS.reduce((a,s)=>a+(s.etp[D.etpY.indexOf(yr-1)]||0),0);
   const inv=D.inv[yr]?D.inv[yr].reduce((a,x)=>a+x[6],0):null;
-  const k=[["Charges",short(o.C),`${pctTxt(pct(o.C,ob.C))} vs ${BL().toLowerCase()}`],
+  const popY=D.indic.pop[yr];const perCap=popY?` · ${grp(Math.round(o.C/popY))} fr./hab.`:"";
+  const k=[["Charges",short(o.C),`${pctTxt(pct(o.C,ob.C))} vs ${BL().toLowerCase()}${perCap}`],
     ["Revenus",short(o.R),`${pctTxt(pct(o.R,ob.R))} vs ${BL().toLowerCase()}`],
     ["Résultat opérationnel",short(op),"revenus moins charges",op<0],
     ["Résultat de l'exercice",short(res),"après opérations extraordinaires",res<0],
@@ -851,10 +887,125 @@ function drawAnalyses(){
   sec("an10","10. Contrôle de qualité des données","Rapprochement de chaque série avec le résultat officiel",tq,
     `Les ${ORDER.length} séries se rapprochent au franc près du résultat officiel publié. Sur ${grp(LINES.length)} lignes, <b>${grp(nj)} présentent au moins un saut</b> (montant qui apparaît, disparaît ou varie de plus de trois fois). Elles portent la mention « à vérifier » dans la recherche et les évolutions.`,
     "Résultat recalculé = somme des revenus − somme des charges, opérations extraordinaires comprises. Pour les années où la brochure ne les détaille pas, les opérations extraordinaires ne sont connues qu'en total.");
+  // 11 francs constants et par habitant
+  {const P=priceIndex(),POP=D.indic.pop,ref=D.indic.refYear;const hyp=y=>D.indic.inflHyp.includes(String(y))||D.indic.popHyp.includes(String(y));
+   const pc=(v,y)=>v/P[y]/POP[y];
+   const ser=[{name:"Charges, comptes",color:css("--s2"),pts:cy.filter(y=>POP[Y4(y)]).map(y=>[Y4(y),pc(opv(isC,"C"+y),Y4(y))])},
+     {name:"Charges, budgets",color:css("--s2"),dash:1,pts:by.filter(y=>POP[Y4(y)]).map(y=>[Y4(y),pc(opv(isC,"B"+y),Y4(y))])},
+     {name:"Revenus, comptes",color:css("--s1"),pts:cy.filter(y=>POP[Y4(y)]).map(y=>[Y4(y),pc(opv(isR,"C"+y),Y4(y))])}];
+   const ya=Y4(cy[ib]),yb=Y4(cN);const ca=opv(isC,"C"+cy[ib]),cb=opv(isC,"C"+cN);
+   const gNom=cb/ca-1,gPx=P[yb]/P[ya]-1,gPop=POP[yb]/POP[ya]-1,gReal=(1+gNom)/((1+gPx)*(1+gPop))-1;
+   const parts=[["Hausse nominale des charges",gNom],["dont inflation",gPx],["dont croissance de la population",gPop],["dont hausse réelle par habitant",gReal]];
+   const mxp=Math.max(...parts.map(p=>Math.abs(p[1])));
+   const bars=`<div class="hbars" style="margin-top:6px">${parts.map((p,k)=>`<div class="hbar"><span>${k?"&nbsp;&nbsp;":""}${p[0]}</span><div class="t"><i style="width:${Math.abs(p[1])/mxp*100}%;background:${k?css("--s"+[0,4,3,1][k]):css("--s2")}"></i></div><span class="v">${(p[1]>=0?"+":"−")+dec(Math.abs(p[1])*100,1)} %</span></div>`).join("")}</div>`;
+   const cpa=pc(ca,ya),cpb=pc(cb,yb);const lastB=by[by.length-1];
+   sec("an11","11. En francs constants et par habitant",`Charges et revenus par habitant, en francs de ${ref}`,
+     lineChart(ser,{label:"Par habitant",tfmt:v=>grp(Math.round(v))+" fr.",yfmt:v=>grp(v),r:200})+`<h3 style="font-size:15px;margin-top:10px">Décomposition de la hausse des charges, comptes ${ya} → ${yb}</h3>`+bars,
+     `Entre ${ya} et ${yb}, les charges des comptes augmentent de <b>${dec(gNom*100,1)} %</b> en francs courants. L'inflation (${dec(gPx*100,1)} %) et la croissance de la population (${dec(gPop*100,1)} %) en expliquent une partie ; la hausse réelle par habitant est de <b>${dec(gReal*100,1)} %</b>. Par habitant et en francs de ${ref}, les charges passent de ${grp(Math.round(cpa))} fr. à ${grp(Math.round(cpb))} fr. Au budget ${Y4(lastB)}, elles atteignent ${grp(Math.round(pc(opv(isC,"B"+lastB),Y4(lastB))))} fr. par habitant${hyp(Y4(lastB))?" (inflation et population de cette année estimées)":""}.`,
+     `Inflation : indice suisse des prix à la consommation, moyenne annuelle (OFS). Population : population résidante permanente au 31 décembre (Statistique Vaud). Années ${[...new Set([...D.indic.inflHyp,...D.indic.popHyp])].join(", ")} : hypothèses (inflation nulle, population +1 %), à remplacer par les chiffres officiels. Les trois effets se multiplient : (1 + inflation) × (1 + population) × (1 + hausse réelle par habitant) = 1 + hausse nominale. Valeurs dans pipeline/indicateurs.json.`)}
   $("#anBody").innerHTML=out.join("");
   $("#anBody").querySelectorAll("tr[data-i]").forEach(tr=>tr.onclick=()=>lineDetail(LINES[+tr.dataset.i]));
   const wfs=$("#anWf");if(wfs)wfs.onclick=e=>{const b=e.target.closest("button");if(!b)return;anWf=b.dataset.v;const y=scrollY;drawAnalyses();scrollTo({top:y})};
 }
+
+// ---------- Bénéficiaires des transferts ----------
+const BEN=["Confédération","Autres cantons et concordats","Communes","Assurances sociales publiques","Entreprises publiques","Entreprises privées","Organisations privées à but non lucratif","Ménages","Étranger"];
+const TTYPE={"360":"Parts de revenus","361":"Dédommagements","362":"Péréquation financière","363":"Subventions"};
+function benOf(rub){const g=rub.slice(0,3);
+  if(g==="370"||rub.slice(0,2)==="37")return "Subventions fédérales redistribuées";
+  if(g==="366")return "Amortissements de subventions d'investissement";
+  if(TTYPE[g]&&rub.length===4){const k=+rub[3];return BEN[k]||"Autres transferts"}
+  return "Autres transferts"}
+const BENALL=[...BEN,"Subventions fédérales redistribuées","Amortissements de subventions d'investissement","Autres transferts"];
+const benCol=b=>{const i=BENALL.indexOf(b);return i<0?css("--s9"):css("--s"+Math.min(9,[7,6,3,9,1,4,5,2,9,8,9,9][i]||9))};
+let bfType="";
+function drawBenef(){
+  const i=ci(),j=bi();const TL=LINES.filter(l=>!l.ex&&(l.nat==="36"||l.nat==="37"));
+  const agg={},aggB={},byDept={},top={};
+  TL.forEach(l=>{if(bfType&&l.rub.slice(0,3)!==bfType)return;const b=benOf(l.rub);agg[b]=(agg[b]||0)+l.v[i];aggB[b]=(aggB[b]||0)+l.v[j];
+    const k=b+"|"+l.dept;byDept[k]=(byDept[k]||0)+l.v[i];(top[b]=top[b]||[]).push(l)});
+  const tot=Object.values(agg).reduce((a,b)=>a+b,0);
+  const rows=BENALL.filter(b=>Math.abs(agg[b]||0)>0).sort((a,b)=>agg[b]-agg[a]);const mx=Math.max(...rows.map(b=>agg[b]),1);
+  $("#bfBars").innerHTML=rows.map(b=>{const v=agg[b],vb=aggB[b]||0;const t3=top[b].filter(l=>l.v[i]>0).sort((x,y)=>y.v[i]-x.v[i]).slice(0,3);
+    return `<div class="bfrow"><div class="bfh"><b>${esc(b)}</b><span class="num">${short(v)} <span class="pill ${v>vb?"up":v<vb?"down":""}">${pctTxt(pct(v,vb))}</span></span></div>
+    <div class="t"><i style="width:${Math.max(0,v)/mx*100}%;background:${benCol(b)}"></i></div>
+    <div class="bft">${dec(v/tot*100,1)} % des transferts · principales lignes : ${t3.map(l=>`<button class="lnk" data-i="${l.i}">${esc(SVC[l.svc].name)} (${short(l.v[i])})</button>`).join(", ")}</div></div>`}).join("");
+  $("#bfBars").querySelectorAll("button[data-i]").forEach(b=>b.onclick=()=>lineDetail(LINES[+b.dataset.i]));
+  $("#bfCap").textContent=`${CL()}${PROJ[cur]?" (projet)":""} : ${short(tot)} de transferts${bfType?" ("+TTYPE[bfType].toLowerCase()+")":""}, comparé à ${BL().toLowerCase()}`;
+  // matrice bénéficiaire × département
+  let h=`<thead><tr><th>Bénéficiaire</th>${order.map(d=>`<th>${d.code}</th>`).join("")}</tr></thead><tbody>`;
+  const mxc=Math.max(...Object.values(byDept),1);
+  rows.forEach(b=>{h+=`<tr><td>${esc(b)}</td>`+order.map(d=>{const v=byDept[b+"|"+d.id]||0;const s=v>0?Math.min(7,1+Math.floor(Math.sqrt(v/mxc)*6.999)):0;const bg=s?css("--seq"+s):"transparent";
+    return `<td style="background:${bg};color:${s?textOn(bg):css("--muted")}">${v?(Math.abs(v)<1e6?"<1":mio(v)):"–"}</td>`}).join("")+"</tr>"});
+  $("#bfMat").innerHTML=h+"</tbody>";
+  // tendance par bénéficiaire (budgets)
+  const by=BYRS;const series=rows.slice(0,6).map(b=>({name:b,color:benCol(b),pts:by.map(y=>[Y4(y),TL.filter(l=>benOf(l.rub)===b&&(!bfType||l.rub.slice(0,3)===bfType)).reduce((a,l)=>a+l.v[SI["B"+y]],0)/1e6])}));
+  $("#bfTrend").innerHTML=lineChart(series,{label:"Transferts par bénéficiaire",tfmt:v=>grp(Math.round(v))+" mio",yfmt:v=>grp(v),r:230});
+  drawNamed()}
+function drawNamed(){
+  const q=norm($("#bfQ").value.trim());const terms=q.split(/\s+/).filter(Boolean);
+  const items=[];LINES.forEach(l=>{if(!(l.nat==="36"||l.nat==="37")||!l.cm)return;const [yr,its]=l.cm[0];its.forEach(x=>items.push({l,yr,lab:x[0],a:x[1],b:x[2]}))});
+  const f=items.filter(x=>terms.every(t=>norm(x.lab+" "+SVC[x.l.svc].name+" "+x.l.label).includes(t))).sort((a,b)=>b.a-a.a);
+  $("#bfNamedInfo").textContent=`${grp(f.length)} éléments sur ${grp(items.length)} détaillés dans les commentaires des brochures (dernière brochure disponible pour chaque ligne).`;
+  $("#bfNamed tbody").innerHTML=f.slice(0,150).map(x=>`<tr data-i="${x.l.i}"><td>${esc(x.lab)}<div class="code">${esc(SVC[x.l.svc].name)} · ${x.l.rub} ${esc(benOf(x.l.rub))}</div></td><td class="r">${x.yr}</td><td class="r"><b>${grp(x.a)}</b></td><td class="r">${grp(x.b)}</td></tr>`).join("")||'<tr><td colspan="4" style="padding:16px;color:var(--fg-2)">Aucun élément ne correspond.</td></tr>';
+}
+function initBenef(){
+  $("#bfType").innerHTML=`<button data-v="" aria-pressed="true">Tous les transferts</button>`+Object.entries(TTYPE).map(([k,v])=>`<button data-v="${k}" aria-pressed="false">${v}</button>`).join("");
+  segInit("#bfType",v=>{bfType=v;drawBenef()});
+  let t;$("#bfQ").addEventListener("input",()=>{clearTimeout(t);t=setTimeout(drawNamed,120)});
+  $("#bfNamed tbody").addEventListener("click",e=>{const tr=e.target.closest("tr[data-i]");if(tr)lineDetail(LINES[+tr.dataset.i])})}
+
+// ---------- Institutions (annexes) ----------
+let inSel="CHUV";
+function drawInst(){
+  const A=D.annexes;const codes=Object.keys(A).sort((a,b)=>(A[b].C[LASTB]||0)-(A[a].C[LASTB]||0));
+  if(!A[inSel])inSel=codes[0];
+  $("#inSel").innerHTML=codes.map(c=>`<button data-v="${c}" aria-pressed="${c===inSel}">${c}</button>`).join("");
+  $("#inSel").onclick=e=>{const b=e.target.closest("button");if(!b)return;inSel=b.dataset.v;drawInst()};
+  // vue d'ensemble : charges de chaque institution, dernier budget
+  const mx=Math.max(...codes.map(c=>A[c].C[LASTB]||0),1);
+  $("#inAll").innerHTML=codes.map(c=>{const v=A[c].C[LASTB]||0,vb=A[c].C["B"+(BYRS[BYRS.length-1]-1)]||0;return `<div class="hbar"><span><b>${c}</b> <span style="color:var(--muted)">· ${esc(A[c].nom)}</span></span><div class="t"><i style="width:${v/mx*100}%;background:${css("--s"+(codes.indexOf(c)+1))}"></i></div><span class="v">${short(v)}</span></div>`}).join("");
+  const a=A[inSel];const vec=k=>SER.map(s=>a[k][s]??0);
+  const last=LASTB,prev="B"+(BYRS[BYRS.length-1]-1);
+  const res=a.res[last];
+  let h=`<div class="sheet-h"><h2>${esc(a.nom)}</h2><span class="code">${inSel} · ${SLAB[last]}${PROJ[last]?" (projet)":""}</span></div>
+  <div class="kpis" style="grid-template-columns:repeat(auto-fit,minmax(170px,1fr))">
+   <div class="kpi"><div class="k">Charges d'exploitation</div><div class="v num">${short(a.C[last])}</div><div class="s">${pctTxt(pct(a.C[last],a.C[prev]))} vs ${SLAB[prev].toLowerCase()}</div></div>
+   <div class="kpi"><div class="k">Revenus d'exploitation</div><div class="v num">${short(a.R[last])}</div><div class="s">${pctTxt(pct(a.R[last],a.R[prev]))} vs ${SLAB[prev].toLowerCase()}</div></div>
+   <div class="kpi"><div class="k">Résultat de l'exercice</div><div class="v num">${res===undefined?"–":short(res)}</div><div class="s">budget</div></div>
+   <div class="kpi"><div class="k">Écart comptes ${Y4(BOTH[BOTH.length-1])}</div><div class="v num">${a.C[LASTC]!==undefined&&a.C["B"+CYRS[CYRS.length-1]]!==undefined?sgn(a.C[LASTC]-a.C["B"+CYRS[CYRS.length-1]]):"–"}</div><div class="s">charges réalisées vs budget</div></div>
+  </div>
+  <div class="cols2 sec"><div class="card"><div class="sec-h"><h2>Charges d'exploitation, ${YRLAB}</h2></div>${seriesChart(vec("C"),{w:520,h:190,label:"Charges"})}${chartLegend()}</div>
+  <div class="card"><div class="sec-h"><h2>Revenus d'exploitation, ${YRLAB}</h2></div>${seriesChart(vec("R"),{w:520,h:190,label:"Revenus"})}${chartLegend()}</div></div>`;
+  const det=a.detail;
+  if(det){const yy=det.brochure;const tbl=(sec,title)=>{const ls=det.lignes.filter(x=>x[0]===sec).sort((x,y)=>y[3]-x[3]);const T=ls.reduce((s,x)=>s+x[3],0);
+      return `<div class="card"><div class="sec-h"><h2>${title}</h2><p>Brochure ${yy}, ${ls.length} lignes</p></div><div class="chartbox"><table class="mini"><thead><tr><th>Ligne</th><th>Budget ${yy}</th><th>Budget ${yy-1}</th><th>Comptes ${yy-2}</th><th>Part</th></tr></thead><tbody>${ls.map(x=>`<tr><td>${esc(x[2])}${x[1]?` <span class="code">${x[1]}</span>`:""}</td><td><b>${grp(x[3])}</b></td><td>${grp(x[4])}</td><td>${grp(x[5])}</td><td>${T?dec(x[3]/T*100,1)+" %":""}</td></tr>`).join("")}</tbody></table></div></div>`};
+    h+=`<div class="sec">${tbl("C","Détail des charges")}</div><div class="sec">${tbl("R","Détail des revenus")}</div>
+    <p class="note">Le détail est repris de l'annexe de la brochure ${yy}. Sa somme a été contrôlée contre les totaux d'exploitation publiés.</p>`}
+  $("#inSheet").innerHTML=h}
+
+// ---------- Suivi des investissements ----------
+let ivFilter="long";
+function drawInvTrack(){
+  const yrs=Object.keys(D.inv).map(Number).sort();const obj={};
+  yrs.forEach(y=>D.inv[y].forEach(x=>{const o=obj[x[1]]||(obj[x[1]]={id:x[1],svc:x[0],lab:x[2],decret:x[3],y:{}});o.y[y]=(o.y[y]||0)+x[6];o.lab=x[2];o.svc=x[0];if(/^\d/.test(x[3]))o.decret=x[3]}));
+  const all=Object.values(obj);all.forEach(o=>{o.n=Object.keys(o.y).length;o.cum=Object.values(o.y).reduce((a,b)=>a+b,0);const m=/(\d{4})$/.exec(o.decret||"");o.dy=m?+m[1]:null;o.last=yrs.filter(y=>o.y[y]!==undefined).pop();o.first=yrs.filter(y=>o.y[y]!==undefined)[0]});
+  const ly=yrs[yrs.length-1];const cur=all.filter(o=>o.y[ly]!==undefined);
+  const long=cur.filter(o=>o.n>=5),old=cur.filter(o=>o.dy&&ly-o.dy>=8);
+  $("#ivKpi").innerHTML=`<div class="kpi"><div class="k">Objets suivis</div><div class="v num">${grp(all.length)}</div><div class="s">dans les budgets ${yrs[0]} à ${ly}</div></div>
+   <div class="kpi"><div class="k">Inscrits en ${ly}</div><div class="v num">${grp(cur.length)}</div><div class="s">${short(cur.reduce((a,o)=>a+o.y[ly],0))} nets</div></div>
+   <div class="kpi"><div class="k">Inscrits 5 budgets ou plus</div><div class="v num">${grp(long.length)}</div><div class="s">parmi les objets ${ly}</div></div>
+   <div class="kpi"><div class="k">Décret de 8 ans ou plus</div><div class="v num">${grp(old.length)}</div><div class="s">objets ${ly} votés en ${ly-8} ou avant</div></div>`;
+  let list=ivFilter==="long"?long:ivFilter==="old"?old:ivFilter==="new"?cur.filter(o=>o.n===1):all;
+  list=list.sort((a,b)=>b.cum-a.cum);
+  $("#ivTbl thead").innerHTML=`<tr><th>Objet</th><th>Décret</th>${yrs.map(y=>`<th>${y}</th>`).join("")}<th>Cumul inscrit</th></tr>`;
+  $("#ivTbl tbody").innerHTML=list.slice(0,200).map(o=>`<tr><td>${esc(o.lab)}<div class="code">${o.id} · ${esc(SVC[o.svc]?SVC[o.svc].name:o.svc)}</div></td><td>${esc(o.decret||"")}</td>${yrs.map(y=>`<td>${o.y[y]===undefined?'<span style="color:var(--muted)">·</span>':short(o.y[y])}</td>`).join("")}<td><b>${short(o.cum)}</b></td></tr>`).join("");
+  $("#ivInfo").textContent=`${grp(list.length)} objets${list.length>200?" (200 premiers affichés)":""}. Montants : dépenses nettes inscrites à chaque budget. Un objet inscrit plusieurs années de suite est un projet en cours sur plusieurs exercices ; le budget ne dit pas combien a été réellement dépensé.`}
+function initInvTrack(){segInit("#ivF",v=>{ivFilter=v;drawInvTrack()})}
+
+// ---------- Francs constants et par habitant ----------
+function priceIndex(){const I=D.indic.inflation,ref=D.indic.refYear;const ys=Object.keys(I).map(Number).sort();const lvl={};let v=100;
+  const y0=ys[0]-1;lvl[y0]=100;ys.forEach(y=>{v=v*(1+I[y]/100);lvl[y]=v});const r=lvl[ref];Object.keys(lvl).forEach(k=>lvl[k]=lvl[k]/r);return lvl}
 
 // ---------- Service sheet ----------
 function initSvc(){
@@ -901,7 +1052,7 @@ function renderSvc(code){
   $("#svAll").onclick=()=>{svcF=code;$("#q").value="";$("#fDept").value="";$("#fType").value="";$("#fNat").value="";$("#fSav").checked=false;shown=100;openTab("t-se")}}
 
 // ---------- Eco ----------
-function drawEco(){
+function drawEco(){drawInvTrack();
   const yr=cur[0]==="B"&&D.inv[yearOf(cur)]?yearOf(cur):Y4(BYRS[BYRS.length-1]);const inv=D.inv[yr]||[];
   $("#ecLede").textContent=`Budget d'investissement ${yr}${PROJ["B"+(yr%100)]?" (projet)":""} : ${inv.length} objets pour ${short(inv.reduce((a,x)=>a+x[6],0))} nets. Les mesures d'économie ne sont détaillées que dans la brochure ${D.savYears.join(', ')}.`;
   $("#invCap").textContent=`Budget ${yr}, en millions`;$("#invCap2").textContent=`Budget ${yr}, dépenses nettes`;
@@ -920,7 +1071,7 @@ $("#mastLede").textContent=`Toutes les lignes du budget de fonctionnement de l'�
 $("#stamp").textContent=`Sources : brochures budget ${D.brochures[0]} à ${D.brochures[D.brochures.length-1]}`;
 document.querySelectorAll(".yrsB").forEach(e=>e.textContent=Y4(BYRS[0])+"–"+Y4(BYRS[BYRS.length-1]));
 $("#bcAvail").textContent=`${BOTH.length} exercices sont disponibles, de ${Y4(BOTH[0])} à ${Y4(BOTH[BOTH.length-1])}.`;
-initYears();initSearch();initSvc();
+initYears();initSearch();initSvc();initBenef();initInvTrack();
 const st=store("bv-tab");openTab(st&&$("#"+st)?st:"t-ov");
 })();
 </script>
