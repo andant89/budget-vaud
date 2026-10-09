@@ -1,0 +1,6 @@
+build/
+__pycache__/
+*.pyc
+.DS_Store
+# Les brochures PDF ne sont pas versionnées par défaut (voir sources/README.md)
+sources/pdf/*.pdf

@@ -1,0 +1,49 @@
+service,nom,departement,departement_nom,premiere_brochure,derniere_brochure
+001,Secrétariat général du DFTS,DFTS,"Finances, territoire et sport",2020,2027
+002,Police cantonale,DJES,"Jeunesse, environnement et sécurité",2020,2027
+003,Service des automobiles et de la navigation,DICIRH,"Institutions, culture, infrastructures et RH",2020,2027
+004,Service de la sécurité civile et militaire,DJES,"Jeunesse, environnement et sécurité",2020,2027
+005,Direction générale de l'environnement,DJES,"Jeunesse, environnement et sécurité",2020,2027
+010,Secrétariat général du DEF,DEF,Enseignement et formation professionnelle,2020,2027
+011,DGEO - Direction générale,DEF,Enseignement et formation professionnelle,2020,2027
+012,DGEO - Enseignement obligatoire et pédagogie spécialisée,DEF,Enseignement et formation professionnelle,2020,2027
+013,Direction générale de l'enseignement postobligatoire,DEF,Enseignement et formation professionnelle,2020,2027
+014,Enseignement secondaire II,DEF,Enseignement et formation professionnelle,2020,2027
+015,Direction générale de l'enseignement supérieur,DEF,Enseignement et formation professionnelle,2020,2027
+017,Direction générale de la culture,DICIRH,"Institutions, culture, infrastructures et RH",2020,2027
+018,Direction générale de l'enfance et de la jeunesse,DJES,"Jeunesse, environnement et sécurité",2020,2027
+020,Secrétariat général du DJES,DJES,"Jeunesse, environnement et sécurité",2020,2027
+021,Service juridique et législatif,DICIRH,"Institutions, culture, infrastructures et RH",2020,2020
+022,Service des curatelles et tutelles professionnelles,DJES,"Jeunesse, environnement et sécurité",2020,2027
+023,Service de la population,DEIEP,"Économie, innovation, emploi et patrimoine",2020,2027
+024,Service pénitentiaire,DJES,"Jeunesse, environnement et sécurité",2020,2027
+025,Service des communes et du logement,DICIRH,"Institutions, culture, infrastructures et RH",2020,2020
+026,Ministère public,OJV-MP,Ordre judiciaire et Ministère public,2020,2027
+027,Secrétariat général du DSAS,DSAS,Santé et action sociale,2020,2027
+037,Administration générale de la DGS,DSAS,Santé et action sociale,2020,2027
+039,Secrétariat général du DEIEP,DEIEP,"Économie, innovation, emploi et patrimoine",2020,2027
+040,DG de l'emploi et du marché du travail,DEIEP,"Économie, innovation, emploi et patrimoine",2020,2027
+041,"Dir. générale agriculture, viticulture et aff. vétérinaires",DADN,"Agriculture, durabilité, climat et numérique",2020,2027
+042,Service de l'éducation physique et du sport,DFTS,"Finances, territoire et sport",2020,2027
+043,Direction générale du territoire et du logement,DFTS,"Finances, territoire et sport",2020,2027
+044,Service de la promotion de l'économie et de l'innovation,DEIEP,"Économie, innovation, emploi et patrimoine",2020,2027
+045,Secrétariat général du DICIRH,DICIRH,"Institutions, culture, infrastructures et RH",2020,2027
+046,Direction générale de la mobilité et des routes,DICIRH,"Institutions, culture, infrastructures et RH",2020,2027
+047,Direction générale du numérique & des systèmes d'information,DADN,"Agriculture, durabilité, climat et numérique",2020,2027
+048,Direction générale des immeubles et du patrimoine,DEIEP,"Économie, innovation, emploi et patrimoine",2020,2027
+050,Chancellerie d'Etat,DFTS,"Finances, territoire et sport",2020,2027
+051,Secrétariat général du DADN,DADN,"Agriculture, durabilité, climat et numérique",2020,2027
+052,Direction générale de la fiscalité,DFTS,"Finances, territoire et sport",2020,2027
+053,Service d'analyse et de gestion financières,DFTS,"Finances, territoire et sport",2020,2027
+054,Direction générale des ressources humaines,DICIRH,"Institutions, culture, infrastructures et RH",2020,2027
+056,Contrôle cantonal des finances,DFTS,"Finances, territoire et sport",2020,2027
+057,Ordre judiciaire vaudois,OJV-MP,Ordre judiciaire et Ministère public,2020,2027
+058,Secrétariat général du Grand Conseil,SGGC,Secrétariat général du Grand Conseil,2020,2027
+059,Cour des comptes,DFTS,"Finances, territoire et sport",2020,2027
+064,Système de santé,DSAS,Santé et action sociale,2020,2027
+065,Administration générale de la DGCS,DSAS,Santé et action sociale,2020,2027
+066,Prestations financières et insertion,DSAS,Santé et action sociale,2020,2027
+067,Accompagnement et hébergement,DSAS,Santé et action sociale,2020,2027
+068,Dir. générale des affaires institutionnelles et des communes,DICIRH,"Institutions, culture, infrastructures et RH",2021,2027
+069,Conseil de la magistrature,DICIRH,"Institutions, culture, infrastructures et RH",2024,2027
+070,Service cantonal de l'accueil de jour des enfants,DICIRH,"Institutions, culture, infrastructures et RH",2025,2027

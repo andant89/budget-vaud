@@ -1,0 +1,19 @@
+{
+  "departements_actuels": [
+    ["DFTS", "Finances, territoire et sport"],
+    ["DEF", "Enseignement et formation professionnelle"],
+    ["DJES", "Jeunesse, environnement et sécurité"],
+    ["DSAS", "Santé et action sociale"],
+    ["DEIEP", "Économie, innovation, emploi et patrimoine"],
+    ["DICIRH", "Institutions, culture, infrastructures et RH"],
+    ["DADN", "Agriculture, durabilité, climat et numérique"],
+    ["OJV-MP", "Ordre judiciaire et Ministère public"],
+    ["SGGC", "Secrétariat général du Grand Conseil"]
+  ],
+  "services_disparus": {
+    "021": {"departement": 6, "note": "Service juridique et législatif (2020), rattaché aux Institutions"},
+    "025": {"departement": 6, "note": "Service des communes et du logement (2020), rattaché aux Institutions"}
+  },
+  "budgets_projets": [2024, 2027],
+  "_aide": "departements_actuels suit l'ordre de la brochure la plus récente. Mettre à jour cette liste si l'organisation des départements change. budgets_projets : années pour lesquelles la brochure est un projet du Conseil d'État et non le budget adopté."
+}

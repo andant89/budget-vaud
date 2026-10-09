@@ -1,0 +1,2239 @@
+annee_budget,service,objet,libelle,date_decret,depenses,recettes,depenses_nettes
+2020,005,I.000010.01,Le Famollens en ville de Rolle,31.05.2011,270000,120000,150000
+2020,005,I.000027.01,Part cantonale ass. anciennes décharges2,13.03.2012,160000,60000,100000
+2020,005,I.000029.01,Travaux de correction de l'Eau Froide,22.06.2010,30000,0,30000
+2020,005,I.000030.01,La Thielle à Yverdon,31.05.2011,1800000,1500000,300000
+2020,005,I.000033.01,La Baye de Clarens à Montreux,31.05.2011,1000000,500000,500000
+2020,005,I.000034.01,Le Nozon à Orbe,31.05.2011,1000000,0,1000000
+2020,005,I.000035.01,La Brinaz à Grandson et Montagny,31.05.2011,6000000,5500000,500000
+2020,005,I.000036.01,Canal du Haut Lac-Basse Plaine du Rhône,31.05.2011,2000000,1500000,500000
+2020,005,I.000039.01,Gestion inform. lacs et cours d'eau,31.05.2011,50000,0,50000
+2020,005,I.000040.01,Crédit cadre gestion/traitement déchets,28.08.2012,100000,0,100000
+2020,005,I.000042.01,Décharge des Saviez à Noville - Ass,13.03.2012,250000,150000,100000
+2020,005,I.000304.02,Maison de l'environnement Lsne Vennes,26.03.2019,7000000,-100000,7100000
+2020,005,I.000335.01,Plan directeur des rives du Léman 3ème,13.05.2014,100000,0,100000
+2020,005,I.000338.01,Carte d'exposition aux dangers naturels,01.07.2014,200000,0,200000
+2020,005,I.000350.01,Gestion intégrée des risques,01.07.2014,450000,50000,400000
+2020,005,I.000416.01,Venoge 3 - réalisations & coordination,Objet nouv,400000,200000,200000
+2020,005,I.000417.01,Décharge de Molard-Parelliet à Trélex,21.11.2017,30000,0,30000
+2020,005,I.000419.01,Rhône 3 - 1ere tranche de travaux,29.05.2018,1200000,0,1200000
+2020,005,I.000420.01,Ruisseau de Broye,Objet nouv,100000,0,100000
+2020,005,I.000421.01,Corridors à faune (Lucens),Objet nouv,20000,0,20000
+2020,005,I.000425.01,Plan d'évacuation des eaux Chamberonne,13.03.2018,300000,0,300000
+2020,005,I.000426.01,Crédit cadre micropolluants,19.01.2016,8000000,0,8000000
+2020,005,I.000427.01,Programme cantonal en faveur de biodiv,Objet nouv,100000,0,100000
+2020,005,I.000429.01,Infra. & cond. gestion hors forêts prot,Objet nouv,20000,0,20000
+2020,005,I.000430.01,Protection DN & amélioration structures3,13.03.2018,1200000,0,1200000
+2020,005,I.000431.01,Protection DN & amélioration structures4,Objet nouv,100000,0,100000
+2020,005,I.000432.01,Part cantonale ass. anciennes décharges3,06.11.2018,1430000,600000,830000
+2020,005,I.000434.01,Crédit prospection & garantie risque géo,Objet nouv,20000,0,20000
+2020,005,I.000435.01,Lutte contre espèces exotiques envahiss,Objet nouv,20000,0,20000
+2020,005,I.000436.01,Sécurisation de cours d'eau,Objet nouv,100000,0,100000
+2020,005,I.000437.01,Gestion déchets-installations & sensib,30.08.2016,150000,0,150000
+2020,005,I.000437.02,Gestion déchets - installations,30.08.2016,200000,0,200000
+2020,005,I.000609.01,Regroupement DGE par régions,Objet nouv,200000,0,200000
+2020,005,I.000644.01,La Grande Eau - Traversée d'Aigle,Objet nouv,20000,0,20000
+2020,005,I.000645.01,La Veveyse & l'Ognonnaz - Travaux,Objet nouv,20000,0,20000
+2020,005,I.000646.01,Renaturation de la Broye,Objet nouv,20000,0,20000
+2020,005,I.000654.01,Sécurisation approvis. énergétique,Objet nouv,650000,650000,0
+2020,005,I.000668.01,Harmonisation gestion subventions DGE,Objet nouv,300000,0,300000
+2020,005,I.000669.01,Modernisation du SI de la DGE,Objet nouv,100000,0,100000
+2020,005,I.000673.02,DGE-DIRNA regroupement région Nord,Objet nouv,400000,0,400000
+2020,005,I.000685.01,Décharge Les Gérignes à Bourg-en-Lavaux,06.11.2018,700000,0,700000
+2020,005,I.000686.01,Décharges Bois de Vaux à Lussery-Villars,06.11.2018,50000,0,50000
+2020,005,I.000698.01,Plan climat vaudois,Objet nouv,100000,0,100000
+2020,005,I.000700.01,Renouvellement moyens d'analyses labos,Objet nouv,20000,0,20000
+2020,005,I.000702.01,Gestion intégrée des risques 2,Objet nouv,100000,0,100000
+2020,005,I.000722.01,Aménagement de la Chamberonne,Objet nouv,100000,0,100000
+2020,043,I.000378.01,Appui aux communes pour leur PGA,12.05.2015,600000,0,600000
+2020,043,I.000508.01,Modernisation SI du SDT,27.11.2018,490000,0,490000
+2020,010,I.000706.03,Educ. Num. - Mise à niveau et formation,Objet nouv,3000000,0,3000000
+2020,011,I.000401.02,SESAF - OPS/OES/OCOSP,Objet nouv,500000,0,500000
+2020,013,I.000301.02,Refonte SI métier DGEP,30.05.2017,1450000,0,1450000
+2020,013,I.000396.03,CrE Gymnase du Chablais Aigle,Objet nouv,2000000,0,2000000
+2020,013,I.000439.02,CrE Gymnase d'Echallens,Objet nouv,1000000,0,1000000
+2020,013,I.000442.01,CE Morges Salle de sport VD5,Objet nouv,1500000,0,1500000
+2020,013,I.000602.03,Extension GYB Payerne,27.11.2018,8000000,5000000,3000000
+2020,013,I.000618.02,Extension Gymnase de Burier,11.12.2018,9900000,0,9900000
+2020,013,I.000619.03,CrE Extension GAP,Objet nouv,300000,0,300000
+2020,013,I.000630.01,Ecole professionnelle de Vennes,26.03.2019,3500000,0,3500000
+2020,013,I.000726.02,Task-Force DGEP gymnases 2020-2023,Objet nouv,500000,0,500000
+2020,015,I.000250.03,Agrandissement Unithèque - BCU,Objet nouv,17000000,1500000,15500000
+2020,015,I.000381.02,CrE- UNIL Sciences de la vie Ecublens,24.11.2015,3000000,0,3000000
+2020,015,I.000399.02,UNIL - Refection terrains de sport,21.11.2017,1000000,500000,500000
+2020,015,I.000451.01,UNIL - Agrandissement station de pompage,Objet nouv,5700000,0,5700000
+2020,015,I.000455.03,CrE Extension HEP Etape 2,Objet nouv,650000,0,650000
+2020,015,I.000458.01,UNIL - Extension Internef,Objet nouv,600000,0,600000
+2020,015,I.000463.01,UNIL - Crédit-cadre rénovation 2018-2021,22.01.2019,5150000,0,5150000
+2020,015,I.000464.01,UNIL - Grands consommateurs LVLEne,22.01.2019,5690000,350000,5340000
+2020,015,I.000657.03,CrE Extension HEP Etape 1,Objet nouv,1000000,0,1000000
+2020,015,I.000658.01,UNIL - Assainissement production chaleur,Objet nouv,400000,0,400000
+2020,015,I.000662.02,UNIL - Locaux communautaires Vortex,26.03.2019,3000000,0,3000000
+2020,017,I.000066.02,Nouveau Musée des Beaux-Arts,18.03.2014,5118000,5300000,-182000
+2020,017,I.000331.02,Musées de l'Elysée et du MUDAC,09.05.2017,20000000,6000000,14000000
+2020,017,I.000332.02,Avenir de Rumine,Objet nouv,500000,0,500000
+2020,017,I.000637.01,Aménagements extérieurs Plateforme 10,09.05.2017,3500000,0,3500000
+2020,018,I.000697.02,Refonte SI SPJ,Objet nouv,100000,0,100000
+2020,020,I.000708.01,Modernisation SI OCTP,Objet nouv,500000,0,500000
+2020,021,I.000653.01,SJL-Implément. module Inkasso dans SIF,Objet nouv,500000,0,500000
+2020,004,I.000397.02,Gollion Instrastructures CCPP,Objet nouv,800000,0,800000
+2020,004,I.000415.01,Modern. SI PCi et EMCC Schéma directeur,Objet nouv,100000,0,100000
+2020,004,I.000648.01,Infrastuctures d'instruction Prot pop,Objet nouv,100000,0,100000
+2020,004,I.000649.01,Matériel et équipement de la PCi,Objet nouv,100000,0,100000
+2020,002,I.000022.01,Modernis. SI Police - Schéma Directeur,08.10.2013,293000,0,293000
+2020,002,I.000406.01,Centre de formation pour les policiers,Objet nouv,400000,0,400000
+2020,002,I.000409.01,Modernis. SI Police - Phase II,Objet nouv,1000000,0,1000000
+2020,002,I.000411.01,Renouv. du matériel de transmission_term,05.09.2017,800000,0,800000
+2020,002,I.000638.01,Renouv. du matériel de trans_réseau,15.01.2019,5463000,0,5463000
+2020,024,I.000310.02,Sécurisation de la prison de la Croisée,08.05.2018,1600000,100000,1500000
+2020,024,I.000348.03,CrE PGM Pénitencier Grands-Marais Orbe,18.09.2018,3000000,0,3000000
+2020,024,I.000486.02,CPPO Pôle alimentaire,Objet nouv,200000,0,200000
+2020,024,I.000620.01,CrE Assainissem. La Tuilière à Lonay,Objet nouv,300000,0,300000
+2020,024,I.000633.02,"CPPO-Poste contrôle avancé, sécurisation",Objet nouv,1000000,0,1000000
+2020,024,I.000683.01,CrECE Rénovation pénitencier Bochuz Orbe,Objet nouv,300000,0,300000
+2020,027,I.000392.02,Renouv. SI SPAS - RI/BRAPA,31.10.2017,1261000,0,1261000
+2020,027,I.000672.02,BAP-Reaffect. aile est,Objet nouv,6240000,0,6240000
+2020,037,I.000713.02,DGS-OMC renouvellement du SI,Objet nouv,100000,0,100000
+2020,065,I.000352.02,Mise en oeuvre du SI SAMOA,24.11.2015,750000,0,750000
+2020,038,I.000077.03,Hôpital de Cery - Nouveau bâtiment,17.09.2013,13936000,0,13936000
+2020,038,I.000099.01,Hopital unique de l'enfant,23.04.2013,38642000,0,38642000
+2020,038,I.000099.03,Hôpital des Enfants - Parking,07.11.2017,2184000,0,2184000
+2020,038,I.000099.04,Hôpital des Enfants - Cadre normatif,07.11.2017,540000,0,540000
+2020,038,I.000103.01,CE - BH05 - Bloc opératoire,26.08.2008,19000,0,19000
+2020,038,I.000103.02,BH05 - Bloc opératoire,21.05.2013,18564000,0,18564000
+2020,038,I.000103.03,BH05 - Bloc opératoire - Equipements,24.05.2016,4547000,0,4547000
+2020,038,I.000106.01,1ère tranche Soins continus+intensifs,29.05.2012,8804000,0,8804000
+2020,038,I.000112.01,Entretien tech. : ascenseurs - secours,04.05.2010,3033000,0,3033000
+2020,038,I.000369.01,CTE Laboratoire thérapie expérimentale,10.12.2014,960000,0,960000
+2020,038,I.000386.01,Etudes-Médecine perso et ing immunitaire,24.11.2015,2401000,0,2401000
+2020,038,I.000389.01,Ingénierie immunitaire oncologie - bât,24.11.2015,13327000,0,13327000
+2020,041,I.000385.01,Améliorations foncières 2015-2017,02.06.2015,440000,80000,360000
+2020,041,I.000395.01,Mise en conformité des porcheries,03.11.2015,400000,0,400000
+2020,041,I.000506.01,Centre d'enseign.prof. métiers la terre,Objet nouv,350000,0,350000
+2020,041,I.000510.01,Projet dvp régional agricole (PDRA) NOIX,Objet nouv,980000,545000,435000
+2020,041,I.000515.01,Améliorations foncières 2017-2019,13.03.2018,6500000,1080000,5420000
+2020,041,I.000750.01,Améliorations foncières 2019-2021,Objet nouv,1000000,220000,780000
+2020,041,I.000752.01,PDRA Ouest VD,Objet nouv,100000,0,100000
+2020,041,I.000755.01,PDRA Pays d'Enhaut,Objet nouv,100000,0,100000
+2020,042,I.000507.01,Centre intercommunal de Glace de Malley,24.05.2016,2214100,0,2214100
+2020,042,I.000647.01,Infrastructures sportives,08.05.2018,580000,0,580000
+2020,042,I.000723.01,Piscine de Malley,Objet nouv,2800000,0,2800000
+2020,042,I.000724.01,Stade de la Tuilière,Objet nouv,5600000,0,5600000
+2020,023,I.000762.01,Progr biométrie PA19 cyberadministration,Objet nouv,200000,0,200000
+2020,044,I.000517.01,Remontées mécaniques Alpes vaudoises,Objet nouv,8300000,0,8300000
+2020,044,I.000517.03,Télé Leysin-Col des Mosses Etape 1,21.06.2016,1110000,0,1110000
+2020,044,I.000518.01,Renouvellement SI Police cant. commerce,20.11.2018,479000,0,479000
+2020,044,I.000519.01,Pôles de développement industriels,06.09.2016,500000,0,500000
+2020,045,I.000143.01,Mensuration officielle et SIT-ACV,10.02.2004,0,50000,-50000
+2020,045,I.000184.01,Crédit mensuration officielle 2008-2011,24.03.2009,420000,700000,-280000
+2020,045,I.000353.01,Poursuite mensuration officielle & ICDG,09.09.2014,6250000,1300000,4950000
+2020,045,I.000391.02,SIBAT - SI des bâtiments,Objet nouv,100000,0,100000
+2020,045,I.000403.02,Renouvellement SIPC,Objet nouv,100000,0,100000
+2020,045,I.000745.01,Mensuration officielle & ICDG 20-25,Objet nouv,500000,300000,200000
+2020,046,I.000147.02,H 144 Rennaz - Les Evouettes - cr. add,23.11.2010,620000,0,620000
+2020,046,I.000164.02,"RC 177,Vufflens-Penthaz constr.nouv. rte",11.11.2014,500000,0,500000
+2020,046,I.000167.01,"RC 47, Essertines-Gimel correc. routière",02.02.2010,30000,0,30000
+2020,046,I.000194.01,"Routes nationales, construction - 23ème",31.03.2009,715000,615000,100000
+2020,046,I.000208.01,RC 254-19 correction 3 points noirs,10.01.2012,377000,0,377000
+2020,046,I.000209.01,Campagne 2012-15 entret lourd ouvr d'art,06.11.2012,20000,0,20000
+2020,046,I.000210.01,1er rattrap. dégâts forces de la nature,08.10.2013,475000,125000,350000
+2020,046,I.000226.01,Renforcement 40 t. solde du réseau RC,10.01.2012,1660000,0,1660000
+2020,046,I.000226.02,Renforcement 40t. Solde du rés RC cr ad,Objet nouv,1120000,0,1120000
+2020,046,I.000231.01,CE-Inventaire & anal.risques ouvr.soutèn,05.02.2013,600000,0,600000
+2020,046,I.000237.01,CE - Hôpital Rennaz,29.05.2012,150000,0,150000
+2020,046,I.000238.01,Préfin. routier - aides aux communes,05.11.2013,2000000,0,2000000
+2020,046,I.000254.03,RC 1 St-Sulpice requal. Tir Féd.-Venoge,12.03.2019,4500000,0,4500000
+2020,046,I.000259.02,RC 76 Chav/Renens requal Bourd.-Tir Féd,Objet nouv,2800000,0,2800000
+2020,046,I.000262.03,"CE RC 254, Vuiteboeuf-Ste-Croix,2è étape",21.05.2019,774000,0,774000
+2020,046,I.000270.04,"RC 601.025, Epalinges - requalif. Croise",13.03.2018,6500000,0,6500000
+2020,046,I.000275.03,"RC780,Treytorrens-Rivaz, Plat du Dézaley",Objet nouv,2000000,0,2000000
+2020,046,I.000282.02,RC 75 Morges-Echichens aménagement cycla,30.04.2019,2050000,650000,1400000
+2020,046,I.000288.02,"RC 448, Lsne déplacement route Romanel",20.01.2015,0,1404000,-1404000
+2020,046,I.000298.02,"RC 706, Ormont-Dessous, corr. Favrin",Objet nouv,2000000,0,2000000
+2020,046,I.000318.01,Strat.cant.2 roues: appui mesures A,27.08.2013,1000000,0,1000000
+2020,046,I.000349.01,CE - RER Vaudois,09.09.2014,100000,0,100000
+2020,046,I.000372.03,RC 82 Ecublens-Renens-Tir Féd : Pont Ble,29.05.2018,3114000,1700000,1414000
+2020,046,I.000374.01,CE - Nouv. tracé m2 et place de la Gare,10.03.2015,310000,0,310000
+2020,046,I.000376.01,CE - 2e étape m3 Flon-Blécherette,10.03.2015,160000,0,160000
+2020,046,I.000380.02,"RC 749, Corsier-s/Vevey - Limite FR",22.11.2016,600000,0,600000
+2020,046,I.000398.02,"RC 82, Ecublens-Renens-Tir Fédéral-route",28.02.2017,80000,0,80000
+2020,046,I.000402.02,CE-Centrale GCTA - Etudes,30.10.2018,1940000,0,1940000
+2020,046,I.000402.03,Centrale GCTA - Travaux,Objet nouv,5000000,0,5000000
+2020,046,I.000524.01,RC 1 Mies-Founex requal.(CE I.000290.02),22.08.2017,5000000,1000000,4000000
+2020,046,I.000525.01,RC 601 Lucens bretelle Lsne carr.601-618,05.06.2018,209000,0,209000
+2020,046,I.000526.01,"RC 726, accès nouv.hôpital du Chablais",12.12.2017,200000,0,200000
+2020,046,I.000535.01,Modernisation SI DGMR,30.05.2017,1465000,0,1465000
+2020,046,I.000538.01,"Points noirs, 3ème crédit cadre",05.06.2018,4175000,0,4175000
+2020,046,I.000541.01,"Dégâts forces de la nature, 2ème rattrap",08.03.2016,450000,0,450000
+2020,046,I.000542.01,Campagne 2015-18 entret lourd ouvr d'art,19.01.2016,1790000,0,1790000
+2020,046,I.000544.01,"Travaux assainissement bruit, 3ème étape",06.02.2018,2000000,300000,1700000
+2020,046,I.000546.01,Campagne 2019-23 entret lourd ouvr art,Objet nouv,1450000,0,1450000
+2020,046,I.000547.01,Campagne 2017 entretien des revêtements,23.05.2017,150000,0,150000
+2020,046,I.000548.01,Campagne 2018 entretien des revêtements,27.03.2018,100000,0,100000
+2020,046,I.000549.01,Campagne 2019 entretien des revêtements,30.04.2019,2000000,0,2000000
+2020,046,I.000550.01,Entr lourd murs soutènement 2019-2022,Objet nouv,1000000,0,1000000
+2020,046,I.000558.01,"Dégâts forces de la nature, 3ème rattrap",Objet nouv,1500000,0,1500000
+2020,046,I.000582.01,RER Vaudois : Gare Renens - Passerelle,22.08.2017,4000000,0,4000000
+2020,046,I.000584.01,CE - Bus Haut Niveau Service-2e étape,21.06.2016,400000,0,400000
+2020,046,I.000585.01,Crédit investissement - m2/m3 SSPG - tun,Objet nouv,5500000,0,5500000
+2020,046,I.000586.01,Crédit invest. - CFF Rebroussement Cully,29.05.2018,300000,0,300000
+2020,046,I.000588.01,Bus Haut Niveau Service-1ère étape,21.06.2016,1000000,0,1000000
+2020,046,I.000589.01,Interfaces voyageurs (P+R),30.04.2019,2830000,0,2830000
+2020,046,I.000590.01,Strat.cant. 2 roues : 2ème étape,30.04.2019,1837500,0,1837500
+2020,046,I.000591.01,CE - Stratégie transport marchandises,06.02.2018,360000,0,360000
+2020,046,I.000600.01,"RC 69, Tolochenaz requalification",Objet nouv,1500000,0,1500000
+2020,046,I.000603.01,CE - Prolongement CdF Aigle-Leysin,22.11.2016,200000,0,200000
+2020,046,I.000605.02,RC 773 Lutry- Belmont-La Croix cor. rte,Objet nouv,2800000,0,2800000
+2020,046,I.000606.01,"RC 501, requalification Cugy-Bottens",Objet nouv,3800000,0,3800000
+2020,046,I.000632.01,Assainissement RC 58-533-790,16.01.2018,48000,0,48000
+2020,046,I.000639.01,LEB - Tunnel Avenue d'Echallens,23.05.2017,2166000,0,2166000
+2020,046,I.000651.01,CGN Rénovation Rhône,12.03.2019,2290000,0,2290000
+2020,046,I.000670.02,CE - Aug. capacité M1 - évolution offre,Objet nouv,450000,0,450000
+2020,046,I.000688.01,CE - M2/M3 et équipe de projet,Objet nouv,7920000,0,7920000
+2020,046,I.000689.01,RC 257 Ste-Croix limite Neuchâtel,Objet nouv,200000,0,200000
+2020,046,I.000690.01,RC 422 Pomy-Cronay 2e tronçon,Objet nouv,360000,0,360000
+2020,046,I.000694.01,RC 751 + 752 Rogivue (ER),Objet nouv,1000000,0,1000000
+2020,046,I.000696.01,RC 702 Les Borsalets,Objet nouv,500000,0,500000
+2020,046,I.000711.01,Assainissement 3 RC 429-631-632,Objet nouv,2750000,0,2750000
+2020,046,I.000728.01,Campagne 2020 entretien revêtement,Objet nouv,9000000,0,9000000
+2020,046,I.000738.01,Assainissement RC260/267/32,Objet nouv,1000000,0,1000000
+2020,046,I.000742.01,RC 299 Création de bandes cyclables,Objet nouv,1000000,0,1000000
+2020,046,I.000743.01,CE - Dév. réseau ferroviaire VD 2035-50,Objet nouv,500000,0,500000
+2020,047,I.000229.01,Sécurisation du SI,08.10.2013,234000,0,234000
+2020,047,I.000387.01,Renforcement socle et dépl. cyber,29.09.2015,1743000,0,1743000
+2020,047,I.000622.01,Stratégie e-VD port. sécur. et support,06.11.2018,1837000,0,1837000
+2020,047,I.000623.01,Environn. utilisateur collab. et mobile,Objet nouv,150000,0,150000
+2020,047,I.000624.01,Sécurisation du SI - étape 2,Objet nouv,971000,0,971000
+2020,047,I.000704.01,Modern. infrastructures+p/f mutualisées,Objet nouv,100000,0,100000
+2020,047,I.000746.01,SOCLE 2,Objet nouv,200000,0,200000
+2020,054,I.000629.01,SPEV - Evolution SIRH - Phase 2,Objet nouv,1594000,0,1594000
+2020,050,I.000333.02,ACV 2ème étape de densification,23.06.2015,50000,0,50000
+2020,052,I.000204.01,"Registres de l'ACV-RCPERS,RCEnt,SITI",19.03.2013,200000,0,200000
+2020,052,I.000245.01,ACI-Vision 2010-poursuite automatisation,22.06.2010,1796000,0,1796000
+2020,052,I.000365.02,Désengagement du Host-fiscalité-tax. PM,21.04.2015,221000,0,221000
+2020,052,I.000594.01,DGF-Poursuite cyber. + chgt législ,08.01.2019,1870000,0,1870000
+2020,052,I.000594.02,CE - DGF Etudes Perspectives 2025,08.01.2019,250000,0,250000
+2020,052,I.000625.01,DGF - RIE III et autres domaines,Objet nouv,100000,0,100000
+2020,048,I.000216.01,EPSIC Lausanne Ass.énergétique,11.12.2012,2500000,0,2500000
+2020,048,I.000217.01,Prison du Bois-Mermet Lsne Ass.énerg,11.12.2012,446000,0,446000
+2020,048,I.000218.01,Prison la Tuilière Lonay Ass.énergétique,11.12.2012,500000,0,500000
+2020,048,I.000313.03,EPO Orbe assain. infrastructures tech,31.03.2015,400000,1000000,-600000
+2020,048,I.000316.03,CC Optimisation occupation 3 bât. Etat,28.01.2014,520000,0,520000
+2020,048,I.000337.02,CE-Cité U La Pala Chavannes,30.09.2014,0,8000000,-8000000
+2020,048,I.000359.02,UNIL-Epalinges Réaménag. bât. F,Objet nouv,800000,0,800000
+2020,048,I.000404.02,Cathédrale Lsne restauration étape 1,Objet nouv,750000,0,750000
+2020,048,I.000570.01,CERN Rennaz Transformation agrand,Objet nouv,1500000,800000,700000
+2020,048,I.000576.01,CADEV-Renouv. plateforme d'achats,27.11.2018,2050000,0,2050000
+2020,048,I.000577.01,CADEV renouvell.matériel d'impression,09.02.2016,214400,0,214400
+2020,048,I.000610.01,DGMR Centres d'exploitation régionaux,Objet nouv,700000,0,700000
+2020,048,I.000635.01,CE Transf. poste directeur Plateforme 10,09.05.2017,820000,0,820000
+2020,048,I.000636.01,CE Complément affectation Maison Elysée,09.05.2017,1000000,0,1000000
+2020,048,I.000642.02,CC EV Grands Consommateurs LVLEne,Objet nouv,400000,0,400000
+2020,048,I.000661.01,EPCL Vallée de la Jeunesse stabilisation,19.06.2018,250000,0,250000
+2020,048,I.000675.01,Entretien des bâtiments sur 6 sites,26.03.2019,8000000,0,8000000
+2020,048,I.000682.01,Assainissement EPO Colonie fermée,08.01.2019,2700000,0,2700000
+2020,048,I.000684.02,"EVAM, Bex, rénovation",Objet nouv,700000,145000,555000
+2020,057,I.000355.01,Modernisation du SI justice,26.08.2014,1456000,0,1456000
+2020,057,I.000597.01,Regroupement sur un site du TC,Objet nouv,3500000,0,3500000
+2020,057,I.000598.01,Impact inform. projets fédéraux,Objet nouv,100000,0,100000
+2020,057,I.000599.01,Sécurisation des offices judiciaires,Objet nouv,1000000,0,1000000
+2021,068,I.000653.01,SJL-Implément. module Inkasso dans SIF,22.09.2020,500000,0,500000
+2021,043,I.000184.01,Crédit mensuration officielle 2008-2011,24.03.2009,120000,200000,-80000
+2021,043,I.000353.01,Poursuite mensuration officielle & ICDG,09.09.2014,4380000,1400000,2980000
+2021,043,I.000378.01,Appui aux communes pour leur PGA,12.05.2015,800000,0,800000
+2021,043,I.000391.02,SIBAT - SI des bâtiments,Objet nouv,500000,0,500000
+2021,043,I.000403.02,Renouvellement SIPC,Objet nouv,100000,0,100000
+2021,043,I.000508.01,Modernisation SI du SDT,27.11.2018,440000,0,440000
+2021,043,I.000745.01,Mensuration officielle & ICDG 20-25,29.09.2020,900000,700000,200000
+2021,043,I.000749.01,Système d'information de l'OIT,Objet nouv,100000,0,100000
+2021,022,I.000708.01,Modernisation SI SCTP,29.09.2020,500000,0,500000
+2021,003,I.000305.03,CrE SAN Aménag. des locaux,Objet nouv,1000000,0,1000000
+2021,003,I.000319.01,SAN - Evolution majeure du SI-inf,19.11.2013,986000,0,986000
+2021,003,I.000412.01,SDSI SAN - Phase II,Objet nouv,700000,0,700000
+2021,003,I.000413.01,Nouveau SAN Lausanne - Impact informat,Objet nouv,100000,0,100000
+2021,010,I.000706.01,Education numérique - Informatique,11.12.2019,1000000,0,1000000
+2021,010,I.000706.03,Educ. Num. - Mise à niveau et formation,11.12.2019,3000000,0,3000000
+2021,011,I.000401.02,GI-PSAF Gest. inform. de la pédag. spéc,12.11.2019,500000,0,500000
+2021,013,I.000301.02,Refonte SI métier DGEP,30.05.2017,1650000,0,1650000
+2021,013,I.000396.02,Gymnase du Chablais Aigle,Objet nouv,7000000,0,7000000
+2021,013,I.000396.03,CrE Gymnase du Chablais Aigle,18.12.2019,1000000,0,1000000
+2021,013,I.000439.02,CrE Gymnase d'Echallens,26.05.2020,2000000,0,2000000
+2021,013,I.000442.01,CE Morges Salle de sport VD5,Objet nouv,5000000,0,5000000
+2021,013,I.000602.03,Extension GYB Payerne,27.11.2018,8000000,5000000,3000000
+2021,013,I.000618.02,Extension Gymnase de Burier,11.12.2018,4800000,0,4800000
+2021,013,I.000619.03,CrE Extension GAP,Objet nouv,1430000,0,1430000
+2021,013,I.000705.01,Ecole professionnelle (social) Yverdon,Objet nouv,1000000,0,1000000
+2021,013,I.000716.03,Extension site de Burier - etape 2,Objet nouv,1000000,0,1000000
+2021,013,I.000726.02,Task-Force DGEP gymnases 2020-2023,22.09.2020,500000,0,500000
+2021,015,I.000250.03,Agrandissement Unithèque - BCU,17.09.2019,20000000,8750000,11250000
+2021,015,I.000307.03,Campus santé Construction C4,Objet nouv,900000,500000,400000
+2021,015,I.000358.02,Campus santé HESAV Bourdonnette,Objet nouv,900000,500000,400000
+2021,015,I.000381.02,CrE- UNIL Sciences de la vie Ecublens,24.11.2015,2000000,0,2000000
+2021,015,I.000399.02,UNIL - Refection terrains de sport,21.11.2017,215000,107500,107500
+2021,015,I.000451.01,UNIL - Agrandissement station de pompage,29.10.2019,4400000,0,4400000
+2021,015,I.000455.03,CrE Extension HEP Etape 2,Objet nouv,1620000,0,1620000
+2021,015,I.000458.01,CrE - UNIL Extension Internef,Objet nouv,700000,0,700000
+2021,015,I.000463.01,UNIL - Crédit-cadre rénovation 2018-2021,22.01.2019,3880000,1210000,2670000
+2021,015,I.000464.01,UNIL - Grands consommateurs LVLEne,22.01.2019,6010000,130000,5880000
+2021,015,I.000657.01,Extension HEP Etape 1,Objet nouv,960000,0,960000
+2021,015,I.000658.01,UNIL - Assainissement production chaleur,Objet nouv,700000,0,700000
+2021,015,I.000662.02,UNIL - Locaux communautaires Vortex,26.03.2019,500000,0,500000
+2021,017,I.000331.02,Musées de l'Elysée et du MUDAC,09.05.2017,20000000,6000000,14000000
+2021,017,I.000332.02,Avenir de Rumine,Objet nouv,1000000,0,1000000
+2021,017,I.000637.01,Aménagements extérieurs Plateforme 10,09.05.2017,3500000,0,3500000
+2021,018,I.000697.02,Refonte SI SPJ,Objet nouv,750000,0,750000
+2021,020,I.000782.01,Plan climat : à répart. s/futurs décrets,Objet nouv,34600000,0,34600000
+2021,002,I.000406.01,Centre de formation pour les policiers,Objet nouv,3000000,0,3000000
+2021,002,I.000409.01,Modernis. SI Police - Phase II,Objet nouv,1000000,0,1000000
+2021,002,I.000638.01,Renouv. du matériel de trans_réseau,15.01.2019,3380000,0,3380000
+2021,004,I.000397.02,Gollion Instrastructures CCPP,Objet nouv,1000000,0,1000000
+2021,004,I.000415.01,Modern. SI PCi et EMCC Schéma directeur,Objet nouv,350000,0,350000
+2021,004,I.000648.01,Infrastuctures d'instruction Prot pop,Objet nouv,3000000,0,3000000
+2021,004,I.000649.01,Matériel et équipement de la PCi,Objet nouv,1000000,0,1000000
+2021,004,I.000693.01,Feux à éclipses,Objet nouv,2000000,0,2000000
+2021,005,I.000010.01,Le Famollens en ville de Rolle,31.05.2011,270000,120000,150000
+2021,005,I.000027.01,Part cantonale ass. anciennes décharges2,13.03.2012,120000,50000,70000
+2021,005,I.000033.01,La Baye de Clarens à Montreux,31.05.2011,600000,300000,300000
+2021,005,I.000034.01,Le Nozon à Orbe,31.05.2011,300000,0,300000
+2021,005,I.000035.01,La Brinaz à Grandson et Montagny,31.05.2011,4000000,3500000,500000
+2021,005,I.000039.01,Gestion inform. lacs et cours d'eau,31.05.2011,24000,0,24000
+2021,005,I.000040.01,Crédit cadre gestion/traitement déchets,28.08.2012,20000,0,20000
+2021,005,I.000042.01,Décharge des Saviez à Noville - Ass,13.03.2012,250000,150000,100000
+2021,005,I.000304.02,Maison de l'environnement Lsne Vennes,26.03.2019,10000000,0,10000000
+2021,005,I.000335.01,Plan directeur des rives du Léman 3ème,13.05.2014,200000,0,200000
+2021,005,I.000338.01,Carte d'exposition aux dangers naturels,01.07.2014,60000,0,60000
+2021,005,I.000350.01,Gestion intégrée des risques,01.07.2014,20000,0,20000
+2021,005,I.000416.01,Venoge 3 - Réalisations,07.05.2019,600000,100000,500000
+2021,005,I.000417.01,Décharge de Molard-Parelliet à Trélex,21.11.2017,30000,0,30000
+2021,005,I.000419.01,Rhône 3 - 1ere tranche de travaux,29.05.2018,1200000,0,1200000
+2021,005,I.000420.01,Ruisseau de Broye,14.01.2020,250000,0,250000
+2021,005,I.000421.01,Ouvrages de franchissement pour la faune,Objet nouv,700000,0,700000
+2021,005,I.000425.01,Plan d'évacuation des eaux Chamberonne,13.03.2018,400000,0,400000
+2021,005,I.000426.01,Crédit cadre micropolluants,19.01.2016,8660000,0,8660000
+2021,005,I.000427.01,"Biotopes: protection, revital. & gestion",Objet nouv,700000,0,700000
+2021,005,I.000429.01,Infra. & cond. gestion hors forêts prot,Objet nouv,800000,0,800000
+2021,005,I.000430.01,Protection DN & amélioration structures3,13.03.2018,900000,0,900000
+2021,005,I.000431.01,Protection DN & amélioration structures4,Objet nouv,1000000,0,1000000
+2021,005,I.000432.01,Part cantonale ass. anciennes décharges3,06.11.2018,500000,200000,300000
+2021,005,I.000434.01,Crédit prospection & garantie risque géo,Objet nouv,700000,0,700000
+2021,005,I.000435.01,Lutte contre espèces exotiques envahiss,Objet nouv,300000,0,300000
+2021,005,I.000436.01,Protection contre les crues Le Marais,Objet nouv,500000,0,500000
+2021,005,I.000437.02,Gestion déchets - installations,30.08.2016,100000,0,100000
+2021,005,I.000644.01,Grande Eau 2 Traversée Aigle-Gd Canal,Objet nouv,100000,0,100000
+2021,005,I.000645.01,Bassin versant de l'Ognonnaz,Objet nouv,300000,0,300000
+2021,005,I.000646.01,Renaturation de la Broye,Objet nouv,500000,0,500000
+2021,005,I.000654.01,Sécurisation approvis. énergétique,Objet nouv,650000,650000,0
+2021,005,I.000668.01,Modernisation SI subventions ACV (SIS),Objet nouv,500000,0,500000
+2021,005,I.000669.01,Modernisation du SI de la DGE,Objet nouv,500000,0,500000
+2021,005,I.000673.02,DGE-DIRNA regroupement région Nord,Objet nouv,2600000,0,2600000
+2021,005,I.000685.01,Décharge Les Gérignes à Bourg-en-Lavaux,06.11.2018,250000,0,250000
+2021,005,I.000698.01,Plan climat vaudois,Objet nouv,300000,0,300000
+2021,005,I.000700.01,Renouvellement moyens d'analyses labos,Objet nouv,250000,0,250000
+2021,005,I.000702.01,Gestion intégrée des risques 2,Objet nouv,400000,0,400000
+2021,005,I.000722.01,Aménagement de la Chamberonne,14.01.2020,200000,0,200000
+2021,024,I.000310.02,Sécurisation de la prison de la Croisée,08.05.2018,7000000,900000,6100000
+2021,024,I.000347.02,Prison la Tuilière psychiatrie,Objet nouv,600000,500000,100000
+2021,024,I.000348.03,CrE PGM Pénitencier Grands-Marais Orbe,18.09.2018,4000000,0,4000000
+2021,024,I.000479.01,Constr. bâtiment adm. du SPEN à Orbe,Objet nouv,900000,0,900000
+2021,024,I.000486.02,CPPO Pôle alimentaire,Objet nouv,200000,0,200000
+2021,024,I.000620.02,Rénovation prison Tuilière à Lonay,26.05.2020,700000,0,700000
+2021,024,I.000633.02,"CPPO-Poste contrôle avancé, sécurisation",Objet nouv,1000000,0,1000000
+2021,024,I.000683.01,CrECE Rénovation pénitencier Bochuz Orbe,Objet nouv,1700000,0,1700000
+2021,027,I.000392.02,Renouv. SI SPAS - RI/BRAPA,31.10.2017,1257000,0,1257000
+2021,027,I.000487.01,Renouvel. SI social - finalisation,Objet nouv,100000,0,100000
+2021,027,I.000672.02,BAP-Reaffect. aile est,17.12.2019,6500000,0,6500000
+2021,037,I.000713.02,DGS-OMC renouvellement du SI,Objet nouv,200000,0,200000
+2021,065,I.000352.02,Mise en oeuvre du SI SAMOA,24.11.2015,719000,0,719000
+2021,038,I.000077.01,CE - Hôpital de Cery,24.04.2007,330000,0,330000
+2021,038,I.000077.03,Hôpital de Cery - Nouveau bâtiment,17.09.2013,17139000,0,17139000
+2021,038,I.000099.01,Hopital unique de l'enfant,23.04.2013,40247000,0,40247000
+2021,038,I.000099.03,Hôpital des Enfants - Parking,07.11.2017,4088000,0,4088000
+2021,038,I.000099.04,Hôpital des Enfants - Cadre normatif,07.11.2017,1360000,0,1360000
+2021,038,I.000103.02,BH05 - Bloc opératoire,21.05.2013,11840000,0,11840000
+2021,038,I.000103.03,BH05 - Bloc opératoire - Equipements,24.05.2016,6063000,0,6063000
+2021,038,I.000106.01,1ère tranche Soins continus+intensifs,29.05.2012,10124000,0,10124000
+2021,038,I.000112.01,Entretien tech. : ascenseurs - secours,04.05.2010,1425000,0,1425000
+2021,038,I.000386.01,Etudes-Médecine perso et ing immunitaire,24.11.2015,873000,0,873000
+2021,038,I.000389.01,Ingénierie immunitaire oncologie - bât,24.11.2015,16985000,0,16985000
+2021,038,I.000735.01,CE - Garage à ambulances urgences,23.06.2020,47000,0,47000
+2021,041,I.000395.01,Mise en conformité des porcheries,03.11.2015,400000,0,400000
+2021,041,I.000506.01,Centre d'enseign.prof. métiers la terre,Objet nouv,2000000,0,2000000
+2021,041,I.000510.01,Projet dvp régional agricole (PDRA) NOIX,09.06.2020,130000,72000,58000
+2021,041,I.000515.01,Améliorations foncières 2017-2019,13.03.2018,2500000,500000,2000000
+2021,041,I.000750.01,Améliorations foncières 2019-2021,17.12.2019,2000000,440000,1560000
+2021,041,I.000751.01,Améliorations foncières 2021-2023,Objet nouv,100000,0,100000
+2021,041,I.000752.01,PDRA Ouest VD,Objet nouv,100000,0,100000
+2021,041,I.000754.01,Irrigation Grandcour,Objet nouv,100000,0,100000
+2021,041,I.000755.01,PDRA Pays d'Enhaut,Objet nouv,100000,0,100000
+2021,042,I.000647.01,Infrastructures sportives,08.05.2018,1340000,0,1340000
+2021,042,I.000723.01,Piscine de Malley,Objet nouv,2800000,0,2800000
+2021,042,I.000724.01,Stade de la Tuilière,Objet nouv,1400000,0,1400000
+2021,023,I.000703.01,SPOP-systèmes biométrie+cyberprestations,09.06.2020,100000,0,100000
+2021,044,I.000517.01,Remontées mécaniques Alpes vaudoises,Objet nouv,2383400,0,2383400
+2021,044,I.000517.03,Télé Leysin-Col des Mosses Etape 1,21.06.2016,1228800,0,1228800
+2021,044,I.000518.01,Renouvellement SI Police cant. commerce,20.11.2018,374000,0,374000
+2021,044,I.000748.01,Pôles de développement industriels II,Objet nouv,100000,0,100000
+2021,046,I.000164.02,"RC 177,Vufflens-Penthaz constr.nouv. rte",11.11.2014,100000,0,100000
+2021,046,I.000194.01,"Routes nationales, construction - 23ème",31.03.2009,260000,224000,36000
+2021,046,I.000209.01,Campagne 2012-15 entret lourd ouvr d'art,06.11.2012,100000,0,100000
+2021,046,I.000226.01,Renforcement 40 t. solde du réseau RC,10.01.2012,1670000,0,1670000
+2021,046,I.000226.02,Renforcement 40t. Solde du rés RC cr ad,04.02.2020,720000,0,720000
+2021,046,I.000231.01,CE-Inventaire & anal.risques ouvr.soutèn,05.02.2013,600000,0,600000
+2021,046,I.000238.01,Préfin. routier - aides aux communes,05.11.2013,2000000,0,2000000
+2021,046,I.000254.03,RC 1 St-Sulpice requal. Tir Féd.-Venoge,12.03.2019,2000000,625000,1375000
+2021,046,I.000257.02,"RC 30, jct Gland & giratoire Bichette",Objet nouv,1000000,0,1000000
+2021,046,I.000259.02,RC 76 Chav/Renens requal Bourd.-Tir Féd,Objet nouv,2500000,0,2500000
+2021,046,I.000262.02,"RC 254, Vuiteboeuf-Ste-Croix, 2è étape",Objet nouv,500000,0,500000
+2021,046,I.000262.03,"CE RC 254, Vuiteboeuf-Ste-Croix,2è étape",21.05.2019,397000,0,397000
+2021,046,I.000266.03,"RC 422,Pomy, girat.ORIF / mobilité douce",Objet nouv,4500000,700000,3800000
+2021,046,I.000270.04,"RC 601.025, Epalinges - requalif. Croise",13.03.2018,6500000,0,6500000
+2021,046,I.000271.02,"RC 705, Aigle, reconstruction la Frasse",Objet nouv,1000000,0,1000000
+2021,046,I.000275.03,"RC780,Treytorrens-Rivaz, Plat du Dézaley",03.11.2020,4000000,0,4000000
+2021,046,I.000282.02,RC 75 Morges-Echichens aménagement cycla,30.04.2019,1550000,650000,900000
+2021,046,I.000285.02,RC 7 Chavannes-Bogis-Chav.-Bois élargis,Objet nouv,500000,0,500000
+2021,046,I.000295.02,"RC 719, Gryon, estacades Barbo. corr rte",Objet nouv,2000000,0,2000000
+2021,046,I.000298.02,"RC 706, Ormont-Dessous, corr. Favrin",Objet nouv,2000000,0,2000000
+2021,046,I.000318.01,Strat.cant.2 roues: appui mesures A,27.08.2013,200000,0,200000
+2021,046,I.000328.02,"RC 276,Treycovagnes, Châtelard,mob douce",Objet nouv,2500000,1100000,1400000
+2021,046,I.000402.02,CE-Centrale GCTA - Etudes,30.10.2018,1015000,0,1015000
+2021,046,I.000402.03,Centrale GCTA - Travaux,Objet nouv,4500000,0,4500000
+2021,046,I.000522.01,"RC 253, Merlaz-Baulmes assainis. routier",Objet nouv,2400000,0,2400000
+2021,046,I.000524.01,RC 1 Mies-Founex requal.(CE I.000290.02),22.08.2017,1000000,850000,150000
+2021,046,I.000527.01,"RC 706, Ormont-Dessus, La Lavanche",Objet nouv,1500000,0,1500000
+2021,046,I.000528.01,"RC 709, Leysin, réhab. tronçon Peneclay",Objet nouv,1500000,0,1500000
+2021,046,I.000532.01,RC 151 Bussigny pont de la Chocolatière,Objet nouv,1000000,0,1000000
+2021,046,I.000535.01,Modernisation SI DGMR,30.05.2017,170000,0,170000
+2021,046,I.000538.01,"Points noirs, 3ème crédit cadre",05.06.2018,750000,0,750000
+2021,046,I.000539.01,RC 1-54-55 Aubonne 4 car. Littoral Parc,Objet nouv,700000,0,700000
+2021,046,I.000541.01,"Dégâts forces de la nature, 2ème rattrap",08.03.2016,1500000,0,1500000
+2021,046,I.000542.01,Campagne 2015-18 entret lourd ouvr d'art,19.01.2016,1010000,0,1010000
+2021,046,I.000544.01,"Travaux assainissement bruit, 3ème étape",06.02.2018,1500000,200000,1300000
+2021,046,I.000546.01,Campagne 2019-23 entret lourd ouvr art,05.11.2019,3000000,0,3000000
+2021,046,I.000550.01,Entr lourd murs soutènement 2019-2022,04.02.2020,1000000,0,1000000
+2021,046,I.000558.01,"Dégâts forces de la nature, 3ème rattrap",Objet nouv,1000000,0,1000000
+2021,046,I.000582.01,RER Vaudois : Gare Renens - Passerelle,22.08.2017,2300000,0,2300000
+2021,046,I.000584.01,CE - Bus Haut Niveau Service-2e étape,21.06.2016,400000,0,400000
+2021,046,I.000585.01,Crédit investissement - m2/m3 SSPG - tun,12.11.2019,6000000,0,6000000
+2021,046,I.000586.01,Crédit invest. - CFF Rebroussement Cully,29.05.2018,500000,0,500000
+2021,046,I.000588.01,Bus Haut Niveau Service-1ère étape,21.06.2016,3000000,0,3000000
+2021,046,I.000589.01,Interfaces voyageurs (P+R),30.04.2019,2730000,0,2730000
+2021,046,I.000590.01,Strat.cant. 2 roues : 2ème étape,30.04.2019,1837500,0,1837500
+2021,046,I.000591.01,CE - Stratégie transport marchandises,06.02.2018,360000,0,360000
+2021,046,I.000600.01,"RC 69, Tolochenaz requalification",24.09.2019,500000,0,500000
+2021,046,I.000605.02,RC 773 Lutry- Belmont-La Croix cor. rte,30.06.2020,1500000,0,1500000
+2021,046,I.000606.01,"RC 501, requalification Cugy-Bottens",01.10.2019,3000000,0,3000000
+2021,046,I.000607.01,"RC 3, Tannay-Les Fouroux entr. lourd",Objet nouv,2000000,0,2000000
+2021,046,I.000608.01,Entret.pistes cyclables Yvonand-Avenches,Objet nouv,1000000,0,1000000
+2021,046,I.000639.01,LEB - Tunnel Avenue d'Echallens,23.05.2017,3751000,0,3751000
+2021,046,I.000670.02,CE - Aug. capacité M1 - évolution offre,10.03.2020,100000,0,100000
+2021,046,I.000670.03,CE - Aug. capacité M1 - projet d'ouvrage,Objet nouv,1000000,0,1000000
+2021,046,I.000688.01,CE - M2/M3 et équipe de projet,12.11.2019,8175000,0,8175000
+2021,046,I.000690.01,RC 422 Pomy-Cronay 2e tronçon,Objet nouv,1500000,0,1500000
+2021,046,I.000694.01,RC 751 + 752 Rogivue (ER),01.07.2020,1000000,0,1000000
+2021,046,I.000728.01,Campagne 2020 entretien revêtement,03.03.2020,3100000,0,3100000
+2021,046,I.000729.01,Campagne 2021 entretien revêtement,Objet nouv,6500000,0,6500000
+2021,046,I.000738.01,Assainissement RC260/267/32,Objet nouv,1500000,0,1500000
+2021,046,I.000742.01,RC 299 Création de bandes cyclables,Objet nouv,2800000,0,2800000
+2021,046,I.000743.01,CE - Dév. réseau ferroviaire VD 2035-50,30.06.2020,500000,0,500000
+2021,047,I.000229.01,Sécurisation du SI,08.10.2013,120500,0,120500
+2021,047,I.000387.01,Renforcement socle et dépl. cyber,29.09.2015,930000,0,930000
+2021,047,I.000622.01,Stratégie e-VD port. sécur. et support,06.11.2018,1106000,0,1106000
+2021,047,I.000623.01,Environn. utilisateur collab. et mobile,Objet nouv,300000,0,300000
+2021,047,I.000624.01,Sécurisation du SI - étape 2,04.02.2020,1025000,0,1025000
+2021,047,I.000704.01,Modern. infrastructures+p/f mutualisées,Objet nouv,450000,0,450000
+2021,054,I.000629.01,SPEV - Evolution SIRH - Phase 2,01.07.2020,750000,0,750000
+2021,050,I.000251.02,Archivage électr. historique+probatoire,07.05.2019,1000000,0,1000000
+2021,050,I.000300.03,SIEL - renouv. SI Exécutif et Législatif,01.11.2016,250000,0,250000
+2021,052,I.000245.01,ACI-Vision 2010-poursuite automatisation,22.06.2010,1280000,0,1280000
+2021,052,I.000365.02,Désengagement du Host-fiscalité-tax. PM,21.04.2015,805000,0,805000
+2021,052,I.000594.01,DGF-Poursuite cyber. + chgt législ,08.01.2019,2320000,0,2320000
+2021,052,I.000594.02,CE - DGF Etudes Perspectives 2025,08.01.2019,200000,0,200000
+2021,052,I.000625.01,DGF-Suite impératifs législatifs + strat,Objet nouv,750000,0,750000
+2021,048,I.000216.01,EPSIC Lausanne Ass.énergétique,11.12.2012,2500000,0,2500000
+2021,048,I.000359.02,UNIL Epalinges Réaménag. Bât. F,Objet nouv,3000000,0,3000000
+2021,048,I.000404.02,Cathédrale Lsne restauration étape 1,Objet nouv,750000,0,750000
+2021,048,I.000570.01,CERN Rennaz Transformation agrand,Objet nouv,7000000,3800000,3200000
+2021,048,I.000572.01,CB-assainissement et extension,Objet nouv,1000000,500000,500000
+2021,048,I.000576.01,CADEV-Renouv. plateforme d'achats,27.11.2018,2923500,0,2923500
+2021,048,I.000610.01,DGMR Centres d'exploitation régionaux,Objet nouv,1000000,0,1000000
+2021,048,I.000635.01,CE Transf. poste directeur Plateforme 10,09.05.2017,170000,0,170000
+2021,048,I.000636.01,CE Réaffectation Maison Elysée,09.05.2017,500000,0,500000
+2021,048,I.000642.02,CC EV Grands Consommateurs LVLEne,Objet nouv,400000,0,400000
+2021,048,I.000675.01,Entretien des bâtiments sur 6 sites,26.03.2019,8000000,0,8000000
+2021,048,I.000682.01,Assainissement EPO Colonie fermée,08.01.2019,0,420000,-420000
+2021,057,I.000355.01,Modernisation du SI justice,26.08.2014,960000,0,960000
+2021,057,I.000597.01,Regroupement sur un site du TC,27.10.2020,4515000,0,4515000
+2021,057,I.000598.01,Impact inform. projets fédéraux,Objet nouv,750000,0,750000
+2021,057,I.000599.01,Sécurisation des offices judiciaires,Objet nouv,1000000,0,1000000
+2022,001,I.000789.01,Accompagnement communes Pol climat+Durab,Objet nouv,600000,0,600000
+2022,068,I.000653.01,SJL-Implément. module Inkasso dans SIF,22.09.2020,603000,0,603000
+2022,043,I.000184.01,Crédit mensuration officielle 2008-2011,24.03.2009,200000,300000,-100000
+2022,043,I.000353.01,Poursuite mensuration officielle & ICDG,09.09.2014,2500000,1300000,1200000
+2022,043,I.000378.01,Appui aux communes pour leur PGA,12.05.2015,800000,0,800000
+2022,043,I.000391.02,SIBAT - SI des bâtiments,Objet nouv,100000,0,100000
+2022,043,I.000403.02,Renouvellement SIPC,Objet nouv,100000,0,100000
+2022,043,I.000508.01,Modernisation SI du SDT,27.11.2018,298000,0,298000
+2022,043,I.000745.01,Mensuration officielle & ICDG 20-25,29.09.2020,5300000,700000,4600000
+2022,022,I.000708.01,Modernisation SI SCTP,29.09.2020,873000,0,873000
+2022,003,I.000305.03,CrE SAN Aménag. des locaux,Objet nouv,900000,0,900000
+2022,003,I.000319.01,SAN - Evolution majeure du SI-inf,19.11.2013,237000,0,237000
+2022,003,I.000412.01,SDSI SAN - Phase II,Objet nouv,100000,0,100000
+2022,010,I.000706.01,Education numérique - Informatique,11.12.2019,1000000,0,1000000
+2022,010,I.000706.03,Education Numérique - Mise à niv. & form,11.12.2019,6434000,0,6434000
+2022,010,I.000788.01,Plan climat - Formation-moteur chgmt,Objet nouv,1037700,0,1037700
+2022,011,I.000401.02,GI-PSAF Gest. inform. de la pédag. spéc,12.11.2019,1733000,0,1733000
+2022,013,I.000061.03,Centre enseign. ouest lausannois CEOL,17.06.2014,411000,0,411000
+2022,013,I.000301.02,Refonte SI métier DGEP,30.05.2017,1293000,0,1293000
+2022,013,I.000396.02,Gymnase du Chablais Aigle,Objet nouv,4069000,0,4069000
+2022,013,I.000396.06,Démolition Hôpital Aigle,Objet nouv,2300000,0,2300000
+2022,013,I.000439.01,Gymnase d'Echallens,Objet nouv,1560000,0,1560000
+2022,013,I.000439.02,CrE Gymnase d'Echallens,26.05.2020,2000000,0,2000000
+2022,013,I.000440.01,Ecole professionnelle de Payerne,Objet nouv,1200000,0,1200000
+2022,013,I.000442.01,CE Morges Salle de sport VD5,Objet nouv,1176000,0,1176000
+2022,013,I.000602.03,Extension GYB Payerne,27.11.2018,953400,425000,528400
+2022,013,I.000618.02,Extension Gymnase de Burier,11.12.2018,825000,0,825000
+2022,013,I.000619.03,CrE Extension GAP,Objet nouv,180000,0,180000
+2022,013,I.000630.01,Ecole professionnelle de Vennes,26.03.2019,4920000,0,4920000
+2022,013,I.000716.03,Extension site de Burier - etape 2,Objet nouv,600000,0,600000
+2022,013,I.000726.02,Task-Force DGEP gymnases 2020-2023,22.09.2020,1500000,0,1500000
+2022,013,I.000819.01,"Gymnase de Nyon, site la Côte, Etoy (ex-",Objet nouv,5078800,0,5078800
+2022,015,I.000250.03,Agrandissement Unithèque - BCU,17.09.2019,16500000,6000000,10500000
+2022,015,I.000307.03,Campus santé Construction C4,Objet nouv,1000000,0,1000000
+2022,015,I.000358.02,Campus santé HESAV Bourdonnette,Objet nouv,2500000,0,2500000
+2022,015,I.000371.02,Campus Santé équipement site,Objet nouv,2000000,0,2000000
+2022,015,I.000381.03,UNIL-Sciences de la vie Ecublens,Objet nouv,2400000,0,2400000
+2022,015,I.000451.01,UNIL - Agrandissement station de pompage,29.10.2019,1863500,0,1863500
+2022,015,I.000455.03,CrE Extension HEP Etape 2,Objet nouv,600000,0,600000
+2022,015,I.000458.01,CrE - UNIL Extension Internef,16.12.2020,660000,0,660000
+2022,015,I.000463.01,UNIL - Crédit-cadre rénovation 2018-2021,22.01.2019,1470000,0,1470000
+2022,015,I.000464.01,UNIL - Grands consommateurs LVLEne,22.01.2019,2434200,0,2434200
+2022,015,I.000657.03,CrE Extension HEP Etape 1,Objet nouv,1620000,0,1620000
+2022,015,I.000658.01,UNIL - Assainissement production chaleur,Objet nouv,2100000,0,2100000
+2022,015,I.000784.01,UNIL ± cryoTEM provisoire,Objet nouv,2350000,1100000,1250000
+2022,017,I.000331.02,Musées de l'Elysée et du MUDAC,09.05.2017,14389000,9520000,4869000
+2022,017,I.000331.03,CrA Musées de l'Elysée et du MUDAC,26.11.2019,2500000,0,2500000
+2022,017,I.000332.02,Avenir de Rumine,Objet nouv,600000,0,600000
+2022,017,I.000637.03,CrA supp. Aménagements extérieures P10,30.03.2021,385000,0,385000
+2022,017,I.000687.01,CrE Site et Musée romain Avenches,Objet nouv,800000,0,800000
+2022,017,I.000761.01,Autonomisation informatique Plateforme10,26.11.2019,500000,0,500000
+2022,018,I.000697.02,Refonte SI SPJ,Objet nouv,100000,0,100000
+2022,020,I.000818.01,Plan climat vaudois - diverses mesures,Objet nouv,2387000,0,2387000
+2022,002,I.000022.01,Modernis. SI Police - Schéma Directeur,08.10.2013,504000,0,504000
+2022,002,I.000409.01,Modernis. SI Police - Odyssée,Objet nouv,500000,0,500000
+2022,002,I.000411.01,Renouv. du matériel de transmission_term,05.09.2017,800000,0,800000
+2022,002,I.000638.01,Renouv. du matériel de trans_réseau,15.01.2019,3815000,0,3815000
+2022,004,I.000648.01,Infrastuctures d'instruction Prot pop,Objet nouv,5500000,0,5500000
+2022,004,I.000649.01,Matériel et équipement de la PCi,Objet nouv,1000000,0,1000000
+2022,004,I.000693.01,Feux à éclipses,Objet nouv,1800000,0,1800000
+2022,004,I.000816.01,Plan climat - protextion pop + renf infr,Objet nouv,1020000,0,1020000
+2022,005,I.000040.01,Crédit cadre gestion/traitement déchets,28.08.2012,70000,0,70000
+2022,005,I.000042.01,Décharge des Saviez à Noville - Ass,13.03.2012,500000,150000,350000
+2022,005,I.000304.02,Maison de l'environnement Lsne Vennes,26.03.2019,600000,0,600000
+2022,005,I.000335.01,Plan directeur des rives du Léman 3ème,13.05.2014,150000,0,150000
+2022,005,I.000338.01,Carte d'exposition aux dangers naturels,01.07.2014,23000,0,23000
+2022,005,I.000350.01,Gestion intégrée des risques,01.07.2014,55000,0,55000
+2022,005,I.000416.01,Venoge 3 - Réalisations,07.05.2019,2006000,160000,1846000
+2022,005,I.000417.01,Décharge de Molard-Parelliet à Trélex,21.11.2017,30000,0,30000
+2022,005,I.000419.01,Rhône 3 - 1ere tranche de travaux,29.05.2018,2205000,0,2205000
+2022,005,I.000420.01,Ruisseau de Broye,14.01.2020,5200000,0,5200000
+2022,005,I.000421.01,Ouvrages de franchissement pour la faune,Objet nouv,100000,0,100000
+2022,005,I.000425.01,Plan d'évacuation des eaux Chamberonne,13.03.2018,250000,0,250000
+2022,005,I.000426.01,Crédit cadre micropolluants,19.01.2016,9800000,0,9800000
+2022,005,I.000427.01,"Biotopes: protection, revital. & gestion",Objet nouv,200000,0,200000
+2022,005,I.000430.01,Protection DN & amélioration structures3,13.03.2018,800000,0,800000
+2022,005,I.000431.01,Protection DN & amélioration structures4,23.06.2021,300000,0,300000
+2022,005,I.000432.01,Part cantonale ass. anciennes décharges3,06.11.2018,500000,0,500000
+2022,005,I.000434.01,Crédit prospection & garantie risque géo,Objet nouv,700000,0,700000
+2022,005,I.000435.01,Lutte contre espèces exotiques envahiss,Objet nouv,100000,0,100000
+2022,005,I.000436.01,ZI du Marais-protection contre les crues,23.06.2021,200000,0,200000
+2022,005,I.000437.02,Gestion déchets - installations,30.08.2016,120000,0,120000
+2022,005,I.000609.01,CrE Regroupement DGE par régions,Objet nouv,1359900,0,1359900
+2022,005,I.000644.01,Grande Eau 2 Traversée Aigle-Gd Canal,23.06.2021,450000,0,450000
+2022,005,I.000645.01,Bassin versant de l'Ognonnaz,23.06.2021,500000,0,500000
+2022,005,I.000646.01,Renaturation de la Broye,Objet nouv,50000,0,50000
+2022,005,I.000654.01,Sécurisation approvis. énergétique,Objet nouv,50000,50000,0
+2022,005,I.000668.01,Modernisation SI subventions ACV (SIS),27.04.2021,1026000,0,1026000
+2022,005,I.000669.01,Modernisation du SI de la DGE,01.06.2021,1676000,0,1676000
+2022,005,I.000673.02,DGE-DIRNA regroupement région Nord,Objet nouv,1320000,0,1320000
+2022,005,I.000685.01,Décharge Les Gérignes à Bourg-en-Lavaux,06.11.2018,500000,0,500000
+2022,005,I.000699.01,Planification cantonale des déchets,Objet nouv,50000,0,50000
+2022,005,I.000700.01,Renouvellement moyens d'analyses labos,Objet nouv,760000,0,760000
+2022,005,I.000701.01,Assainissement des sites pollués,Objet nouv,900000,0,900000
+2022,005,I.000702.01,Gestion intégrée des risques 2,02.03.2021,800000,0,800000
+2022,005,I.000722.01,Aménagement de la Chamberonne,14.01.2020,3800000,0,3800000
+2022,005,I.000766.01,Ciel ouvert ruisseaux Champmartin+Marais,23.06.2021,600000,360000,240000
+2022,005,I.000767.01,Aménagements piscicoles 2,23.06.2021,957000,383000,574000
+2022,005,I.000768.01,Maintenance évolutive cours d'eau,23.06.2021,800000,0,800000
+2022,005,I.000796.01,SIAM - Modern. du SI subvention métier,Objet nouv,100000,0,100000
+2022,005,I.000803.01,Adapter forêts changements climatiques,Objet nouv,2500000,0,2500000
+2022,005,I.000804.01,Favoriser l'utilisation bois en cascade,Objet nouv,550000,0,550000
+2022,005,I.000817.01,Assainissement de la décharge des Saviez,Objet nouv,100000,0,100000
+2022,024,I.000090.03,EDM Palézieux Construction,21.06.2011,513600,0,513600
+2022,024,I.000310.02,Sécurisation de la prison de la Croisée,08.05.2018,4800000,1000000,3800000
+2022,024,I.000348.03,CrE PGM Pénitencier Grands-Marais Orbe,18.09.2018,2850000,0,2850000
+2022,024,I.000485.01,"Nouvelle colonie ouverte, Orbe",Objet nouv,6337200,0,6337200
+2022,024,I.000486.02,CPPO Pôle alimentaire,Objet nouv,240000,0,240000
+2022,024,I.000620.02,Rénovation prison Tuilière à Lonay,26.05.2020,8910000,0,8910000
+2022,024,I.000633.02,"CPPO-Poste contrôle avancé, sécurisation",Objet nouv,279600,0,279600
+2022,024,I.000717.02,Rénovation prison Bois-Mermet,Objet nouv,4200000,0,4200000
+2022,027,I.000672.02,BAP-Reaffect. aile est,17.12.2019,7000000,1000000,6000000
+2022,037,I.000713.02,DGS-OMC renouvellement du SI,24.11.2020,1143000,0,1143000
+2022,038,I.000077.03,Hôpital de Cery - Nouveau bâtiment,17.09.2013,13096000,0,13096000
+2022,038,I.000099.01,Hopital unique de l'enfant,23.04.2013,29663000,0,29663000
+2022,038,I.000099.02,Hôpital des Enfants - Equipements,07.11.2017,2498000,0,2498000
+2022,038,I.000103.02,BH05 - Bloc opératoire,21.05.2013,3683000,0,3683000
+2022,038,I.000103.03,BH05 - Bloc opératoire - Equipements,24.05.2016,1864000,0,1864000
+2022,038,I.000106.01,1ère tranche Soins continus+intensifs,29.05.2012,2571000,0,2571000
+2022,038,I.000112.01,Entretien tech. : ascenseurs - secours,04.05.2010,889000,0,889000
+2022,038,I.000369.01,CTE Laboratoire thérapie expérimentale,10.12.2014,289000,0,289000
+2022,038,I.000386.01,Etudes-Médecine perso et ing immunitaire,24.11.2015,1143000,0,1143000
+2022,038,I.000389.01,Ingénierie immunitaire oncologie - bât,24.11.2015,11379000,0,11379000
+2022,038,I.000389.02,Ingénierie immunitaire oncologie - équip,24.11.2015,900000,0,900000
+2022,038,I.000498.01,2ème tranche Soins continus+intensifs,Objet nouv,384000,0,384000
+2022,038,I.000655.01,Infrastructures stationnaires Cité hosp,23.06.2020,3451000,0,3451000
+2022,038,I.000733.01,CE - Réhabilitation Hôpital Beaumont,23.06.2020,1027000,0,1027000
+2022,038,I.000734.01,Garage à ambulances transferts,23.06.2020,4718000,0,4718000
+2022,038,I.000735.01,CE - Garage à ambulances urgences,23.06.2020,1046000,0,1046000
+2022,038,I.000759.01,Crédit cadre APE,Objet nouv,1180000,0,1180000
+2022,041,I.000132.02,Améliorations foncières 2010-2014 créd,13.05.2014,1000000,0,1000000
+2022,041,I.000385.01,Améliorations foncières 2015-2017,02.06.2015,200000,100000,100000
+2022,041,I.000395.01,Mise en conformité des porcheries,03.11.2015,218000,0,218000
+2022,041,I.000510.01,Projet dvp régional agricole (PDRA) NOIX,09.06.2020,980600,544800,435800
+2022,041,I.000515.01,Améliorations foncières 2017-2019,13.03.2018,1350000,232000,1118000
+2022,041,I.000750.01,Améliorations foncières 2019-2021,17.12.2019,6500000,1100000,5400000
+2022,041,I.000751.01,Améliorations foncières 2021-2023,Objet nouv,300000,0,300000
+2022,041,I.000752.01,PDRA Ouest VD,Objet nouv,1840100,1154700,685400
+2022,041,I.000800.01,DGAV - Plan climat phase I,Objet nouv,928400,0,928400
+2022,041,I.000812.01,DGAV - Plan climat phase II,Objet nouv,750000,0,750000
+2022,042,I.000647.01,Infrastructures sportives,08.05.2018,700000,0,700000
+2022,023,I.000703.01,SPOP-systèmes biométrie+cyberprestations,09.06.2020,861000,0,861000
+2022,044,I.000517.08,Alpes vaudoises 2020 - crédit-cadre no.4,16.06.2020,9065000,0,9065000
+2022,044,I.000518.01,Renouvellement SI Police cant. commerce,20.11.2018,193000,0,193000
+2022,046,I.000164.01,"CE-RC177,Vufflens-Penthaz rte liaison-AR",05.10.2010,124000,0,124000
+2022,046,I.000164.02,"RC 177,Vufflens-Penthaz constr.nouv. rte",11.11.2014,200000,0,200000
+2022,046,I.000194.01,"Routes nationales, construction - 23ème",31.03.2009,100000,86000,14000
+2022,046,I.000210.01,1er rattrap. dégâts forces de la nature,08.10.2013,426000,275000,151000
+2022,046,I.000226.01,Renforcement 40 t. solde du réseau RC,10.01.2012,2000000,0,2000000
+2022,046,I.000226.02,Renforcement 40t. Solde du rés RC cr ad,04.02.2020,500000,0,500000
+2022,046,I.000231.01,CE-Inventaire & anal.risques ouvr.soutèn,05.02.2013,750000,0,750000
+2022,046,I.000238.01,Préfin. routier - aides aux communes,05.11.2013,1000000,0,1000000
+2022,046,I.000254.03,RC 1 St-Sulpice requal. Tir Féd.-Venoge,12.03.2019,3000000,0,3000000
+2022,046,I.000259.02,RC 76 Chav/Renens requal Bourd.-Tir Féd,01.12.2020,3300000,0,3300000
+2022,046,I.000262.02,"RC 254, Vuiteboeuf-Ste-Croix, 2è étape",Objet nouv,1750000,0,1750000
+2022,046,I.000262.03,"CE RC 254, Vuiteboeuf-Ste-Croix,2è étape",21.05.2019,589000,0,589000
+2022,046,I.000266.03,"RC 422,Pomy, girat.ORIF / mobilité douce",Objet nouv,2433000,366000,2067000
+2022,046,I.000270.04,"RC 601.025, Epalinges - requalif. Croise",13.03.2018,5240000,0,5240000
+2022,046,I.000271.02,"RC 705, Aigle, reconstruction la Frasse",Objet nouv,2000000,0,2000000
+2022,046,I.000275.03,"RC780,Treytorrens-Rivaz, Plat du Dézaley",03.11.2020,1750000,0,1750000
+2022,046,I.000280.03,Etudes accidents & élimin.3 points noirs,04.11.2014,500000,0,500000
+2022,046,I.000282.02,RC 75 Morges-Echichens aménagement cycla,30.04.2019,1020000,360000,660000
+2022,046,I.000285.02,RC 7 Chavannes-Bogis-Chav.-Bois élargis,Objet nouv,1503500,0,1503500
+2022,046,I.000286.02,CE-RC1 Morges requal.Venoge-Morges étape,Objet nouv,307500,0,307500
+2022,046,I.000288.02,"RC 448, Lsne déplacement route Romanel",20.01.2015,0,1404000,-1404000
+2022,046,I.000295.02,"RC 719, Gryon, estacades Barbo. corr rte",Objet nouv,1000000,0,1000000
+2022,046,I.000298.02,"RC 706, Ormont-Dessous, corr. Favrin",Objet nouv,750000,0,750000
+2022,046,I.000318.01,Strat.cant.2 roues: appui mesures A,27.08.2013,1000000,0,1000000
+2022,046,I.000328.02,"RC 276,Treycovagnes, Châtelard,mob douce",Objet nouv,1000000,569500,430500
+2022,046,I.000339.02,RDU Région Nyon 1ère étape,Objet nouv,375000,1090000,-715000
+2022,046,I.000349.01,CE - RER Vaudois,09.09.2014,500000,0,500000
+2022,046,I.000367.01,"RC 177, Vufflens-Penthaz, syndicat AF",11.11.2014,100000,0,100000
+2022,046,I.000402.03,Centrale GCTA - Travaux,Objet nouv,1500000,0,1500000
+2022,046,I.000521.01,RC 601 Moudon bretelle BE carrefour 543,Objet nouv,250000,0,250000
+2022,046,I.000521.02,CE-RC 601 Moudon bretelle BE carref 543,Objet nouv,300000,75000,225000
+2022,046,I.000522.01,"RC 253, Merlaz-Baulmes assainis. routier",20.04.2021,500000,0,500000
+2022,046,I.000524.01,RC 1 Mies-Founex requal.(CE I.000290.02),22.08.2017,600000,400000,200000
+2022,046,I.000526.01,"RC 726, accès nouv.hôpital du Chablais",12.12.2017,0,350000,-350000
+2022,046,I.000527.01,"RC 706, Ormont-Dessus, La Lavanche",Objet nouv,750000,0,750000
+2022,046,I.000528.01,"RC 709, Leysin, réhab. tronçon Peneclay",Objet nouv,500000,0,500000
+2022,046,I.000532.01,RC 151 Bussigny pont de la Chocolatière,Objet nouv,500000,0,500000
+2022,046,I.000535.01,Modernisation SI DGMR,30.05.2017,362000,0,362000
+2022,046,I.000538.01,"Points noirs, 3ème crédit cadre",05.06.2018,100000,0,100000
+2022,046,I.000541.01,"Dégâts forces de la nature, 2ème rattrap",08.03.2016,874000,0,874000
+2022,046,I.000542.01,Campagne 2015-18 entret lourd ouvr d'art,19.01.2016,200000,0,200000
+2022,046,I.000544.01,"Travaux assainissement bruit, 3ème étape",06.02.2018,1500000,200000,1300000
+2022,046,I.000546.01,Campagne 2019-23 entret lourd ouvr art,05.11.2019,1500000,0,1500000
+2022,046,I.000547.01,Campagne 2017 entretien des revêtements,23.05.2017,250000,0,250000
+2022,046,I.000548.01,Campagne 2018 entretien des revêtements,27.03.2018,50000,0,50000
+2022,046,I.000549.01,Campagne 2019 entretien des revêtements,30.04.2019,500000,0,500000
+2022,046,I.000550.01,Entr lourd murs soutènement 2019-2022,04.02.2020,700000,0,700000
+2022,046,I.000558.01,"Dégâts forces de la nature, 3ème rattrap",Objet nouv,500000,0,500000
+2022,046,I.000584.01,CE - Bus Haut Niveau Service-2e étape,21.06.2016,400000,0,400000
+2022,046,I.000585.01,Crédit investissement - m2/m3 SSPG - tun,12.11.2019,4997500,0,4997500
+2022,046,I.000586.01,Crédit invest. - CFF Rebroussement Cully,29.05.2018,650000,0,650000
+2022,046,I.000588.01,Bus Haut Niveau Service-1ère étape,21.06.2016,1000000,0,1000000
+2022,046,I.000589.01,Interfaces voyageurs (P+R),30.04.2019,1100000,0,1100000
+2022,046,I.000590.01,Strat.cant. 2 roues : 2ème étape,30.04.2019,500000,0,500000
+2022,046,I.000591.01,CE - Stratégie transport marchandises,06.02.2018,400000,0,400000
+2022,046,I.000600.01,"RC 69, Tolochenaz requalification",24.09.2019,500000,0,500000
+2022,046,I.000603.01,CE - Prolongement CdF Aigle-Leysin,22.11.2016,500000,0,500000
+2022,046,I.000605.02,RC 773 Lutry- Belmont-La Croix cor. rte,30.06.2020,1500000,0,1500000
+2022,046,I.000606.01,"RC 501, requalification Cugy-Bottens",01.10.2019,3700000,0,3700000
+2022,046,I.000606.03,"RC 501, Cugy-Bottens, piste cyclable",01.10.2019,200000,0,200000
+2022,046,I.000608.01,Entret.pistes cyclables Yvonand-Avenches,Objet nouv,369000,0,369000
+2022,046,I.000632.01,Assainissement RC 58-533-790,16.01.2018,498000,0,498000
+2022,046,I.000639.01,LEB - Tunnel Avenue d'Echallens,23.05.2017,6725000,0,6725000
+2022,046,I.000665.01,"Points noirs, 4ème crédit cadre",Objet nouv,250000,0,250000
+2022,046,I.000670.02,CE - Aug. capacité M1 - évolution offre,10.03.2020,400000,0,400000
+2022,046,I.000688.01,CE - M2/M3 et équipe de projet,12.11.2019,8329700,0,8329700
+2022,046,I.000690.01,RC 422 Pomy-Cronay 2e tronçon,Objet nouv,1000000,0,1000000
+2022,046,I.000694.01,RC 751 + 752 Rogivue (ER),01.07.2020,20000,0,20000
+2022,046,I.000711.01,Assainissement 3 RC 429-631-632,24.09.2019,500000,0,500000
+2022,046,I.000727.02,RC 743 Requalification Gilamont - RN,Objet nouv,250000,0,250000
+2022,046,I.000728.01,Campagne 2020 entretien revêtement,03.03.2020,534000,0,534000
+2022,046,I.000729.01,Campagne 2021 entretien revêtement,20.04.2021,750000,0,750000
+2022,046,I.000730.01,Campagne 2022 entretien revêtement,Objet nouv,3000000,0,3000000
+2022,046,I.000732.01,"RC 260, 271-270, 309 et 548 + jct Rolle",Objet nouv,3000000,0,3000000
+2022,046,I.000738.01,Assainissement RC 260/267/32/543,01.12.2020,1000000,0,1000000
+2022,046,I.000740.01,Assainis. RC613 Marnand-Villars Bramard,Objet nouv,250000,0,250000
+2022,046,I.000741.01,Assaini. RC543 Peyres-Possens-Sottens,Objet nouv,250000,0,250000
+2022,046,I.000742.01,RC299 réhabilit. entre Echallens/Goumoen,Objet nouv,750000,0,750000
+2022,046,I.000743.01,CE - Dév. réseau ferroviaire VD 2035-50,30.06.2020,750000,0,750000
+2022,046,I.000783.01,Travaux assainissement bruit 4e étape,08.06.2021,775000,1000,774000
+2022,046,I.000786.01,Campagne 2021 entr revêt 1 - Ouvrages,20.04.2021,100000,0,100000
+2022,046,I.000787.01,Campagne 2021 entr revêt 1-canalisations,20.04.2021,250000,0,250000
+2022,046,I.000792.01,Plan climat - dev. prestations TP,08.06.2021,14507000,4352000,10155000
+2022,046,I.000795.01,"LHand arrêts de bus, 1ère étape",Objet nouv,250000,0,250000
+2022,046,I.000807.01,Acompte auto. fixes/équipements m2-m3,Objet nouv,10252200,0,10252200
+2022,046,I.000808.01,Nouveau tunnel Gare-Flon m2-m3,Objet nouv,940100,0,940100
+2022,046,I.000809.01,CE - études/gestion de projet m2/m3,Objet nouv,6765000,0,6765000
+2022,046,I.000821.01,Stratégie vélo 2035 étape 1,Objet nouv,3000000,0,3000000
+2022,047,I.000229.01,Sécurisation du SI,08.10.2013,65000,0,65000
+2022,047,I.000387.01,Renforcement socle et dépl. cyber,29.09.2015,696000,0,696000
+2022,047,I.000565.01,Modernisation infrastructure FO du RCV,Objet nouv,100000,0,100000
+2022,047,I.000622.01,Stratégie e-VD port. sécur. et support,06.11.2018,653000,0,653000
+2022,047,I.000624.01,Sécurisation du SI - étape 2,04.02.2020,2028000,0,2028000
+2022,047,I.000736.02,Migration S/4 Hana,Objet nouv,100000,0,100000
+2022,047,I.000737.01,Renouvellement SI affaires constr. DGIP,Objet nouv,100000,0,100000
+2022,047,I.000793.02,Modernisation du SI DGIP,Objet nouv,95000,0,95000
+2022,054,I.000629.01,SPEV - Evolution SIRH - Phase 2,01.07.2020,1061000,0,1061000
+2022,054,I.000797.01,Programme SIRH - Phase 3,Objet nouv,100000,0,100000
+2022,050,I.000251.02,Archivage électr. historique+probatoire,07.05.2019,1829000,0,1829000
+2022,052,I.000204.01,"Registres de l'ACV-RCPERS,RCEnt,SITI",19.03.2013,46000,0,46000
+2022,052,I.000365.02,Désengagement du Host-fiscalité-tax. PM,21.04.2015,241000,0,241000
+2022,052,I.000594.01,DGF-Poursuite cyber. + chgt législ,08.01.2019,801000,0,801000
+2022,052,I.000594.02,CE - DGF Etudes Perspectives 2025,08.01.2019,11000,0,11000
+2022,052,I.000625.01,"DGF - Suite ""Perspectives 2025""",29.06.2021,500000,0,500000
+2022,048,I.000201.01,CADEV-Gestion du centre d'édition,02.07.2013,30000,0,30000
+2022,048,I.000359.02,UNIL Epalinges Réaménag. Bât. F,08.12.2020,3396000,0,3396000
+2022,048,I.000404.02,Cathédrale Lsne restauration étape 1,Objet nouv,600000,0,600000
+2022,048,I.000570.01,CERN Rennaz Transformation agrand,Objet nouv,2400000,1000000,1400000
+2022,048,I.000572.01,CB-assainissement et extension,Objet nouv,1000000,500000,500000
+2022,048,I.000576.01,CADEV-Renouv. plateforme d'achats,27.11.2018,737000,0,737000
+2022,048,I.000610.01,DGMR Centres d'exploitation régionaux,Objet nouv,600000,0,600000
+2022,048,I.000635.01,CE Transf. poste directeur Plateforme 10,09.05.2017,51000,0,51000
+2022,048,I.000636.02,Réaffectation Maison de l’Elysée,Objet nouv,200000,0,200000
+2022,048,I.000672.03,CrA BAP-reaffect. aile est plan climat,30.03.2021,970000,0,970000
+2022,048,I.000675.01,Entretien des bâtiments sur 6 sites,26.03.2019,6198000,0,6198000
+2022,048,I.000675.02,CrA 6 sites Auguste Piccard pl. climat,Objet nouv,400000,0,400000
+2022,048,I.000675.03,CrA 6 sites Chamblandes pl. climat,Objet nouv,200000,0,200000
+2022,048,I.000675.04,CrA 6 sites ETML+Site de Marcelin,Objet nouv,150000,0,150000
+2022,048,I.000682.01,Assainissement EPO Colonie fermée,08.01.2019,1500000,0,1500000
+2022,048,I.000719.02,Rennaz Aménag. terrain gens du voyage,Objet nouv,100000,0,100000
+2022,048,I.000763.01,CC Entretien 9 sites,27.10.2020,6000000,0,6000000
+2022,048,I.000763.02,CrA CC entretien 9 sites Bugnon pl. cl,30.03.2021,300000,0,300000
+2022,048,I.000763.03,CrA CC entretien 9 sites EPSIC pl. cl,30.03.2021,500000,0,500000
+2022,048,I.000763.04,CrA CC entretien 9 sites ERACOM pl. cl,30.03.2021,400000,0,400000
+2022,048,I.000764.01,CC Entretien prisons,26.05.2020,4060800,0,4060800
+2022,048,I.000764.02,CrA CC entretien prison croisée pl. cl,30.03.2021,350000,0,350000
+2022,048,I.000779.01,CC Rénovation 5 cures,Objet nouv,1800000,0,1800000
+2022,048,I.000790.01,CrEGC Amphithéâtre romain d'Avenches,22.06.2021,500000,0,500000
+2022,057,I.000355.01,Modernisation du SI justice,26.08.2014,354000,0,354000
+2022,057,I.000597.01,Extension du tribunal cantonal,27.10.2020,8215200,0,8215200
+2022,057,I.000597.05,CrA TC inter. bât. existant pl. cl,30.03.2021,100000,0,100000
+2022,057,I.000598.01,Impact inform. projets fédéraux,Objet nouv,100000,0,100000
+2022,057,I.000598.03,Contributions VD HIJP/Justitia 4.0,Objet nouv,100000,0,100000
+2022,057,I.000599.01,Sécurisation des offices judiciaires,Objet nouv,600000,0,600000
+2022,057,I.000744.02,Réaffectation bâtiment Valentin 10,Objet nouv,1885800,0,1885800
+2023,001,I.000789.01,Accompagnement communes Pol climat+Durab,16.06.2021,650000,0,650000
+2023,001,I.000818.01,Plan climat vaudois - diverses mesures,30.11.2021,1773000,0,1773000
+2023,068,I.000653.01,SJL-Implément. module Inkasso dans SIF,22.09.2020,553000,0,553000
+2023,043,I.000184.01,Crédit mensuration officielle 2008-2011,24.03.2009,200000,300000,-100000
+2023,043,I.000353.01,Poursuite mensuration officielle & ICDG,09.09.2014,1500000,2000000,-500000
+2023,043,I.000378.01,Appui aux communes pour leur PGA,12.05.2015,900000,0,900000
+2023,043,I.000378.02,Appui aux communes pour PGA crédit addit,07.07.2020,300000,0,300000
+2023,043,I.000391.02,SIBAT - SI des bâtiments,01.02.2022,249000,0,249000
+2023,043,I.000403.02,Renouvellement SIPC,Objet nouv,340000,0,340000
+2023,043,I.000508.01,Modernisation SI du SDT,27.11.2018,474000,0,474000
+2023,043,I.000745.01,Mensuration officielle & ICDG 20-25,29.09.2020,6000000,900000,5100000
+2023,043,I.000833.01,Crédit cadre études équipements SSDA,Objet nouv,1200000,0,1200000
+2023,042,I.000753.01,Infrastructures sportives II,Objet nouv,10897000,0,10897000
+2023,050,I.000251.02,Archivage électr. historique+probatoire,07.05.2019,2337000,0,2337000
+2023,010,I.000706.04,Educ. Num. Phase II Informatique pédag,Objet nouv,1000000,0,1000000
+2023,010,I.000706.05,Educ. Num. Phase II Dépl.Trans. & Coord,Objet nouv,4000000,0,4000000
+2023,010,I.000788.01,Plan climat - Formation-moteur chgmt,Objet nouv,1630000,0,1630000
+2023,011,I.000401.02,GI-PSAF Gest. inform. de la pédag. spéc,12.11.2019,1461000,0,1461000
+2023,013,I.000301.02,Refonte SI métier DGEP,30.05.2017,2218000,0,2218000
+2023,013,I.000396.02,Gymnase du Chablais Aigle,Objet nouv,1000000,0,1000000
+2023,013,I.000439.02,CrE Gymnase d'Echallens,26.05.2020,1000000,0,1000000
+2023,013,I.000440.01,Ecole professionnelle de Payerne,Objet nouv,1000000,0,1000000
+2023,013,I.000442.01,CE Morges Salle de sport VD5,Objet nouv,4000000,0,4000000
+2023,015,I.000250.03,Agrandissement Unithèque - BCU,17.09.2019,20000000,4000000,16000000
+2023,015,I.000307.03,Campus santé Construction C4,14.06.2022,5000000,1900000,3100000
+2023,015,I.000358.02,Campus santé HESAV Bourdonnette,14.06.2022,10000000,4800000,5200000
+2023,015,I.000371.02,Campus Santé équipement site,14.06.2022,10000000,0,10000000
+2023,015,I.000381.03,UNIL-Sciences de la vie Ecublens,Objet nouv,23000000,10000000,13000000
+2023,015,I.000449.01,"Université Bugnon 9, 2ème étape",Objet nouv,400000,0,400000
+2023,015,I.000451.01,UNIL - Agrandissement station de pompage,29.10.2019,1900000,0,1900000
+2023,015,I.000452.01,UNIL - Unicentre agrandissement-rénovati,Objet nouv,400000,0,400000
+2023,015,I.000458.01,CrE - UNIL NBSH,16.12.2020,1100000,0,1100000
+2023,015,I.000459.01,UNIL - Nouveau bâtiment Amphimax 2,Objet nouv,400000,0,400000
+2023,015,I.000463.01,UNIL - Crédit-cadre rénovation 2018-2021,22.01.2019,1600000,0,1600000
+2023,015,I.000464.01,UNIL - Grands consommateurs LVLEne,22.01.2019,1100000,0,1100000
+2023,015,I.000657.03,CrE Extension HEP Etape 1,16.11.2021,2000000,0,2000000
+2023,015,I.000658.01,UNIL - Assainissement production chaleur,Objet nouv,15000000,0,15000000
+2023,015,I.000660.01,UNIL - Amphipôle rénov. audit. & galette,Objet nouv,400000,0,400000
+2023,022,I.000708.01,Modernisation SI SCTP,29.09.2020,1339000,0,1339000
+2023,005,I.000335.01,Plan directeur des rives du Léman 3ème,13.05.2014,150000,0,150000
+2023,005,I.000338.01,Carte d'exposition aux dangers naturels,01.07.2014,121000,0,121000
+2023,005,I.000416.01,Venoge 3 - Réalisations,07.05.2019,2901000,1883500,1017500
+2023,005,I.000416.02,Venoge 3 - Etudes,07.05.2019,200000,0,200000
+2023,005,I.000417.01,Décharge de Molard-Parelliet à Trélex,21.11.2017,50000,0,50000
+2023,005,I.000419.01,Rhône 3 - 1ere tranche de travaux,29.05.2018,11236000,2724700,8511300
+2023,005,I.000420.01,Ruisseau de Broye,14.01.2020,100000,0,100000
+2023,005,I.000421.01,Ouvrages de franchissement pour la faune,Objet nouv,125000,0,125000
+2023,005,I.000425.01,Plan d'évacuation des eaux Chamberonne,13.03.2018,150000,0,150000
+2023,005,I.000426.01,Crédit cadre micropolluants,19.01.2016,9000000,0,9000000
+2023,005,I.000427.01,"Biotopes: protection, revital. & gestion",Objet nouv,2000000,1100000,900000
+2023,005,I.000430.01,Protection DN & amélioration structures3,13.03.2018,673000,0,673000
+2023,005,I.000431.01,Protection DN & amélioration structures4,23.06.2021,2000000,0,2000000
+2023,005,I.000432.01,Part cantonale ass. anciennes décharges3,06.11.2018,1000000,200000,800000
+2023,005,I.000434.01,Crédit prospection & garantie risque géo,Objet nouv,1900000,0,1900000
+2023,005,I.000435.01,Lutte contre espèces exotiques envahiss,Objet nouv,500000,0,500000
+2023,005,I.000436.01,ZI du Marais-protection contre les crues,23.06.2021,500000,200000,300000
+2023,005,I.000437.01,Gestion déchets-installations & sensib,30.08.2016,250000,0,250000
+2023,005,I.000644.01,Grande Eau 2 Traversée Aigle-Gd Canal,23.06.2021,500000,0,500000
+2023,005,I.000645.01,Bassin versant de l'Ognonnaz,23.06.2021,500000,0,500000
+2023,005,I.000646.01,Renaturation de la Broye,Objet nouv,300000,0,300000
+2023,005,I.000654.01,Sécurisation approvis. énergétique,Objet nouv,50000,0,50000
+2023,005,I.000668.01,Modernisation SI subventions ACV (SIS),27.04.2021,2359000,0,2359000
+2023,005,I.000669.01,Modernisation du SI de la DGE,01.06.2021,2103000,0,2103000
+2023,005,I.000685.01,Décharge Les Gérignes à Bourg-en-Lavaux,06.11.2018,750000,0,750000
+2023,005,I.000699.01,Planification cantonale des déchets,Objet nouv,50000,0,50000
+2023,005,I.000700.01,Equipement Laboratoires DIREV,Objet nouv,945000,0,945000
+2023,005,I.000701.01,Assainissement des sites pollués,Objet nouv,3080400,1318200,1762200
+2023,005,I.000702.01,Gestion intégrée des risques 2,02.03.2021,800000,0,800000
+2023,005,I.000722.01,Aménagement de la Chamberonne,14.01.2020,100000,0,100000
+2023,005,I.000766.01,Ciel ouvert ruisseaux Champmartin+Marais,23.06.2021,1800000,1200000,600000
+2023,005,I.000767.01,Aménagements piscicoles 2,23.06.2021,1240000,574000,666000
+2023,005,I.000768.01,Maintenance évolutive cours d'eau,23.06.2021,850000,0,850000
+2023,005,I.000796.01,SIAM - Modern. du SI subvention métier,24.05.2021,340000,0,340000
+2023,005,I.000803.01,Adapter forêts changements climatiques,14.12.2021,1000000,0,1000000
+2023,005,I.000804.01,Favoriser l'utilisation bois en cascade,14.12.2021,550000,0,550000
+2023,005,I.000806.01,Préserver la biodiversité en ville,Objet nouv,500000,0,500000
+2023,005,I.000817.01,Assainissement de la décharge des Saviez,Objet nouv,750000,0,750000
+2023,005,I.000837.01,Aménagement de la Lutrive à Lutry,Objet nouv,200000,0,200000
+2023,005,I.000838.01,Moyens de base p/lutte incendies forêt,Objet nouv,500000,0,500000
+2023,002,I.000022.01,Modernis. SI Police - Schéma Directeur,08.10.2013,179000,0,179000
+2023,002,I.000409.01,Modernis. SI Police - Odyssée,30.11.2021,1736000,0,1736000
+2023,002,I.000638.01,Renouv. du matériel de trans_réseau,15.01.2019,2800000,0,2800000
+2023,024,I.000310.02,Sécurisation de la prison de la Croisée,08.05.2018,5500000,900000,4600000
+2023,024,I.000348.03,CrE PGM Pénitencier Grands-Marais Orbe,18.09.2018,3000000,0,3000000
+2023,024,I.000620.02,Rénovation prison Tuilière à Lonay,26.05.2020,4360000,0,4360000
+2023,024,I.000633.02,"CPPO-Poste contrôle avancé, sécurisation",Objet nouv,500000,0,500000
+2023,004,I.000648.01,Infrastuctures d'instruction Prot pop,Objet nouv,5000000,0,5000000
+2023,004,I.000649.01,Matériel et équipement de la PCi,Objet nouv,1000000,0,1000000
+2023,004,I.000693.01,Feux à éclipses,Objet nouv,1300000,0,1300000
+2023,004,I.000816.01,Plan climat - protextion pop + renf infr,Objet nouv,1300000,0,1300000
+2023,027,I.000672.03,CrA BAP-reaffect. aile est plan climat,30.03.2021,2500000,0,2500000
+2023,037,I.000713.02,DGS-OMC renouvellement du SI,24.11.2020,2417000,0,2417000
+2023,038,I.000077.03,Hôpital de Cery - Nouveau bâtiment,17.09.2013,6237000,0,6237000
+2023,038,I.000099.01,Hopital unique de l'enfant,23.04.2013,32857000,0,32857000
+2023,038,I.000099.02,Hôpital des Enfants - Equipements,07.11.2017,6629000,0,6629000
+2023,038,I.000103.02,BH05 - Bloc opératoire,21.05.2013,1029000,0,1029000
+2023,038,I.000103.03,BH05 - Bloc opératoire - Equipements,24.05.2016,438000,0,438000
+2023,038,I.000106.01,1ère tranche Soins continus+intensifs,29.05.2012,1291000,0,1291000
+2023,038,I.000112.01,Entretien tech. : ascenseurs - secours,04.05.2010,523000,0,523000
+2023,038,I.000386.01,Etudes-Médecine perso et ing immunitaire,24.11.2015,1376000,0,1376000
+2023,038,I.000386.02,Travaux-Médecine perso et ing. immunit,Objet nouv,7666000,0,7666000
+2023,038,I.000389.01,Ing. immunitaire onco. - bâtiment LICR,24.11.2015,14047000,0,14047000
+2023,038,I.000389.02,Ing. immunitaire onco. - équip. med,24.11.2015,4638000,0,4638000
+2023,038,I.000498.01,2ème tranche Soins continus+intensifs,Objet nouv,960000,0,960000
+2023,038,I.000655.01,Infrastructures stationnaires Cité hosp,23.06.2020,3012000,0,3012000
+2023,038,I.000733.01,CE - Réhabilitation Hôpital Beaumont,23.06.2020,1714000,0,1714000
+2023,038,I.000734.01,Garage à ambulances transferts,23.06.2020,1142000,0,1142000
+2023,038,I.000735.01,CE - Garage à ambulances urgences,23.06.2020,1459000,0,1459000
+2023,038,I.000759.01,Crédit cadre APE,15.06.2022,2936000,0,2936000
+2023,038,I.000810.01,Assainissement enveloppes BU23/CI/B20,Objet nouv,1281000,0,1281000
+2023,044,I.000517.08,Alpes vaudoises 2020 - crédit-cadre no.4,16.06.2020,3592700,0,3592700
+2023,044,I.000518.01,Renouvellement SI Police cant. commerce,20.11.2018,41000,0,41000
+2023,044,I.000847.01,Maîtrise foncière 3 & soutien infrastr,Objet nouv,1500000,0,1500000
+2023,044,I.000848.01,Tourisme durable,Objet nouv,2000000,0,2000000
+2023,023,I.000703.01,SPOP-systèmes biométrie+cyberprestations,09.06.2020,728000,0,728000
+2023,048,I.000359.02,UNIL Epalinges Réaménag. Bât. F,08.12.2020,480000,0,480000
+2023,048,I.000404.01,Cathédrale Lsne restauration - etape 1,29.10.2019,2500000,0,2500000
+2023,048,I.000570.01,CERN Rennaz Transformation agrand,Objet nouv,2400000,1200000,1200000
+2023,048,I.000576.01,CADEV-Renouv. plateforme d'achats,27.11.2018,1321000,0,1321000
+2023,048,I.000635.02,Transfert poste directeur Plateforme 10,26.11.2019,100000,0,100000
+2023,048,I.000636.02,Réaffectation Maison de l’Elysée,18.01.2022,1000000,0,1000000
+2023,048,I.000675.01,CC Entretien des bâtiments sur 6 sites,26.03.2019,7000000,0,7000000
+2023,048,I.000675.02,CrA 6 sites Auguste Piccard pl. climat,30.03.2021,2500000,0,2500000
+2023,048,I.000675.03,CrA 6 sites Chamblandes pl. climat,30.03.2021,500000,0,500000
+2023,048,I.000682.01,Assainissement EPO Colonie fermée,08.01.2019,1000000,0,1000000
+2023,048,I.000719.02,Rennaz Aménag. terrain gens du voyage,Objet nouv,100000,0,100000
+2023,048,I.000763.01,CC Entretien 9 sites,27.10.2020,9000000,0,9000000
+2023,048,I.000763.02,CrA CC entretien 9 sites Bugnon pl. cl,30.03.2021,500000,0,500000
+2023,048,I.000763.03,CrA CC entretien 9 sites EPSIC pl. cl,30.03.2021,2500000,0,2500000
+2023,048,I.000763.04,CrA CC entretien 9 sites ERACOM pl. cl,30.03.2021,2500000,0,2500000
+2023,048,I.000764.01,CC Entretien prisons,26.05.2020,8000000,0,8000000
+2023,048,I.000764.02,CrA CC entretien prison croisée pl. cl,30.03.2021,2000000,0,2000000
+2023,048,I.000776.01,Château Hauteville cons. + rest,03.11.2020,500000,0,500000
+2023,048,I.000778.01,CC Entretien 5 sites,Objet nouv,6000000,0,6000000
+2023,048,I.000785.01,DAL Projet PIGNUS 21 rempl. machine msp,16.03.2021,100000,0,100000
+2023,048,I.000790.01,CrEGC Amphithéâtre romain d'Avenches,22.06.2021,400000,0,400000
+2023,017,I.000306.05,CreGC Site et Musée Romain Avenches,Objet nouv,2000000,0,2000000
+2023,017,I.000332.03,CrEGC Reaffectation Palais Rumine,18.01.2022,2000000,0,2000000
+2023,017,I.000761.01,Autonomisation informatique Plateforme10,26.11.2019,350000,0,350000
+2023,046,I.000147.02,H 144 Rennaz - Les Evouettes - cr. add,23.11.2010,412500,0,412500
+2023,046,I.000164.01,"CE-RC177,Vufflens-Penthaz rte liaison-AR",05.10.2010,37500,0,37500
+2023,046,I.000164.02,"RC 177,Vufflens-Penthaz constr.nouv. rte",11.11.2014,75000,0,75000
+2023,046,I.000194.01,"Routes nationales, construction - 23ème",31.03.2009,255000,217500,37500
+2023,046,I.000208.01,RC 254-19 correction 3 points noirs,10.01.2012,750000,0,750000
+2023,046,I.000209.01,Campagne 2012-15 entret lourd ouvr d'art,06.11.2012,375000,0,375000
+2023,046,I.000210.01,1er rattrap. dégâts forces de la nature,08.10.2013,262500,0,262500
+2023,046,I.000226.01,Renforcement 40 t. solde du réseau RC,10.01.2012,262500,0,262500
+2023,046,I.000226.02,Renforcement 40t. Solde du rés RC cr ad,04.02.2020,52500,0,52500
+2023,046,I.000231.01,CE-Inventaire & anal.risques ouvr.soutèn,05.02.2013,525000,0,525000
+2023,046,I.000238.01,Préfin. routier - aides aux communes,05.11.2013,1500000,0,1500000
+2023,046,I.000254.03,RC 1 St-Sulpice requal. Tir Féd.-Venoge,12.03.2019,1500000,1311000,189000
+2023,046,I.000259.02,RC 76 Chav/Renens requal Bourd.-Tir Féd,01.12.2020,1650000,0,1650000
+2023,046,I.000262.03,"CE RC 254, Vuiteboeuf-Ste-Croix,2è étape",21.05.2019,247500,0,247500
+2023,046,I.000266.03,"RC 422,Pomy, girat.ORIF / mobilité douce",30.11.2021,3000000,375000,2625000
+2023,046,I.000270.04,"RC 601.025, Epalinges - requalif. Croise",13.03.2018,1875000,1875000,0
+2023,046,I.000271.04,"CE RC705 Aigle, reconstruction La Frasse",Objet nouv,675000,0,675000
+2023,046,I.000275.03,"RC780,Treytorrens-Rivaz, Plat du Dézaley",03.11.2020,3000000,0,3000000
+2023,046,I.000278.02,RC 401 Grandson Vaumarcus,Objet nouv,375000,0,375000
+2023,046,I.000282.02,RC 75 Morges-Echichens aménagement cycla,30.04.2019,75000,15000,60000
+2023,046,I.000285.02,RC 7 Chavannes-Bogis-Chav.-Bois élargis,Objet nouv,2775000,0,2775000
+2023,046,I.000286.02,CE-RC1 Morges requal.Venoge-Morges étape,Objet nouv,375000,0,375000
+2023,046,I.000295.02,"RC 719, Gryon, estacades Barbo. corr rte",29.03.2022,4500750,0,4500750
+2023,046,I.000298.02,"RC 706, Ormont-Dessous, corr. Favrin",Objet nouv,2100000,0,2100000
+2023,046,I.000318.01,Strat.cant.2 roues: appui mesures A,27.08.2013,300000,0,300000
+2023,046,I.000322.03,CE RC 80 Lonay-Denges etudes phase 1,29.03.2022,75000,0,75000
+2023,046,I.000334.02,PALM aménagement giratoires Cheseaux,Objet nouv,562500,0,562500
+2023,046,I.000349.01,CE - RER Vaudois,09.09.2014,200000,0,200000
+2023,046,I.000366.03,CE RC 1 Morges-St-Prex requal. étape 5,30.11.2021,150000,0,150000
+2023,046,I.000367.01,"RC 177, Vufflens-Penthaz, syndicat AF",11.11.2014,100000,0,100000
+2023,046,I.000374.01,CE - Nouv. tracé m2 et place de la Gare,10.03.2015,98000,0,98000
+2023,046,I.000375.01,CE - 1ère étape m3 Gare - Flon,10.03.2015,14400,0,14400
+2023,046,I.000376.01,CE - 2e étape m3 Flon-Blécherette,10.03.2015,44000,0,44000
+2023,046,I.000390.01,RC 705-706 ouvr. protection 2ème étape,25.08.2015,450000,0,450000
+2023,046,I.000402.02,CE-Centrale GCTA - Etudes,30.10.2018,375000,0,375000
+2023,046,I.000402.03,Centrale GCTA - Travaux,Objet nouv,350000,0,350000
+2023,046,I.000521.02,CE-RC 601 Moudon bretelle BE carref 543,30.11.2021,262500,48000,214500
+2023,046,I.000522.01,"RC 253, Merlaz-Baulmes assainis. routier",20.04.2021,675000,0,675000
+2023,046,I.000524.01,RC 1 Mies-Founex requal.(CE I.000290.02),22.08.2017,375000,0,375000
+2023,046,I.000527.01,"RC 706, Ormont-Dessus, La Lavanche",Objet nouv,1125000,0,1125000
+2023,046,I.000528.01,"RC 709, Leysin, réhab. tronçon Peneclay",08.02.2022,1125000,0,1125000
+2023,046,I.000532.01,RC 151 Bussigny pont de la Chocolatière,Objet nouv,375000,0,375000
+2023,046,I.000535.01,Modernisation SI DGMR,30.05.2017,980000,0,980000
+2023,046,I.000538.01,"Points noirs, 3ème crédit cadre",05.06.2018,930000,0,930000
+2023,046,I.000541.01,"Dégâts forces de la nature, 2ème rattrap",08.03.2016,187500,0,187500
+2023,046,I.000542.01,Campagne 2015-18 entret lourd ouvr d'art,19.01.2016,225000,0,225000
+2023,046,I.000544.01,"Travaux assainissement bruit, 3ème étape",06.02.2018,1125000,150000,975000
+2023,046,I.000546.01,Campagne 2019-23 entret lourd ouvr art,05.11.2019,1875000,0,1875000
+2023,046,I.000548.01,Campagne 2018 entretien des revêtements,27.03.2018,150000,0,150000
+2023,046,I.000549.01,Campagne 2019 entretien des revêtements,30.04.2019,37500,0,37500
+2023,046,I.000550.01,Entr lourd murs soutènement 2019-2022,04.02.2020,502500,0,502500
+2023,046,I.000556.01,Entretien lourd murs soutènement 2023-25,Objet nouv,187500,0,187500
+2023,046,I.000558.01,"Dégâts forces de la nature, 3ème rattrap",18.01.2022,1125000,600000,525000
+2023,046,I.000584.01,CE - Bus Haut Niveau Service-2e étape,21.06.2016,800000,0,800000
+2023,046,I.000585.01,Crédit investissement - m2/m3 SSPG - tun,12.11.2019,9447400,1357000,8090400
+2023,046,I.000588.01,Bus Haut Niveau Service-1ère étape,21.06.2016,2500000,0,2500000
+2023,046,I.000589.01,Interfaces voyageurs (P+R),30.04.2019,2000000,0,2000000
+2023,046,I.000590.01,Strat.cant. 2 roues : 2ème étape,30.04.2019,1000000,0,1000000
+2023,046,I.000591.01,CE - Stratégie transport marchandises,06.02.2018,259000,0,259000
+2023,046,I.000600.01,"RC 69, Tolochenaz requalification",24.09.2019,675000,0,675000
+2023,046,I.000603.01,CE - Prolongement CdF Aigle-Leysin,22.11.2016,880000,0,880000
+2023,046,I.000604.02,"CE RC19, Signy-Avenex-Nyon JtAR",Objet nouv,225000,0,225000
+2023,046,I.000605.02,RC 773 Lutry- Belmont-La Croix cor. rte,30.06.2020,1108500,0,1108500
+2023,046,I.000606.01,"RC 501, requalification Cugy-Bottens",01.10.2019,600000,0,600000
+2023,046,I.000608.01,Entret.pistes cyclables Yvonand-Avenches,Objet nouv,1125000,0,1125000
+2023,046,I.000665.01,"Points noirs, 4ème crédit cadre",Objet nouv,187500,0,187500
+2023,046,I.000670.02,CE - Aug. capacité M1 - évolution offre,10.03.2020,100000,0,100000
+2023,046,I.000688.01,CE - M2/M3 et équipe de projet,12.11.2019,9060000,0,9060000
+2023,046,I.000690.01,RC 422 Pomy-Cronay 2e tronçon,Objet nouv,375000,0,375000
+2023,046,I.000694.01,RC 751 + 752 Rogivue (ER),01.07.2020,187500,0,187500
+2023,046,I.000728.01,Campagne 2020 entretien revêtement,03.03.2020,112500,0,112500
+2023,046,I.000729.01,Campagne 2021 entretien revêtement,20.04.2021,900000,0,900000
+2023,046,I.000730.01,Campagne 2022 entretien revêtement,14.06.2022,1875000,0,1875000
+2023,046,I.000731.01,Campagne 2023 entretien revêtement,Objet nouv,6750000,0,6750000
+2023,046,I.000732.01,"RC 260, 271-270, 309 et 548 + jct Rolle",30.11.2021,525000,0,525000
+2023,046,I.000738.01,Assainissement RC 260/267/32/543,01.12.2020,75000,0,75000
+2023,046,I.000740.01,Assainis. RC613 Marnand-Villars Bramard,Objet nouv,375000,0,375000
+2023,046,I.000741.01,Assainissement 6 tronçons 2021-2,Objet nouv,5250000,0,5250000
+2023,046,I.000742.01,RC299 réhabilit. entre Echallens/Goumoen,30.11.2021,1875000,0,1875000
+2023,046,I.000743.01,CE - Dév. réseau ferroviaire VD 2035-50,30.06.2020,2000000,0,2000000
+2023,046,I.000765.01,Vich-Begnins mobilité douce,Objet nouv,1500000,0,1500000
+2023,046,I.000777.02,CE RC 76-79_jonction Ecublens,Objet nouv,112500,0,112500
+2023,046,I.000783.01,Travaux assainissement bruit 4e étape,08.06.2021,375000,0,375000
+2023,046,I.000787.01,Campagne 2021 entr revêt 1-canalisations,20.04.2021,1382250,0,1382250
+2023,046,I.000792.01,Plan climat - dev. prestations TP,08.06.2021,10715000,3215000,7500000
+2023,046,I.000795.01,"LHand arrêts de bus, 1ère étape",Objet nouv,2250000,0,2250000
+2023,046,I.000807.01,Acompte auto. fixes/équipements m2-m3,25.01.2022,35473200,0,35473200
+2023,046,I.000808.01,Nouveau tunnel Gare-Flon m2-m3,08.02.2022,6079400,0,6079400
+2023,046,I.000809.01,CE - études/gestion de projet m2/m3,08.02.2022,19016100,0,19016100
+2023,046,I.000821.01,Stratégie vélo 2035 étape 1,Objet nouv,2000000,0,2000000
+2023,046,I.000827.01,Subventions stratégie vélo 2035 étape 1,Objet nouv,1539500,0,1539500
+2023,046,I.000839.01,Fret ferroviaire gravier pied du jura,Objet nouv,7000000,0,7000000
+2023,003,I.000305.03,CrE SAN Aménag. des locaux,Objet nouv,1000000,0,1000000
+2023,003,I.000319.01,SAN - Evolution majeure du SI-inf,19.11.2013,428000,0,428000
+2023,047,I.000387.01,Renforcement socle et dépl. cyber,29.09.2015,299000,0,299000
+2023,047,I.000565.01,Modernisation infrastructure FO du RCV,14.06.2022,340000,0,340000
+2023,047,I.000622.01,Stratégie e-VD port. sécur. et support,06.11.2018,956000,0,956000
+2023,047,I.000624.01,Sécurisation du SI - étape 2,04.02.2020,1302000,0,1302000
+2023,047,I.000736.02,Migration S/4 Hana,14.06.2022,1628000,0,1628000
+2023,047,I.000737.01,Renouvellement SI affaires constr. DGIP,Objet nouv,68000,0,68000
+2023,054,I.000629.01,SPEV - Evolution SIRH - Phase 2,01.07.2020,438000,0,438000
+2023,052,I.000365.02,Désengagement du Host-fiscalité-tax. PM,21.04.2015,247000,0,247000
+2023,052,I.000594.01,DGF-Poursuite cyber. + chgt législ,08.01.2019,137000,0,137000
+2023,052,I.000594.02,CE - DGF Etudes Perspectives 2025,08.01.2019,54000,0,54000
+2023,052,I.000625.01,"DGF - Suite ""Perspectives 2025""",29.06.2021,1200000,0,1200000
+2023,052,I.000747.01,"DGF - Poursuite ""Perspective 2025""",15.06.2022,340000,0,340000
+2023,041,I.000132.02,Améliorations foncières 2010-2014 créd,13.05.2014,1000000,100000,900000
+2023,041,I.000385.01,Améliorations foncières 2015-2017,02.06.2015,200000,40000,160000
+2023,041,I.000395.01,Mise en conformité des porcheries,03.11.2015,150000,0,150000
+2023,041,I.000510.01,Projet dvp régional agricole (PDRA) NOIX,09.06.2020,513000,285000,228000
+2023,041,I.000515.01,Améliorations foncières 2017-2019,13.03.2018,1000000,200000,800000
+2023,041,I.000750.01,Améliorations foncières 2019-2021,17.12.2019,3000000,750000,2250000
+2023,041,I.000751.01,Améliorations foncières 2021-2023,21.01.2022,4000000,1000000,3000000
+2023,041,I.000752.01,PDRA Ouest VD,23.11.2021,4000000,2222000,1778000
+2023,041,I.000755.01,PDRA Pays d'Enhaut,Objet nouv,100000,56000,44000
+2023,041,I.000756.01,PDRA Graines & pains,Objet nouv,100000,56000,44000
+2023,041,I.000757.01,PDRA Lausanne & env,Objet nouv,100000,56000,44000
+2023,041,I.000800.01,DGAV - Plan climat phase 1ère génération,Objet nouv,2000000,0,2000000
+2023,041,I.000811.01,Amélioraitons foncières 2023-2025,Objet nouv,125000,25000,100000
+2023,057,I.000355.01,Modernisation du SI justice,26.08.2014,117000,0,117000
+2023,057,I.000597.01,Extension du tribunal cantonal,27.10.2020,4000000,0,4000000
+2023,057,I.000597.03,Construction d’un parking,27.10.2020,1500000,500000,1000000
+2023,057,I.000597.04,Interventions dans le bâtiment existant,27.10.2020,2000000,0,2000000
+2023,057,I.000597.05,CrA TC inter. bât. existant pl. cl,30.03.2021,1500000,0,1500000
+2023,057,I.000598.01,Impact inform. projets fédéraux,05.04.2022,50000,0,50000
+2023,057,I.000598.03,Contributions VD HIJP/Justitia 4.0,05.04.2022,50000,0,50000
+2023,057,I.000599.01,Sécurisation des offices judiciaires,Objet nouv,100000,0,100000
+2023,057,I.000744.02,Réaffectation bâtiment Valentin 10,Objet nouv,1000000,0,1000000
+2023,057,I.000828.01,CE - Transition numérique MP et OJV,05.04.2022,50000,0,50000
+2024,068,I.000653.01,SJL-Implément. module Inkasso dans SIF,22.09.2020,1393000,0,1393000
+2024,068,I.000856.02,DGAIC - Refonte Prefec et Votelec,Objet nouv,10000,0,10000
+2024,043,I.000353.01,Poursuite mensuration officielle & ICDG,09.09.2014,1000000,2500000,-1500000
+2024,043,I.000378.01,Appui aux communes pour leur PGA,12.05.2015,1400000,0,1400000
+2024,043,I.000391.02,SIBAT - SI des bâtiments,01.02.2022,857000,0,857000
+2024,043,I.000403.02,Renouvellement SIPC,21.12.2022,200000,0,200000
+2024,043,I.000508.01,Modernisation SI du SDT,27.11.2018,534000,0,534000
+2024,043,I.000745.01,Mensuration officielle & ICDG 20-25,29.09.2020,7500000,1000000,6500000
+2024,043,I.000833.01,Crédit cadre études équipements SSDA,Objet nouv,2800000,0,2800000
+2024,043,I.000875.01,CrE Equipements site strat. PAC Vernand,Objet nouv,850000,0,850000
+2024,042,I.000753.01,Infrastructures sportives II,Objet nouv,3600000,0,3600000
+2024,050,I.000251.02,Archivage électr. historique+probatoire,07.05.2019,2471000,0,2471000
+2024,010,I.000706.04,Educ. Num. Phase II Informatique pédag,28.02.2023,3705000,0,3705000
+2024,010,I.000706.05,Educ. Num. Phase II Dépl.Trans. & Coord,28.02.2023,9006000,0,9006000
+2024,010,I.000788.01,"Plan climat - Formation, moteur chgmt",20.06.2023,1200000,0,1200000
+2024,011,I.000401.02,GI-PSAF Gest. inform. de la pédag. spéc,12.11.2019,2173000,0,2173000
+2024,011,I.000814.02,GIS-EO 2,Objet nouv,30000,0,30000
+2024,013,I.000301.03,CA - Refonte SI métier DGEP,Objet nouv,418000,0,418000
+2024,013,I.000396.02,Gymnase du Chablais Aigle,Objet nouv,4500000,0,4500000
+2024,013,I.000439.02,CrE Gymnase d'Echallens,26.05.2020,2000000,0,2000000
+2024,013,I.000440.03,CrE Ecole professionnelle de Payerne,11.10.2022,3000000,0,3000000
+2024,013,I.000442.01,CE Morges Salle de sport VD5,Objet nouv,3500000,0,3500000
+2024,013,I.000815.02,GIS-EP,Objet nouv,30000,0,30000
+2024,015,I.000250.03,Agrandissement Unithèque - BCU,17.09.2019,5000000,0,5000000
+2024,015,I.000307.03,Campus santé Construction C4,14.06.2022,11000000,1900000,9100000
+2024,015,I.000358.02,Campus santé HESAV Bourdonnette,14.06.2022,13000000,4800000,8200000
+2024,015,I.000371.02,Campus Santé équipement site,14.06.2022,4000000,0,4000000
+2024,015,I.000381.03,UNIL-Sciences de la vie Ecublens,22.11.2022,12700000,0,12700000
+2024,015,I.000445.01,UNIL - Assainissement Voirie Etape 1,Objet nouv,400000,0,400000
+2024,015,I.000458.01,CrE - UNIL NBSH,16.12.2020,1100000,0,1100000
+2024,015,I.000464.01,UNIL - Grands consommateurs LVLEne,22.01.2019,3500000,0,3500000
+2024,015,I.000657.03,CrE Extension HEP Etape 1,16.11.2021,1000000,0,1000000
+2024,015,I.000658.01,UNIL - Assainissement production chaleur,13.06.2023,11000000,0,11000000
+2024,015,I.000660.01,UNIL - Amphipôle assain. énerg. Galette,Objet nouv,400000,0,400000
+2024,015,I.000841.01,UNIL - Crédit-cadre réseau d'eau,Objet nouv,1000000,0,1000000
+2024,015,I.000881.01,UNIL - Crédit cadre Rénovation 2023-027,Objet nouv,2000000,0,2000000
+2024,015,I.000882.01,UNIL - Grands consomm. LVLEne 2ème étape,Objet nouv,1000000,0,1000000
+2024,018,I.000697.02,Refonte SI DGEJ,Objet nouv,71000,0,71000
+2024,022,I.000708.01,Modernisation SI SCTP,29.09.2020,154000,0,154000
+2024,005,I.000335.01,Plan directeur des rives du Léman 3ème,13.05.2014,150000,0,150000
+2024,005,I.000416.01,Venoge 3 - Réalisations,07.05.2019,809200,234200,575000
+2024,005,I.000416.02,Venoge 3 - Etudes,07.05.2019,140000,0,140000
+2024,005,I.000417.01,Décharge de Molard-Parelliet à Trélex,21.11.2017,30000,0,30000
+2024,005,I.000419.01,Rhône 3 - 1ere tranche de travaux,29.05.2018,11000000,3700000,7300000
+2024,005,I.000420.01,Ruisseau de Broye,14.01.2020,500000,0,500000
+2024,005,I.000425.01,Plan d'évacuation des eaux Chamberonne,13.03.2018,100000,0,100000
+2024,005,I.000426.01,Crédit cadre micropolluants,19.01.2016,10000000,0,10000000
+2024,005,I.000427.01,"Biotopes: protection, revital. & gestion",21.12.2022,6000000,4000000,2000000
+2024,005,I.000430.01,Protection DN & amélioration structures3,13.03.2018,1000000,0,1000000
+2024,005,I.000431.01,Protection DN & amélioration structures4,23.06.2021,1800000,0,1800000
+2024,005,I.000432.01,Part cantonale ass. anciennes décharges3,06.11.2018,1000000,250000,750000
+2024,005,I.000434.01,Géothermie et gestion du sous-sol,04.04.2023,1410000,0,1410000
+2024,005,I.000435.01,Lutte contre espèces exotiques envahiss,Objet nouv,400000,100000,300000
+2024,005,I.000436.01,ZI du Marais-protection contre les crues,23.06.2021,300000,0,300000
+2024,005,I.000437.01,Gestion déchets-installations & sensib,30.08.2016,250000,0,250000
+2024,005,I.000609.02,Regroupement DGE par régions,Objet nouv,750000,0,750000
+2024,005,I.000644.01,Grande Eau 2 Traversée Aigle-Gd Canal,23.06.2021,300000,0,300000
+2024,005,I.000645.01,Bassin versant de l'Ognonnaz,23.06.2021,100000,0,100000
+2024,005,I.000646.01,Renaturation de la Broye,Objet nouv,300000,0,300000
+2024,005,I.000654.01,Sécurisation approvis. énergétique,Objet nouv,950000,800000,150000
+2024,005,I.000668.01,Modernisation SI subventions ACV (SIS),27.04.2021,622000,0,622000
+2024,005,I.000669.01,Modernisation du SI de la DGE,01.06.2021,1605000,0,1605000
+2024,005,I.000685.01,Décharge Les Gérignes à Bourg-en-Lavaux,06.11.2018,750000,0,750000
+2024,005,I.000700.01,Equipement Laboratoires DIREV,17.01.2023,1440000,0,1440000
+2024,005,I.000701.01,Assainissement des sites pollués,Objet nouv,5410500,2605500,2805000
+2024,005,I.000702.01,Gestion intégrée des risques 2,02.03.2021,1440000,640000,800000
+2024,005,I.000722.01,Aménagement de la Chamberonne,14.01.2020,500000,0,500000
+2024,005,I.000766.01,Ciel ouvert ruisseaux Champmartin+Marais,23.06.2021,600000,0,600000
+2024,005,I.000767.01,Aménagements piscicoles 2,23.06.2021,600000,0,600000
+2024,005,I.000768.01,Maintenance évolutive cours d'eau,23.06.2021,850000,0,850000
+2024,005,I.000794.02,Modernisation SI Géographique DGE,Objet nouv,55000,0,55000
+2024,005,I.000796.01,SIAM - Modern. du SI subvention métier,24.05.2022,100000,0,100000
+2024,005,I.000803.01,Adapter forêts changements climatiques,14.12.2021,2500000,0,2500000
+2024,005,I.000804.01,Favoriser l'utilisation bois en cascade,14.12.2021,575000,0,575000
+2024,005,I.000806.01,Préserver la biodiversité en ville,17.01.2023,755000,0,755000
+2024,005,I.000838.01,Moyens de base p/lutte incendies forêt,Objet nouv,400000,0,400000
+2024,005,I.000865.01,Assainis. glissement des Fontanelles,Objet nouv,1000000,0,1000000
+2024,005,I.000891.01,Assainissement décharge du Boiron,Objet nouv,1400000,0,1400000
+2024,005,I.000893.01,Ass. décharge Le Saut Yverdon,Objet nouv,1400000,0,1400000
+2024,005,I.000894.01,Amén.Lac & cours d'eau chang.climatique,Objet nouv,200000,0,200000
+2024,005,I.000899.01,Gestion intégrée des risques 3,Objet nouv,540000,240000,300000
+2024,005,I.000902.01,Accueil en forêt : mesure 36 Polfor 2040,Objet nouv,70000,0,70000
+2024,002,I.000409.01,Modernis. SI Police - Odyssée,30.11.2021,1918000,0,1918000
+2024,002,I.000638.01,Renouv. du matériel de trans_réseau,15.01.2019,993000,0,993000
+2024,002,I.000857.02,Implémentation Polizei-Abfrageplattform,Objet nouv,72000,0,72000
+2024,024,I.000310.02,Sécurisation de la prison de la Croisée,08.05.2018,6000000,1000000,5000000
+2024,024,I.000348.03,CrE PGM Pénitencier Grands-Marais Orbe,18.09.2018,3000000,0,3000000
+2024,024,I.000485.01,"Nouvelle colonie ouverte, Orbe",Objet nouv,500000,0,500000
+2024,024,I.000633.02,"CPPO-Poste contrôle avancé, sécurisation",Objet nouv,2500000,0,2500000
+2024,004,I.000649.01,Matériel et équipement de la PCi,Objet nouv,1000000,0,1000000
+2024,004,I.000693.01,Feux à éclipses,Objet nouv,600000,0,600000
+2024,004,I.000781.02,CrO SSCM piste Pci,20.06.2023,2000000,0,2000000
+2024,004,I.000816.01,Plan climat - protection pop + renf infr,14.03.2023,870000,0,870000
+2024,027,I.000672.03,CrA BAP-reaffect. aile est plan climat,30.03.2021,4000000,0,4000000
+2024,037,I.000713.02,DGS-OMC renouvellement du SI,24.11.2020,2616000,0,2616000
+2024,038,I.000077.03,Hôpital de Cery - Nouveau bâtiment,17.09.2013,232000,0,232000
+2024,038,I.000077.04,Hôpital de Cery - Rénovation,19.09.2013,3460000,0,3460000
+2024,038,I.000077.05,Hôpital de Cery - Extension périmètre,Objet nouv,3204000,0,3204000
+2024,038,I.000077.06,Hôpital de Cery - Assainis. façade,Objet nouv,1080000,0,1080000
+2024,038,I.000099.01,Hopital unique de l'enfant,23.04.2013,15095000,0,15095000
+2024,038,I.000099.02,Hôpital des Enfants - Equipements,07.11.2017,7144000,0,7144000
+2024,038,I.000099.03,Hôpital des Enfants - Parking,07.11.2017,214000,0,214000
+2024,038,I.000099.04,Hôpital des Enfants - Cadre normatif,07.11.2017,753000,0,753000
+2024,038,I.000103.02,BH05 - Bloc opératoire,21.05.2013,2265000,0,2265000
+2024,038,I.000103.03,BH05 - Bloc opératoire - Equipements,24.05.2016,150000,0,150000
+2024,038,I.000106.01,1ère tranche Soins continus+intensifs,29.05.2012,3463000,0,3463000
+2024,038,I.000112.01,Entretien tech. : ascenseurs - secours,04.05.2010,697000,0,697000
+2024,038,I.000386.01,Etudes-Médecine perso et ing immunitaire,24.11.2015,767000,0,767000
+2024,038,I.000386.02,Travaux-Médecine perso et ing. immunit,22.11.2022,13795000,0,13795000
+2024,038,I.000389.01,Ing. immunitaire onco. - bâtiment LICR,24.11.2015,9616000,0,9616000
+2024,038,I.000389.02,Ing. immunitaire onco. - équip. med,24.11.2015,1870000,0,1870000
+2024,038,I.000389.03,Ing. immunitaire onco. - plateforme,22.11.2022,2636000,0,2636000
+2024,038,I.000389.04,Ing. immunitaire onco.- prod. vapeur,22.11.2022,1654000,0,1654000
+2024,038,I.000389.05,Ing. immunitaire onco. - équip. LICR,22.11.2022,5332000,0,5332000
+2024,038,I.000498.01,Création d'une nouvelle unité SIA,Objet nouv,1845000,0,1845000
+2024,038,I.000501.01,Extension BH études,Objet nouv,225000,0,225000
+2024,038,I.000655.01,Infrastructures stationnaires Cité hosp,23.06.2020,3339000,0,3339000
+2024,038,I.000733.01,CE - Réhabilitation Hôpital Beaumont,23.06.2020,636000,0,636000
+2024,038,I.000734.01,Garage à ambulances transferts,23.06.2020,2523000,0,2523000
+2024,038,I.000735.01,CE - Garage à ambulances urgences,23.06.2020,1162000,0,1162000
+2024,038,I.000735.02,TR - Garage à ambulances urgences,Objet nouv,576000,0,576000
+2024,038,I.000759.01,Crédit cadre act. perf. énergétique,15.06.2022,3563000,0,3563000
+2024,038,I.000810.01,Assainissement enveloppes BU23/CI/B20,Objet nouv,2769000,0,2769000
+2024,038,I.000813.01,Etudes - Création lits interméd. au BH,Objet nouv,135000,0,135000
+2024,038,I.000849.01,Bâtiments IRA et LAD Cery,Objet nouv,720000,0,720000
+2024,066,I.000859.02,Modernisation SI Bourses d'étude,Objet nouv,800000,0,800000
+2024,044,I.000517.03,Télé Leysin-Col des Mosses Etape 1,21.06.2016,1110000,0,1110000
+2024,044,I.000517.08,Alpes vaudoises 2020 - crédit-cadre no.4,16.06.2020,3571000,0,3571000
+2024,044,I.000847.01,Maîtrise foncière 3 & soutien infrastr,28.02.2023,1500000,0,1500000
+2024,044,I.000848.01,Tourisme durable,27.06.2023,2000000,0,2000000
+2024,023,I.000703.01,SPOP-systèmes biométrie+cyberprestations,09.06.2020,1012000,0,1012000
+2024,048,I.000404.01,Cathédrale Lsne restauration - etape 1,29.10.2019,3000000,0,3000000
+2024,048,I.000570.01,CERN Rennaz Transformation agrand,Objet nouv,2000000,0,2000000
+2024,048,I.000576.01,CADEV-Renouv. plateforme d'achats,27.11.2018,230000,0,230000
+2024,048,I.000635.01,CE Transf. poste directeur Plateforme 10,09.05.2017,100000,0,100000
+2024,048,I.000636.02,Réaffectation Maison de l’Elysée,18.01.2022,2500000,0,2500000
+2024,048,I.000675.01,CC Entretien des bâtiments sur 6 sites,26.03.2019,1000000,0,1000000
+2024,048,I.000675.02,CrA 6 sites Auguste Piccard pl. climat,30.03.2021,2000000,0,2000000
+2024,048,I.000675.03,CrA 6 sites Chamblandes pl. climat,30.03.2021,1000000,0,1000000
+2024,048,I.000682.01,Assainissement EPO Colonie fermée,08.01.2019,900000,0,900000
+2024,048,I.000684.02,"EVAM, Bex, rénovation",Objet nouv,500000,0,500000
+2024,048,I.000719.02,Rennaz Aménag. terrain gens du voyage,Objet nouv,600000,0,600000
+2024,048,I.000763.01,CC Entretien 9 sites,27.10.2020,7000000,0,7000000
+2024,048,I.000763.02,CrA CC entretien 9 sites Bugnon pl. cl,30.03.2021,500000,0,500000
+2024,048,I.000763.03,CrA CC entretien 9 sites EPSIC pl. cl,30.03.2021,2000000,0,2000000
+2024,048,I.000763.04,CrA CC entretien 9 sites ERACOM pl. cl,30.03.2021,2000000,0,2000000
+2024,048,I.000764.01,CC Entretien prisons,26.05.2020,5000000,0,5000000
+2024,048,I.000764.02,CrA CC entretien prison croisée pl. cl,30.03.2021,500000,0,500000
+2024,048,I.000776.01,Château Hauteville cons. + rest,03.11.2020,1000000,0,1000000
+2024,048,I.000778.01,CC Entretien 5 sites,21.03.2023,5000000,0,5000000
+2024,048,I.000779.01,CC Rénovation 5 cures,14.12.2021,2000000,0,2000000
+2024,048,I.000790.01,CrEGC Amphithéâtre romain d'Avenches,22.06.2021,500000,0,500000
+2024,048,I.000824.02,CrE GC Rénovation bâtiment RTS La Sallaz,Objet nouv,2000000,0,2000000
+2024,048,I.000852.01,CC 3 sites infiltrations,20.06.2023,4000000,0,4000000
+2024,048,I.000858.01,Surélévation Riponne 10,04.04.2023,1460000,0,1460000
+2024,048,I.000858.02,Transformation Université 5,04.04.2023,800000,0,800000
+2024,048,I.000889.01,CC 3 sites ass. Gymnase Yverdon,Objet nouv,7000000,0,7000000
+2024,045,I.000825.02,OAJE - Démat. des autorisations,Objet nouv,100000,0,100000
+2024,017,I.000306.05,Nouveau Musée Romain d'Avenches,Objet nouv,500000,0,500000
+2024,017,I.000332.03,CrEGC Reaffectation Palais Rumine,18.01.2022,1000000,0,1000000
+2024,046,I.000164.02,"RC 177,Vufflens-Penthaz constr.nouv. rte",11.11.2014,100000,0,100000
+2024,046,I.000194.01,"Routes nationales, construction - 23ème",31.03.2009,37500,30000,7500
+2024,046,I.000238.01,Préfin. routier - aides aux communes,05.11.2013,1000000,0,1000000
+2024,046,I.000254.03,RC 1 St-Sulpice requal. Tir Féd.-Venoge,12.03.2019,118000,1450000,-1332000
+2024,046,I.000257.02,"RC 30, jct Gland & giratoire Bichette",Objet nouv,400000,0,400000
+2024,046,I.000259.02,RC 76 Chav/Renens requal Bourd.-Tir Féd,01.12.2020,2500000,609000,1891000
+2024,046,I.000262.02,"RC 254, Vuiteboeuf-Ste-Croix, 2è étape",Objet nouv,5500000,0,5500000
+2024,046,I.000262.03,"CE RC 254, Vuiteboeuf-Ste-Croix,2è étape",21.05.2019,75000,0,75000
+2024,046,I.000266.03,"RC 422,Pomy, girat.ORIF / mobilité douce",30.11.2021,3500000,300000,3200000
+2024,046,I.000269.03,"RC601,Epalinges requal.Vennes-Croisettes",20.01.2015,113000,0,113000
+2024,046,I.000588.01,Bus Haut Niveau Service-1ère étape,21.06.2016,3700000,0,3700000
+2024,046,I.000589.01,Interfaces voyageurs (P+R),30.04.2019,2320000,0,2320000
+2024,046,I.000590.01,Strat.cant. 2 roues : 2ème étape,30.04.2019,1000000,0,1000000
+2024,046,I.000591.01,CE - Stratégie transport marchandises,06.02.2018,117000,0,117000
+2024,046,I.000603.01,CE - Prolongement CdF Aigle-Leysin,22.11.2016,300000,0,300000
+2024,046,I.000639.02,LEB - Tunnel Av. d'Echallens - Cr. add,Objet nouv,2732000,0,2732000
+2024,046,I.000670.03,CE - Aug. capacité M1 - projet d'ouvrage,Objet nouv,1000000,0,1000000
+2024,046,I.000688.01,CE - M2/M3 et équipe de projet,12.11.2019,4700000,0,4700000
+2024,046,I.000743.01,CE - Dév. réseau ferroviaire VD 2035-50,30.06.2020,340000,0,340000
+2024,046,I.000792.01,Plan climat - dev. prestations TP,08.06.2021,18000000,5400000,12600000
+2024,046,I.000795.01,"LHand arrêts de bus, 1ère étape",Objet nouv,1250000,0,1250000
+2024,046,I.000807.01,Acompte auto. fixes/équipements m2-m3,25.01.2022,13310300,0,13310300
+2024,046,I.000808.01,Nouveau tunnel Gare-Flon m2-m3,08.02.2022,16226900,0,16226900
+2024,046,I.000809.01,CE - études/gestion de projet m2/m3,08.02.2022,27499800,0,27499800
+2024,046,I.000821.01,Stratégie vélo 2035 étape 1,04.10.2022,4126000,0,4126000
+2024,046,I.000827.01,Subventions stratégie vélo 2035 étape 1,11.10.2022,1257000,0,1257000
+2024,046,I.000839.01,Fret ferroviaire gravier pied du jura,Objet nouv,6000000,0,6000000
+2024,046,I.000862.01,RC 401 carrefour Lussex,Objet nouv,1000000,0,1000000
+2024,046,I.000912.01,Stratégie transport marchandises Etape2,Objet nouv,500000,0,500000
+2024,046,I.000913.01,Electrification flotte de bus TP,Objet nouv,1000000,0,1000000
+2024,003,I.000305.03,CrE SAN Aménag. des locaux,Objet nouv,2000000,0,2000000
+2024,047,I.000387.01,Renforcement socle et dépl. cyber,29.09.2015,49000,0,49000
+2024,047,I.000565.01,Modernisation infrastructure FO du RCV,14.06.2022,2469000,450000,2019000
+2024,047,I.000622.01,Stratégie e-VD port. sécur. et support,06.11.2018,324000,0,324000
+2024,047,I.000624.01,Sécurisation du SI - étape 2,04.02.2020,1705000,0,1705000
+2024,047,I.000736.02,Migration S/4 Hana,14.06.2022,1536000,0,1536000
+2024,047,I.000737.01,Renouvellement SI affaires constr. DGIP,Objet nouv,55000,0,55000
+2024,047,I.000793.02,Modernisation du SI DGIP,Objet nouv,55000,0,55000
+2024,047,I.000877.01,DGNSI - Editique 2023,Objet nouv,1089000,0,1089000
+2024,054,I.000629.01,SPEV - Evolution SIRH - Phase 2,01.07.2020,220000,0,220000
+2024,051,I.000789.01,Accompagnement communes Pol climat+Durab,16.06.2021,640000,0,640000
+2024,051,I.000818.01,Plan climat vaudois - diverses mesures,30.11.2021,1500000,0,1500000
+2024,052,I.000365.02,Désengagement du Host-fiscalité-tax. PM,21.04.2015,725000,0,725000
+2024,052,I.000594.01,DGF-Poursuite cyber. + chgt législ,08.01.2019,121000,0,121000
+2024,052,I.000594.02,CE - DGF Etudes Perspectives 2025,08.01.2019,56000,0,56000
+2024,052,I.000625.01,"DGF - Suite ""Perspectives 2025""",29.06.2021,1218000,0,1218000
+2024,052,I.000747.01,"DGF - Poursuite ""Perspective 2025""",15.06.2022,1290000,0,1290000
+2024,052,I.000842.01,"DGF - ""Métamorphose 2030""",Objet nouv,1000000,0,1000000
+2024,041,I.000132.02,Améliorations foncières 2010-2014 créd,13.05.2014,875734,80000,795734
+2024,041,I.000385.01,Améliorations foncières 2015-2017,02.06.2015,185000,35000,150000
+2024,041,I.000395.01,Mise en conformité des porcheries,03.11.2015,800000,0,800000
+2024,041,I.000506.05,Pôle cantonal agri. Grange-Verney,Objet nouv,1000000,0,1000000
+2024,041,I.000506.06,Bâtiment administratif DGAV Moudon,Objet nouv,1000000,0,1000000
+2024,041,I.000510.01,Projet dvp régional agricole (PDRA) NOIX,09.06.2020,562500,312500,250000
+2024,041,I.000750.01,Améliorations foncières 2019-2021,17.12.2019,750000,250000,500000
+2024,041,I.000751.01,Améliorations foncières 2021-2023,21.01.2022,6250000,1000000,5250000
+2024,041,I.000752.01,PDRA Ouest VD,23.11.2021,2025000,1125000,900000
+2024,041,I.000800.01,DGAV - Plan climat phase 1ère génération,29.11.2022,5000000,0,5000000
+2024,041,I.000811.01,Amélioraitons foncières 2023-2025,Objet nouv,6000000,1000000,5000000
+2024,057,I.000355.01,Modernisation du SI justice,26.08.2014,557000,0,557000
+2024,057,I.000597.01,Extension du tribunal cantonal,27.10.2020,3000000,0,3000000
+2024,057,I.000597.03,Construction d’un parking,27.10.2020,1000000,0,1000000
+2024,057,I.000597.04,Interventions dans le bâtiment existant,27.10.2020,1500000,0,1500000
+2024,057,I.000597.05,CrA TC inter. bât. existant pl. cl,30.03.2021,2000000,0,2000000
+2024,057,I.000598.01,Impact inform. projets fédéraux,05.04.2022,164000,0,164000
+2024,057,I.000599.01,Sécurisation des offices judiciaires,Objet nouv,900000,0,900000
+2024,057,I.000744.02,Réaffectation bâtiment Valentin 10,Objet nouv,2000000,0,2000000
+2024,057,I.000828.01,CE - Transition numérique MP et OJV,05.04.2022,96000,0,96000
+2025,068,I.000653.01,SJL-Implément. module Inkasso dans SIF,22.09.2020,459000,0,459000
+2025,068,I.000856.02,DGAIC - Refonte Prefec et Votelec,Objet nouv,587000,0,587000
+2025,043,I.000353.01,Poursuite mensuration officielle & ICDG,09.09.2014,100000,1600000,-1500000
+2025,043,I.000378.01,Appui aux communes pour leur PGA,12.05.2015,1000000,0,1000000
+2025,043,I.000391.02,SIBAT - SI des bâtiments,01.02.2022,333000,0,333000
+2025,043,I.000403.02,Renouvellement SIPC,21.12.2022,1415000,0,1415000
+2025,043,I.000745.01,Mensuration officielle & ICDG 20-25,29.09.2020,7600000,1100000,6500000
+2025,043,I.000749.01,Modernisation du SI DGTL,Objet nouv,6000,0,6000
+2025,043,I.000833.01,Crédit cadre études équipements SSDA,Objet nouv,5500000,0,5500000
+2025,043,I.000875.01,CrE Equipements site strat. PAC Vernand,21.11.2023,800000,0,800000
+2025,042,I.000753.01,Infrastructures sportives II,Objet nouv,6600000,0,6600000
+2025,050,I.000251.02,Archivage électr. historique+probatoire,07.05.2019,1345000,0,1345000
+2025,010,I.000706.04,Educ. Num. Phase II Informatique pédag,28.02.2023,3700000,0,3700000
+2025,010,I.000706.05,Educ. Num. Phase II Dépl.Trans. & Coord,28.02.2023,7100000,0,7100000
+2025,010,I.000788.01,"Plan climat - Formation, moteur chgmt",20.06.2023,1100000,0,1100000
+2025,011,I.000401.02,GI-PSAF Gest. inform. de la pédag. spéc,12.11.2019,925000,0,925000
+2025,011,I.000814.02,GIS-EO 2,Objet nouv,6000,0,6000
+2025,013,I.000396.02,CrO Gymnase du Chablais Aigle,26.03.2024,8849000,0,8849000
+2025,013,I.000396.03,CrE Gymnase du Chablais Aigle,18.12.2019,150000,0,150000
+2025,013,I.000396.04,Acquisition parcelle à Aigle,Objet nouv,1070000,0,1070000
+2025,013,I.000439.02,CrE Gymnase d'Echallens,26.05.2020,280000,0,280000
+2025,013,I.000440.03,CrE Ecole professionnelle de Payerne,11.10.2022,360000,0,360000
+2025,013,I.000442.01,CrO Morges Salle de sport VD5,25.06.2024,3470000,0,3470000
+2025,013,I.000442.04,CrE Morges Salle de sport VD5,26.05.2020,100000,0,100000
+2025,013,I.000618.02,CrO Extension Gymnase de Burier,11.12.2018,450000,0,450000
+2025,013,I.000726.03,CrO amén. salle de sport GYM Bussigny,Objet nouv,390000,0,390000
+2025,013,I.000917.01,"Mobilier, matériel et équip. GY Crissier",10.10.2023,500000,0,500000
+2025,013,I.000941.02,CrO ETVJ Salles provisoires,Objet nouv,1000000,0,1000000
+2025,013,I.000958.02,CrO CPNV Salles provisoires,Objet nouv,1000000,0,1000000
+2025,015,I.000249.03,CrE UNIL - Amphipôle Ecublens,24.11.2015,170000,0,170000
+2025,015,I.000250.03,CrO Agrandissement Unithèque - BCU,17.09.2019,6051000,1450000,4601000
+2025,015,I.000250.04,CrA Agrandissement Unithèque - BCU,24.05.2022,1080000,0,1080000
+2025,015,I.000250.05,CrA 2 Potentiel solaire Unithèque - BCU,Objet nouv,400000,0,400000
+2025,015,I.000250.06,CrA Mise en conformité Unithèque - BCU,Objet nouv,6000000,0,6000000
+2025,015,I.000307.03,CrO Campus santé Construction C4,14.06.2022,7050000,1130000,5920000
+2025,015,I.000307.04,Campus santé équipements AV+IT,14.06.2022,690000,0,690000
+2025,015,I.000307.05,CrA Campus Santé Constrution C4,28.05.2024,280000,0,280000
+2025,015,I.000358.02,CrO Campus santé HESAV Bourdonnette,14.06.2022,18410000,3650000,14760000
+2025,015,I.000358.03,Campus santé HESAV équipement AV+IT,14.06.2022,1460000,0,1460000
+2025,015,I.000358.04,CrA Campus Sante HESAV,28.05.2024,1060000,0,1060000
+2025,015,I.000371.02,CrO Campus Santé Site,14.06.2022,6900000,370000,6530000
+2025,015,I.000371.03,CrA Campus santé Equipement,28.05.2024,2240000,0,2240000
+2025,015,I.000381.02,CrE UNIL - Sciences de la vie Ecublens,24.11.2015,1200000,0,1200000
+2025,015,I.000445.01,CrO UNIL - Assainissement Voirie Etape 1,Objet nouv,400000,0,400000
+2025,015,I.000458.01,CrE - UNIL NBSH,16.12.2020,270000,0,270000
+2025,015,I.000464.01,UNIL - Grands consommateurs LVLEne,22.01.2019,800000,200000,600000
+2025,015,I.000657.01,CrO Extension HEP / Bourdonnette,Objet nouv,5550000,0,5550000
+2025,015,I.000657.03,CrE Extension HEP / Bourdonnette,16.11.2021,300000,0,300000
+2025,015,I.000658.01,CrO UNIL Assainissement prod. chaleur,13.06.2023,24220000,0,24220000
+2025,015,I.000660.01,CrO UNIL - Amphipôle ass. énerg. Galette,Objet nouv,500000,0,500000
+2025,015,I.000784.01,CrO UNIL ± cryoTEM provisoire,31.08.2021,200000,100000,100000
+2025,015,I.000881.01,UNIL - Crédit cadre Rénovation 6e crédit,Objet nouv,1000000,0,1000000
+2025,015,I.000882.01,UNIL - Grands consomm. LVLEne 2ème étape,Objet nouv,1500000,0,1500000
+2025,018,I.000697.02,Refonte SI DGEJ,14.11.2023,939000,0,939000
+2025,018,I.000892.01,CrO ORPM Rolle,07.05.2024,340000,0,340000
+2025,022,I.000708.01,Modernisation SI SCTP,29.09.2020,155000,0,155000
+2025,022,I.000708.02,CA - Modernisation SI SCTP,03.07.2024,30000,0,30000
+2025,005,I.000416.01,Venoge 3 - Réalisations,07.05.2019,800000,0,800000
+2025,005,I.000416.02,Venoge 3 - Etudes,07.05.2019,100000,0,100000
+2025,005,I.000419.01,Rhône 3 - 1ere tranche de travaux,29.05.2018,10100000,2100000,8000000
+2025,005,I.000420.01,Ruisseau de Broye,14.01.2020,500000,0,500000
+2025,005,I.000425.01,Plan d'évacuation des eaux Chamberonne,13.03.2018,50000,0,50000
+2025,005,I.000426.01,Crédit cadre micropolluants,19.01.2016,15860000,0,15860000
+2025,005,I.000427.01,"Biotopes: protection, revital. & gestion",21.12.2022,1200000,0,1200000
+2025,005,I.000430.01,Protection DN & amélioration structures3,13.03.2018,600000,0,600000
+2025,005,I.000431.01,Protection DN & amélioration structures4,23.06.2021,1500000,0,1500000
+2025,005,I.000432.01,Part cantonale ass. anciennes décharges3,06.11.2018,500000,200000,300000
+2025,005,I.000434.01,Géothermie et gestion du sous-sol,04.04.2023,1700000,0,1700000
+2025,005,I.000435.01,Lutte contre espèces exotiques envahiss,Objet nouv,500000,0,500000
+2025,005,I.000436.01,ZI du Marais-protection contre les crues,23.06.2021,160000,60000,100000
+2025,005,I.000437.01,Gestion déchets-installations & sensib,30.08.2016,200000,0,200000
+2025,005,I.000644.01,Grande Eau 2 Traversée Aigle-Gd Canal,23.06.2021,5000000,2700000,2300000
+2025,005,I.000645.01,Bassin versant de l'Ognonnaz,23.06.2021,2400000,600000,1800000
+2025,005,I.000646.01,Renaturation de la Broye,Objet nouv,300000,0,300000
+2025,005,I.000654.01,Sécurisation approvis. énergétique,Objet nouv,400000,0,400000
+2025,005,I.000668.01,Modernisation SI subventions ACV (SIS),27.04.2021,1215000,0,1215000
+2025,005,I.000669.01,Modernisation du SI de la DGE,01.06.2021,2366000,0,2366000
+2025,005,I.000700.01,Equipement Laboratoires DIREV,17.01.2023,1500000,0,1500000
+2025,005,I.000701.01,Assainissement des sites pollués,28.05.2024,3500000,2000000,1500000
+2025,005,I.000702.01,Gestion intégrée des risques 2,02.03.2021,900000,0,900000
+2025,005,I.000722.01,Aménagement de la Chamberonne,14.01.2020,500000,0,500000
+2025,005,I.000766.01,Ciel ouvert ruisseaux Champmartin+Marais,23.06.2021,100000,0,100000
+2025,005,I.000767.01,Aménagements piscicoles 2,23.06.2021,850000,550000,300000
+2025,005,I.000768.01,Maintenance évolutive cours d'eau,23.06.2021,900000,0,900000
+2025,005,I.000794.02,Modernisation SI Géographique DGE,Objet nouv,1408000,0,1408000
+2025,005,I.000796.01,SIAM - Modern. du SI subvention métier,24.05.2022,1812000,0,1812000
+2025,005,I.000803.01,Adapter forêts changements climatiques,14.12.2021,1300000,0,1300000
+2025,005,I.000804.01,Favoriser l'utilisation bois en cascade,14.12.2021,700000,0,700000
+2025,005,I.000806.01,Préserver la biodiversité en ville,17.01.2023,700000,0,700000
+2025,005,I.000838.01,Moyens de base p/lutte incendies forêt,Objet nouv,1500000,0,1500000
+2025,005,I.000865.01,Assainis. glissement des Fontanelles,Objet nouv,400000,0,400000
+2025,005,I.000891.01,Assainissement décharge du Boiron,Objet nouv,500000,0,500000
+2025,005,I.000893.01,Ass. décharge Le Saut Yverdon,Objet nouv,300000,0,300000
+2025,005,I.000894.01,Amén.Lac & cours d'eau chang.climatique,Objet nouv,200000,0,200000
+2025,005,I.000895.01,Revitalisation rives de lacs,Objet nouv,200000,0,200000
+2025,005,I.000897.01,ECF du Famolens,Objet nouv,200000,100000,100000
+2025,005,I.000898.01,ECF Thielle 2,Objet nouv,200000,100000,100000
+2025,005,I.000899.01,Gestion intégrée des risques 3,Objet nouv,300000,0,300000
+2025,005,I.000900.01,Protection DN & amélioration structures5,Objet nouv,300000,0,300000
+2025,005,I.000902.01,Accueil en forêt : mesure 36 Polfor 2040,Objet nouv,100000,0,100000
+2025,005,I.000907.01,Plan sectoriel protection de la qualité,Objet nouv,1100000,0,1100000
+2025,005,I.000908.01,Plan d'action sols,Objet nouv,1200000,0,1200000
+2025,005,I.000934.01,Bornes de recharges électriques,Objet nouv,700000,0,700000
+2025,005,I.000935.01,Plan sectoriel utilisation eaux,Objet nouv,1650000,0,1650000
+2025,005,I.000936.01,Economie circulaire - construction,Objet nouv,145000,0,145000
+2025,005,I.000937.01,Infrastructure écologique,Objet nouv,4200000,0,4200000
+2025,005,I.000938.01,Rénovat.énergétique bâtiments communaux,Objet nouv,2750000,0,2750000
+2025,005,I.000962.01,Mise en oeuvre plan cantonal radon,Objet nouv,100000,0,100000
+2025,005,I.000963.01,Investigation & assainissement dioxine,Objet nouv,300000,0,300000
+2025,002,I.000409.01,Modernis. SI Police - Odyssée,30.11.2021,2437000,0,2437000
+2025,002,I.000410.01,Modernis. SI Police - Phase III,Objet nouv,6000,0,6000
+2025,002,I.000831.02,CrO Amén. locaux Epinettes PolCant,28.05.2024,800000,520000,280000
+2025,002,I.000857.02,Implémentation Polizei-Abfrageplattform,Objet nouv,293000,0,293000
+2025,002,I.000974.01,PolCant - Modernisation SI forensique,Objet nouv,6000,0,6000
+2025,024,I.000310.02,CrO Sécurisation prison de la Croisée,08.05.2018,4840000,0,4840000
+2025,024,I.000348.03,CrE PGM Pénitencier Grands-Marais Orbe,18.09.2018,310000,0,310000
+2025,024,I.000348.04,CrE compl.PGM Pénit. Grands-Marais Orbe,Objet nouv,1310000,0,1310000
+2025,024,I.000478.01,SPEN - Modern. SI SPEN-Schéma directeur,Objet nouv,6000,0,6000
+2025,024,I.000620.03,CrA Assainissement La Tuilière à Lonay,Objet nouv,650000,0,650000
+2025,024,I.000620.04,CrA Assainissement Tuilière plan climat,30.03.2021,2380000,1110000,1270000
+2025,024,I.000633.03,CrE CPPO-poste contrôle avancé sécurisa,21.01.2020,130000,0,130000
+2025,024,I.000717.02,CrO Plan continuité prison Bois-Mermet,Objet nouv,320000,0,320000
+2025,024,I.000717.03,CrO Plan de continuité prison Bochuz,Objet nouv,410000,0,410000
+2025,024,I.000876.02,CrO PPNV Infrastructures phase 1,Objet nouv,1260000,0,1260000
+2025,004,I.000649.01,Matériel et équipement de la PCi,Objet nouv,1000000,0,1000000
+2025,004,I.000816.01,Plan climat - protection pop + renf infr,14.03.2023,740000,0,740000
+2025,027,I.000672.02,CrO BAP-Reaffect. aile est,17.12.2019,100000,0,100000
+2025,027,I.000672.03,CrA BAP-reaffect. aile est plan climat,30.03.2021,2580000,0,2580000
+2025,037,I.000713.02,DGS-OMC renouvellement du SI,24.11.2020,129000,0,129000
+2025,037,I.000988.01,Plan climat système socio-sanitaire vaud,Objet nouv,114000,0,114000
+2025,038,I.000077.04,Hôpital de Cery - Rénovation,19.09.2013,3397000,0,3397000
+2025,038,I.000077.05,Hôpital de Cery - Extension périmètre,Objet nouv,240000,0,240000
+2025,038,I.000099.01,Hopital unique de l'enfant,23.04.2013,12808000,0,12808000
+2025,038,I.000099.02,Hôpital des Enfants - Equipements,07.11.2017,4788000,0,4788000
+2025,038,I.000099.03,Hôpital des Enfants - Parking,07.11.2017,398000,0,398000
+2025,038,I.000099.04,Hôpital des Enfants - Cadre normatif,07.11.2017,1129000,0,1129000
+2025,038,I.000103.02,BH05 - Bloc opératoire,21.05.2013,1767000,0,1767000
+2025,038,I.000106.01,1ère tranche Soins continus+intensifs,29.05.2012,1677000,0,1677000
+2025,038,I.000112.01,Entretien tech. : ascenseurs - secours,04.05.2010,926000,0,926000
+2025,038,I.000386.01,Etudes-Médecine perso et ing immunitaire,24.11.2015,671000,0,671000
+2025,038,I.000386.02,Travaux-Médecine perso et ing. immunit,22.11.2022,12998000,0,12998000
+2025,038,I.000389.01,Ing. immunitaire onco. - bâtiment LICR,24.11.2015,3002000,0,3002000
+2025,038,I.000389.02,Ing. immunitaire onco. - équip. med,24.11.2015,21000,0,21000
+2025,038,I.000389.03,Ing. immunitaire onco. - plateforme,22.11.2022,2188000,0,2188000
+2025,038,I.000389.04,Ing. immunitaire onco.- prod. vapeur,22.11.2022,526000,0,526000
+2025,038,I.000389.05,Ing. immunitaire onco. - équip. LICR,22.11.2022,5469000,0,5469000
+2025,038,I.000498.01,Création d'une nouvelle unité SIA,Objet nouv,1890000,0,1890000
+2025,038,I.000502.01,Rénovation de la cuisine de production,Objet nouv,380000,0,380000
+2025,038,I.000655.01,Infrastructures stationnaires Cité hosp,23.06.2020,3283000,0,3283000
+2025,038,I.000734.01,Garage à ambulances transferts,23.06.2020,4297000,0,4297000
+2025,038,I.000735.01,CE - Garage à ambulances urgences,23.06.2020,872000,0,872000
+2025,038,I.000735.02,TR - Garage à ambulances urgences,Objet nouv,510000,0,510000
+2025,038,I.000759.01,Crédit cadre act. perf. énergétique,15.06.2022,4235000,0,4235000
+2025,038,I.000799.01,CE - Nlle centrale prod. chaleur Cery,Objet nouv,1030000,0,1030000
+2025,038,I.000813.01,Etudes - Création lits interméd. au BH,Objet nouv,210000,0,210000
+2025,038,I.000849.01,Bâtiments IRA et LAD Cery,Objet nouv,3168000,0,3168000
+2025,038,I.000967.01,Remise aux normes héliport,Objet nouv,2280000,0,2280000
+2025,038,I.000989.01,Plan climat CHUV,Objet nouv,162000,0,162000
+2025,065,I.000352.03,CA - Mise en oeuvre du SI SAMOA,24.11.2020,84000,0,84000
+2025,065,I.000932.02,DGCS-Evolution du système d'information,Objet nouv,6000,0,6000
+2025,066,I.000859.02,Modernisation SI Bourses d'étude,14.11.2023,2079000,0,2079000
+2025,067,I.000987.01,Plan climat DGCS,Objet nouv,2200000,0,2200000
+2025,040,I.000976.01,Programme form. & inst. trans. énergétique,Objet nouv,1790000,0,1790000
+2025,044,I.000517.03,Télé Leysin-Col des Mosses Etape 1,21.06.2016,1110000,0,1110000
+2025,044,I.000517.08,Alpes vaudoises 2020 - crédit-cadre no.4,16.06.2020,1800000,0,1800000
+2025,044,I.000518.01,Renouvellement SI Police cant. commerce,20.11.2018,8000,0,8000
+2025,044,I.000847.01,Maîtrise foncière 3 & soutien infrastr,28.02.2023,2000000,0,2000000
+2025,044,I.000848.01,Tourisme durable,27.06.2023,4000000,0,4000000
+2025,044,I.000968.01,Renforcement du soutien filière bois,Objet nouv,760000,0,760000
+2025,044,I.000969.01,Renouvellement SI PolCom - SIRA II,Objet nouv,6000,0,6000
+2025,023,I.000703.01,SPOP-systèmes biométrie+cyberprestations,09.06.2020,309000,0,309000
+2025,048,I.000404.01,CrO Cathédrale Lsne restauration étape 1,29.10.2019,740000,0,740000
+2025,048,I.000570.01,CrO CERN Rennaz Transformation agrand,21.11.2023,3370000,1840000,1530000
+2025,048,I.000576.01,CADEV-Renouv. plateforme d'achats,27.11.2018,393000,0,393000
+2025,048,I.000636.02,CrO Réaffectation Maison de l’Elysée,18.01.2022,2070000,0,2070000
+2025,048,I.000675.01,CC Entretien des bâtiments sur 6 sites,26.03.2019,480000,0,480000
+2025,048,I.000675.02,CrA 6 sites Auguste Piccard pl. climat,30.03.2021,1500000,0,1500000
+2025,048,I.000675.03,CrA 6 sites Chamblandes pl. climat,30.03.2021,1650000,0,1650000
+2025,048,I.000675.04,CrA 6 sites ETML+Site de Marcelin,21.03.2023,890000,0,890000
+2025,048,I.000682.01,CrO Assainissement EPO Colonie fermée,08.01.2019,1080000,0,1080000
+2025,048,I.000763.01,CC Entretien 9 sites,27.10.2020,3280000,0,3280000
+2025,048,I.000763.02,CrA CC entretien 9 sites Bugnon pl. cl,30.03.2021,260000,0,260000
+2025,048,I.000763.03,CrA CC entretien 9 sites EPSIC pl. cl,30.03.2021,2260000,0,2260000
+2025,048,I.000763.04,CrA CC entretien 9 sites ERACOM pl. cl,30.03.2021,3370000,0,3370000
+2025,048,I.000763.05,CrA CC entretien 9 sites EPCL Midi,Objet nouv,470000,0,470000
+2025,048,I.000763.06,CrA Gymnase Bugnon mesures SST,Objet nouv,510000,0,510000
+2025,048,I.000764.01,CC Entretien prisons,26.05.2020,5120000,0,5120000
+2025,048,I.000764.02,CrA CC entretien prison croisée pl. cl,30.03.2021,2680000,0,2680000
+2025,048,I.000778.01,CC Entretien 5 sites TDA Lausanne,21.03.2023,2000000,0,2000000
+2025,048,I.000778.02,CC Entretien 5 sites ES Santé,Objet nouv,2000000,0,2000000
+2025,048,I.000778.03,CC Entretien 5 sites CEPV,Objet nouv,2000000,0,2000000
+2025,048,I.000778.04,CC Entretien 5 sites CCPP,Objet nouv,700000,0,700000
+2025,048,I.000778.05,"CC Entretien 5 sites EVAM , Bex",Objet nouv,710000,0,710000
+2025,048,I.000778.06,CC Entretien 5 sites ETP,Objet nouv,140000,0,140000
+2025,048,I.000779.01,CC Rénovation 5 cures,14.12.2021,510000,0,510000
+2025,048,I.000790.03,CrE Amphithéâtre Avenches Etape 2,Objet nouv,200000,0,200000
+2025,048,I.000824.02,CrE Rénovation bâtiment BAP TEMPLE,Objet nouv,300000,0,300000
+2025,048,I.000826.03,CrE Rénovation Gymnase de la Cité,Objet nouv,790000,0,790000
+2025,048,I.000851.02,CrO Cathédrale rénov. étape finale,Objet nouv,310000,0,310000
+2025,048,I.000852.01,CC 3 sites infiltrations,20.06.2023,4070000,0,4070000
+2025,048,I.000858.01,CrO Surélévation Riponne 10,04.04.2023,1960000,0,1960000
+2025,048,I.000858.02,CrO Transformation Université 5,04.04.2023,340000,0,340000
+2025,048,I.000860.01,DAL Projet PIEZO 2023,01.11.2022,1000000,0,1000000
+2025,048,I.000889.01,CC 2024-2028 Gymnase Yverdon,Objet nouv,390000,0,390000
+2025,048,I.000889.02,CC 2024-2028 HEP Lausanne,Objet nouv,300000,0,300000
+2025,048,I.000889.03,CC 2024-2028 CLE,Objet nouv,390000,0,390000
+2025,048,I.000889.05,CC 2024-2028 ETP,Objet nouv,100000,0,100000
+2025,048,I.000915.02,CrO Plan climat 2 Autonomie Elec. 2035,Objet nouv,3610000,0,3610000
+2025,048,I.000918.02,CrO Centre Blécherette T.prioritaires,Objet nouv,1090000,100000,990000
+2025,048,I.000949.01,CC 2024 - Aassanissement bâtiments ACV,Objet nouv,2900000,0,2900000
+2025,048,I.000954.01,CC Mobilité électrique pour les sites,Objet nouv,700000,0,700000
+2025,048,I.000955.01,CC Végétalisation des sites,Objet nouv,1000000,0,1000000
+2025,045,I.000718.02,Politique de la donnée,Objet nouv,6000,0,6000
+2025,045,I.000825.02,OAJE - Démat. des autorisations,Objet nouv,1115000,0,1115000
+2025,017,I.000332.03,CrE Réaffectation Palais Rumine,18.01.2022,370000,0,370000
+2025,017,I.000761.01,Autonomisation informatique Plateforme10,26.11.2019,100000,0,100000
+2025,017,I.000973.01,SERAC - Strat. num. musées cantonaux,Objet nouv,6000,0,6000
+2025,046,I.000147.02,H 144 Rennaz - Les Evouettes - cr. add,23.11.2010,1000000,0,1000000
+2025,046,I.000164.02,"RC 177,Vufflens-Penthaz constr.nouv. rte",11.11.2014,250000,0,250000
+2025,046,I.000226.01,Renforcement 40 t. solde du réseau RC,10.01.2012,250000,0,250000
+2025,046,I.000238.01,Préfin. routier - aides aux communes,05.11.2013,500000,0,500000
+2025,046,I.000259.02,RC 76 Chav/Renens requal Bourd.-Tir Féd,01.12.2020,100000,0,100000
+2025,046,I.000262.02,"RC 254, Vuiteboeuf-Ste-Croix, 2è étape",06.02.2024,4200000,0,4200000
+2025,046,I.000262.03,"CE RC 254, Vuiteboeuf-Ste-Croix,2è étape",21.05.2019,100000,0,100000
+2025,046,I.000266.03,"RC 422,Pomy, girat.ORIF / mobilité douce",30.11.2021,1000000,0,1000000
+2025,046,I.000267.02,RC 452 Romanel/Lsne Sauge+carr. Lussex,Objet nouv,500000,0,500000
+2025,046,I.000271.04,"CE RC705 Aigle, reconstruction La Frasse",21.12.2022,650000,0,650000
+2025,046,I.000273.02,"RC 719, pont sur la Gryonne, OA",Objet nouv,500000,0,500000
+2025,046,I.000278.02,RC 401 Grandson Vaumarcus,09.05.2023,1500000,0,1500000
+2025,046,I.000285.02,RC 7 Chavannes-Bogis-Chav.-Bois élargis,Objet nouv,2000000,0,2000000
+2025,046,I.000286.03,RC 1 Morges requal.tronçon Venoge-Morges,Objet nouv,1000000,0,1000000
+2025,046,I.000295.02,"RC 719, Gryon, estacades Barbo. corr rte",29.03.2022,3500000,0,3500000
+2025,046,I.000888.02,RC705 viaduc d'Aigle assain. et renforc,Objet nouv,1000000,0,1000000
+2025,046,I.000909.01,Interfaces voyageurs - Etape 2,Objet nouv,2510000,0,2510000
+2025,046,I.000912.01,CE - Stratégie transp. marchan. Etape2,Objet nouv,822000,0,822000
+2025,046,I.000912.02,Stratégies transport marchandises étape2,Objet nouv,2301000,0,2301000
+2025,046,I.000913.01,Electrification flotte de bus TP,Objet nouv,2000000,0,2000000
+2025,046,I.000921.01,Entretien préventif urgent 2025,Objet nouv,2000000,0,2000000
+2025,046,I.000957.01,Mesures réduction émission de CO2,Objet nouv,1670000,0,1670000
+2025,046,I.000966.01,"Dégâts forces de la nature, 4ème rattrap",Objet nouv,1459000,0,1459000
+2025,003,I.000412.01,SDSI SAN - Phase II,Objet nouv,1174000,0,1174000
+2025,003,I.000982.01,Aides achat véhicules électriques,Objet nouv,1680000,0,1680000
+2025,047,I.000387.01,Renforcement socle et dépl. cyber,29.09.2015,30000,0,30000
+2025,047,I.000565.01,Modernisation infrastructure FO du RCV,14.06.2022,748000,171000,577000
+2025,047,I.000568.01,Stratégie Cyber - phase 3,Objet nouv,6000,0,6000
+2025,047,I.000622.01,Stratégie e-VD port. sécur. et support,06.11.2018,931000,0,931000
+2025,047,I.000624.01,Sécurisation du SI - étape 2,04.02.2020,797000,0,797000
+2025,047,I.000736.02,Migration S/4 Hana,14.06.2022,1333000,0,1333000
+2025,047,I.000737.01,Renouvellement SI affaires constr. DGIP,07.05.2024,1187000,0,1187000
+2025,047,I.000793.02,Modernisation du SI DGIP,Objet nouv,59000,0,59000
+2025,047,I.000844.01,Migration S/4 Hana - Phase 2,Objet nouv,6000,0,6000
+2025,047,I.000877.01,DGNSI - Editique 2023,Objet nouv,6000,0,6000
+2025,047,I.000931.01,Participation financière VD agenda ANS,Objet nouv,6000,0,6000
+2025,047,I.000972.01,SG-DEF - SIRH personnel enseignant,Objet nouv,6000,0,6000
+2025,054,I.000629.01,SPEV - Evolution SIRH - Phase 2,01.07.2020,53000,0,53000
+2025,054,I.000797.01,Programme SIRH - Phase 3,Objet nouv,6000,0,6000
+2025,054,I.000975.01,DGRH - Gestion temps présence/absence,Objet nouv,6000,0,6000
+2025,054,I.000978.01,Déployer plans de mobilité au sein ACV,Objet nouv,1333000,0,1333000
+2025,052,I.000365.02,Désengagement du Host-fiscalité-tax. PM,21.04.2015,104000,0,104000
+2025,052,I.000594.02,CE - DGF Etudes Perspectives 2025,08.01.2019,47000,0,47000
+2025,052,I.000625.01,"DGF - Suite ""Perspectives 2025""",29.06.2021,1850000,0,1850000
+2025,052,I.000747.01,"DGF - Poursuite ""Perspective 2025""",15.06.2022,1121000,0,1121000
+2025,052,I.000789.01,Accompagnement communes Pol climat+Durab,16.06.2021,700000,0,700000
+2025,052,I.000818.01,Plan climat vaudois - diverses mesures,30.11.2021,1096700,0,1096700
+2025,052,I.000842.01,"DGF - ""Métamorphose 2030""",26.03.2024,597000,0,597000
+2025,052,I.000959.01,Renforcer l'accompagnement des communes,Objet nouv,1180000,0,1180000
+2025,052,I.000961.01,Restauration collective durable,Objet nouv,802000,0,802000
+2025,041,I.000385.01,Améliorations foncières 2015-2017,02.06.2015,153000,50000,103000
+2025,041,I.000395.01,Mise en conformité des porcheries,03.11.2015,535000,0,535000
+2025,041,I.000506.01,CrO Centre d'ens.prof. la terre,Objet nouv,150000,0,150000
+2025,041,I.000506.06,CrO Bâtiment administratif DGAV Moudon,Objet nouv,460000,0,460000
+2025,041,I.000510.01,Projet dvp régional agricole (PDRA) NOIX,09.06.2020,500000,250000,250000
+2025,041,I.000515.01,Améliorations foncières 2017-2019,13.03.2018,450000,250000,200000
+2025,041,I.000750.01,Améliorations foncières 2019-2021,17.12.2019,1500000,500000,1000000
+2025,041,I.000751.01,Améliorations foncières 2021-2023,21.01.2022,7000000,2000000,5000000
+2025,041,I.000752.01,PDRA Ouest VD,23.11.2021,800000,400000,400000
+2025,041,I.000754.01,Irrigation ArroBroye,Objet nouv,200000,100000,100000
+2025,041,I.000756.01,PDRA Gros de Vaud,Objet nouv,400000,200000,200000
+2025,041,I.000800.01,DGAV - Plan climat phase 1ère génération,29.11.2022,2100000,0,2100000
+2025,041,I.000811.01,Améliorations foncières 2023-2025,04.06.2024,16300000,5000000,11300000
+2025,041,I.000812.01,DGAV - Plan climat phase II,Objet nouv,4560000,0,4560000
+2025,041,I.000940.01,Dotation FIR,Objet nouv,100000,0,100000
+2025,057,I.000597.01,CrO Extension du tribunal cantonal,27.10.2020,570000,0,570000
+2025,057,I.000597.03,CrO Construction d’un parking,27.10.2020,380000,0,380000
+2025,057,I.000597.04,CrO Interv.dans le bâtiment existant,27.10.2020,350000,0,350000
+2025,057,I.000597.05,CrA TC inter. bât. existant pl. cl,30.03.2021,1110000,0,1110000
+2025,057,I.000597.06,CrA TC dioxyne et furanes,30.01.2024,270000,0,270000
+2025,057,I.000597.07,CrA Sécurisation ensemble du TC,30.01.2024,130000,0,130000
+2025,057,I.000598.01,Impact inform. projets fédéraux,05.04.2022,1244000,0,1244000
+2025,057,I.000599.01,CrO Sécurisation des offices judiciaires,Objet nouv,1000000,0,1000000
+2025,057,I.000828.01,CE - Transition numérique MP et OJV,05.04.2022,665000,0,665000
+2025,057,I.000828.02,Transition numérique MP et OJV,Objet nouv,2347000,0,2347000
+2026,052,I.000594.01,DGF-Poursuite cyber. + chgt législ,08.01.2019,39000,0,39000
+2026,052,I.000594.02,CE - DGF Etudes Perspectives 2025,08.01.2019,24000,0,24000
+2026,052,I.000625.01,"DGF - Suite ""Perspectives 2025""",29.06.2021,1870000,0,1870000
+2026,052,I.000747.01,"DGF - Poursuite ""Perspective 2025""",15.06.2022,973000,0,973000
+2026,052,I.000842.01,"DGF - ""Métamorphose 2030""",26.03.2024,1150000,0,1150000
+2026,052,I.000843.01,"DGF - ""Métamorphose 2030"" - Phase 2",Objet nouv,100000,0,100000
+2026,043,I.000353.01,Poursuite mensuration officielle & ICDG,09.09.2014,100000,2400000,-2300000
+2026,043,I.000391.02,SIBAT - SI des bâtiments,01.02.2022,918000,0,918000
+2026,043,I.000403.02,Renouvellement SIPC,21.12.2022,1943000,0,1943000
+2026,043,I.000508.01,Modernisation SI du SDT,27.11.2018,4000,0,4000
+2026,043,I.000745.01,Mensuration officielle & ICDG 20-25,29.09.2020,7500000,1100000,6400000
+2026,043,I.000749.01,Modernisation du SI DGTL,Objet nouv,100000,0,100000
+2026,043,I.000833.01,Crédit cadre études équipements SSDA,Objet nouv,2000000,0,2000000
+2026,043,I.000875.01,CrE Equipements site strat. PAC Vernand,21.11.2023,690000,0,690000
+2026,043,I.000903.01,Mensuration officielle & ICDG,Objet nouv,1000000,0,1000000
+2026,043,I.001045.01,Appui aux communes pour leur PGA,Objet nouv,2500000,0,2500000
+2026,042,I.000753.01,Infrastructures sportives II,Objet nouv,12100000,0,12100000
+2026,050,I.000251.02,Archivage électr. historique+probatoire,07.05.2019,155000,0,155000
+2026,010,I.000706.04,Educ. Num. Phase II Informatique pédag,28.02.2023,2100000,0,2100000
+2026,010,I.000706.05,Educ. Num. Phase II Dépl.Trans. & Coord,28.02.2023,7000000,0,7000000
+2026,010,I.000788.01,"Plan climat - Formation, moteur chgmt 1e",20.06.2023,900000,0,900000
+2026,011,I.000401.02,GI-PSAF Gest. inform. de la pédag. spéc,12.11.2019,57000,0,57000
+2026,011,I.000814.02,GIS-EO 2,Objet nouv,100000,0,100000
+2026,013,I.000396.02,CrO Gymnase du Chablais Aigle,26.03.2024,9000000,0,9000000
+2026,013,I.000439.01,CrO Gymnase d'Echallens,Objet nouv,6000000,0,6000000
+2026,013,I.000440.03,CrE Ecole professionnelle de Payerne,11.10.2022,700000,0,700000
+2026,013,I.000440.04,Acquisition parcelle Ecole prof. Payerne,11.10.2022,1100000,0,1100000
+2026,013,I.000442.01,CrO Morges Salle de sport VD5,25.06.2024,4200000,0,4200000
+2026,013,I.000712.02,CrO COFOP Vennes transformation bâtiment,Objet nouv,100000,0,100000
+2026,013,I.000726.03,CrO amén. salle de sport GYM Bussigny,Objet nouv,600000,0,600000
+2026,013,I.000791.02,CrE Ext. Gymnase Chamblandes Pully,Objet nouv,200000,0,200000
+2026,013,I.000815.02,GIS-EP,Objet nouv,100000,0,100000
+2026,013,I.000826.03,CrE Rénovation Gymnase de la Cité,Objet nouv,700000,0,700000
+2026,013,I.000835.03,CrE Optimisation gymnase Bugnon/Ours,Objet nouv,100000,0,100000
+2026,013,I.000917.01,"Mobilier, matériel et équip. GY Crissier",10.10.2023,1200000,0,1200000
+2026,013,I.000999.02,CrO EPM Clarens réal 4 s. poly - Trav.U,Objet nouv,300000,0,300000
+2026,013,I.001000.02,CrO CPNV C et D Yverdon transformation,Objet nouv,100000,0,100000
+2026,013,I.001023.02,CrO CPNV Lausanne Assainissement,Objet nouv,100000,0,100000
+2026,015,I.000249.03,CrE UNIL rénovation Amphipôle,24.11.2015,400000,0,400000
+2026,015,I.000250.03,CrO Agrandissement Unithèque - BCU,17.09.2019,2400000,0,2400000
+2026,015,I.000250.04,CrA Agrandissement Unithèque - BCU,24.05.2022,1400000,0,1400000
+2026,015,I.000250.06,CrA Mise en conformité Unithèque - BCU,Objet nouv,3000000,0,3000000
+2026,015,I.000307.03,CrO Campus santé Construction C4,14.06.2022,5300000,0,5300000
+2026,015,I.000307.04,Campus santé équipements AV+IT,14.06.2022,2400000,0,2400000
+2026,015,I.000307.05,CrA Campus Santé Constrution C4,28.05.2024,800000,0,800000
+2026,015,I.000358.02,CrO Campus santé HESAV Bourdonnette,14.06.2022,13600000,0,13600000
+2026,015,I.000358.03,Campus santé HESAV équipement AV+IT,14.06.2022,2700000,0,2700000
+2026,015,I.000358.04,CrA Campus Sante HESAV,28.05.2024,1700000,0,1700000
+2026,015,I.000371.02,CrO Campus Santé Site,14.06.2022,1900000,0,1900000
+2026,015,I.000371.03,CrA Campus santé Equipement,28.05.2024,4200000,0,4200000
+2026,015,I.000381.03,CrO UNIL - Biocosme,22.11.2022,6000000,0,6000000
+2026,015,I.000381.05,CrA UNIL Biocosme Exemplarité de l’Etat,Objet nouv,1200000,0,1200000
+2026,015,I.000451.03,CrA UNIL - Moule quagga,04.06.2024,300000,0,300000
+2026,015,I.000455.03,CrE Extension HEP Cèdres A2,Objet nouv,100000,0,100000
+2026,015,I.000458.01,CrE - UNIL NBSH,16.12.2020,400000,0,400000
+2026,015,I.000464.01,UNIL - Grands consommateurs LVLEne,22.01.2019,1200000,0,1200000
+2026,015,I.000657.01,CrO Extension HEP / Bourdonnette,Objet nouv,700000,0,700000
+2026,015,I.000658.01,CrO UNIL Assainissement prod. chaleur,13.06.2023,9000000,0,9000000
+2026,015,I.000841.01,UNIL - Crédit-cadre réseau d'eau,Objet nouv,200000,0,200000
+2026,015,I.000881.01,UNIL - Crédit cadre Rénovation 6e crédit,Objet nouv,3800000,0,3800000
+2026,015,I.000882.01,UNIL - Grands consomm. LVLEne 2ème étape,01.10.2024,2400000,0,2400000
+2026,018,I.000697.02,Refonte SI DGEJ,14.11.2023,2242000,0,2242000
+2026,018,I.000892.01,CrO ORPM Rolle,07.05.2024,100000,0,100000
+2026,018,I.000892.02,CrO ORPM Romanel,Objet nouv,100000,0,100000
+2026,005,I.000416.01,Venoge 3 - Réalisations,07.05.2019,3020000,2320000,700000
+2026,005,I.000416.02,Venoge 3 - Etudes,07.05.2019,100000,0,100000
+2026,005,I.000417.01,Décharge de Molard-Parelliet à Trélex,21.11.2017,50000,0,50000
+2026,005,I.000419.01,Rhône 3 - 1ere tranche de travaux,29.05.2018,13100000,7000000,6100000
+2026,005,I.000420.01,Ruisseau de Broye,14.01.2020,4700000,2000000,2700000
+2026,005,I.000425.01,Plan d'évacuation des eaux Chamberonne,13.03.2018,40000,0,40000
+2026,005,I.000426.01,Crédit cadre micropolluants,19.01.2016,2800000,0,2800000
+2026,005,I.000427.01,"Biotopes: protection, revital. & gestion",21.12.2022,500000,0,500000
+2026,005,I.000430.01,Protection DN & amélioration structures3,13.03.2018,800000,0,800000
+2026,005,I.000431.01,Protection DN & amélioration structures4,23.06.2021,1000000,0,1000000
+2026,005,I.000432.01,Part cantonale ass. anciennes décharges3,06.11.2018,900000,400000,500000
+2026,005,I.000434.01,Géothermie et gestion du sous-sol,04.04.2023,1300000,0,1300000
+2026,005,I.000435.01,Lutte contre espèces exotiques envahiss,Objet nouv,300000,0,300000
+2026,005,I.000436.01,ZI du Marais-protection contre les crues,23.06.2021,340000,140000,200000
+2026,005,I.000437.01,Gestion déchets-installations & sensib,30.08.2016,100000,0,100000
+2026,005,I.000643.01,Crédit cadre micropolluants 2,Objet nouv,26600000,17000000,9600000
+2026,005,I.000644.01,Grande Eau 2 Traversée Aigle-Gd Canal,23.06.2021,1800000,800000,1000000
+2026,005,I.000645.01,Bassin versant de l'Ognonnaz,23.06.2021,2800000,1200000,1600000
+2026,005,I.000654.01,Sécurisation approvis. énergétique,Objet nouv,300000,0,300000
+2026,005,I.000668.01,Modernisation SI subventions ACV (SIS),27.04.2021,92000,0,92000
+2026,005,I.000669.01,Modernisation du SI de la DGE,01.06.2021,2711000,0,2711000
+2026,005,I.000673.02,CrO DGE-DIRNA regroupement région Nord,Objet nouv,1100000,0,1100000
+2026,005,I.000685.01,Décharge Les Gérignes à Bourg-en-Lavaux,06.11.2018,1000000,0,1000000
+2026,005,I.000700.01,Equipement Laboratoires DIREV,17.01.2023,580000,0,580000
+2026,005,I.000701.01,Assainissement des sites pollués,28.05.2024,2600000,1000000,1600000
+2026,005,I.000702.01,Gestion intégrée des risques 2,02.03.2021,1200000,600000,600000
+2026,005,I.000722.01,Aménagement de la Chamberonne,14.01.2020,3900000,2200000,1700000
+2026,005,I.000766.01,Ciel ouvert ruisseaux Champmartin+Marais,23.06.2021,428000,278000,150000
+2026,005,I.000767.01,Aménagements piscicoles 2,23.06.2021,500000,200000,300000
+2026,005,I.000794.02,Modernisation SI Géographique DGE,Objet nouv,2000000,0,2000000
+2026,005,I.000796.01,SIAM - Modern. du SI subvention métier,24.05.2022,3744000,0,3744000
+2026,005,I.000803.01,Adapter forêts changements climatiques,14.12.2021,2000000,0,2000000
+2026,005,I.000804.01,Favoriser l'utilisation bois en cascade,14.12.2021,600000,100000,500000
+2026,005,I.000806.01,Préserver la biodiversité en ville,17.01.2023,600000,0,600000
+2026,005,I.000837.01,Aménagement de la Lutrive à Lutry,Objet nouv,1400000,0,1400000
+2026,005,I.000838.01,Moyens de base p/lutte incendies forêt,01.10.2024,700000,0,700000
+2026,005,I.000865.01,Assainis. glissement des Fontanelles,Objet nouv,300000,0,300000
+2026,005,I.000895.01,Revitalisation rives de lacs,Objet nouv,200000,0,200000
+2026,005,I.000897.01,ECF du Famolens 2,Objet nouv,35000,15000,20000
+2026,005,I.000899.01,Gestion intégrée des risques 3,Objet nouv,800000,0,800000
+2026,005,I.000900.01,Protection DN & amélioration structures5,Objet nouv,700000,0,700000
+2026,005,I.000901.01,Prospection ressources sous-sol cantonal,Objet nouv,300000,0,300000
+2026,005,I.000902.01,Accueil en forêt : mesure 36 Polfor 2040,Objet nouv,400000,0,400000
+2026,005,I.000905.01,Soutien aux communes pour les PGEE 2.0,Objet nouv,800000,0,800000
+2026,005,I.000908.01,Plan d'action sols,Objet nouv,800000,0,800000
+2026,005,I.000934.01,Bornes de recharges électriques,Objet nouv,1400000,0,1400000
+2026,005,I.000935.01,Plan sectoriel utilisation eaux,Objet nouv,1800000,0,1800000
+2026,005,I.000936.01,Economie circulaire - construction,26.11.2024,300000,0,300000
+2026,005,I.000937.01,Infrastructure écologique,Objet nouv,3500000,0,3500000
+2026,005,I.000938.01,Rénovat.énergétique bâtiments communaux,Objet nouv,1650000,0,1650000
+2026,005,I.000962.01,Mise en oeuvre plan cantonal radon,Objet nouv,200000,0,200000
+2026,005,I.000963.01,Investigation & assainissement dioxine,Objet nouv,1260000,360000,900000
+2026,005,I.000993.01,Renaturation du Bey à Avenches,Objet nouv,1100000,0,1100000
+2026,005,I.000994.01,Renaturation de la Valeyre au Mont-s-Lsn,Objet nouv,1400000,0,1400000
+2026,005,I.000995.01,Renaturation du Bruet à Ollon,Objet nouv,1250000,600000,650000
+2026,005,I.000996.01,Renaturation du Grand-Canal à Chessel,Objet nouv,1000000,0,1000000
+2026,005,I.000997.01,Dével.biodiversité & paysage milieu bâti,Objet nouv,220000,0,220000
+2026,005,I.001049.01,Stratégie conservation espèces & habitat,Objet nouv,100000,0,100000
+2026,005,I.001052.01,Ruisseau du village à Rougemont,Objet nouv,100000,0,100000
+2026,005,I.001053.01,La Morges à Morges,Objet nouv,100000,0,100000
+2026,005,I.001054.01,L'Asse à Nyon,Objet nouv,85000,35000,50000
+2026,005,I.001072.01,Mise en oeuvre stratégie cantonale ABC,Objet nouv,200000,0,200000
+2026,002,I.000409.01,Modernis. SI Police - Odyssée,30.11.2021,609000,0,609000
+2026,002,I.000638.01,Renouv. du matériel de trans_réseau,15.01.2019,575000,0,575000
+2026,002,I.000831.02,CrO Amén. locaux Epinettes PolCant,28.05.2024,500000,0,500000
+2026,002,I.000946.01,CrO Capitainerie Ouchy,Objet nouv,100000,0,100000
+2026,024,I.000310.02,CrO Sécurisation prison de la Croisée,08.05.2018,3600000,0,3600000
+2026,024,I.000348.03,CrE PGM Pénitencier Grands-Marais Orbe,18.09.2018,500000,0,500000
+2026,024,I.000348.04,CrE compl.PGM Pénit. Grands-Marais Orbe,26.11.2024,800000,0,800000
+2026,024,I.000478.01,SPEN - Modern. SI SPEN-Schéma directeur,Objet nouv,200000,0,200000
+2026,024,I.000485.03,CrE Nouvelle colonie ouverte,Objet nouv,100000,0,100000
+2026,024,I.000620.03,CrA Assainissement La Tuilière à Lonay,Objet nouv,3900000,0,3900000
+2026,024,I.000620.04,CrA Assainissement Tuilière plan climat,30.03.2021,1100000,0,1100000
+2026,024,I.000633.03,CrE CPPO-poste contrôle avancé sécurisa,21.01.2020,100000,0,100000
+2026,024,I.000717.02,CrO Plan continuité prison Bois-Mermet,26.11.2024,300000,0,300000
+2026,024,I.000717.03,CrO Plan de continuité prison Bochuz,26.11.2024,600000,0,600000
+2026,024,I.000876.02,CrO PPNV Infrastructures phase 1,26.11.2024,2700000,0,2700000
+2026,024,I.000876.03,CrE PPNV Infrastructures phase 2,26.11.2024,200000,0,200000
+2026,024,I.000943.02,CrE Nouveau pôle alimentaire Orbe,Objet nouv,200000,0,200000
+2026,024,I.000992.01,CrE Pôle Médical des Colonies,Objet nouv,100000,0,100000
+2026,024,I.001044.02,CrO Infrastructures provisoires,Objet nouv,600000,0,600000
+2026,004,I.000649.01,Matériel et équipement de la PCi,Objet nouv,1000000,0,1000000
+2026,004,I.000781.02,CrO SSCM piste Pci,20.06.2023,300000,0,300000
+2026,004,I.000816.01,Plan climat - protection pop + renf infr,14.03.2023,620000,0,620000
+2026,022,I.000708.02,CA - Modernisation SI SCTP,Objet nouv,430000,0,430000
+2026,037,I.000713.03,CA - Renouvellement di SI OMC,Objet nouv,500000,0,500000
+2026,037,I.000988.01,Plan climat système socio-sanitaire vaud,Objet nouv,114000,0,114000
+2026,038,I.000077.04,Hôpital de Cery - Rénovation,19.09.2013,1721000,0,1721000
+2026,038,I.000077.05,Hôpital de Cery - Extension périmètre,Objet nouv,6000000,0,6000000
+2026,038,I.000077.06,Hôpital de Cery - Assainis. façade,Objet nouv,3300000,0,3300000
+2026,038,I.000099.01,Hopital unique de l'enfant,23.04.2013,635000,0,635000
+2026,038,I.000099.02,Hôpital des Enfants - Equipements,07.11.2017,4296000,0,4296000
+2026,038,I.000103.02,BH05 - Bloc opératoire,21.05.2013,1060000,0,1060000
+2026,038,I.000106.01,1ère tranche Soins continus+intensifs,29.05.2012,1710000,0,1710000
+2026,038,I.000106.03,Extension des soins intensifs et regroup,Objet nouv,974000,0,974000
+2026,038,I.000386.02,Travaux-Médecine perso et ing. immunit,22.11.2022,12018000,0,12018000
+2026,038,I.000386.04,SB-C - Labo B,Objet nouv,3392000,0,3392000
+2026,038,I.000389.01,Ing. immunitaire onco. - bâtiment LICR,24.11.2015,728000,0,728000
+2026,038,I.000389.02,Ing. immunitaire onco. - équip. med,24.11.2015,26000,0,26000
+2026,038,I.000389.03,Ing. immunitaire onco. - plateforme,22.11.2022,693000,0,693000
+2026,038,I.000389.04,Ing. immunitaire onco.- prod. vapeur,22.11.2022,916000,0,916000
+2026,038,I.000389.05,Ing. immunitaire onco. - équip. LICR,22.11.2022,10159000,0,10159000
+2026,038,I.000498.01,Création d'une nouvelle unité SIA,Objet nouv,3120000,0,3120000
+2026,038,I.000655.01,Infrastructures stationnaires Cité hosp,23.06.2020,4837000,0,4837000
+2026,038,I.000733.01,CE - Réhabilitation Hôpital Beaumont,23.06.2020,2554000,0,2554000
+2026,038,I.000734.01,Garage à ambulances transferts,23.06.2020,3692000,0,3692000
+2026,038,I.000735.01,CE - Garage à ambulances urgences,23.06.2020,1370000,0,1370000
+2026,038,I.000759.01,Crédit cadre act. perf. énergétique,15.06.2022,5360000,0,5360000
+2026,038,I.000813.01,Etudes - Création lits interméd. au BH,Objet nouv,525000,0,525000
+2026,038,I.000849.01,Bâtiments IRA et LAD Cery,Objet nouv,31840000,0,31840000
+2026,038,I.000849.02,Equipements IRA et LAD Cery,Objet nouv,3300000,0,3300000
+2026,038,I.000967.01,Remise aux normes héliport,Objet nouv,3800000,0,3800000
+2026,038,I.001082.01,Master plan de la cité hospitalière,Objet nouv,2200000,0,2200000
+2026,065,I.000932.02,DGCS-Evolution du système d'information,Objet nouv,300000,0,300000
+2026,065,I.001011.02,DGCS - Refonte SI dir. hébergement,Objet nouv,100000,0,100000
+2026,066,I.000859.02,Modernisation SI Bourses d'étude,14.11.2023,2283000,0,2283000
+2026,067,I.000987.01,Plan climat DGCS,Objet nouv,1900000,0,1900000
+2026,044,I.000517.03,Télé Leysin-Col des Mosses Etape 1,21.06.2016,1110000,0,1110000
+2026,044,I.000518.01,Renouvellement SI Police cant. commerce,20.11.2018,9000,0,9000
+2026,044,I.000518.02,CA - Renouvell. SI Police cant. commerce,Objet nouv,500000,0,500000
+2026,044,I.000847.01,Maîtrise foncière 3 & soutien infrastr,28.02.2023,2000000,0,2000000
+2026,044,I.000848.01,Développement durable tourisme régional,27.06.2023,4000000,0,4000000
+2026,044,I.000968.01,Renforcement du soutien filière bois,Objet nouv,760000,0,760000
+2026,044,I.001047.02,SI appui au développement économique,Objet nouv,10000,0,10000
+2026,044,I.001077.01,OFCO Spectromètre Foodscreener,Objet nouv,1000000,0,1000000
+2026,040,I.000976.01,Programme form. & inst. trans. énergétique,Objet nouv,902000,0,902000
+2026,023,I.000703.01,SPOP-systèmes biométrie+cyberprestations,09.06.2020,531000,0,531000
+2026,048,I.000570.01,CrO CERN Rennaz Transformation agrand,21.11.2023,1800000,0,1800000
+2026,048,I.000572.02,CrE CB-assainissement et extension,Objet nouv,100000,0,100000
+2026,048,I.000576.01,CADEV-Renouv. plateforme d'achats,27.11.2018,22000,0,22000
+2026,048,I.000635.02,CrE Transfert poste dir. Plateforme 10,26.11.2019,100000,0,100000
+2026,048,I.000636.02,CrO Réaffectation Maison de l’Elysée,18.01.2022,100000,0,100000
+2026,048,I.000675.01,CC Entretien des bâtiments sur 6 sites,26.03.2019,200000,0,200000
+2026,048,I.000675.02,CrA 6 sites Auguste Piccard pl. climat,30.03.2021,200000,0,200000
+2026,048,I.000675.03,CrA 6 sites Chamblandes pl. climat,30.03.2021,600000,0,600000
+2026,048,I.000675.04,CrA 6 sites ETML+Site de Marcelin,21.03.2023,400000,0,400000
+2026,048,I.000682.01,CrO Assainissement EPO Colonie fermée,08.01.2019,500000,0,500000
+2026,048,I.000719.02,Cro Rennaz Aménag.terrain gens du voyage,21.11.2023,400000,0,400000
+2026,048,I.000737.01,Renouvellement SI affaires constr. DGIP,07.05.2024,382000,0,382000
+2026,048,I.000763.01,CC Entretien 9 sites,27.10.2020,3100000,0,3100000
+2026,048,I.000763.02,CrA CC entretien 9 sites Bugnon pl. cl,30.03.2021,200000,0,200000
+2026,048,I.000763.03,CrA CC entretien 9 sites EPSIC pl. cl,30.03.2021,1100000,0,1100000
+2026,048,I.000763.04,CrA CC entretien 9 sites ERACOM pl. cl,30.03.2021,5100000,0,5100000
+2026,048,I.000763.06,CrA Gymnase Bugnon mesures SST,05.11.2024,500000,0,500000
+2026,048,I.000764.01,CC Entretien prisons,26.05.2020,2300000,0,2300000
+2026,048,I.000764.02,CrA CC entretien prison croisée pl. cl,30.03.2021,1100000,0,1100000
+2026,048,I.000778.01,CC Entretien 5 sites,21.03.2023,8700000,0,8700000
+2026,048,I.000790.03,CrE Amphithéâtre Avenches Etape 2,05.11.2024,500000,0,500000
+2026,048,I.000845.01,DAL - Renouv. plateforme achats-Phase 2,Objet nouv,10000,0,10000
+2026,048,I.000851.02,CrO Cathédrale rénov. étape finale,Objet nouv,543000,0,543000
+2026,048,I.000852.01,CC 3 sites infiltrations,20.06.2023,1700000,0,1700000
+2026,048,I.000858.01,CrO Surélévation Riponne 10,04.04.2023,200000,0,200000
+2026,048,I.000889.01,CC 4 sites assainissement (2024-2028),05.11.2024,6550000,0,6550000
+2026,048,I.000915.02,CrO Plan climat 2 Autonomie Elec. 2035,05.11.2024,1800000,0,1800000
+2026,048,I.000918.02,CrO Centre Blécherette T.prioritaires,Objet nouv,400000,0,400000
+2026,048,I.000933.01,CrO Restauration Chateau de Chillon,Objet nouv,700000,0,700000
+2026,048,I.000948.01,CrO Parlement assainissement façade,Objet nouv,400000,0,400000
+2026,048,I.000950.01,2025 - Ecole Accueil Lausanne,Objet nouv,100000,0,100000
+2026,048,I.000950.02,2025 - CPNV - Bât ABE - Yverdon,Objet nouv,400000,0,400000
+2026,048,I.000950.03,2025 - Fondation Mérine Moudon,Objet nouv,100000,0,100000
+2026,048,I.000950.04,2025 -Grange-Verney Bât principal Moudon,Objet nouv,200000,0,200000
+2026,048,I.000950.05,2025 - Centre conserv. faune St-Sulpice,Objet nouv,100000,0,100000
+2026,048,I.000950.06,2025 - Ecole Prof. Commerciale Lausanne,Objet nouv,600000,0,600000
+2026,048,I.000950.07,2025 - HEIG - VD Cheseaux,Objet nouv,400000,0,400000
+2026,048,I.001046.01,Rattrapage recensement MS,Objet nouv,250000,0,250000
+2026,048,I.001075.01,Numérisation des diapositives DAP,Objet nouv,200000,0,200000
+2026,068,I.000653.02,CA - Gestion du contentieux DGAIC,Objet nouv,600000,0,600000
+2026,068,I.000856.02,DGAIC - Refonte Prefec et Votelec,Objet nouv,2060000,0,2060000
+2026,017,I.000332.03,CrE Réaffectation Palais Rumine,18.01.2022,400000,0,400000
+2026,017,I.000973.01,DGC - Strat. num. musées cantonaux,Objet nouv,10000,0,10000
+2026,046,I.000164.02,"RC 177,Vufflens-Penthaz constr.nouv. rte",11.11.2014,750000,0,750000
+2026,046,I.000238.01,Préfin. routier - aides aux communes,05.11.2013,2000000,0,2000000
+2026,046,I.000259.02,RC 76 Chav/Renens requal Bourd.-Tir Féd,01.12.2020,300000,454000,-154000
+2026,046,I.000262.02,"RC 254, Vuiteboeuf-Ste-Croix, 2è étape",06.02.2024,6000000,0,6000000
+2026,046,I.000267.02,RC 452 Romanel/Lsne Sauge+carr. Lussex,Objet nouv,500000,0,500000
+2026,046,I.000271.02,"RC 705, Aigle, reconstruction la Frasse",Objet nouv,3000000,0,3000000
+2026,046,I.000271.04,"CE RC705 Aigle, reconstruction La Frasse",21.12.2022,150000,0,150000
+2026,046,I.000278.02,RC 401 Grandson Vaumarcus,09.05.2023,290000,0,290000
+2026,046,I.000285.02,RC 7 Chavannes-Bogis-Chav.-Bois élargis,Objet nouv,4000000,251000,3749000
+2026,046,I.000295.02,"RC 719, Gryon, estacades Barbo. corr rte",29.03.2022,4500000,0,4500000
+2026,046,I.000298.02,"RC 706, Ormont-Dessous, corr. Favrin",31.01.2023,3500000,0,3500000
+2026,046,I.000322.03,CE RC 80 Lonay-Denges etudes phase 1,29.03.2022,120000,0,120000
+2026,046,I.000328.02,"RC 276,Treycovagnes, Châtelard,mob douce",Objet nouv,1500000,25000,1475000
+2026,046,I.000334.02,PALM aménagement giratoires Cheseaux,Objet nouv,500000,0,500000
+2026,046,I.000339.02,"RC 11 Eysins, requalification",Objet nouv,2000000,750000,1250000
+2026,046,I.000366.02,RC 1 Morges-St-Prex requal. étape 5,24.09.2024,1600000,0,1600000
+2026,046,I.000366.03,CE RC 1 Morges-St-Prex requal. étape 5,30.11.2021,182000,0,182000
+2026,046,I.000367.01,"RC 177, Vufflens-Penthaz, syndicat AF",11.11.2014,250000,0,250000
+2026,046,I.000521.01,RC 601 Moudon bretelle BE carrefour 543,Objet nouv,2700000,300000,2400000
+2026,046,I.000522.01,"RC 253, Merlaz-Baulmes assainis. routier",20.04.2021,60000,0,60000
+2026,046,I.000535.01,Modernisation SI DGMR,30.05.2017,9000,0,9000
+2026,046,I.000558.01,"Dégâts forces de la nature, 3ème rattrap",18.01.2022,1300000,0,1300000
+2026,046,I.000584.01,CE - Bus Haut Niveau Service-2e étape,21.06.2016,696000,0,696000
+2026,046,I.000585.01,Crédit investissement - m2/m3 SSPG - tun,12.11.2019,854000,0,854000
+2026,046,I.000588.01,Bus Haut Niveau Service-1ère étape,21.06.2016,643000,0,643000
+2026,046,I.000589.01,Interfaces voyageurs (P+R),30.04.2019,1800000,0,1800000
+2026,046,I.000590.01,Strat.cant. 2 roues : 2ème étape,30.04.2019,500000,0,500000
+2026,046,I.000600.01,"RC 69, Tolochenaz requalification",24.09.2019,1507000,0,1507000
+2026,046,I.000605.02,RC 773 Lutry- Belmont-La Croix cor. rte,30.06.2020,0,133000,-133000
+2026,046,I.000608.01,Entret.pistes cyclables Yvonand-Avenches,Objet nouv,330000,0,330000
+2026,046,I.000641.03,CE RC1 Malley-UNIL,Objet nouv,450000,0,450000
+2026,046,I.000670.03,CE - Aug. capacité M1 - projet d'ouvrage,Objet nouv,1000000,0,1000000
+2026,046,I.000688.01,CE - M2/M3 et équipe de projet,12.11.2019,8811000,0,8811000
+2026,046,I.000690.01,RC 422 Pomy-Cronay 2e tronçon,Objet nouv,2000000,0,2000000
+2026,046,I.000729.01,Campagne 2021 entretien revêtement,20.04.2021,60000,0,60000
+2026,046,I.000730.01,Campagne 2022 entretien revêtement,31.05.2022,300000,0,300000
+2026,046,I.000731.01,Campagne 2023 entretien revêtement,09.05.2023,500000,0,500000
+2026,046,I.000740.01,Entretien de 8 RC,12.03.2024,1000000,0,1000000
+2026,046,I.000741.01,Assainissement 6 tronçons 2021-2,04.10.2022,20000,0,20000
+2026,046,I.000742.01,RC299 réhabilit. entre Echallens/Goumoen,30.11.2021,300000,0,300000
+2026,046,I.000743.01,CE - Dév. réseau ferroviaire VD 2035-50,30.06.2020,1000000,0,1000000
+2026,046,I.000769.01,Assainiss RC 306 St-Barthélémy-Echallens,Objet nouv,500000,0,500000
+2026,046,I.000770.01,Campagne 2024 entretien revêtement,25.06.2024,2000000,0,2000000
+2026,046,I.000771.01,Campagne 2025 entretien revêtement,Objet nouv,2000000,0,2000000
+2026,046,I.000777.02,CE RC 76-79_jonction Ecublens,Objet nouv,900000,0,900000
+2026,046,I.000783.01,Travaux assainissement bruit 4e étape,08.06.2021,1000000,300000,700000
+2026,046,I.000787.01,Campagne 2021 entr revêt 1-canalisations,20.04.2021,300000,0,300000
+2026,046,I.000792.01,Plan climat - dev. prestations TP,08.06.2021,23500000,7500000,16000000
+2026,046,I.000795.01,LHand arrêts de bus,Objet nouv,2000000,1000000,1000000
+2026,046,I.000821.01,Stratégie vélo 2035 étape 1,04.10.2022,3344000,0,3344000
+2026,046,I.000827.01,Subventions stratégie vélo 2035 étape 1,11.10.2022,2300000,0,2300000
+2026,046,I.000854.02,CE RC 1 Dully-Prangins,09.05.2023,410000,0,410000
+2026,046,I.000861.03,CE RC 719 Forchex-Huémoz réhabilitation,Objet nouv,600000,0,600000
+2026,046,I.000868.01,Campagne de revêtement 2027,Objet nouv,4000000,0,4000000
+2026,046,I.000870.01,Assainissement de RC (2026-2),Objet nouv,500000,0,500000
+2026,046,I.000873.01,Assainissement RC 702 Les Moulins,Objet nouv,1000000,0,1000000
+2026,046,I.000879.02,CE réfection aires de ravitaillement,Objet nouv,500000,0,500000
+2026,046,I.000884.01,CE EES Marcolet-Cheseaux,Objet nouv,750000,0,750000
+2026,046,I.000885.01,Entretien lourd murs soutènement 2024-28,Objet nouv,500000,0,500000
+2026,046,I.000886.01,Campagne 2024-28 entret. lourd ouvr art,05.12.2023,1000000,0,1000000
+2026,046,I.000887.01,RC 601 viaduc Lucens assain. et renforc,Objet nouv,2784000,0,2784000
+2026,046,I.000909.01,Interfaces voyageurs - Etape 2,Objet nouv,1000000,0,1000000
+2026,046,I.000911.01,CE - Stratégie multimodale,Objet nouv,500000,0,500000
+2026,046,I.000912.01,CE ± Mise en œuvre strat. transp. march,Objet nouv,829000,0,829000
+2026,046,I.000912.02,Financement install. fret rail-route,Objet nouv,2000000,0,2000000
+2026,046,I.000913.01,Electrification flotte de bus TP,Objet nouv,1000000,0,1000000
+2026,046,I.000921.01,Entretien préventif urgent 2025,Objet nouv,1190000,0,1190000
+2026,046,I.000922.01,Entretien préventif urgent 2026,Objet nouv,2000000,0,2000000
+2026,046,I.000957.01,Mesures réduction émissions de CO2,Objet nouv,1660000,0,1660000
+2026,046,I.001002.01,CE jonctions Chavannes - Malley,Objet nouv,1000000,0,1000000
+2026,046,I.001005.01,CE RC 151 Bussigny-Aclens,Objet nouv,500000,0,500000
+2026,046,I.001016.01,CC - Stratégie cantonale de covoiturage,Objet nouv,135000,0,135000
+2026,046,I.001017.01,CC-Stratégie cantonale plans de mobilité,Objet nouv,981000,0,981000
+2026,046,I.001080.01,Renouvellement gare lacustre CGN Ouchy,Objet nouv,189000,0,189000
+2026,003,I.000305.03,CrE SAN Aménag. des locaux+DAL,Objet nouv,200000,0,200000
+2026,003,I.000412.01,SDSI SAN - Phase II,04.02.2025,500000,0,500000
+2026,003,I.000982.01,Aides achat véhicules électriques,Objet nouv,1680000,0,1680000
+2026,054,I.000629.01,SPEV - Evolution SIRH - Phase 2,01.07.2020,30000,0,30000
+2026,054,I.000797.01,Programme SIRH - Phase 3,Objet nouv,10000,0,10000
+2026,054,I.000975.01,DGRH - Gestion temps présence/absence,Objet nouv,10000,0,10000
+2026,054,I.000978.01,Déployer plans de mobilité au sein ACV,Objet nouv,1240000,0,1240000
+2026,070,I.000825.02,OAJE - Démat. des autorisations,Objet nouv,100000,0,100000
+2026,051,I.000789.01,Accompagnement communes Pol climat+Durab,16.06.2021,754000,0,754000
+2026,051,I.000818.01,Plan climat vaudois - diverses mesures,30.11.2021,640000,0,640000
+2026,051,I.000959.01,Renforcer l'accompagnement des communes,Objet nouv,1400000,0,1400000
+2026,051,I.000961.01,Restauration collective durable,Objet nouv,828000,0,828000
+2026,041,I.000506.07,CrE Pôle cant.agri. Grange-Verney-CEA,Objet nouv,200000,0,200000
+2026,041,I.000506.08,CrE Pôle cant.agri. Grange-Verney-ENS,Objet nouv,100000,0,100000
+2026,041,I.000510.01,Projet dvp régional agricole (PDRA) NOIX,09.06.2020,562000,312000,250000
+2026,041,I.000515.01,Améliorations foncières 2017-2019,13.03.2018,75000,25000,50000
+2026,041,I.000750.01,Améliorations foncières 2019-2021,17.12.2019,750000,250000,500000
+2026,041,I.000751.01,Améliorations foncières 2021-2023,21.01.2022,3000000,1000000,2000000
+2026,041,I.000752.01,PDRA Ouest VD,23.11.2021,900000,500000,400000
+2026,041,I.000754.01,Irrigation ArroBroye,Objet nouv,200000,100000,100000
+2026,041,I.000756.01,PDRA Gros de Vaud,Objet nouv,6000000,3000000,3000000
+2026,041,I.000800.01,DGAV - Plan climat phase 1ère génération,29.11.2022,2000000,0,2000000
+2026,041,I.000811.01,Améliorations foncières 2023-2025,04.06.2024,22500000,7500000,15000000
+2026,041,I.000812.01,DGAV - Plan climat phase II,Objet nouv,3000000,0,3000000
+2026,041,I.000840.01,Améliorations foncières 2026-2028,Objet nouv,150000,50000,100000
+2026,041,I.000940.01,Dotation FIR,Objet nouv,9000000,0,9000000
+2026,047,I.000565.01,Modernisation infrastructure FO du RCV,14.06.2022,1334000,762000,572000
+2026,047,I.000568.01,Stratégie Cyber - phase 3,Objet nouv,10000,0,10000
+2026,047,I.000622.01,Stratégie e-VD port. sécur. et support,06.11.2018,579000,0,579000
+2026,047,I.000624.01,Sécurisation du SI - étape 2,04.02.2020,100000,0,100000
+2026,047,I.000736.02,Migration S/4 Hana,14.06.2022,73000,0,73000
+2026,047,I.000793.02,Modernisation du SI DGIP,Objet nouv,100000,0,100000
+2026,047,I.000844.01,Migration S/4 Hana - Phase 2,Objet nouv,100000,0,100000
+2026,047,I.000846.01,Modernisation du SI statistique,Objet nouv,10000,0,10000
+2026,047,I.000877.01,DGNSI - Editique 2023,Objet nouv,10000,0,10000
+2026,047,I.000906.01,Sécurisation du SI - Etape 3,Objet nouv,10000,0,10000
+2026,047,I.000931.01,Participation financière VD agenda ANS,26.11.2024,500000,0,500000
+2026,047,I.000972.01,SG-DEF - SIRH personnel enseignant,Objet nouv,10000,0,10000
+2026,057,I.000598.01,Impact inform. projets fédéraux,05.04.2022,71000,0,71000
+2026,057,I.000598.03,Contributions VD HIJP/Justitia 4.0,05.04.2022,525000,0,525000
+2026,057,I.000599.01,CrO Sécurisation des offices judiciaires,Objet nouv,400000,0,400000
+2026,057,I.000828.01,CE - Transition numérique MP et OJV,05.04.2022,699000,0,699000
+2026,057,I.000828.02,Transition num. OJV - Projets CH,29.10.2024,472000,0,472000
+2026,057,I.000828.03,Transition num. OJV - évol. SI,29.10.2024,3622000,0,3622000
+2026,057,I.000984.01,CrO Déplacement JPX Lausanne / Provence,26.11.2024,6000000,0,6000000
+2026,057,I.000985.01,CrO Extension JPX Nyon,Objet nouv,100000,0,100000
+2026,057,I.000998.01,Mise en conformité câblage IT OJV/MP,29.10.2024,200000,0,200000
+2027,052,I.000594.02,CE - DGF Etudes Perspectives 2025,08.01.2019,23000,0,23000
+2027,052,I.000625.01,"DGF - Suite ""Perspectives 2025""",29.06.2021,1741000,0,1741000
+2027,052,I.000747.01,"DGF - Poursuite ""Perspective 2025""",15.06.2022,859000,0,859000
+2027,052,I.000842.01,"DGF - ""Métamorphose 2030""",26.03.2024,2794000,0,2794000
+2027,052,I.000843.01,"DGF - ""Métamorphose 2030"" - Phase 2",Objet nouv,10000,0,10000
+2027,043,I.000353.01,Poursuite mensuration officielle & ICDG,09.09.2014,500000,1000000,-500000
+2027,043,I.000403.02,Renouvellement SIPC,21.12.2022,2507000,0,2507000
+2027,043,I.000508.01,Modernisation SI du SDT,27.11.2018,914000,0,914000
+2027,043,I.000745.01,Mensuration officielle & ICDG 20-25,29.09.2020,7800000,1600000,6200000
+2027,043,I.000749.01,Modernisation du SI DGTL,Objet nouv,10000,0,10000
+2027,043,I.000833.01,Crédit cadre études équipements SSDA,Objet nouv,1500000,0,1500000
+2027,043,I.000875.01,CrE Equipements site strat. PAC Vernand,21.11.2023,403000,0,403000
+2027,043,I.000903.01,Mensuration officielle & ICDG,Objet nouv,4850000,750000,4100000
+2027,043,I.001045.01,Appui aux communes pour leur PGA,Objet nouv,1300000,0,1300000
+2027,042,I.000753.01,Infrastructures sportives II,03.06.2025,13740000,0,13740000
+2027,042,I.001014.01,Infrastructures sportives III,03.06.2025,9138000,0,9138000
+2027,042,I.001106.01,Manifestations sportives enverg. 26-29,03.06.2025,3500000,0,3500000
+2027,050,I.000251.02,Archivage électr. historique+probatoire,07.05.2019,2000000,0,2000000
+2027,010,I.000706.04,Educ. Num. Phase II Informatique pédag,28.02.2023,1500000,0,1500000
+2027,010,I.000706.05,Educ. Num. Phase II Dépl.Trans. & Coord,28.02.2023,5300000,0,5300000
+2027,010,I.000788.01,"Plan climat - Formation, moteur chgmt 1e",20.06.2023,970000,0,970000
+2027,011,I.000401.02,GI-PSAF Gest. inform. de la pédag. spéc,12.11.2019,655000,0,655000
+2027,011,I.000814.02,Digit. échanges et sécurisation du SI,12.05.2026,100000,0,100000
+2027,013,I.000396.02,CrO Gymnase du Chablais Aigle,26.03.2024,14850000,0,14850000
+2027,013,I.000438.03,CrE Gymnase de la Côte,Objet nouv,50000,0,50000
+2027,013,I.000439.01,CrO Gymnase d'Echallens,18.03.2025,17290000,0,17290000
+2027,013,I.000439.03,Acqu. parcelle Echallens,26.05.2020,460000,0,460000
+2027,013,I.000439.05,CrO Gymnase d'Echallens-Passage LEB,18.03.2025,1300000,0,1300000
+2027,013,I.000440.01,CrO Ecole professionnelle de Payerne,Objet nouv,9000000,950000,8050000
+2027,013,I.000442.01,CrO Morges Salle de sport VD5,25.06.2024,5850000,0,5850000
+2027,013,I.000602.03,CrO Extension GYB Payerne,27.11.2018,380000,190000,190000
+2027,013,I.000726.03,CrO amén. salle de sport GYM Bussigny,11.02.2025,1170000,0,1170000
+2027,013,I.000791.02,CrE Ext. Gymnase Chamblandes Pully,Objet nouv,40000,0,40000
+2027,013,I.000815.02,GIS-EP,Objet nouv,10000,0,10000
+2027,013,I.000826.03,CrE Rénovation Gymnase de la Cité,10.02.2026,1480000,0,1480000
+2027,013,I.000835.03,CrE Optimisation gymnase Bugnon/Ours,Objet nouv,80000,0,80000
+2027,013,I.000919.02,CrE Centre sportif Sévelin,Objet nouv,30000,0,30000
+2027,013,I.000927.02,CrE Bâtiment C gymnase Yverdon,Objet nouv,50000,0,50000
+2027,013,I.000941.02,CrO ETVJ Salles provisoires,10.06.2025,100000,0,100000
+2027,013,I.000950.02,Rénov 25 - CPNV - Bât ABE - Yverdon,18.11.2025,5200000,0,5200000
+2027,013,I.000950.03,Rénov 25 - Fondation Mérine Moudon,18.11.2025,910000,0,910000
+2027,013,I.000950.06,Rénov 25 - Ecole Prof. Comm.Lausanne,18.11.2025,700000,0,700000
+2027,013,I.000999.02,CrO EPM Clarens réal 4 s. poly - Trav.U,25.08.2026,330000,0,330000
+2027,013,I.001020.02,CrE Gymnase de Burier - Assainissement,Objet nouv,110000,0,110000
+2027,013,I.001021.02,CrE Gymnase de Nyon - Assainissement,Objet nouv,260000,0,260000
+2027,013,I.001022.01,CrE Gymnase Beaulieu Assaini,Objet nouv,450000,0,450000
+2027,013,I.001023.03,CrE CPNV Lausanne Assainissement,Objet nouv,120000,0,120000
+2027,013,I.001024.03,CrE ETVJ Assainissement,Objet nouv,90000,0,90000
+2027,013,I.001027.02,CrE ETML Rénovation Lausanne,Objet nouv,20000,0,20000
+2027,013,I.001028.02,CrE COFOP rénovation Vennes,Objet nouv,20000,0,20000
+2027,013,I.001094.01,CrO Assaini' rénovation Marcelin Morges,Objet nouv,660000,0,660000
+2027,013,I.001154.01,CrE Chamblandes s.sport assaini,Objet nouv,30000,0,30000
+2027,013,I.001156.01,CrE Gymnase A.Piccard s.sport assaini,Objet nouv,40000,0,40000
+2027,013,I.001146.01,Cité des métiers - Démarrage et M.e.O,Objet nouv,500000,0,500000
+2027,014,I.001115.01,CC - Moyens d'enseign. pr la form. prof,Objet nouv,1250000,0,1250000
+2027,015,I.000250.06,CrA Mise en conformité Unithèque - BCU,09.06.2026,3060000,0,3060000
+2027,015,I.000307.03,CrO Campus santé Construction C4,14.06.2022,1950000,0,1950000
+2027,015,I.000307.04,Campus santé équipements AV+IT,14.06.2022,650000,0,650000
+2027,015,I.000307.05,CrA Campus Santé Constrution C4,28.05.2024,820000,0,820000
+2027,015,I.000358.02,CrO Campus santé HESAV Bourdonnette,14.06.2022,6500000,2600000,3900000
+2027,015,I.000371.02,CrO Campus Santé Site,14.06.2022,3900000,0,3900000
+2027,015,I.000371.03,CrA Campus santé Equipement,28.05.2024,3250000,0,3250000
+2027,015,I.000381.03,CrO UNIL - Biocosme,22.11.2022,16900000,6500000,10400000
+2027,015,I.000381.05,CrA UNIL Biocosme Exemplarité de l’Etat,Objet nouv,1300000,0,1300000
+2027,015,I.000455.03,CrE Extension HEP Cèdres A2,Objet nouv,200000,0,200000
+2027,015,I.000657.01,CrO Extension HEP / Bourdonnette,24.03.2026,11700000,0,11700000
+2027,015,I.000658.01,CrO UNIL Assainissement prod. chaleur,13.06.2023,9750000,0,9750000
+2027,015,I.000660.03,CrE UNIL - Amphipôle Sud assaini,Objet nouv,400000,0,400000
+2027,015,I.000881.01,UNIL - Crédit cadre Rénovation 6e crédit,Objet nouv,3000000,0,3000000
+2027,015,I.000882.01,UNIL - Grands consomm. LVLEne 2ème étape,01.10.2024,4550000,0,4550000
+2027,015,I.000950.07,Rénov 25 - HEIG - VD Cheseaux,18.11.2025,2140000,0,2140000
+2027,015,I.001037.01,CrE Extention HEP Cèdres Parc 2,Objet nouv,50000,0,50000
+2027,018,I.000697.02,Refonte SI DGEJ,14.11.2023,2006000,0,2006000
+2027,005,I.000416.01,Venoge 3 - Réalisations,07.05.2019,200000,0,200000
+2027,005,I.000417.01,Décharge de Molard-Parelliet à Trélex,21.11.2017,20000,0,20000
+2027,005,I.000419.01,Rhône 3 - 1ere tranche de travaux,29.05.2018,10000000,5000000,5000000
+2027,005,I.000420.01,Ruisseau de Broye,14.01.2020,2200000,0,2200000
+2027,005,I.000425.01,Plan d'évacuation des eaux Chamberonne,13.03.2018,20000,0,20000
+2027,005,I.000427.01,Biotopes: protection' revital. & gestion,21.12.2022,900000,0,900000
+2027,005,I.000431.01,Protection DN & amélioration structures4,23.06.2021,300000,0,300000
+2027,005,I.000432.01,Part cantonale ass. anciennes décharges3,06.11.2018,1300000,500000,800000
+2027,005,I.000434.01,Géothermie et gestion du sous-sol,04.04.2023,1200000,0,1200000
+2027,005,I.000435.01,Lutte contre espèces exotiques envahiss,Objet nouv,300000,0,300000
+2027,005,I.000436.01,ZI du Marais-protection contre les crues,23.06.2021,1000000,0,1000000
+2027,005,I.000643.01,Crédit cadre micropolluants 2,03.02.2026,8200000,0,8200000
+2027,005,I.000644.01,Grande Eau 2 Traversée Aigle-Gd Canal,23.06.2021,1600000,0,1600000
+2027,005,I.000645.01,Bassin versant de l'Ognonnaz,23.06.2021,1000000,0,1000000
+2027,005,I.000668.01,Modernisation SI subventions ACV (SIS),27.04.2021,128000,0,128000
+2027,005,I.000669.01,Modernisation du SI de la DGE,01.06.2021,1077000,0,1077000
+2027,005,I.000685.01,Décharge Les Gérignes à Bourg-en-Lavaux,06.11.2018,150000,0,150000
+2027,005,I.000699.01,Planification cantonale des déchets,Objet nouv,100000,0,100000
+2027,005,I.000700.01,Equipement Laboratoires DIREV,17.01.2023,440000,0,440000
+2027,005,I.000701.01,Assainissement des sites pollués,28.05.2024,4400000,2800000,1600000
+2027,005,I.000702.01,Gestion intégrée des risques 2,02.03.2021,650000,300000,350000
+2027,005,I.000722.01,Aménagement de la Chamberonne,14.01.2020,2400000,0,2400000
+2027,005,I.000766.01,Ciel ouvert ruisseaux Champmartin+Marais,23.06.2021,250000,0,250000
+2027,005,I.000767.01,Aménagements piscicoles 2,23.06.2021,200000,0,200000
+2027,005,I.000794.02,Modernisation SI Géographique DGE,25.03.2025,2100000,0,2100000
+2027,005,I.000796.01,SIAM - Modern. du SI subvention métier,24.05.2022,1000000,0,1000000
+2027,005,I.000803.01,Adapter forêts changements climatiques,14.12.2021,1400000,0,1400000
+2027,005,I.000804.01,Favoriser l'utilisation bois en cascade,14.12.2021,600000,0,600000
+2027,005,I.000806.01,Préserver la biodiversité en ville,17.01.2023,100000,0,100000
+2027,005,I.000837.01,Aménagement de la Lutrive à Lutry,25.11.2025,1100000,0,1100000
+2027,005,I.000838.01,Moyens de base p/lutte incendies forêt,01.10.2024,500000,0,500000
+2027,005,I.000865.01,Assainis. glissement des Fontanelles,25.03.2025,200000,0,200000
+2027,005,I.000891.01,Assainissement décharge du Boiron,Objet nouv,200000,0,200000
+2027,005,I.000893.01,Ass. décharge Le Saut Yverdon,Objet nouv,200000,0,200000
+2027,005,I.000894.01,Renaturation du Buron,Objet nouv,200000,0,200000
+2027,005,I.000895.01,Revitalisation rives de lacs,Objet nouv,50000,0,50000
+2027,005,I.000899.01,Gestion intégrée des risques 3,03.03.2026,800000,0,800000
+2027,005,I.000900.01,Protection DN & amélioration structures5,03.03.2026,700000,0,700000
+2027,005,I.000901.01,Prospection ressources sous-sol cantonal,Objet nouv,600000,0,600000
+2027,005,I.000905.01,Soutien aux communes pour les PGEE 2.0,Objet nouv,1400000,0,1400000
+2027,005,I.000908.01,Plan d'action sols mesures environnement,01.04.2025,900000,0,900000
+2027,005,I.000934.01,Bornes de recharges électriques,Objet nouv,800000,0,800000
+2027,005,I.000935.01,Gestion intégrée des eaux,Objet nouv,800000,0,800000
+2027,005,I.000936.01,Economie circulaire - construction,26.11.2024,200000,0,200000
+2027,005,I.000938.01,Rénovat.énergétique bâtiments communaux,05.05.2026,700000,0,700000
+2027,005,I.000962.01,Mise en oeuvre plan cantonal radon,Objet nouv,200000,0,200000
+2027,005,I.000963.01,Investigation & assainissement dioxine,Objet nouv,700000,300000,400000
+2027,005,I.000993.01,Renaturation du Bey à Avenches,25.11.2025,600000,0,600000
+2027,005,I.000994.01,Renaturation de la Valeyre au Mont-s-Lsn,25.11.2025,700000,0,700000
+2027,005,I.000995.01,Renaturation du Bruet à Ollon,25.11.2025,700000,0,700000
+2027,005,I.000996.01,Renaturation du Grand-Canal à Chessel,25.11.2025,500000,0,500000
+2027,005,I.000997.01,Dével.biodiversité & paysage milieu bâti,Objet nouv,220000,0,220000
+2027,005,I.001049.01,Stratégie conservation espèces & habitat,Objet nouv,100000,0,100000
+2027,005,I.001050.01,Restauration corridors à faune,Objet nouv,100000,0,100000
+2027,005,I.001052.01,Ruisseau du village à Rougemont,Objet nouv,800000,0,800000
+2027,005,I.001053.01,La Morges à Morges,Objet nouv,1000000,0,1000000
+2027,005,I.001054.01,L'Asse à Nyon,Objet nouv,1200000,0,1200000
+2027,005,I.001055.01,Embouchure la Vuachère et la Paudèze,Objet nouv,400000,0,400000
+2027,005,I.001057.01,Aménagements piscicoles 3,Objet nouv,100000,0,100000
+2027,005,I.001061.01,Assainissement anciennes décharges,Objet nouv,100000,0,100000
+2027,005,I.001063.01,Equipement Laboratoires DIREV 2,Objet nouv,100000,0,100000
+2027,005,I.001072.01,Mise en oeuvre stratégie cantonale ABC,Objet nouv,100000,0,100000
+2027,005,I.001116.01,Entretien adapt. desserte forestière,Objet nouv,1000000,0,1000000
+2027,005,I.001118.01,Prot crue bassin vers. Est Château d'Oex,Objet nouv,100000,0,100000
+2027,005,I.001119.01,Prot crues Le BAM' l'Orbe' le Crouset,Objet nouv,400000,0,400000
+2027,005,I.000609.03,CrE Regroupement DGE par régions,Objet nouv,100000,0,100000
+2027,005,I.000673.02,CrO DGE-DIRNA regroupement région Nord,10.03.2026,330000,0,330000
+2027,005,I.000950.04,Rénov 25 -Grange-Verney Bât princ Moudon,18.11.2025,2600000,0,2600000
+2027,005,I.000950.05,Rénov 25 - C.conserv. faune St-Sulpice,18.11.2025,40000,0,40000
+2027,002,I.000406.01,CrE Centre formation pour les policiers,Objet nouv,1000000,0,1000000
+2027,002,I.000409.01,Modernis. SI Police - Odyssée,30.11.2021,2000000,0,2000000
+2027,002,I.000638.01,Renouv. du matériel de trans_réseau,15.01.2019,300000,0,300000
+2027,002,I.000831.02,CrO Amén. locaux Epinettes PolCant,28.05.2024,650000,0,650000
+2027,002,I.001073.01,Système national mobile de communication,Objet nouv,3300000,0,3300000
+2027,002,I.000974.01,PolCant - Modernisation SI forensique,Objet nouv,10000,0,10000
+2027,024,I.000310.02,CrO Sécurisation prison de la Croisée,08.05.2018,2600000,0,2600000
+2027,024,I.000310.03,CrA La Croisée inst.modulaires,Objet nouv,2930000,650000,2280000
+2027,024,I.000348.04,CrE compl.PGM Pénit. Grands-Marais Orbe,26.11.2024,1650000,0,1650000
+2027,024,I.000485.03,CrE Nouvelle colonie ouverte,24.03.2026,310000,0,310000
+2027,024,I.000478.01,SPEN - Modern. SI SPEN-Schéma directeur,Objet nouv,10000,0,10000
+2027,024,I.000620.05,CrA Etape 3 La Tuilière à Lonay,Objet nouv,4580000,0,4580000
+2027,024,I.000717.02,CrO Plan continuité prison Bois-Mermet,26.11.2024,580000,0,580000
+2027,024,I.000717.03,CrO Plan de continuité prison Bochuz,26.11.2024,1320000,0,1320000
+2027,024,I.000876.02,CrO PPNV Infrastructures phase 1,26.11.2024,5850000,0,5850000
+2027,024,I.000876.03,CrE PPNV Infrastructures phase 2,26.11.2024,780000,0,780000
+2027,024,I.000943.02,CrE Nouveau pôle alimentaire Orbe,24.03.2026,200000,0,200000
+2027,024,I.000991.01,CrO Entretien extérieur EDM - Palézieux,Objet nouv,200000,0,200000
+2027,024,I.000992.01,CrE Pôle Médical des Colonies,24.03.2026,60000,0,60000
+2027,024,I.001044.02,CrO Zone d’attente carcérale EPO,12.05.2026,2400000,0,2400000
+2027,024,I.001095.01,CrO Assaini Bât semi détention Simplon,Objet nouv,680000,0,680000
+2027,004,I.000649.01,Matériel et équipement de la PCi,Objet nouv,1000000,0,1000000
+2027,004,I.000816.01,Plan climat - protection pop + renf infr,14.03.2023,606000,0,606000
+2027,022,I.000708.03,CA2 - Modernisation SI SCTP,12.05.2026,690000,0,690000
+2027,037,I.000988.01,Plan climat système socio-sanitaire vaud,31.03.2026,114000,0,114000
+2027,037,I.001074.01,Dossier patient informatisé,Objet nouv,11437000,0,11437000
+2027,038,I.000077.04,Hôpital de Cery - Rénovation,17.09.2013,1919000,0,1919000
+2027,038,I.000077.05,Hôpital de Cery - Extension périmètre,Objet nouv,3814000,0,3814000
+2027,038,I.000077.06,Hôpital de Cery - Assainis. façade,Objet nouv,2098000,0,2098000
+2027,038,I.000103.02,BH05 - Bloc opératoire,21.05.2013,944000,0,944000
+2027,038,I.000106.01,1ère tranche Soins continus+intensifs,29.05.2012,1625000,0,1625000
+2027,038,I.000106.03,Extension des soins intensifs et regroup,Objet nouv,648000,0,648000
+2027,038,I.000386.02,Travaux-Médecine perso et ing. immunit,22.11.2022,13712000,0,13712000
+2027,038,I.000389.01,Ing. immunitaire onco. - bâtiment LICR,24.11.2015,2596000,0,2596000
+2027,038,I.000389.05,Ing. immunitaire onco. - équip. LICR,22.11.2022,1819000,0,1819000
+2027,038,I.000498.01,Création d'une nouvelle unité SIA,Objet nouv,878000,0,878000
+2027,038,I.000655.01,Infrastructures stationnaires Cité hosp,23.06.2020,3107000,0,3107000
+2027,038,I.000734.01,Garage à ambulances transferts,23.06.2020,3650000,0,3650000
+2027,038,I.000759.01,Crédit cadre act. perf. énergétique,15.06.2022,6414000,0,6414000
+2027,038,I.000849.01,Bâtiments IRA et LAD Cery,18.11.2025,22031000,0,22031000
+2027,038,I.000849.02,Equipements IRA et LAD Cery,18.11.2025,4881000,0,4881000
+2027,038,I.000967.01,Remise aux normes héliport,Objet nouv,1557000,0,1557000
+2027,038,I.001136.01,DPI - CHUV,Objet nouv,16804000,0,16804000
+2027,065,I.000932.02,DGCS-Evolution du système d'information,04.11.2025,1975000,0,1975000
+2027,065,I.001011.02,DGCS - Refonte SI dir. hébergement,Objet nouv,10000,0,10000
+2027,065,I.001068.02,DGCS - Digitalisation prest. sociales,Objet nouv,10000,0,10000
+2027,066,I.000859.02,Modernisation SI Bourses d'étude,14.11.2023,1351000,0,1351000
+2027,067,I.000987.01,Plan climat DGCS,31.03.2026,1500000,0,1500000
+2027,044,I.000518.01,Renouvellement SI Police cant. commerce,20.11.2018,560000,0,560000
+2027,044,I.000847.01,Maîtrise foncière 3 & soutien infrastr,28.02.2023,2000000,0,2000000
+2027,044,I.000848.01,Développement durable tourisme régional,27.06.2023,6000000,0,6000000
+2027,023,I.000703.01,SPOP-systèmes biométrie+cyberprestations,09.06.2020,315000,0,315000
+2027,048,I.000570.01,CrO CERN Rennaz Transformation agrand,21.11.2023,2210000,0,2210000
+2027,048,I.000571.02,CrE Villa romaine Orbe-Boscéaz CIMO,10.02.2026,120000,0,120000
+2027,048,I.000576.01,CADEV-Renouv. plateforme d'achats,27.11.2018,320000,0,320000
+2027,048,I.000675.01,CC Entretien des bâtiments sur 6 sites,26.03.2019,80000,0,80000
+2027,048,I.000675.03,CrA 6 sites Chamblandes pl. climat,30.03.2021,640000,0,640000
+2027,048,I.000675.04,CrA 6 sites ETML+Site de Marcelin,21.03.2023,280000,0,280000
+2027,048,I.000682.01,CrO Assainissement EPO Colonie fermée,08.01.2019,90000,0,90000
+2027,048,I.000719.02,Cro Rennaz Aménag.terrain gens du voyage,21.11.2023,200000,0,200000
+2027,048,I.000737.01,Renouvellement SI affaires constr. DGIP,07.05.2024,593000,0,593000
+2027,048,I.000763.03,CrA CC entretien 9 sites EPSIC pl. cl,30.03.2021,2320000,0,2320000
+2027,048,I.000763.06,CrA Gymnase Bugnon mesures SST,05.11.2024,650000,0,650000
+2027,048,I.000764.01,CC Entretien prisons,26.05.2020,980000,0,980000
+2027,048,I.000764.02,CrA CC entretien prison croisée pl. cl,30.03.2021,2060000,460000,1600000
+2027,048,I.000778.01,CC Entretien 5 sites,21.03.2023,9560000,0,9560000
+2027,048,I.000790.02,CrO Amphithéâtre romain d'Avenches,Objet nouv,2250000,0,2250000
+2027,048,I.000790.03,CrE Amphithéâtre Avenches Etape 2,05.11.2024,570000,0,570000
+2027,048,I.000824.02,CrE Rénovation bâtiment BAP TEMPLE,Objet nouv,180000,0,180000
+2027,048,I.000845.01,DAL - Renouv. plateforme achats-Phase 2,Objet nouv,10000,0,10000
+2027,048,I.000851.02,CrO Cathédrale rénov. étape finale,Objet nouv,400000,0,400000
+2027,048,I.000852.01,CC 3 sites infiltrations,20.06.2023,1760000,0,1760000
+2027,048,I.000858.01,CrO Surélévation Riponne 10,04.04.2023,520000,0,520000
+2027,048,I.000889.01,CC 4 sites assainissement (2024-2028),05.11.2024,2540000,0,2540000
+2027,048,I.000915.02,CrO Plan climat 2 Autonomie Elec. 2035,05.11.2024,2940000,140000,2800000
+2027,048,I.000918.02,CrO Centre Blécherette T.prioritaires,26.08.2025,3450000,0,3450000
+2027,048,I.000933.01,CrO Restauration Château de Chillon,10.06.2025,1430000,0,1430000
+2027,048,I.001030.02,CrO Réam.Parking Place Château St-Maire,Objet nouv,50000,0,50000
+2027,048,I.001046.01,Rattrapage recensement MS,Objet nouv,400000,0,400000
+2027,048,I.001078.02,DGIP - Modernisation du SI - étape 3,Objet nouv,10000,0,10000
+2027,048,I.001091.01,CC Assainissement install. Ascenseurs,Objet nouv,450000,0,450000
+2027,068,I.000856.02,DGAIC - Refonte Prefec et Votelec,28.01.2025,1416000,0,1416000
+2027,017,I.000332.03,CrE Réaffectation Palais Rumine,18.01.2022,770000,0,770000
+2027,017,I.000715.03,CrE Assaini' rénovation Jardin Botanique,Objet nouv,40000,0,40000
+2027,017,I.000973.01,DGC - Strat. num. musées cantonaux,Objet nouv,10000,0,10000
+2027,017,I.001092.01,CrE Assaini. et rénovation DABC Lucens,Objet nouv,180000,0,180000
+2027,046,I.000164.02,RC 177'Vufflens-Penthaz constr.nouv. rte,11.11.2014,100000,0,100000
+2027,046,I.000194.01,Routes nationales' construction - 23ème,31.03.2009,100000,86000,14000
+2027,046,I.000226.01,Renforcement 40 t. solde du réseau RC,10.01.2012,92000,0,92000
+2027,046,I.000238.01,Préfin. routier - aides aux communes,05.11.2013,5000000,0,5000000
+2027,046,I.000257.02,RC 30' jct Gland & giratoire Bichette,Objet nouv,100000,0,100000
+2027,046,I.000259.02,RC 76 Chav/Renens requal Bourd.-Tir Féd,01.12.2020,350000,700000,-350000
+2027,046,I.000262.02,RC 254' Vuiteboeuf-Ste-Croix' 2è étape,06.02.2024,5000000,0,5000000
+2027,046,I.000271.02,RC 705' Aigle' reconstruction la Frasse,Objet nouv,100000,0,100000
+2027,046,I.000271.04,CE RC705 Aigle' reconstruction La Frasse,21.12.2022,200000,0,200000
+2027,046,I.000285.02,RC 7 Chavannes-Bogis-Chav.-Bois élargis,28.01.2025,3000000,0,3000000
+2027,046,I.000286.03,RC 1 Morges requal.tronçon Venoge-Morges,Objet nouv,1000000,0,1000000
+2027,046,I.000295.02,RC 719' Gryon' estacades Barbo. corr rte,29.03.2022,5000000,0,5000000
+2027,046,I.000298.02,RC 706' Ormont-Dessous' corr. Favrin,31.01.2023,1800000,0,1800000
+2027,046,I.000322.03,CE RC 80 Lonay-Denges etudes phase 1,29.03.2022,140000,0,140000
+2027,046,I.000328.02,RC 276'Treycovagnes' Châtelard'mob douce,Objet nouv,2600000,0,2600000
+2027,046,I.000334.02,PALM aménagement giratoires Cheseaux,Objet nouv,100000,0,100000
+2027,046,I.000339.02,RC 11 Eysins' requalification,27.05.2025,500000,0,500000
+2027,046,I.000366.02,RC 1 Morges-St-Prex requal. étape 5,24.09.2024,3500000,0,3500000
+2027,046,I.000366.03,CE RC 1 Morges-St-Prex requal. étape 5,30.11.2021,197000,0,197000
+2027,046,I.000402.03,Centrale GCTA - Travaux,21.04.2026,4000000,1000000,3000000
+2027,046,I.000521.01,RC 601 Moudon bretelle BE carrefour 543,27.05.2025,4500000,0,4500000
+2027,046,I.000522.01,RC 253' Merlaz-Baulmes assainis. routier,20.04.2021,100000,0,100000
+2027,046,I.000558.01,Dégâts forces de la nature' 3ème rattrap,18.01.2022,1500000,0,1500000
+2027,046,I.000600.01,RC 69' Tolochenaz requalification,24.09.2019,1507000,0,1507000
+2027,046,I.000605.02,RC 773 Lutry- Belmont-La Croix cor. rte,30.06.2020,10000,0,10000
+2027,046,I.000608.01,Entret.pistes cyclables Yvonand-Avenches,Objet nouv,100000,0,100000
+2027,046,I.000665.01,Points noirs' 4ème crédit cadre,Objet nouv,1000000,0,1000000
+2027,046,I.000690.01,RC 422 Pomy-Cronay 2ème tronçon,Objet nouv,100000,0,100000
+2027,046,I.000731.01,Campagne 2023 entretien revêtement,09.05.2023,655000,0,655000
+2027,046,I.000740.01,Entretien de 8 RC,12.03.2024,2000000,0,2000000
+2027,046,I.000770.01,Campagne 2024 entretien revêtement,25.06.2024,4000000,0,4000000
+2027,046,I.000771.01,Campagne 2025 entretien revêtement,17.06.2025,3350000,0,3350000
+2027,046,I.000783.01,Travaux assainissement bruit 4e étape,08.06.2021,1100000,25000,1075000
+2027,046,I.000854.02,CE RC 1 Dully-Prangins,09.05.2023,348000,0,348000
+2027,046,I.000854.03,RC 1 Dully Prangins,Objet nouv,100000,0,100000
+2027,046,I.000861.03,CE RC 719 Forchex-Huémoz réhabilitation,Objet nouv,986000,0,986000
+2027,046,I.000868.01,Campagne de revêtement 2027,Objet nouv,5165000,0,5165000
+2027,046,I.000870.01,Assainissement de RC (2026-2),Objet nouv,1000000,0,1000000
+2027,046,I.000879.02,CE réfection aires de ravitaillement,Objet nouv,500000,0,500000
+2027,046,I.000884.01,CE EES Marcolet-Cheseaux,Objet nouv,750000,0,750000
+2027,046,I.000886.01,Campagne 2024-28 entret. lourd ouvr art,05.12.2023,2580000,0,2580000
+2027,046,I.000887.01,RC 601 viaduc Lucens assain. et renforc,Objet nouv,100000,0,100000
+2027,046,I.000922.01,Entretien préventif urgent 2026,Objet nouv,2000000,0,2000000
+2027,046,I.000923.01,Entretien préventif urgent 2027,Objet nouv,5000000,0,5000000
+2027,046,I.000990.03,CE RC 151 Viaduc Cudrex,Objet nouv,300000,0,300000
+2027,046,I.001010.03,CO - RC 706 Requal. Aigremont-Favrins,Objet nouv,350000,0,350000
+2027,046,I.001012.02,CE - RC 151 Requal. Bussigny Aclens,Objet nouv,1000000,0,1000000
+2027,046,I.001013.01,LHand arrêts de bus' subvention,03.02.2026,1500000,0,1500000
+2027,046,I.001067.01,CE - RC 705 Requalification Les Afforêts,Objet nouv,500000,0,500000
+2027,046,I.001090.01,CE ± RC705 assain. pont sur le Larrevoin,Objet nouv,300000,0,300000
+2027,046,I.001103.01,RC 601-518 contourn. Payerne entretien,Objet nouv,5000000,0,5000000
+2027,046,I.000610.03,CrE DGMR Centres exploitation régionaux,Objet nouv,200000,0,200000
+2027,046,I.000610.04,Acquisition parcelle et servitude,Objet nouv,200000,0,200000
+2027,046,I.000584.01,CE - Bus Haut Niveau Service-2e étape,21.06.2016,641000,0,641000
+2027,046,I.000585.01,Crédit investissement - m2/m3 SSPG - tun,12.11.2019,3681000,0,3681000
+2027,046,I.000588.01,Bus Haut Niveau Service-1ère étape,21.06.2016,1920000,0,1920000
+2027,046,I.000589.01,Interfaces voyageurs (P+R),30.04.2019,1100000,0,1100000
+2027,046,I.000590.01,Strat.cant. 2 roues : 2ème étape,30.04.2019,500000,0,500000
+2027,046,I.000641.03,CE RC1 Malley-UNIL,Objet nouv,50000,0,50000
+2027,046,I.000670.03,CE - Aug. capacité M1 - projet d'ouvrage,Objet nouv,2000000,0,2000000
+2027,046,I.000688.01,CE - M2/M3 et équipe de projet,12.11.2019,2874000,0,2874000
+2027,046,I.000743.01,CE - Dév. réseau ferroviaire VD 2035-50,30.06.2020,500000,0,500000
+2027,046,I.000792.01,Plan climat - dev. prestations TP,08.06.2021,12450000,3735000,8715000
+2027,046,I.000795.01,LHand arrêts de bus,03.02.2026,1000000,0,1000000
+2027,046,I.000821.01,Stratégie vélo 2035 étape 1,04.10.2022,3500000,0,3500000
+2027,046,I.000827.01,Subventions stratégie vélo 2035 étape 1,11.10.2022,2000000,0,2000000
+2027,046,I.000909.01,Interfaces voyageurs - Etape 2,03.02.2026,3300000,0,3300000
+2027,046,I.000911.01,CE - Stratégie multimodale,Objet nouv,500000,0,500000
+2027,046,I.000912.01,CE ± Mise en œuvre strat. transp. march,26.08.2025,829000,0,829000
+2027,046,I.000912.02,Financement install. fret rail-route,26.08.2025,3985000,0,3985000
+2027,046,I.000957.01,Mesures réduction émissions de CO2,Objet nouv,1000000,0,1000000
+2027,046,I.001016.01,CC - Stratégie cantonale de covoiturage,Objet nouv,475000,0,475000
+2027,046,I.001017.01,CC-Stratégie cantonale plans de mobilité,Objet nouv,1640000,0,1640000
+2027,046,I.001080.01,Renouvellement gare lacustre CGN Ouchy,Objet nouv,189000,0,189000
+2027,046,I.001084.01,Frais de substitution-renouvellement m2,21.04.2026,2711000,0,2711000
+2027,046,I.001086.01,Frais de substitution-augm. capacité m2,21.04.2026,2184000,0,2184000
+2027,046,I.001087.01,"Financement unité ""Audit""",21.04.2026,183000,0,183000
+2027,046,I.001088.01,M3 : Poursuite études et équipe projet,21.04.2026,8124000,0,8124000
+2027,046,I.001089.01,CE - Réalisation liaison piétonne,28.04.2026,326000,0,326000
+2027,046,I.001147.01,CE - Accompa goulet' pénétrante urbaine,Objet nouv,500000,0,500000
+2027,003,I.000305.03,CrE SAN Aménag. des locaux+DAL,Objet nouv,240000,0,240000
+2027,003,I.000412.01,SDSI SAN - Phase II,04.02.2025,631000,0,631000
+2027,003,I.000982.01,Aides achat véhicules électriques,Objet nouv,1680000,0,1680000
+2027,051,I.000789.01,Accompagnement communes Pol climat+Durab,16.06.2021,400000,0,400000
+2027,051,I.000818.01,Plan climat vaudois - diverses mesures,30.11.2021,718000,0,718000
+2027,051,I.000959.01,Renforcer l'accompagnement des communes,01.04.2025,980000,0,980000
+2027,051,I.000961.01,Restauration collective durable,17.12.2025,885000,0,885000
+2027,041,I.000506.07,CrE Pôle cant.agri. Grange-Verney-CEA,03.06.2025,450000,0,450000
+2027,041,I.000506.08,CrE Pôle cant.agri. Grange-Verney-ENS,Objet nouv,90000,0,90000
+2027,041,I.000506.11,CrE Centre d'ens.prof. la terre Changins,Objet nouv,100000,0,100000
+2027,041,I.000510.01,Projet dvp régional agricole (PDRA) NOIX,09.06.2020,1433000,733000,700000
+2027,041,I.000515.01,Améliorations foncières 2017-2019,13.03.2018,500000,100000,400000
+2027,041,I.000750.01,Améliorations foncières 2019-2021,17.12.2019,600000,100000,500000
+2027,041,I.000751.01,Améliorations foncières 2021-2023,21.01.2022,1000000,500000,500000
+2027,041,I.000752.01,PDRA Ouest VD,23.11.2021,1100000,100000,1000000
+2027,041,I.000755.01,PA Sols - mesures agricoles,01.04.2025,300000,0,300000
+2027,041,I.000756.01,PDRA Gros de Vaud,22.01.2026,3000000,1500000,1500000
+2027,041,I.000800.01,DGAV - Plan climat phase 1ère génération,29.11.2022,7000000,0,7000000
+2027,041,I.000811.01,Améliorations foncières 2023-2025,04.06.2024,9000000,3000000,6000000
+2027,041,I.000812.01,DGAV - Plan climat phase II,Objet nouv,4000000,0,4000000
+2027,041,I.000840.01,Améliorations foncières 2026-2029,24.03.2026,18600000,6600000,12000000
+2027,041,I.000940.01,Dotation FIR,31.03.2026,10000000,0,10000000
+2027,047,I.000565.01,Modernisation infrastructure FO du RCV,14.06.2022,1396000,1067000,329000
+2027,047,I.000622.01,Stratégie e-VD port. sécur. et support,06.11.2018,198000,0,198000
+2027,047,I.000624.01,Sécurisation du SI - étape 2,04.02.2020,261000,0,261000
+2027,047,I.000793.02,Modernisation du SI DGIP - Etape 2,25.08.2026,100000,0,100000
+2027,047,I.000844.01,Migration S/4 Hana - Phase 2,Objet nouv,100000,0,100000
+2027,047,I.000846.01,Modernisation du SI statistique,26.05.2026,100000,0,100000
+2027,047,I.000877.01,Remplacement de la plate-forme éditique,Objet nouv,10000,0,10000
+2027,047,I.000906.01,Sécurisation du SI - Etape 3,Objet nouv,10000,0,10000
+2027,047,I.000931.01,Participation financière VD agenda ANS,26.11.2024,1062000,0,1062000
+2027,047,I.000972.01,SG-DEF - SIRH personnel enseignant,Objet nouv,100000,0,100000
+2027,047,I.000981.02,CrE Nouveau bâtiment DGNSI Prilly,Objet nouv,200000,0,200000
+2027,057,I.000599.01,CrO Sécurisation des offices judiciaires,Objet nouv,100000,0,100000
+2027,057,I.000828.01,CE - Transition numérique MP et OJV,05.04.2022,1090000,0,1090000
+2027,057,I.000828.02,Transition num. OJV - Projets CH,29.10.2024,160000,0,160000
+2027,057,I.000828.03,Transition num. OJV - évol. SI,29.10.2024,3625000,0,3625000
+2027,057,I.000984.01,CrO Déplacement JPX Lausanne / Provence,26.11.2024,1350000,0,1350000
+2027,057,I.000985.01,CrO Extension JPX Nyon,10.02.2026,1890000,0,1890000
+2027,057,I.000998.01,Mise en conformité câblage IT OJV/MP,29.10.2024,650000,0,650000
+2027,057,I.001032.02,CrE Transfo.Bât Tribunal Arrondi. Est VD,Objet nouv,10000,0,10000
+2027,057,I.001125.01,CrE OJV Stratégie immobilière,Objet nouv,50000,0,50000
