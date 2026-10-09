@@ -21,6 +21,12 @@ jobs:
           python-version: "3.12"
       - name: Contrôles des données
         run: python -m unittest discover tests -v
+      - name: Aperçu du site (téléchargeable depuis l'exécution)
+        uses: actions/upload-artifact@v4
+        with:
+          name: apercu-du-site
+          path: site/index.html
+          retention-days: 14
 
   pages:
     # Ne publie le site que si le dépôt est public (GitHub Pages indisponible en privé sur un compte gratuit)
