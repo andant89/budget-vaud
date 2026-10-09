@@ -23,7 +23,8 @@ L'outil décrit ce que montrent les chiffres. Il ne dit pas ce qu'il faudrait en
 | `pipeline/` | Scripts d'extraction et de fusion (Python, bibliothèque standard uniquement) |
 | `sources/` | Texte extrait de chaque brochure et liste des sources |
 | `tests/` | Contrôles automatiques de cohérence |
-| `docs/` | Méthodologie et procédure de mise à jour |
+| `docs/` | Méthodologie, procédure de mise à jour et mode d'emploi de l'assistant |
+| `assistant/` | Outils pour interroger les données avec votre propre IA (serveur MCP et script) |
 
 ### Fichiers de données
 
@@ -65,6 +66,10 @@ Conçu pour que n'importe qui puisse interroger le budget, sans connaissances en
 - **Fiche service** et **Économies et investissements**, avec le suivi de chaque objet d'investissement d'un budget à l'autre
 
 Les termes techniques sont soulignés et expliqués au survol. Une option affiche tous les montants par habitant. Les comparaisons sont guidées : un badge indique si elle est standard (deux budgets successifs), de type prévision et réalisé, ou à interpréter avec prudence. Les montants qui apparaissent, disparaissent ou varient de plus de trois fois sont signalés « à vérifier ».
+
+## Interroger le budget avec votre IA
+
+Téléchargez le projet et branchez l'IA de votre choix : Claude Desktop, Claude Code ou toute application compatible MCP via `assistant/mcp_server.py`, ou n'importe quel modèle compatible OpenAI (local avec Ollama, ou en ligne) via `assistant/ask.py`. L'IA répond uniquement à partir des données de `data/`, cite les lignes utilisées et suit des consignes de neutralité. Mode d'emploi : [docs/assistant.md](docs/assistant.md).
 
 ## Reconstruire les données
 
