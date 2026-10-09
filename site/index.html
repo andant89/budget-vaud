@@ -198,6 +198,16 @@ footer{margin-top:44px;padding-top:14px;border-top:1px solid var(--line);font-si
 
 /* multi-year additions */
 [hidden]{display:none!important}
+.hit .hl{fill:var(--fg);opacity:0;transition:opacity .1s}
+.hit:hover .hl,.hit:focus .hl{opacity:.06}
+.hit .guide{opacity:0}
+.hit:hover .guide,.hit:focus .guide{opacity:1}
+.hit{outline:none}
+.hit.click{cursor:pointer}
+.tipm{cursor:default}
+.hb.tipm:hover,.hbar:hover{background:var(--surface-2);border-radius:4px}
+#tip .sw{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:6px;vertical-align:0}
+#tip .tiphint{margin-top:6px;font-size:11.5px;color:var(--accent)}
 .tabgrp{align-self:center;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:12px 4px 10px 12px;white-space:nowrap}
 .tabgrp:first-child{padding-left:4px}
 .gl{border-bottom:1px dotted var(--fg-2);cursor:help}
@@ -562,6 +572,18 @@ function moveTip(e){const w=tip.offsetWidth,h=tip.offsetHeight;let x=e.clientX+1
 function hideTip(){tip.classList.remove("on")}
 function tipRows(title,rows){return "<b>"+esc(title)+"</b>"+rows.map(r=>`<div class="row"><span>${r[0]}</span><span>${r[1]}</span></div>`).join("")}
 
+// ---------- infobulles génériques (data-tip) ----------
+(function(){let pinned=null;
+  const sh=(el,e)=>{tip.innerHTML=el.getAttribute("data-tip");tip.classList.add("on");if(e&&e.clientX!==undefined&&e.type!=="focusin")moveTip(e);else{const r=el.getBoundingClientRect();moveTip({clientX:r.left+r.width/2,clientY:r.top})}};
+  document.addEventListener("mousemove",e=>{const el=e.target.closest&&e.target.closest("[data-tip]");if(el){sh(el,e)}else if(!pinned&&tip.classList.contains("on")&&!e.target.closest(".gl,.tile,svg path,svg rect,table.heat td"))hideTip()});
+  document.addEventListener("mouseleave",hideTip);
+  document.addEventListener("focusin",e=>{const el=e.target.closest&&e.target.closest("[data-tip]");if(el)sh(el,e)});
+  document.addEventListener("click",e=>{const el=e.target.closest&&e.target.closest("[data-tip]");
+    if(el&&el.dataset.ser){hideTip();$("#selCur").value=el.dataset.ser;$("#selCur").dispatchEvent(new Event("change"));return}
+    if(el&&el.dataset.bc){hideTip();const b=$("#bcYear").querySelector(`button[data-v="${el.dataset.bc}"]`);if(b)b.click();return}
+    if(el&&matchMedia("(hover:none)").matches){pinned=el;sh(el,e)}else if(pinned&&!el){pinned=null;hideTip()}});
+})();
+
 // ---------- tabs ----------
 const tabs=$$(".tab");let curTab="t-ov";
 function openTab(id){curTab=id;tabs.forEach(t=>{const on=t.id===id;t.setAttribute("aria-selected",on);$("#"+t.getAttribute("aria-controls")).hidden=!on});store("bv-tab",id);
@@ -594,7 +616,7 @@ function initYears(){$("#selCur").innerHTML=optList(cur);applyMode();
   $("#selBase").onchange=()=>{base=$("#selBase").value;yearsChanged()};
   $("#selEx").onchange=()=>{withEx=$("#selEx").checked;recompute();yearsChanged()};yearsChanged(true)}
 function yearsChanged(first){$("#curStatus").innerHTML=PROJ[cur]?'<span class="status proj gl" data-g="projet" tabindex="0">Projet du Conseil d\'État</span>':(cur[0]==="C"?'<span class="status">Comptes bouclés</span>':'<span class="status">Budget adopté</span>');
-  const k=cmpKind(cur,base);$("#cmpBadge").innerHTML=`<span class="badge ${k[0]}" title="${esc(k[2])}">${k[1]}</span>`;
+  const k=cmpKind(cur,base);$("#cmpBadge").innerHTML=`<span class="badge ${k[0]}" data-tip="${esc("<b>"+esc(k[1])+"</b>"+esc(k[2]))}" tabindex="0">${k[1]}</span>`;
   let n=$("#cmpNote");if(!n){n=document.createElement("p");n.id="cmpNote";n.className="cmpnote";$("#yearbar").after(n)}
   n.textContent=k[0]==="ok"?"":k[2];n.hidden=k[0]==="ok"||$("#yearbar").hidden;
   sankeyW=0;if(!first)renderTab()}
@@ -617,9 +639,17 @@ function seriesChart(vals,opts={}){ // vals: array aligned to SER
   s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(0)}" y2="${y(0)}" stroke="${css("--axis")}"/>`;
   YRS.forEach(yr=>{const b=SI["B"+(yr%100)],c=SI["C"+(yr%100)];const cx=x(yr)+x.bandwidth()/2;
     if(b!==undefined){const v=vals[b];const y0=y(Math.max(0,v)),h=Math.abs(y(v)-y(0));const sel=("B"+(yr%100))===cur;
-      s+=`<rect x="${x(yr)}" y="${y0}" width="${x.bandwidth()}" height="${Math.max(1,h)}" rx="2" fill="${sel?css("--accent"):css("--seq3")}" ${PROJ["B"+(yr%100)]?`fill-opacity=".55"`:""}><title>${SLAB["B"+(yr%100)]}${PROJ["B"+(yr%100)]?" (projet)":""} : ${chf(v)}</title></rect>`}
-    if(c!==undefined){const v=vals[c];s+=`<circle cx="${cx}" cy="${y(v)}" r="5" fill="${css("--s2")}" stroke="${css("--surface")}" stroke-width="2"><title>${SLAB["C"+(yr%100)]} : ${chf(v)}</title></circle>`}
-    s+=`<text x="${cx}" y="${H-6}" text-anchor="middle" font-size="11" fill="${css("--fg-2")}">${yr}</text>`});
+      s+=`<rect x="${x(yr)}" y="${y0}" width="${x.bandwidth()}" height="${Math.max(1,h)}" rx="2" fill="${sel?css("--accent"):css("--seq3")}" ${PROJ["B"+(yr%100)]?`fill-opacity=".55"`:""}/>`}
+    if(c!==undefined){const v=vals[c];s+=`<circle cx="${cx}" cy="${y(v)}" r="5" fill="${css("--s2")}" stroke="${css("--surface")}" stroke-width="2"/>`}
+    s+=`<text x="${cx}" y="${H-6}" text-anchor="middle" font-size="11" fill="${css("--fg-2")}">${yr}</text>`;
+    // zone de survol : toute la colonne de l'année
+    const sb="B"+(yr%100),sc="C"+(yr%100),pb="B"+(yr%100-1);const rows=[];
+    if(b!==undefined)rows.push([SLAB[sb]+(PROJ[sb]?" (projet)":""),chf(vals[b])]);
+    if(c!==undefined)rows.push([SLAB[sc],chf(vals[c])]);
+    if(b!==undefined&&c!==undefined)rows.push(["Écart comptes − budget",sgn(vals[c]-vals[b])]);
+    if(b!==undefined&&SI[pb]!==undefined&&vals[SI[pb]])rows.push(["Variation vs budget "+(yr-1),pctTxt(pct(vals[b],vals[SI[pb]]))]);
+    if(rows.length){const tipH=tipRows(String(yr),rows)+(b!==undefined&&opts.click!==false?'<div class="tiphint">Cliquez pour afficher cette année</div>':"");
+      const step=x.step();s+=`<g class="hit${b!==undefined&&opts.click!==false?" click":""}" data-tip="${esc(tipH)}" ${b!==undefined&&opts.click!==false?`data-ser="${sb}"`:""} tabindex="0"><rect class="hl" x="${x(yr)-step*x.paddingInner()/2}" y="${m.t-6}" width="${step}" height="${H-m.b-m.t+6}" rx="4"/></g>`}});
   return s+"</svg>"}
 const chartLegend=()=>`<div class="legend inline"><span><i style="background:${css("--seq3")}"></i>Budget</span><span><i style="background:${css("--accent")}"></i>Année affichée</span><span><i style="background:${css("--s2")};border-radius:99px"></i>Comptes</span><span style="color:var(--muted)">Barre pâle : projet</span></div>`;
 
@@ -798,7 +828,7 @@ function renderRows(){const i=ci(),j=bi();
   $$("#tbl th").forEach(th=>{if(th.dataset.k===sortKey)th.setAttribute("aria-sort",sortDir>0?"ascending":"descending");else th.removeAttribute("aria-sort")});
   $("#tbl tbody").innerHTML=results.slice(0,shown).map(l=>{const a=l.v[i],b=l.v[j],dd=a-b;
     return `<tr data-i="${l.i}"><td><span class="dot" style="background:${dcol(l.dept)}"></span>${esc(SVC[l.svc].name)}<div class="code">${DEPT[l.dept].code} · ${l.svc}</div></td>
-    <td>${esc(l.label)}${l.cm?'<span class="chip cm">détail</span>':""}${l.sav?'<span class="chip sv">économie</span>':""}${pairFlag(a,b)?'<span class="chip jx" title="Montant qui apparaît, disparaît ou varie de plus de 3 fois : possible réorganisation">à vérifier</span>':""}<div class="code">${l.rub} · ${l.t==="C"?"charge":"revenu"}</div></td>
+    <td>${esc(l.label)}${l.cm?'<span class="chip cm">détail</span>':""}${l.sav?'<span class="chip sv">économie</span>':""}${pairFlag(a,b)?'<span class="chip jx" data-tip="<b>À vérifier</b>Montant qui apparaît, disparaît ou varie de plus de 3 fois entre les deux années : souvent une réorganisation ou une écriture comptable.">à vérifier</span>':""}<div class="code">${l.rub} · ${l.t==="C"?"charge":"revenu"}</div></td>
     <td class="r"><b>${perHab?amt(a):grp(a)}</b></td><td class="r">${perHab?amt(b,base):grp(b)}</td>
     <td class="r"><span class="pill ${dd>0?"up":dd<0?"down":""}">${dd===0?"=":pctTxt(pct(a,b))}</span><div class="code">${dd>0?"+":""}${grp(dd)}</div></td><td class="r">${spark(l)}</td></tr>`}).join("")||`<tr><td colspan="6" style="padding:20px;color:var(--fg-2)">Aucune ligne ne correspond. Essayez un mot plus court ou retirez un filtre.</td></tr>`;
   $("#moreBtn").hidden=results.length<=shown;$("#moreInfo").textContent=results.length>shown?`${grp(Math.min(shown,results.length))} affichées sur ${grp(results.length)}`:""}
@@ -806,7 +836,7 @@ function renderRows(){const i=ci(),j=bi();
 // ---------- diverging lists (shared) ----------
 function divList(id,arr,max){const el=$(id);
   el.innerHTML=arr.slice(0,15).map(x=>{const w=Math.abs(x.d)/max*50;
-    return `<div class="drow" tabindex="0"><div class="lab">${esc(x.name)}${pairFlag(x.a,x.b)?'<span class="chip jx" title="Montant qui apparaît, disparaît ou varie de plus de 3 fois : possible réorganisation">à vérifier</span>':""}<small>${esc(x.sub)} · ${pctTxt(pct(x.a,x.b))}</small></div><div class="track"><div class="b ${x.d<0?"neg":""}" style="${x.d<0?"right:50%":"left:50%"};width:${w}%;background:${x.d<0?css("--down"):css("--up")}"></div></div><div class="v">${sgn(x.d)}</div></div>`}).join("")||'<p class="note">Aucune.</p>';
+    return `<div class="drow" tabindex="0"><div class="lab">${esc(x.name)}${pairFlag(x.a,x.b)?'<span class="chip jx" data-tip="<b>À vérifier</b>Montant qui apparaît, disparaît ou varie de plus de 3 fois entre les deux années : souvent une réorganisation ou une écriture comptable.">à vérifier</span>':""}<small>${esc(x.sub)} · ${pctTxt(pct(x.a,x.b))}</small></div><div class="track"><div class="b ${x.d<0?"neg":""}" style="${x.d<0?"right:50%":"left:50%"};width:${w}%;background:${x.d<0?css("--down"):css("--up")}"></div></div><div class="v">${sgn(x.d)}</div></div>`}).join("")||'<p class="note">Aucune.</p>';
   el.querySelectorAll(".drow").forEach((r,k)=>{r.onclick=arr[k].go;r.onkeydown=e=>{if(e.key==="Enter")arr[k].go()}})}
 function items(level,type,i,j,dp){
   let it;
@@ -840,9 +870,11 @@ function drawBC(){
   y.ticks(5).forEach(t=>s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(t)}" y2="${y(t)}" stroke="${css("--line")}"/><text x="${m.l-6}" y="${y(t)}" dy="0.32em" text-anchor="end" font-size="10.5" fill="${css("--muted")}">${grp(Math.round(t/1e6))}</text>`);
   s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(0)}" y2="${y(0)}" stroke="${css("--axis")}"/>`;
   yrs.forEach((yr,a)=>{data[a].forEach((v,k)=>{const yy=y(Math.max(0,v)),h=Math.abs(y(v)-y(0));
-      s+=`<rect x="${x0(yr)+x1(k)}" y="${yy}" width="${x1.bandwidth()}" height="${Math.max(1,h)}" rx="2" fill="${css(keys[k][2])}" ${yr===bcYear?"":'fill-opacity=".55"'}><title>20${yr} · ${keys[k][0]} : ${sgn(v)} (comptes moins budget)</title></rect>`;
+      s+=`<rect x="${x0(yr)+x1(k)}" y="${yy}" width="${x1.bandwidth()}" height="${Math.max(1,h)}" rx="2" fill="${css(keys[k][2])}" ${yr===bcYear?"":'fill-opacity=".55"'}/>`;
       if(Math.abs(v)>=1e6)s+=`<text x="${x0(yr)+x1(k)+x1.bandwidth()/2}" y="${v>=0?yy-4:yy+h+11}" text-anchor="middle" font-size="9.5" fill="${css("--fg-2")}">${grp(Math.round(v/1e6))}</text>`});
-    s+=`<text x="${x0(yr)+x0.bandwidth()/2}" y="${H-6}" text-anchor="middle" font-size="12" font-weight="${yr===bcYear?700:400}" fill="${css("--fg")}">20${yr}</text>`});
+    s+=`<text x="${x0(yr)+x0.bandwidth()/2}" y="${H-6}" text-anchor="middle" font-size="12" font-weight="${yr===bcYear?700:400}" fill="${css("--fg")}">20${yr}</text>`;
+    const tipH=`<b>20${yr} : comptes moins budget</b>`+keys.map((k,q)=>`<div class="row"><span><i class="sw" style="background:${css(k[2])}"></i>${k[0]}</span><span>${sgn(data[a][q])}</span></div>`).join("")+`<div class="row"><span>Résultat : budget</span><span>${short(D.cr.res["B"+yr])}</span></div><div class="row"><span>Résultat : comptes</span><span>${short(D.cr.res["C"+yr])}</span></div><div class="tiphint">Cliquez pour le détail de cette année</div>`;
+    s+=`<g class="hit click" data-tip="${esc(tipH)}" data-bc="${yr}" tabindex="0"><rect class="hl" x="${x0(yr)-x0.step()*x0.paddingInner()/2}" y="${m.t}" width="${x0.step()}" height="${H-m.b-m.t}" rx="4"/></g>`});
   $("#bcChart").innerHTML=s+"</svg>";
   $("#bcLegend").innerHTML=keys.map(k=>`<span><i style="background:${css(k[2])}"></i>${k[0]}</span>`).join("");
   const r=items(bcLevel,bcType,i,j,"");
@@ -867,10 +899,15 @@ function lineChart(series,o){
   d3.range(d3.min(xs),d3.max(xs)+1).forEach(t=>s+=`<text x="${x(t)}" y="${H-7}" text-anchor="middle" font-size="10.5" fill="${css("--fg-2")}">${t}</text>`);
   const ends=[];
   series.forEach(se=>{const p=se.pts;s+=`<path d="${d3.line().x(d=>x(d[0])).y(d=>y(d[1]))(p)}" fill="none" stroke="${se.color}" stroke-width="2" ${se.dash?'stroke-dasharray="5 4"':""}/>`;
-    p.forEach(d=>s+=`<circle cx="${x(d[0])}" cy="${y(d[1])}" r="${se.dash?2.5:3.5}" fill="${se.dash?css("--surface"):se.color}" stroke="${se.color}" stroke-width="1.5"><title>${esc(se.name)} ${d[0]} : ${o.tfmt?o.tfmt(d[1]):d[1]}</title></circle>`);
+    p.forEach(d=>s+=`<circle cx="${x(d[0])}" cy="${y(d[1])}" r="${se.dash?2.5:3.5}" fill="${se.dash?css("--surface"):se.color}" stroke="${se.color}" stroke-width="1.5"/>`);
     const last=p[p.length-1];ends.push({y:y(last[1]),x:x(last[0]),t:`${se.name} ${o.tfmt?o.tfmt(last[1]):""}`,c:se.color})});
   ends.sort((a,b)=>a.y-b.y);for(let k=1;k<ends.length;k++)if(ends[k].y-ends[k-1].y<13)ends[k].y=ends[k-1].y+13;
   ends.forEach(e=>s+=`<text x="${W-m.r+8}" y="${e.y}" dy="0.32em" font-size="11.5" fill="${css("--fg")}"><tspan fill="${e.c}">●</tspan> ${esc(e.t)}</text>`);
+  const ux=[...new Set(xs)].sort((a,b)=>a-b);
+  ux.forEach((xv,k)=>{const x0=k?(x(ux[k-1])+x(xv))/2:m.l-4,x1=k<ux.length-1?(x(xv)+x(ux[k+1]))/2:W-m.r+4;
+    const vals=series.map(se=>{const pt=se.pts.find(p=>p[0]===xv);return pt?[se,pt[1]]:null}).filter(Boolean).sort((a,b)=>b[1]-a[1]);
+    const tipH=`<b>${xv}</b>`+vals.map(([se,v])=>`<div class="row"><span><i class="sw" style="background:${se.color}"></i>${esc(se.name)}</span><span>${o.tfmt?o.tfmt(v):v}</span></div>`).join("");
+    s+=`<g class="hit" data-tip="${esc(tipH)}" tabindex="0"><rect class="hl" x="${x0}" y="${m.t}" width="${x1-x0}" height="${H-m.b-m.t}"/><line class="guide" x1="${x(xv)}" x2="${x(xv)}" y1="${m.t}" y2="${H-m.b}" stroke="${css("--fg-2")}" stroke-dasharray="3 3"/></g>`});
   return `<div class="chartbox">${s}</svg></div>`}
 function divCell(p,scale){if(p===null||!isFinite(p))return [css("--surface-2"),css("--muted")];const t=Math.max(-1,Math.min(1,p/scale));
   const c=t>=0?d3.interpolateRgb(css("--mid"),css("--s1"))(Math.sqrt(t)):d3.interpolateRgb(css("--mid"),css("--s2"))(Math.sqrt(-t));return [c,textOn(c)]}
@@ -895,7 +932,7 @@ function drawAnalyses(){
     let s=`<svg viewBox="0 0 ${W} ${H}" width="100%" style="max-width:${W}px;min-width:560px" role="img" aria-label="Contribution des départements à la hausse des charges">`;
     y.ticks(5).forEach(t=>s+=`<line x1="${m.l}" x2="${W-m.r}" y1="${y(t)}" y2="${y(t)}" stroke="${css("--line")}"/><text x="${m.l-6}" y="${y(t)}" dy="0.32em" text-anchor="end" font-size="10.5" fill="${css("--muted")}">${dec(t/1e9,1)}</text>`);
     steps.forEach((st,i)=>{const top=st.tot?st.v:st.base+Math.max(0,st.v),bot=st.tot?lo:st.base+Math.min(0,st.v);
-      s+=`<rect x="${x(i)}" y="${y(Math.max(top,bot))}" width="${x.bandwidth()}" height="${Math.max(1,Math.abs(y(bot)-y(top)))}" rx="2" fill="${st.tot?css("--axis"):dcol(st.dept)}"><title>${st.lab} : ${st.tot?short(st.v):sgn(st.v)}</title></rect>`;
+      s+=`<rect x="${x(i)}" y="${y(Math.max(top,bot))}" width="${x.bandwidth()}" height="${Math.max(1,Math.abs(y(bot)-y(top)))}" rx="2" fill="${st.tot?css("--axis"):dcol(st.dept)}" class="tipm" data-tip="${esc(st.tot?tipRows(st.lab.replace(/^B /,"Budget ").replace(/^C /,"Comptes "),[["Total des charges",chf(st.v)]]):tipRows(DEPT[st.dept].name,[["Variation",sgn(st.v)],["Part de la hausse totale",dec(st.v/(end-start)*100,1)+" %"]]))}" tabindex="0"/>`;
       s+=`<text x="${x(i)+x.bandwidth()/2}" y="${y(Math.max(top,bot))-5}" text-anchor="middle" font-size="10.5" fill="${css("--fg-2")}">${st.tot?dec(st.v/1e9,2):(st.v>=0?"+":"−")+grp(Math.abs(Math.round(st.v/1e6)))}</text>`;
       s+=`<text x="${x(i)+x.bandwidth()/2}" y="${H-m.b+16}" text-anchor="middle" font-size="11" fill="${css("--fg")}">${esc(st.lab)}</text>`});
     s+=`<text x="${m.l}" y="${H-8}" font-size="10.5" fill="${css("--muted")}">Totaux en milliards, contributions en millions</text>`;
@@ -909,7 +946,7 @@ function drawAnalyses(){
   const nats=[["36","Transferts et subventions"],["30","Personnel"],["31","Biens et services"],["37","Subventions à redistribuer"],["33","Amortissements"]];
   const rowsN=by.map(y=>{const t=opv(isC,"B"+y);const parts=nats.map(([n])=>opv(l=>l.nat===n,"B"+y)/t*100);parts.push(100-parts.reduce((a,b)=>a+b,0));return {y,parts}});
   const colsN=[css("--s1"),css("--s2"),css("--s3"),css("--s4"),css("--s7"),css("--s9")];
-  let st=`<div style="display:grid;gap:5px">`+rowsN.map(r=>`<div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:8px;align-items:center;font-size:12px"><span class="num">${2000+r.y}</span><div style="display:flex;height:18px;border-radius:3px;overflow:hidden;gap:2px">${r.parts.map((p,k)=>`<i title="${k<5?nats[k][1]:"Autres"} : ${dec(p,1)} %" style="width:${p}%;background:${colsN[k]};display:block"></i>`).join("")}</div></div>`).join("")+`</div><div class="legend">${nats.map((n,k)=>`<span><i style="background:${colsN[k]}"></i>${n[1]}</span>`).join("")}<span><i style="background:${colsN[5]}"></i>Autres</span></div>`;
+  let st=`<div style="display:grid;gap:5px">`+rowsN.map(r=>`<div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:8px;align-items:center;font-size:12px"><span class="num">${2000+r.y}</span><div style="display:flex;height:18px;border-radius:3px;overflow:hidden;gap:2px">${r.parts.map((p,k)=>`<i class="tipm" data-tip="${esc(tipRows((k<5?nats[k][1]:"Autres")+" · "+Y4(r.y),[["Part des charges",dec(p,1)+" %"],["Montant",short(p/100*opv(isC,"B"+r.y))]]))}" style="width:${p}%;background:${colsN[k]};display:block"></i>`).join("")}</div></div>`).join("")+`</div><div class="legend">${nats.map((n,k)=>`<span><i style="background:${colsN[k]}"></i>${n[1]}</span>`).join("")}<span><i style="background:${colsN[5]}"></i>Autres</span></div>`;
   const tp=r=>r.parts[0]+r.parts[1];
   sec("an3","3. La structure des charges","Part de chaque nature dans les charges des budgets, en %",st,
     `Transferts et personnel représentent <b>${dec(tp(rowsN[0]),1)} %</b> des charges en ${Y4(b0)} et <b>${dec(tp(rowsN[rowsN.length-1]),1)} %</b> en ${Y4(bN)}. La part des transferts passe de ${dec(rowsN[0].parts[0],1)} % à ${dec(rowsN[rowsN.length-1].parts[0],1)} %. Les transferts regroupent notamment les subsides et aides sociales ainsi que les subventions aux hôpitaux, hautes écoles et institutions ; une partie de ces montants découle de lois cantonales ou fédérales.`,
@@ -918,7 +955,7 @@ function drawAnalyses(){
   const taxes=[["052|4000","Impôt sur le revenu (PP)"],["052|4001","Impôt sur la fortune (PP)"],["052|4002","Impôt à la source"],["052|4010","Impôt sur le bénéfice (PM)"],["052|4011","Impôt sur le capital (PM)"],["052|4022","Impôt sur les gains en capital"],["052|4023","Droits de mutation"],["052|4024","Successions et donations"],["052|4600","Part à l'impôt fédéral direct"],["053|4110","Part au bénéfice de la BNS"]];
   const LBK=Object.fromEntries(LINES.map(l=>[l.svc+"|"+l.rub,l]));const ey=BOTH;const eyT=`${Y4(ey[0])} à ${Y4(ey[ey.length-1])}`;
   let tb=`<div class="chartbox"><table class="mini"><thead><tr><th>Recette</th>${ey.map(y=>`<th>${2000+y}</th>`).join("")}<th>Écart cumulé</th></tr></thead><tbody>`;let cumT=0;
-  taxes.forEach(([k,n])=>{const l=LBK[k];if(!l)return;let c=0;tb+=`<tr data-i="${l.i}"><td>${n}</td>`+ey.map(y=>{const b=l.v[SI["B"+y]],a=l.v[SI["C"+y]];c+=a-b;const p=b?((a-b)/Math.abs(b)*100):null;const [bg,fg]=divCell(p,40);return `<td style="background:${bg};color:${fg}" title="Budget ${short(b)}, comptes ${short(a)}">${p===null?"–":(p>0?"+":p<0?"−":"")+dec(p,0)+" %"}</td>`}).join("")+`<td><b>${sgn(c)}</b></td></tr>`;if(k!=="053|4110")cumT+=c});
+  taxes.forEach(([k,n])=>{const l=LBK[k];if(!l)return;let c=0;tb+=`<tr data-i="${l.i}"><td>${n}</td>`+ey.map(y=>{const b=l.v[SI["B"+y]],a=l.v[SI["C"+y]];c+=a-b;const p=b?((a-b)/Math.abs(b)*100):null;const [bg,fg]=divCell(p,40);return `<td style="background:${bg};color:${fg}" class="tipm" data-tip="${esc(tipRows(n||"",[["Budget",chf(b)],["Comptes",chf(a)],["Écart",sgn(a-b)]]))}">${p===null?"–":(p>0?"+":p<0?"−":"")+dec(p,0)+" %"}</td>`}).join("")+`<td><b>${sgn(c)}</b></td></tr>`;if(k!=="053|4110")cumT+=c});
   tb+=`</tbody></table></div><div class="gradlegend"><span>Encaissé moins que prévu</span><span class="bar" style="background:linear-gradient(90deg,${css("--s2")},${css("--mid")},${css("--s1")})"></span><span>Encaissé plus que prévu (±40 %)</span></div>`;
   const pm=LBK["052|4010"];const pmc=ey.reduce((a,y)=>a+pm.v[SI["C"+y]]-pm.v[SI["B"+y]],0);
   sec("an4","4. La précision des prévisions fiscales","Écart entre impôts encaissés (comptes) et prévus (budget), en % du budget",tb,
@@ -934,7 +971,7 @@ function drawAnalyses(){
     "Critères : budget supérieur à 1 million chaque année et écart de même signe toutes les années disponibles. Cliquez une ligne pour sa fiche.");
   // 6 exécution par département
   let te=`<div class="chartbox"><table class="mini"><thead><tr><th>Département</th>${ey.map(y=>`<th>${2000+y}</th>`).join("")}</tr></thead><tbody>`;
-  order.forEach(d=>{te+=`<tr><td><span class="dot" style="background:${dcol(d.id)}"></span>${esc(d.name)}</td>`+ey.map(y=>{const b=opv(l=>isC(l)&&l.dept===d.id,"B"+y),a=opv(l=>isC(l)&&l.dept===d.id,"C"+y);const p=b?a/b*100:null;const [bg,fg]=divCell(p===null?null:p-100,25);return `<td style="background:${bg};color:${fg}" title="Budget ${short(b)}, comptes ${short(a)}">${p===null?"–":dec(p,0)+" %"}</td>`}).join("")+`</tr>`});
+  order.forEach(d=>{te+=`<tr><td><span class="dot" style="background:${dcol(d.id)}"></span>${esc(d.name)}</td>`+ey.map(y=>{const b=opv(l=>isC(l)&&l.dept===d.id,"B"+y),a=opv(l=>isC(l)&&l.dept===d.id,"C"+y);const p=b?a/b*100:null;const [bg,fg]=divCell(p===null?null:p-100,25);return `<td style="background:${bg};color:${fg}" class="tipm" data-tip="${esc(tipRows(d.name+" · "+Y4(y),[["Budget",chf(b)],["Comptes",chf(a)],["Exécution",p===null?"–":dec(p,1)+" %"]]))}">${p===null?"–":dec(p,0)+" %"}</td>`}).join("")+`</tr>`});
   te+=`</tbody></table></div>`;
   sec("an6","6. Le taux d'exécution des charges","Charges réalisées (comptes) en % du budget, par département",te,
     (SI.C21===undefined||SI.C24===undefined)?`Les taux proches de 100 % indiquent une exécution conforme au budget.`:`Les grands départements (Enseignement, Santé et action sociale) exécutent leur budget à quelques pourcents près. Les plus gros écarts se concentrent dans quelques services. Promotion de l'économie : ${short(STOT['044'].C[SI.C21])} dépensés en 2021 pour ${short(STOT['044'].C[SI.B21])} budgétés (période des aides COVID). Service de la population : ${short(STOT['023'].C[SI.C24])} en 2024 pour ${short(STOT['023'].C[SI.B24])} budgétés (période qui suit l'arrivée de réfugiés d'Ukraine en 2022). Finances : écarts de 2019 à 2022 sur la fiscalité et la gestion financière, qui comprennent des pertes sur créances et des réévaluations.`,
@@ -954,7 +991,7 @@ function drawAnalyses(){
   [0,25,50,80,100].forEach(t=>sp+=`<line x1="${mp.l}" x2="${Wp-mp.r}" y1="${yp(t)}" y2="${yp(t)}" stroke="${t===80?css("--axis"):css("--line")}"/><text x="${mp.l-6}" y="${yp(t)}" dy="0.32em" text-anchor="end" font-size="10.5" fill="${css("--muted")}">${t} %</text>`);
   [1,10,100,1000].forEach(t=>sp+=`<text x="${xp(t)}" y="${Hp-8}" text-anchor="middle" font-size="10.5" fill="${css("--fg-2")}">${t} ligne${t>1?"s":""}</text>`);
   sp+=`<path d="${d3.line().x(d=>xp(d[0])).y(d=>yp(d[1]))(cum.map((c,i)=>[i+1,c]))}" fill="none" stroke="${css("--s1")}" stroke-width="2"/>`;
-  sp+=`<circle cx="${xp(n80)}" cy="${yp(80)}" r="5" fill="${css("--s2")}" stroke="${css("--surface")}" stroke-width="2"/><text x="${xp(n80)+8}" y="${yp(80)+16}" font-size="11.5" fill="${css("--fg")}">${n80} lignes = 80 %</text></svg>`;
+  sp+=`<circle cx="${xp(n80)}" cy="${yp(80)}" r="5" fill="${css("--s2")}" stroke="${css("--surface")}" stroke-width="2"/><text x="${xp(n80)+8}" y="${yp(80)+16}" font-size="11.5" fill="${css("--fg")}">${n80} lignes = 80 %</text>`+[1,2,3,5,10,15,20,30,40,n50,60,80,n80,100,150,200,300,500,750,1000].filter((n,k,a)=>n<=vals.length&&a.indexOf(n)===k).sort((a,b)=>a-b).map(n=>`<g class="hit" data-tip="${esc(tipRows(n+" plus grosses lignes",[["Part cumulée des charges",dec(cum[n-1],1)+" %"],["Montant cumulé",short(cum[n-1]/100*T)]]))}" tabindex="0"><circle cx="${xp(n)}" cy="${yp(cum[n-1])}" r="9" fill="transparent"/><circle class="guide" cx="${xp(n)}" cy="${yp(cum[n-1])}" r="4" fill="${css("--s1")}"/></g>`).join("")+`</svg>`;
   sec("an8","8. La concentration des dépenses",`Part cumulée des charges du ${SLAB[LASTB].toLowerCase()} selon le nombre de lignes (échelle logarithmique)`,`<div class="chartbox">${sp}</div>`,
     `Sur ${grp(vals.length)} lignes de charges, <b>${n50} suffisent pour la moitié du budget et ${n80} pour 80 %</b>. Les 10 plus grosses en représentent ${dec(cum[9],0)} %. Les plus grosses lignes sont des subsides, des subventions aux hôpitaux et institutions, et les salaires des enseignants.`,
     "Méthode de Pareto : lignes triées de la plus grosse à la plus petite, puis cumul.");
@@ -1180,7 +1217,7 @@ function drawHome(){
   // 100 francs dépensés
   const dC={};LINES.forEach(l=>{if(l.t==="C"&&!l.ex)dC[l.dept]=(dC[l.dept]||0)+l.v[i]});
   const rows=order.map(d=>[d,(dC[d.id]||0)/o.C*100]).sort((a,b)=>b[1]-a[1]);
-  $("#hmSpend").innerHTML=rows.map(([d,p])=>`<div class="hb"><span>${esc(d.name)}</span><div class="t"><i style="width:${p/rows[0][1]*100}%;background:${dcol(d.id)}"></i></div><span class="v num">${dec(p,p<1?1:0)} fr.</span></div>`).join("");
+  $("#hmSpend").innerHTML=rows.map(([d,p])=>`<div class="hb tipm" data-tip="${esc(tipRows(d.name,[["Sur 100 francs dépensés",dec(p,1)+" fr."],["Montant",short(dC[d.id]||0)]]))}"><span>${esc(d.name)}</span><div class="t"><i style="width:${p/rows[0][1]*100}%;background:${dcol(d.id)}"></i></div><span class="v num">${dec(p,p<1?1:0)} fr.</span></div>`).join("");
   // d'où vient l'argent, pour 100 francs dépensés
   const sumL=f=>LINES.reduce((a,l)=>(!l.ex&&l.t==="R"&&f(l))?a+l.v[i]:a,0);
   const pp=sumL(l=>["4000","4001","4002","4009"].includes(l.rub)&&l.svc==="052"),pm=sumL(l=>["4010","4011","4019"].includes(l.rub)&&l.svc==="052");
@@ -1188,7 +1225,7 @@ function drawHome(){
   const src=[["Impôts des personnes (revenu, fortune, à la source)",pp,"--s1"],["Impôts des entreprises (bénéfice, capital)",pm,"--s7"],["Autres impôts (gains immobiliers, successions, droits de mutation…)",oth,"--s3"],["Versements de la Confédération et d'autres collectivités",tr,"--s4"],["Taxes, émoluments, revenus financiers et autres",rest,"--s5"]];
   if(gap>0)src.push(["Part non couverte par les revenus de l'année",gap,"--up"]);
   const mx=Math.max(...src.map(s=>s[1]));
-  $("#hmSource").innerHTML=src.map(([n,v,c])=>`<div class="hb"><span>${n}</span><div class="t"><i style="width:${v/mx*100}%;background:${css(c)}"></i></div><span class="v num">${dec(v/o.C*100,0)} fr.</span></div>`).join("");
+  $("#hmSource").innerHTML=src.map(([n,v,c])=>`<div class="hb tipm" data-tip="${esc(tipRows(n,[["Pour 100 francs dépensés",dec(v/o.C*100,1)+" fr."],["Montant",short(v)]]))}"><span>${n}</span><div class="t"><i style="width:${v/mx*100}%;background:${css(c)}"></i></div><span class="v num">${dec(v/o.C*100,0)} fr.</span></div>`).join("");
   // questions
   const ans=Q=>{if(Q.svc){const s=SVC[Q.svc];if(!s)return null;const v=STOT[Q.svc].C[i];return {v,txt:`${short(v)}${pop?` · ${grp(Math.round(v/pop))} fr. par habitant`:""}`,sub:`${s.name} (charges ${CL().toLowerCase()})`,go:()=>showService(Q.svc)}}
     if(Q.line||Q.lines){const ls=(Q.lines||[Q.line]).map(k=>LBK[k]).filter(Boolean);const v=ls.reduce((a,l)=>a+l.v[i],0);return {v,txt:`${short(v)}${pop?` · ${grp(Math.round(v/pop))} fr. par habitant`:""}`,sub:ls.map(l=>l.label).join(" + "),go:()=>lineDetail(ls[0])}}
@@ -1214,7 +1251,7 @@ function renderSvc(code){
   const s=SVC[code],d=DEPT[s.dept],T=STOT[code];const ls=LINES.filter(l=>l.svc===code&&incl(l));
   const net=T.C[i]-T.R[i];const yr=yearOf(cur);const ei=D.etpY.indexOf(yr);
   const byNat=t=>{const m={};ls.filter(l=>l.t===t).forEach(l=>m[l.nat]=(m[l.nat]||0)+l.v[i]);return Object.entries(m).filter(x=>x[1]).sort((a,b)=>b[1]-a[1])};
-  const bars=arr=>{const mx=Math.max(...arr.map(a=>a[1]),1);return arr.map(([n,v])=>`<div class="hbar"><span>${esc(NAT[n])}</span><div class="t"><i style="width:${Math.max(0,v)/mx*100}%;background:${ncol(n)}"></i></div><span class="v">${short(v)}</span></div>`).join("")};
+  const bars=arr=>{const mx=Math.max(...arr.map(a=>a[1]),1);const tt=arr.reduce((s,a)=>s+a[1],0);return arr.map(([n,v])=>`<div class="hbar tipm" data-tip="${esc(tipRows(NAT[n],[[CL(),chf(v)],["Part",dec(v/tt*100,1)+" %"]]))}"><span>${esc(NAT[n])}</span><div class="t"><i style="width:${Math.max(0,v)/mx*100}%;background:${ncol(n)}"></i></div><span class="v">${short(v)}</span></div>`).join("")};
   const top=ls.filter(l=>l.t==="C").sort((a,b)=>b.v[i]-a.v[i]).slice(0,10);
   const meas=D.meas[code]||[];const inv=(D.inv[yr]||[]).filter(x=>x[0]===code).sort((a,b)=>b[6]-a[6]);
   const etpTxt=ei>=0&&s.etp[ei]?dec(s.etp[ei],1)+" ETP":"–";
@@ -1253,7 +1290,7 @@ function drawEco(){drawInvTrack();
   $("#ecLede").textContent=`Budget d'investissement ${yr}${PROJ["B"+(yr%100)]?" (projet)":""} : ${inv.length} objets pour ${short(inv.reduce((a,x)=>a+x[6],0))} nets. Les mesures d'économie ne sont détaillées que dans la brochure ${D.savYears.join(', ')}.`;
   $("#invCap").textContent=`Budget ${yr}, en millions`;$("#invCap2").textContent=`Budget ${yr}, dépenses nettes`;
   const bars=m=>{const arr=order.map(d=>[d,m[d.id]||0]).sort((a,b)=>b[1]-a[1]);const mx=Math.max(...arr.map(a=>a[1]),1);
-    return arr.map(([d,v])=>`<div class="hbar"><span>${esc(d.code)} <span style="color:var(--muted)">· ${esc(d.name.split(",")[0])}</span></span><div class="t"><i style="width:${Math.max(0,v)/mx*100}%;background:${dcol(d.id)}"></i></div><span class="v">${dec(v/1e6,1)}</span></div>`).join("")};
+    const tt=arr.reduce((s,a)=>s+a[1],0);return arr.map(([d,v])=>`<div class="hbar tipm" data-tip="${esc(tipRows(d.name,[["Montant",chf(v)],["Part",tt?dec(v/tt*100,1)+" %":"–"]]))}"><span>${esc(d.code)} <span style="color:var(--muted)">· ${esc(d.name.split(",")[0])}</span></span><div class="t"><i style="width:${Math.max(0,v)/mx*100}%;background:${dcol(d.id)}"></i></div><span class="v">${dec(v/1e6,1)}</span></div>`).join("")};
   const id={};inv.forEach(x=>{const s=SVC[x[0]];if(s)id[s.dept]=(id[s.dept]||0)+x[6]});$("#invDept").innerHTML=bars(id);
   $("#invList").innerHTML=[...inv].sort((a,b)=>b[6]-a[6]).slice(0,14).map(x=>`<li><span>${esc(x[2])}<span class="code" style="display:block">${esc(SVC[x[0]]?SVC[x[0]].name:x[0])} · ${x[1]}</span></span><span>${short(x[6])}</span></li>`).join("");
   const sd={};Object.entries(D.sav).forEach(([k,v])=>{const d=SVC[k.split("|")[0]].dept;sd[d]=(sd[d]||0)+v});$("#savDept").innerHTML=bars(sd);
