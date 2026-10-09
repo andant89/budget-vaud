@@ -37,6 +37,8 @@ L'outil décrit ce que montrent les chiffres. Il ne dit pas ce qu'il faudrait en
 | `mesures_economie.csv` | mesure et rubrique | mesures d'économie détaillées en annexe (brochure 2026) |
 | `commentaires.csv` | élément de commentaire | détail chiffré et texte des « renseignements complémentaires » |
 | `resultats.csv` | série | résultat officiel, opérations extraordinaires, résultat recalculé et contrôle |
+| `controles.csv` | contrôle | 185 contrôles croisés avec les totaux officiels de chaque brochure |
+| `retraitements.csv` | service et budget | différences entre un budget et sa reprise dans la brochure suivante |
 
 Les montants sont en francs, sans arrondi. Les codes de rubrique suivent le modèle comptable harmonisé MCH2 : 3xxx pour les charges, 4xxx pour les revenus ; les deux premiers chiffres donnent la nature (30 personnel, 36 transferts, 40 impôts, etc.).
 
@@ -66,7 +68,7 @@ Pour ajouter une nouvelle brochure, voir [docs/ajouter-une-brochure.md](docs/ajo
 
 ## Fiabilité
 
-Chaque brochure est contrôlée contre sa récapitulation officielle, et chaque série (budget ou comptes d'une année) se rapproche au franc près du résultat officiel de l'exercice. Ces contrôles sont rejoués automatiquement à chaque modification (`tests/`). Les choix de méthode et leurs limites sont décrits dans [docs/methodologie.md](docs/methodologie.md).
+Chaque brochure est contrôlée contre ses totaux officiels : récapitulation générale, totaux par nature, effectifs et budget d'investissement (185 contrôles, `data/controles.csv`). Chaque série (budget ou comptes d'une année) se rapproche au franc près du résultat officiel de l'exercice. Ces contrôles sont rejoués automatiquement à chaque modification (`tests/`). Les choix de méthode et leurs limites sont décrits dans [docs/methodologie.md](docs/methodologie.md).
 
 ## Licence
 

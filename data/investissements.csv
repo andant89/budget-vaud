@@ -47,8 +47,14 @@ annee_budget,service,objet,libelle,date_decret,depenses,recettes,depenses_nettes
 2020,005,I.000722.01,Aménagement de la Chamberonne,Objet nouv,100000,0,100000
 2020,043,I.000378.01,Appui aux communes pour leur PGA,12.05.2015,600000,0,600000
 2020,043,I.000508.01,Modernisation SI du SDT,27.11.2018,490000,0,490000
+2020,003,I.000305.03,CrE SAN Aménag. des locaux,Objet nouv,2000000,0,2000000
+2020,003,I.000319.01,SAN - Evolution majeure du SI-inf.,19.11.2013,940000,0,940000
+2020,003,I.000412.01,SDSI SAN - Phase II,Objet nouv,100000,0,100000
+2020,003,I.000413.01,Nouveau SAN Lausanne - Impact informat.,Objet nouv,100000,0,100000
+2020,010,I.000706.01,Education numérique - Informatique,Objet nouv,1000000,0,1000000
 2020,010,I.000706.03,Educ. Num. - Mise à niveau et formation,Objet nouv,3000000,0,3000000
 2020,011,I.000401.02,SESAF - OPS/OES/OCOSP,Objet nouv,500000,0,500000
+2020,013,I.000070.01,Câblage pédagogique DGEP,02.07.2013,300000,0,300000
 2020,013,I.000301.02,Refonte SI métier DGEP,30.05.2017,1450000,0,1450000
 2020,013,I.000396.03,CrE Gymnase du Chablais Aigle,Objet nouv,2000000,0,2000000
 2020,013,I.000439.02,CrE Gymnase d'Echallens,Objet nouv,1000000,0,1000000
@@ -207,6 +213,8 @@ annee_budget,service,objet,libelle,date_decret,depenses,recettes,depenses_nettes
 2020,047,I.000704.01,Modern. infrastructures+p/f mutualisées,Objet nouv,100000,0,100000
 2020,047,I.000746.01,SOCLE 2,Objet nouv,200000,0,200000
 2020,054,I.000629.01,SPEV - Evolution SIRH - Phase 2,Objet nouv,1594000,0,1594000
+2020,050,I.000251.02,Archivage électr. historique+probatoire,07.05.2019,1000000,0,1000000
+2020,050,I.000300.03,SIEL - renouv. SI Exécutif et Législatif,01.11.2016,1250000,0,1250000
 2020,050,I.000333.02,ACV 2ème étape de densification,23.06.2015,50000,0,50000
 2020,052,I.000204.01,"Registres de l'ACV-RCPERS,RCEnt,SITI",19.03.2013,200000,0,200000
 2020,052,I.000245.01,ACI-Vision 2010-poursuite automatisation,22.06.2010,1796000,0,1796000
@@ -1182,6 +1190,70 @@ annee_budget,service,objet,libelle,date_decret,depenses,recettes,depenses_nettes
 2024,046,I.000262.03,"CE RC 254, Vuiteboeuf-Ste-Croix,2è étape",21.05.2019,75000,0,75000
 2024,046,I.000266.03,"RC 422,Pomy, girat.ORIF / mobilité douce",30.11.2021,3500000,300000,3200000
 2024,046,I.000269.03,"RC601,Epalinges requal.Vennes-Croisettes",20.01.2015,113000,0,113000
+2024,046,I.000270.04,"RC 601.025, Epalinges - requalif. Croise",13.03.2018,1375000,0,1375000
+2024,046,I.000271.04,"CE RC705 Aigle, reconstruction La Frasse",21.12.2022,800000,0,800000
+2024,046,I.000273.02,"RC 719, pont de la Barboleuse, OA",Objet nouv,300000,0,300000
+2024,046,I.000278.02,RC 401 Grandson Vaumarcus,09.05.2023,2500000,0,2500000
+2024,046,I.000282.02,RC 75 Morges-Echichens aménagement cycla,30.04.2019,26000,13000,13000
+2024,046,I.000285.02,RC 7 Chavannes-Bogis-Chav.-Bois élargis,Objet nouv,3000000,0,3000000
+2024,046,I.000286.02,CE-RC1 Morges requal.Venoge-Morges étape,Objet nouv,125000,0,125000
+2024,046,I.000288.02,"RC 448, Lsne déplacement route Romanel",20.01.2015,0,1404000,-1404000
+2024,046,I.000295.02,"RC 719, Gryon, estacades Barbo. corr rte",29.03.2022,5500000,0,5500000
+2024,046,I.000298.02,"RC 706, Ormont-Dessous, corr. Favrin",31.01.2023,1500000,0,1500000
+2024,046,I.000322.03,CE RC 80 Lonay-Denges etudes phase 1,29.03.2022,150000,0,150000
+2024,046,I.000339.02,RDU Région Nyon 1ère étape,Objet nouv,400000,200000,200000
+2024,046,I.000366.03,CE RC 1 Morges-St-Prex requal. étape 5,30.11.2021,180000,0,180000
+2024,046,I.000374.01,CE - Nouv. tracé m2 et place de la Gare,10.03.2015,89000,0,89000
+2024,046,I.000375.01,CE - 1ère étape m3 Gare - Flon,10.03.2015,17000,0,17000
+2024,046,I.000376.01,CE - 2e étape m3 Flon-Blécherette,10.03.2015,73000,0,73000
+2024,046,I.000390.01,RC 705-706 ouvr. protection 2ème étape,25.08.2015,40000,0,40000
+2024,046,I.000402.02,CE-Centrale GCTA - Etudes,30.10.2018,1000000,0,1000000
+2024,046,I.000402.03,Centrale GCTA - Travaux,Objet nouv,5250000,2905000,2345000
+2024,046,I.000521.01,RC 601 Moudon bretelle BE carrefour 543,Objet nouv,100000,0,100000
+2024,046,I.000521.02,CE-RC 601 Moudon bretelle BE carref 543,30.11.2021,25000,0,25000
+2024,046,I.000528.01,"RC 709, Leysin, réhab. tronçon Peneclay",08.02.2022,500000,0,500000
+2024,046,I.000532.01,RC 151 Bussigny pont de la Chocolatière,Objet nouv,300000,0,300000
+2024,046,I.000535.01,Modernisation SI DGMR,30.05.2017,1250000,0,1250000
+2024,046,I.000538.01,"Points noirs, 3ème crédit cadre",05.06.2018,170000,0,170000
+2024,046,I.000541.01,"Dégâts forces de la nature, 2ème rattrap",08.03.2016,38000,0,38000
+2024,046,I.000544.01,"Travaux assainissement bruit, 3ème étape",06.02.2018,1000000,200000,800000
+2024,046,I.000546.01,Campagne 2019-23 entret lourd ouvr art,05.11.2019,800000,0,800000
+2024,046,I.000548.01,Campagne 2018 entretien des revêtements,27.03.2018,100000,0,100000
+2024,046,I.000549.01,Campagne 2019 entretien des revêtements,30.04.2019,30000,0,30000
+2024,046,I.000558.01,"Dégâts forces de la nature, 3ème rattrap",18.01.2022,700000,0,700000
+2024,046,I.000600.01,"RC 69, Tolochenaz requalification",24.09.2019,30000,0,30000
+2024,046,I.000605.02,RC 773 Lutry- Belmont-La Croix cor. rte,30.06.2020,700000,0,700000
+2024,046,I.000606.01,"RC 501, requalification Cugy-Bottens",01.10.2019,46000,0,46000
+2024,046,I.000608.01,Entret.pistes cyclables Yvonand-Avenches,Objet nouv,400000,0,400000
+2024,046,I.000665.01,"Points noirs, 4ème crédit cadre",Objet nouv,300000,0,300000
+2024,046,I.000690.01,RC 422 Pomy-Cronay 2e tronçon,Objet nouv,500000,0,500000
+2024,046,I.000729.01,Campagne 2021 entretien revêtement,20.04.2021,300000,0,300000
+2024,046,I.000730.01,Campagne 2022 entretien revêtement,31.05.2022,1500000,0,1500000
+2024,046,I.000731.01,Campagne 2023 entretien revêtement,09.05.2023,2500000,0,2500000
+2024,046,I.000732.01,"RC 260, 271-270, 309 et 548 + jct Rolle",30.11.2021,1300000,0,1300000
+2024,046,I.000738.01,Assainissement RC 260/267/32/543,01.12.2020,70000,0,70000
+2024,046,I.000739.01,Assainissement RC65 Apples-Pampigny,Objet nouv,500000,0,500000
+2024,046,I.000740.01,Assainis. RC613 Marnand-Villars Bramard,Objet nouv,1000000,0,1000000
+2024,046,I.000741.01,Assainissement 6 tronçons 2021-2,04.10.2022,2000000,300000,1700000
+2024,046,I.000742.01,RC299 réhabilit. entre Echallens/Goumoen,30.11.2021,1200000,0,1200000
+2024,046,I.000765.01,Vich-Begnins mobilité douce,31.01.2023,1500000,0,1500000
+2024,046,I.000770.01,Campagne 2024 entretien revêtement,Objet nouv,9000000,0,9000000
+2024,046,I.000777.02,CE RC 76-79_jonction Ecublens,Objet nouv,225000,0,225000
+2024,046,I.000783.01,Travaux assainissement bruit 4e étape,08.06.2021,500000,100000,400000
+2024,046,I.000787.01,Campagne 2021 entr revêt 1-canalisations,20.04.2021,1000000,0,1000000
+2024,046,I.000801.02,RC 780 - Piste MD Aigle - Bex,Objet nouv,187500,0,187500
+2024,046,I.000854.02,CE RC 1 Dully-Prangins,09.05.2023,500000,0,500000
+2024,046,I.000861.03,CE RC 719 Forchex-Huémoz réhabilitation,Objet nouv,250000,0,250000
+2024,046,I.000872.01,Entretien préventif urgent 2023,27.06.2023,100000,0,100000
+2024,046,I.000879.02,CE réfection aires de ravitaillement,Objet nouv,750000,0,750000
+2024,046,I.000884.01,CE EES Marcolet Cheseaux,Objet nouv,500000,0,500000
+2024,046,I.000885.01,Entretien lourd murs soutènement 2024-28,Objet nouv,500000,0,500000
+2024,046,I.000886.01,Campagne 2024-28 entret. lourd ouvr art,Objet nouv,850000,0,850000
+2024,046,I.000349.01,CE - RER Vaudois,09.09.2014,200000,0,200000
+2024,046,I.000582.01,RER Vaudois : Gare Renens - Passerelle,22.08.2017,1095000,0,1095000
+2024,046,I.000584.01,CE - Bus Haut Niveau Service-2e étape,21.06.2016,700000,0,700000
+2024,046,I.000585.01,Crédit investissement - m2/m3 SSPG - tun,12.11.2019,7105000,105000,7000000
+2024,046,I.000586.01,Crédit invest. - CFF Rebroussement Cully,29.05.2018,395000,0,395000
 2024,046,I.000588.01,Bus Haut Niveau Service-1ère étape,21.06.2016,3700000,0,3700000
 2024,046,I.000589.01,Interfaces voyageurs (P+R),30.04.2019,2320000,0,2320000
 2024,046,I.000590.01,Strat.cant. 2 roues : 2ème étape,30.04.2019,1000000,0,1000000
@@ -1472,6 +1544,70 @@ annee_budget,service,objet,libelle,date_decret,depenses,recettes,depenses_nettes
 2025,046,I.000285.02,RC 7 Chavannes-Bogis-Chav.-Bois élargis,Objet nouv,2000000,0,2000000
 2025,046,I.000286.03,RC 1 Morges requal.tronçon Venoge-Morges,Objet nouv,1000000,0,1000000
 2025,046,I.000295.02,"RC 719, Gryon, estacades Barbo. corr rte",29.03.2022,3500000,0,3500000
+2025,046,I.000298.02,"RC 706, Ormont-Dessous, corr. Favrin",31.01.2023,4000000,0,4000000
+2025,046,I.000328.02,"RC 276,Treycovagnes, Châtelard,mob douce",Objet nouv,1000000,0,1000000
+2025,046,I.000334.02,PALM aménagement giratoires Cheseaux,Objet nouv,500000,0,500000
+2025,046,I.000366.02,RC 1 Morges-St-Prex requal. étape 5,Objet nouv,1000000,0,1000000
+2025,046,I.000366.03,CE RC 1 Morges-St-Prex requal. étape 5,30.11.2021,300000,0,300000
+2025,046,I.000374.01,CE - Nouv. tracé m2 et place de la Gare,10.03.2015,88000,0,88000
+2025,046,I.000375.01,CE - 1ère étape m3 Gare - Flon,10.03.2015,6000,0,6000
+2025,046,I.000376.01,CE - 2e étape m3 Flon-Blécherette,10.03.2015,34000,0,34000
+2025,046,I.000380.02,"RC 749, Corsier-s/Vevey - Limite FR",22.11.2016,300000,0,300000
+2025,046,I.000390.01,RC 705-706 ouvr. protection 2ème étape,25.08.2015,650000,0,650000
+2025,046,I.000402.03,Centrale GCTA - Travaux,Objet nouv,1000000,0,1000000
+2025,046,I.000522.01,"RC 253, Merlaz-Baulmes assainis. routier",20.04.2021,1000000,0,1000000
+2025,046,I.000524.01,RC 1 Mies-Founex requal.(CE I.000290.02),22.08.2017,2000000,0,2000000
+2025,046,I.000525.01,RC 601 Lucens bretelle Lsne carr.601-618,05.06.2018,100000,0,100000
+2025,046,I.000527.01,"RC 706, Ormont-Dessus, La Lavanche",Objet nouv,500000,0,500000
+2025,046,I.000528.01,"RC 709, Leysin, réhab. tronçon Peneclay",08.02.2022,1000000,0,1000000
+2025,046,I.000532.01,RC 151 Bussigny pont de la Chocolatière,Objet nouv,750000,0,750000
+2025,046,I.000533.01,"RC 19 Signy et Grens voie bus,présélect",Objet nouv,800000,0,800000
+2025,046,I.000535.01,Modernisation SI DGMR,30.05.2017,952000,0,952000
+2025,046,I.000538.01,"Points noirs, 3ème crédit cadre",05.06.2018,500000,0,500000
+2025,046,I.000541.01,"Dégâts forces de la nature, 2ème rattrap",08.03.2016,700000,0,700000
+2025,046,I.000546.01,Campagne 2019-23 entret lourd ouvr art,05.11.2019,1000000,0,1000000
+2025,046,I.000550.01,Entr lourd murs soutènement 2019-2022,04.02.2020,100000,0,100000
+2025,046,I.000558.01,"Dégâts forces de la nature, 3ème rattrap",18.01.2022,1000000,0,1000000
+2025,046,I.000584.01,CE - Bus Haut Niveau Service-2e étape,21.06.2016,660000,0,660000
+2025,046,I.000585.01,Crédit investissement - m2/m3 SSPG - tun,12.11.2019,5383000,0,5383000
+2025,046,I.000588.01,Bus Haut Niveau Service-1ère étape,21.06.2016,1540000,0,1540000
+2025,046,I.000589.01,Interfaces voyageurs (P+R),30.04.2019,3600000,0,3600000
+2025,046,I.000590.01,Strat.cant. 2 roues : 2ème étape,30.04.2019,1000000,0,1000000
+2025,046,I.000604.02,"CE RC19, Signy-Avenex-Nyon JtAR",Objet nouv,1382500,0,1382500
+2025,046,I.000608.01,Entret.pistes cyclables Yvonand-Avenches,Objet nouv,500000,0,500000
+2025,046,I.000639.01,LEB - Tunnel Avenue d'Echallens,23.05.2017,200000,0,200000
+2025,046,I.000670.03,CE - Aug. capacité M1 - projet d'ouvrage,Objet nouv,1000000,0,1000000
+2025,046,I.000688.01,CE - M2/M3 et équipe de projet,12.11.2019,13000000,0,13000000
+2025,046,I.000730.01,Campagne 2022 entretien revêtement,31.05.2022,900000,0,900000
+2025,046,I.000731.01,Campagne 2023 entretien revêtement,09.05.2023,1000000,0,1000000
+2025,046,I.000739.01,Assainissement RC65 Apples-Pampigny,Objet nouv,3000000,0,3000000
+2025,046,I.000740.01,Entretien de 8 RC,12.03.2024,2000000,0,2000000
+2025,046,I.000741.01,Assainissement 6 tronçons 2021-2,04.10.2022,100000,0,100000
+2025,046,I.000742.01,RC299 réhabilit. entre Echallens/Goumoen,30.11.2021,1000000,0,1000000
+2025,046,I.000743.01,CE - Dév. réseau ferroviaire VD 2035-50,30.06.2020,2000000,0,2000000
+2025,046,I.000765.01,Vich-Begnins mobilité douce,31.01.2023,1000000,0,1000000
+2025,046,I.000769.01,Assainiss RC 306 St-Barthélémy-Echallens,Objet nouv,2000000,0,2000000
+2025,046,I.000770.01,Campagne 2024 entretien revêtement,25.06.2024,2000000,0,2000000
+2025,046,I.000771.01,Campagne 2025 entretien revêtement,Objet nouv,4000000,0,4000000
+2025,046,I.000777.02,CE RC 76-79_jonction Ecublens,Objet nouv,225000,0,225000
+2025,046,I.000783.01,Travaux assainissement bruit 4e étape,08.06.2021,1250000,0,1250000
+2025,046,I.000787.01,Campagne 2021 entr revêt 1-canalisations,20.04.2021,1800000,0,1800000
+2025,046,I.000792.01,Plan climat - dev. prestations TP,08.06.2021,23500000,7500000,16000000
+2025,046,I.000795.01,"LHand arrêts de bus, 1ère étape",Objet nouv,1000000,0,1000000
+2025,046,I.000807.01,Acompte auto. fixes/équipements m2-m3,25.01.2022,8000000,0,8000000
+2025,046,I.000808.01,Nouveau tunnel Gare-Flon m2-m3,08.02.2022,5000000,0,5000000
+2025,046,I.000809.01,CE - études/gestion de projet m2/m3,08.02.2022,5812000,0,5812000
+2025,046,I.000821.01,Stratégie vélo 2035 étape 1,04.10.2022,4726000,0,4726000
+2025,046,I.000827.01,Subventions stratégie vélo 2035 étape 1,11.10.2022,1908000,0,1908000
+2025,046,I.000839.01,Fret ferroviaire gravier pied du jura,Objet nouv,6000000,0,6000000
+2025,046,I.000854.02,CE RC 1 Dully-Prangins,09.05.2023,200000,0,200000
+2025,046,I.000862.01,RC 401 carrefour Lussex,21.11.2023,1590000,0,1590000
+2025,046,I.000872.01,Entretien préventif urgent 2023,27.06.2023,50000,0,50000
+2025,046,I.000873.01,Assainissement RC 702 Les Moulins,Objet nouv,3000000,0,3000000
+2025,046,I.000879.02,CE réfection aires de ravitaillement,Objet nouv,500000,0,500000
+2025,046,I.000884.01,CE EES Marcolet Cheseaux,Objet nouv,200000,0,200000
+2025,046,I.000886.01,Campagne 2024-28 entret. lourd ouvr art,05.12.2023,1750000,0,1750000
+2025,046,I.000888.01,CE RC 705 viaduc d'Aigle,Objet nouv,400000,0,400000
 2025,046,I.000888.02,RC705 viaduc d'Aigle assain. et renforc,Objet nouv,1000000,0,1000000
 2025,046,I.000909.01,Interfaces voyageurs - Etape 2,Objet nouv,2510000,0,2510000
 2025,046,I.000912.01,CE - Stratégie transp. marchan. Etape2,Objet nouv,822000,0,822000
@@ -1892,7 +2028,7 @@ annee_budget,service,objet,libelle,date_decret,depenses,recettes,depenses_nettes
 2027,052,I.000747.01,"DGF - Poursuite ""Perspective 2025""",15.06.2022,859000,0,859000
 2027,052,I.000842.01,"DGF - ""Métamorphose 2030""",26.03.2024,2794000,0,2794000
 2027,052,I.000843.01,"DGF - ""Métamorphose 2030"" - Phase 2",Objet nouv,10000,0,10000
-2027,043,I.000353.01,Poursuite mensuration officielle & ICDG,09.09.2014,500000,1000000,-500000
+2027,043,I.000353.01,Poursuite mensuration officielle & ICDG,09.09.2014,0,500000,-500000
 2027,043,I.000403.02,Renouvellement SIPC,21.12.2022,2507000,0,2507000
 2027,043,I.000508.01,Modernisation SI du SDT,27.11.2018,914000,0,914000
 2027,043,I.000745.01,Mensuration officielle & ICDG 20-25,29.09.2020,7800000,1600000,6200000
@@ -2120,7 +2256,7 @@ annee_budget,service,objet,libelle,date_decret,depenses,recettes,depenses_nettes
 2027,046,I.000226.01,Renforcement 40 t. solde du réseau RC,10.01.2012,92000,0,92000
 2027,046,I.000238.01,Préfin. routier - aides aux communes,05.11.2013,5000000,0,5000000
 2027,046,I.000257.02,RC 30' jct Gland & giratoire Bichette,Objet nouv,100000,0,100000
-2027,046,I.000259.02,RC 76 Chav/Renens requal Bourd.-Tir Féd,01.12.2020,350000,700000,-350000
+2027,046,I.000259.02,RC 76 Chav/Renens requal Bourd.-Tir Féd,01.12.2020,0,350000,-350000
 2027,046,I.000262.02,RC 254' Vuiteboeuf-Ste-Croix' 2è étape,06.02.2024,5000000,0,5000000
 2027,046,I.000271.02,RC 705' Aigle' reconstruction la Frasse,Objet nouv,100000,0,100000
 2027,046,I.000271.04,CE RC705 Aigle' reconstruction La Frasse,21.12.2022,200000,0,200000

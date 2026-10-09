@@ -101,6 +101,18 @@ def parse_year(path, Y):
         r["res"]=[num(mm.group(1)),num(mm.group(2))] if mm else None
         return r
     crb=cr(pages[2]); crc=cr(pages[3])
+    # totaux officiels publiés ailleurs dans la brochure, pour les contrôles croisés
+    officiel={"natures":{},"etp_total":None,"inv_total":None}
+    for p in pages:
+        if head(p).startswith("Charges et revenus des départements"):
+            for m in re.finditer(r"^(\d{2})\s+\S.*?\s{2,}(-?[\d'±]+|--)\s", p, re.M):
+                officiel["natures"].setdefault(m.group(1), num(m.group(2)))
+        m=re.search(r"Total Etat\.*\s+([\d'.]+)\s+([\d'.]+)", p)
+        if m and head(p).startswith("Evolution des effectifs"): officiel["etp_total"]=[num(m.group(1)),num(m.group(2))]
+        m=re.search(r"Total du budget de l'Etat\.*\s+(.*)$", p, re.M)
+        if m and head(p).startswith("Budget d'investissement"):
+            v=[num(x) for x in re.findall(r"-?[\d']+", m.group(1))]
+            if v: officiel["inv_total"]=v
     # etp
     etp={}
     for i in etp_i:
@@ -112,11 +124,14 @@ def parse_year(path, Y):
         for L in pages[i].splitlines():
             m=re.match(r"^(\d{3})\s{5,}(\S.*)$",L)
             if m: svc=m.group(1); continue
-            m=re.match(r"^\s+(I\.\d{6}\.\d{2})\s+(.*?)\.{2,}\s+(\S+(?: nouv\S*)?)\s+(.*)$",L)
+            m=re.match(r"^\s*(I\.\d{6}\.\d{2})\s+(.*?)(?:\.{2,}\s*|\s{2,})(\d\d\.\d\d\.\d{4}|Objet nouv\S*)\s*(.*)$",L)
             if m and svc:
                 vals=[num(x) for x in re.findall(NUM,m.group(4))]
                 if not vals: continue
-                inv.append([svc,m.group(1),m.group(2).strip(),m.group(3),round(vals[0]),round(vals[0]-vals[-1]),round(vals[-1])])
+                if len(vals)>=3: dep,rec,net=vals[0],vals[1],vals[-1]
+                elif len(vals)==2 and abs(vals[0]+vals[1])<1 and vals[1]<0: dep,rec,net=0,vals[0],vals[1]
+                else: dep,net=vals[0],vals[-1]; rec=dep-net
+                inv.append([svc,m.group(1),m.group(2).strip(),m.group(3),round(dep),round(rec),round(net)])
     # savings (only some years)
     sav=[]; svc=None; title=None; lwt=False
     for i in sav_i:
@@ -136,7 +151,7 @@ def parse_year(path, Y):
               "ok":(not bad) and gt is not None and abs(gt[0]-tc)<1 and abs(gt[1]-tr)<1}
     fm=lambda x:f"{x:,.0f}".replace(",","'")
     print(f"Brochure {Y} : {len(services)} services, {len(lines)} lignes, charges {fm(tc)}, revenus {fm(tr)}, contrôle {'OK' if controle['ok'] else 'ÉCHEC'}")
-    return {"controle":controle,"year":Y,"depts":depts,"services":services,"lines":lines,"comments":cm,"etp":etp,"inv":inv,"sav":sav,"crb":crb,"crc":crc,"tot":[tc,tr]}
+    return {"controle":controle,"year":Y,"depts":depts,"services":services,"lines":lines,"comments":cm,"etp":etp,"inv":inv,"sav":sav,"crb":crb,"crc":crc,"tot":[tc,tr],"officiel":officiel}
 
 def main(paths):
     os.makedirs("build/brochures",exist_ok=True)

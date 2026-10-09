@@ -62,12 +62,20 @@ def main():
         if p < q[SI[ser]]:
             a[SI[ser]] = v; q[SI[ser]] = p
 
+    # Un budget publié comme projet est remplacé par sa version adoptée lorsque la brochure
+    # suivante est disponible (colonne « Budget N-1 », qui reflète le budget voté).
+    projets = set(cfg["budgets_projets"])
+    remplaces = {y for y in projets if y + 1 in A}
     for y in YEARS:
         N = y % 100
         for svc, rub, lab, b, b1, c in A[y]["lines"]:
-            k = f"{svc}|{rub}"; labels[k] = lab
-            put(k, f"B{N}", b, 0); put(k, f"C{N-2}", c, 0)
-            if y == first or rub[:2] in ("38", "48"):
+            k = f"{svc}|{rub}"; labels.setdefault(k, lab); labels[k] = lab
+            if y not in remplaces:
+                put(k, f"B{N}", b, 0)
+            put(k, f"C{N-2}", c, 0)
+            if (y - 1) in remplaces:
+                put(k, f"B{N-1}", b1, 0)
+            elif y == first or rub[:2] in ("38", "48"):
                 put(k, f"B{N-1}", b1, 1)
 
     # résultats officiels et opérations extraordinaires (compte de résultat)
@@ -75,10 +83,15 @@ def main():
     for y in YEARS:
         N = y % 100
         crb, crc = A[y]["crb"], A[y]["crc"]
-        res[f"B{N}"] = crb["res"][0]; res[f"C{N-2}"] = crc["res"][0]
-        if y == first: res[f"B{N-1}"] = crb["res"][1]
-        if crb.get("rex"): rex[f"B{N}"] = crb["rex"][0]
-        if crb.get("cex"): cex[f"B{N}"] = crb["cex"][0]
+        if y not in remplaces:
+            res[f"B{N}"] = crb["res"][0]
+            if crb.get("rex"): rex[f"B{N}"] = crb["rex"][0]
+            if crb.get("cex"): cex[f"B{N}"] = crb["cex"][0]
+        res[f"C{N-2}"] = crc["res"][0]
+        if y == first or (y - 1) in remplaces:
+            res[f"B{N-1}"] = crb["res"][1]
+            if crb.get("rex"): rex[f"B{N-1}"] = crb["rex"][1]
+            if crb.get("cex"): cex[f"B{N-1}"] = crb["cex"][1]
         if crc.get("rex"): rex[f"C{N-2}"] = crc["rex"][0]
         if crc.get("cex"): cex[f"C{N-2}"] = crc["cex"][0]
 
@@ -139,7 +152,7 @@ def main():
             m = meas.setdefault(s0, {}); t = title or "Autre"; m[t] = m.get(t, 0) + amt
     sav_years = [y for y in YEARS if A[y]["sav"]]
 
-    proj = [f"B{y % 100}" for y in cfg["budgets_projets"] if f"B{y % 100}" in SI]
+    proj = [f"B{y % 100}" for y in projets - remplaces if f"B{y % 100}" in SI]
     dcodes = [d[0] for d in cfg["departements_actuels"]]; dnames = [d[1] for d in cfg["departements_actuels"]]
     keys = sorted(vals)
 
@@ -210,6 +223,52 @@ def main():
            "inv": {str(y): A[y]["inv"] for y in YEARS}, "cr": {"res": res, "rex": rex}}
     os.makedirs("site", exist_ok=True)
     json.dump(out, open("site/data.json", "w"), ensure_ascii=False, separators=(",", ":"))
+    # ---------- contrôles croisés par brochure ----------
+    rows = []
+    def chk(y, nom, calcule, officiel, tol=1):
+        ok = officiel is not None and abs(calcule - officiel) <= tol
+        rows.append([y, nom, round(calcule, 2), officiel, int(ok)])
+    for y in YEARS:
+        b = A[y]; o = b["officiel"]
+        rec = b["controle"]["recap_officielle"] or [None, None]
+        chk(y, "charges = récapitulation générale", b["controle"]["total_charges"], rec[0])
+        chk(y, "revenus = récapitulation générale", b["controle"]["total_revenus"], rec[1])
+        nat = {}
+        for l in b["lines"]: nat[l[1][:2]] = nat.get(l[1][:2], 0) + l[3]
+        for code in sorted(o["natures"]):
+            chk(y, f"nature {code} = tableau par nature", nat.get(code, 0), o["natures"][code])
+        if o["etp_total"]:
+            chk(y, "effectifs = Total Etat", sum(v[0] for v in b["etp"].values()), o["etp_total"][0], tol=0.05)
+        if o["inv_total"]:
+            for k, nom in ((4, "dépenses"), (5, "recettes"), (6, "dépenses nettes")):
+                chk(y, f"investissements, {nom} = total du budget", sum(x[k] for x in b["inv"]), o["inv_total"][k - 4])
+    with open("data/controles.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f); w.writerow(["brochure", "controle", "valeur_calculee", "valeur_officielle", "ok"]); w.writerows(rows)
+    nko = [r for r in rows if not r[4]]
+    print(f"{len(rows)} contrôles croisés, {len(nko)} en échec")
+    for r in nko: print("  ÉCHEC", r)
+
+    # ---------- retraitements : budget N-1 vu par la brochure N et par la brochure N-1 ----------
+    ret = []
+    for y in YEARS[1:]:
+        if y - 1 not in A: continue
+        def by_svc(lines, col):
+            t = {}
+            for l in lines:
+                if l[1][:2] in ("38", "48"): continue
+                k = (l[0], "charges" if l[1][0] == "3" else "revenus"); t[k] = t.get(k, 0) + l[col]
+            return t
+        orig, rest = by_svc(A[y - 1]["lines"], 3), by_svc(A[y]["lines"], 4)
+        for k in sorted(set(orig) | set(rest)):
+            a, b2 = orig.get(k, 0), rest.get(k, 0)
+            if abs(a - b2) > 1:
+                ret.append([y - 1, k[0], svc.get(k[0], {}).get("n", ""), k[1], round(a), round(b2), round(b2 - a)])
+    with open("data/retraitements.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["budget", "service", "nom", "type", "selon_sa_brochure", "selon_brochure_suivante", "ecart"])
+        w.writerows(ret)
+    print(f"{len(ret)} retraitements de budget détectés entre brochures successives (data/retraitements.csv)")
+    if nko: sys.exit("Des contrôles croisés ont échoué (voir data/controles.csv).")
     print(f"{len(lines)} lignes, {len(SER)} séries ({SER[0]} à {SER[-1]}), données écrites dans data/ et site/data.json")
 
 

@@ -11,6 +11,22 @@ def lire(nom):
         return list(csv.DictReader(f))
 
 
+class TestControlesCroises(unittest.TestCase):
+    def test_tous_les_controles_croises_passent(self):
+        lignes = lire("controles.csv")
+        self.assertGreater(len(lignes), 100)
+        echecs = [l for l in lignes if l["ok"] != "1"]
+        self.assertEqual(echecs, [], "contrôles en échec : voir data/controles.csv")
+
+    def test_chaque_brochure_a_ses_controles(self):
+        types = {}
+        for l in lire("controles.csv"):
+            types.setdefault(l["brochure"], set()).add(l["controle"].split(" ")[0])
+        for b, t in types.items():
+            for attendu in ("charges", "revenus", "nature", "effectifs", "investissements,"):
+                self.assertIn(attendu, t, f"brochure {b} : contrôle « {attendu} » manquant")
+
+
 class TestRapprochement(unittest.TestCase):
     def test_chaque_serie_retombe_sur_le_resultat_officiel(self):
         lignes = lire("lignes_large.csv")

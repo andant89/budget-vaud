@@ -10,7 +10,17 @@ Particularités de mise en page prises en compte :
 - Les pages « Renseignements complémentaires » sont lues séparément : elles donnent les commentaires et les effectifs.
 - Les pages des départements sont repérées par leur en-tête, ce qui rend l'extraction indépendante du nombre de pages.
 
-**Contrôle** : pour chaque brochure, la somme des lignes de chaque service doit égaler la récapitulation du département, et le total général doit égaler la récapitulation officielle. Une brochure qui échoue à ce contrôle bloque le pipeline.
+**Contrôles par brochure** (résultats dans `data/controles.csv`, 185 contrôles, tous rejoués par les tests) :
+
+| Contrôle | Comparé à |
+|---|---|
+| Somme des lignes de chaque service | Récapitulation du département |
+| Total des charges et des revenus | Récapitulation générale |
+| Total par nature (30, 31, 36, 40…) | Tableau « Charges et revenus d'après leur nature » |
+| Somme des effectifs des services | Ligne « Total Etat » du tableau des effectifs |
+| Dépenses, recettes et dépenses nettes d'investissement | Ligne « Total du budget de l'Etat » |
+
+Une brochure qui échoue à l'un de ces contrôles bloque le pipeline.
 
 ## Construction des séries
 
@@ -26,7 +36,13 @@ La colonne « Budget N-1 » des brochures suivantes n'est pas utilisée en gén�
 
 ### Statut des budgets
 
-Certaines brochures sont des **projets du Conseil d'État** et non des budgets adoptés par le Grand Conseil (actuellement 2024 et 2027, voir `pipeline/config.json`). Les amendements votés ensuite n'y figurent pas.
+Certaines brochures sont des **projets du Conseil d'État** et non des budgets adoptés par le Grand Conseil (2024 et 2027, voir `pipeline/config.json`). Quand la brochure de l'année suivante existe, le projet est remplacé par la colonne « Budget N-1 » de cette brochure, qui reflète le budget adopté. C'est le cas pour 2024. Le budget 2027 reste un projet tant que la brochure 2028 n'est pas disponible.
+
+Exemple de différence : le projet 2024 comptait 363 millions de prélèvement sur la fortune dans les revenus ordinaires du service 053 (rubrique 4309) ; le budget adopté les présente en revenus extraordinaires.
+
+### Retraitements entre brochures
+
+Le budget d'une année apparaît deux fois : dans sa propre brochure, puis dans la colonne « Budget N-1 » de la suivante. Les différences entre les deux versions (amendements, réorganisations, changements de présentation) sont listées dans `data/retraitements.csv`. Elles ne sont pas des erreurs d'extraction : les totaux de chaque version sont contrôlés séparément.
 
 ## Opérations extraordinaires
 
