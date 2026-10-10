@@ -342,6 +342,8 @@ table.mini tr[data-i]{cursor:pointer} table.mini tr[data-i]:hover{background:var
     <p>Une hausse ou une baisse n'est ni bonne ni mauvaise en soi. Elle peut venir d'une décision politique, d'une réorganisation de l'administration (un montant passe d'un service à un autre), d'une nouvelle loi fédérale, de la croissance de la population ou d'une écriture comptable. Les montants qui changent brutalement portent la mention « à vérifier ».</p>
     <h3>D'où viennent les données</h3>
     <p>Toutes les données proviennent des brochures budgétaires publiées par l'État de Vaud. Chaque année, la somme des lignes est contrôlée contre les totaux officiels. Ce site est un projet indépendant, sans lien avec l'État de Vaud ; en cas de doute, la brochure officielle fait foi.</p>
+    <h3>Mesure d'audience</h3>
+    <p>La version publique du site compte les visites avec GoatCounter, un outil sans cookies qui ne collecte aucune donnée personnelle et ne suit pas les visiteurs d'un site à l'autre. Il sert uniquement à savoir combien de personnes consultent le site et quels onglets sont utilisés.</p>
     <h3>Neutralité</h3>
     <p>Les textes décrivent les chiffres sans dire ce qu'il faudrait en conclure. Les couleurs ne portent pas de jugement : l'orange signale une hausse, le bleu une baisse.</p>
     <h3>Glossaire</h3>
@@ -578,7 +580,7 @@ function tipRows(title,rows){return "<b>"+esc(title)+"</b>"+rows.map(r=>`<div cl
 
 // ---------- tabs ----------
 const tabs=$$(".tab");let curTab="t-ov";
-function openTab(id){curTab=id;tabs.forEach(t=>{const on=t.id===id;t.setAttribute("aria-selected",on);$("#"+t.getAttribute("aria-controls")).hidden=!on});store("bv-tab",id);
+function openTab(id){curTab=id;try{if(window.goatcounter&&window.goatcounter.count){const tb=document.getElementById(id);window.goatcounter.count({path:"/onglet/"+id.slice(2),title:tb?tb.textContent:id,event:true})}}catch(e){}tabs.forEach(t=>{const on=t.id===id;t.setAttribute("aria-selected",on);$("#"+t.getAttribute("aria-controls")).hidden=!on});store("bv-tab",id);
   $("#yearbar").hidden=(id==="t-bc"||id==="t-an"||id==="t-in"||id==="t-gu");if($("#cmpNote"))$("#cmpNote").hidden=$("#yearbar").hidden||!$("#cmpNote").textContent;renderTab()}
 tabs.forEach(t=>t.addEventListener("click",()=>openTab(t.id)));
 function segInit(id,cb){const el=$(id);el.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;el.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));cb(b.dataset.v)})}
