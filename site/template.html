@@ -1217,6 +1217,7 @@ function drawHome(){
   const pp=sumL(l=>["4000","4001","4002","4009"].includes(l.rub)&&l.svc==="052"),pm=sumL(l=>["4010","4011","4019"].includes(l.rub)&&l.svc==="052");
   const oth=sumL(l=>l.nat==="40")-pp-pm,tr=sumL(l=>l.nat==="46"||l.nat==="47"),rest=o.R-pp-pm-oth-tr,gap=o.C-o.R;
   const src=[["Impôts des personnes (revenu, fortune, à la source)",pp,"--s1"],["Impôts des entreprises (bénéfice, capital)",pm,"--s7"],["Autres impôts (gains immobiliers, successions, droits de mutation…)",oth,"--s3"],["Versements de la Confédération et d'autres collectivités",tr,"--s4"],["Taxes, émoluments, revenus financiers et autres",rest,"--s5"]];
+  src.sort((a,b)=>b[1]-a[1]);  // du plus grand au plus petit, comme les dépenses ; la part non couverte reste en dernier
   if(gap>0)src.push(["Part non couverte par les revenus de l'année",gap,"--up"]);
   const mx=Math.max(...src.map(s=>s[1]));
   $("#hmSource").innerHTML=src.map(([n,v,c])=>`<div class="hb tipm" data-tip="${esc(tipRows(n,[["Pour 100 francs dépensés",dec(v/o.C*100,1)+" fr."],["Montant",short(v)]]))}"><span>${n}</span><div class="t"><i style="width:${v/mx*100}%;background:${css(c)}"></i></div><span class="v num">${dec(v/o.C*100,0)} fr.</span></div>`).join("");
