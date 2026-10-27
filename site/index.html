@@ -222,6 +222,9 @@ footer{margin-top:44px;padding-top:14px;border-top:1px solid var(--line);font-si
 #tip .tiphint{margin-top:6px;font-size:11.5px;color:var(--accent)}
 .tabgrp{align-self:center;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:12px 4px 10px 12px;white-space:nowrap}
 .tabgrp:first-child{padding-left:4px}
+/* Sur écran large, tous les onglets restent visibles : « Approfondir » passe à la ligne. Sur téléphone, la barre défile. */
+.tabbr{display:none}
+@media (min-width:760px){.tabs{flex-wrap:wrap;overflow-x:visible;row-gap:0}.tabbr{display:block;flex-basis:100%;height:0}}
 .gl{border-bottom:1px dotted var(--fg-2);cursor:help}
 .gl:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 #tip b{display:block}
@@ -313,6 +316,7 @@ table.mini tr[data-i]{cursor:pointer} table.mini tr[data-i]:hover{background:var
     <button class="tab" role="tab" id="t-ex" aria-selected="false" aria-controls="p-ex">Explorer</button>
     <button class="tab" role="tab" id="t-se" aria-selected="false" aria-controls="p-se">Rechercher</button>
     <button class="tab" role="tab" id="t-gu" aria-selected="false" aria-controls="p-gu">Comment lire</button>
+    <span class="tabbr" aria-hidden="true"></span>
     <span class="tabgrp">Approfondir</span>
     <button class="tab" role="tab" id="t-ov" aria-selected="false" aria-controls="p-ov">Vue d'ensemble</button>
     <button class="tab" role="tab" id="t-ev" aria-selected="false" aria-controls="p-ev">Évolutions</button>
