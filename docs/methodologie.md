@@ -103,3 +103,14 @@ Chaque objet d'investissement garde son numéro (I.xxxxxx.xx) d'un budget à l'a
 - Les annexes (UNIL, HEP, HES, CHUV) ne sont pas intégrées ; ces institutions apparaissent comme des subventions.
 - Les comptes contiennent des écritures non budgétées (réévaluations, pertes sur créances) qui expliquent une partie des écarts entre budget et comptes.
 - Les textes de lecture de l'onglet Analyses citent parfois des années précises ; ils doivent être relus lors de l'ajout d'une brochure.
+
+## Amendements au projet de budget 2027
+
+Le 7 octobre 2026, le Conseil d'État a publié 59 amendements à son projet de budget 2027, pour tenir compte de l'initiative des 12 % acceptée le 27 septembre 2026. Ils sont repris dans `data/amendements_2027.csv`, une ligne par rubrique touchée.
+
+- **Statut.** Ce sont des propositions soumises au Grand Conseil. La colonne `budget_2027` de `lignes_large.csv` reste celle de la brochure du projet et n'est pas modifiée. Le budget adopté apparaîtra dans la brochure 2028, et l'écart sera visible dans `retraitements.csv`.
+- **Contrôles.** Les totaux de la liste retombent au franc près sur le « Total des amendements » de l'annexe (100'453'200 de mesures, compensés par −100'453'200 sur les recettes fiscales, la BNS et les capitaux propres). Le regroupement des lignes par numéro d'amendement a été vérifié une fois contre les cellules du tableau dans le PDF.
+- **Effet sur le résultat.** Une réduction de charges ou une hausse de revenus est comptée en positif, une baisse de revenus en négatif. La somme est nulle : le résultat du projet 2027 n'est pas modifié.
+- **Rattachement.** Chaque amendement est rapproché de la ligne du projet portant le même service et la même rubrique ; `budget_2027_amende` cumule les amendements propres à une même ligne. Deux cas ne sont pas rattachés : les mesures transversales imputées à la Chancellerie (service 050), qui portent sur toute l'administration et dépassent parfois le montant de la ligne de la Chancellerie, et l'ajustement du financement du CHUV (service 038), qui n'a pas de service distinct dans les brochures.
+- **Catégories.** `effet de l'initiative` (impôts sur le revenu et la fortune), `mesure départementale`, `mesure transversale` (libellé commençant par « Mesure transversale »), `part BNS supplémentaire` et `prélèvement sur les capitaux propres`, ces deux dernières reprises de la colonne « Recettes fiscales, BNS et revenus extraordinaires » de l'annexe.
+

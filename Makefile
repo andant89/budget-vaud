@@ -1,9 +1,9 @@
-# Pipeline complet : PDF -> texte -> extraction -> fusion -> site -> tests
+# Pipeline complet : PDF -> texte -> extraction -> fusion -> amendements -> site -> tests
 # Prérequis : Python 3.9+ et pdftotext (poppler-utils)
 
 PY ?= python3
 
-all: texte extraction fusion site test
+all: texte extraction fusion amendements site test
 
 texte:
 	$(PY) pipeline/extract.py
@@ -14,6 +14,9 @@ extraction:
 fusion:
 	$(PY) pipeline/merge.py
 
+amendements:
+	$(PY) pipeline/amendements.py
+
 site:
 	$(PY) pipeline/build_site.py
 
@@ -21,6 +24,6 @@ test:
 	$(PY) -m unittest discover tests
 
 # Reconstruit données et site sans repartir des PDF (texte déjà dans sources/txt)
-rebuild: extraction fusion site test
+rebuild: extraction fusion amendements site test
 
-.PHONY: all texte extraction fusion site test rebuild
+.PHONY: all texte extraction fusion amendements site test rebuild

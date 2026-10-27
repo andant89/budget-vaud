@@ -65,5 +65,49 @@ class TestRapprochement(unittest.TestCase):
         self.assertEqual(len(cles), len(set(cles)))
 
 
+class TestAmendements2027(unittest.TestCase):
+    """Annexe 1 du communiqué du 7 octobre 2026 (initiative des 12 %)."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.a = lire("amendements_2027.csv")
+
+    def test_totaux_officiels(self):
+        self.assertEqual(sum(int(r["mesure"]) for r in self.a), 100_453_200)
+        self.assertEqual(sum(int(r["recettes_bns_extraordinaire"]) for r in self.a), -100_453_200)
+
+    def test_descriptions_et_libelles(self):
+        for r in self.a:
+            self.assertTrue(r["description"].strip(), r)
+            self.assertLessEqual(len(r["service_publie"]), 25, r["service_publie"])
+
+    def test_compensation_complete(self):
+        self.assertEqual(sum(int(r["effet_sur_resultat"]) for r in self.a), 0)
+
+    def test_effet_de_l_initiative(self):
+        effet = {r["rubrique"]: int(r["effet_sur_resultat"]) for r in self.a if r["categorie"] == "effet de l'initiative"}
+        self.assertEqual(effet, {"4000": -189_000_000, "4001": -83_000_000})
+
+    def test_numeros_complets_et_ordonnes(self):
+        nums = [int(r["amendement"]) for r in self.a]
+        self.assertEqual(nums, sorted(nums))
+        self.assertEqual(set(nums), set(range(1, 60)))
+
+    def test_rattachement_aux_lignes_du_projet(self):
+        projet = {(l["service"], l["rubrique"]): float(l["budget_2027"]) for l in lire("lignes_large.csv")}
+        for r in self.a:
+            if r["rattachement"] == "ligne du projet 2027":
+                k = (r["service"], r["rubrique"])
+                self.assertIn(k, projet)
+                self.assertAlmostEqual(float(r["budget_2027_projet"]), projet[k], delta=1)
+                self.assertGreaterEqual(float(r["budget_2027_amende"]), 0, k)
+
+    def test_lignes_non_rattachees_connues(self):
+        autres = sorted((r["amendement"], r["service"], r["rubrique"]) for r in self.a if r["rattachement"] != "ligne du projet 2027")
+        # Mesures transversales centralisées à la Chancellerie, et part du CHUV (pas de service 038 dans les brochures)
+        self.assertEqual(autres, [("2", "050", "3010"), ("2", "050", "3634"), ("3", "050", "3110"),
+                                  ("40", "038", "3634"), ("5", "050", "3132"), ("6", "050", "3030")])
+
+
 if __name__ == "__main__":
     unittest.main()
