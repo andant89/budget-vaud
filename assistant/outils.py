@@ -65,7 +65,8 @@ def donnees():
                                  [c["element"] + " " + c["texte"] for c in comm.get((l["service"], l["rubrique"]), [])]))
     return {"lignes": lignes, "series": series, "services": services, "comm": comm,
             "effectifs": _read("effectifs.csv"), "invest": _read("investissements.csv"), "resultats": _read("resultats.csv"),
-            "annexes": _read("annexes_totaux.csv"), "mesures": _read("mesures_economie.csv")}
+            "annexes": _read("annexes_totaux.csv"), "mesures": _read("mesures_economie.csv"),
+            "amendements": _read("amendements_2027.csv") if os.path.exists(os.path.join(DATA, "amendements_2027.csv")) else []}
 
 
 def _serie(annee, type_):
@@ -278,6 +279,28 @@ def mesures_economie(texte=None):
                   key=lambda x: -x["montant"])[:40]
 
 
+def amendements_2027(texte=None, departement=None):
+    """Amendements du Conseil d'État au projet de budget 2027 (initiative des 12 %), regroupés par numéro."""
+    rows = donnees()["amendements"]
+    if not rows:
+        return {"erreur": "data/amendements_2027.csv absent"}
+    tot = {}
+    for r in rows:
+        tot[r["categorie"]] = tot.get(r["categorie"], 0) + int(r["effet_sur_resultat"])
+    if departement: rows = [r for r in rows if r["departement"].upper() == departement.upper()]
+    if texte: rows = [r for r in rows if norm(texte) in norm(" ".join([r["description"], r["service"], r["service_publie"], r["rubrique"]]))]
+    g = {}
+    for r in rows:
+        x = g.setdefault(r["amendement"], {"amendement": int(r["amendement"]), "categorie": r["categorie"], "description": r["description"],
+                                           "effet_sur_resultat": 0, "lignes": []})
+        x["effet_sur_resultat"] += int(r["effet_sur_resultat"])
+        x["lignes"].append({k: r[k] for k in ("service", "service_publie", "rubrique", "effet_sur_resultat", "rattachement",
+                                               "budget_2027_projet", "budget_2027_amende")})
+    return {"statut": rows[0]["statut"] if rows else donnees()["amendements"][0]["statut"],
+            "totaux_par_categorie": tot, "nombre": len(g),
+            "amendements": sorted(g.values(), key=lambda x: -abs(x["effet_sur_resultat"]))[:40]}
+
+
 OUTILS = {
     "series_disponibles": (series_disponibles, {}),
     "rechercher_lignes": (rechercher_lignes, {"texte": ("string", "Mots, numéro de rubrique ou nom de service", True),
@@ -303,6 +326,8 @@ OUTILS = {
     "investissements": (investissements, {"annee": ("integer", "Année du budget", False), "texte": ("string", "Mot à chercher", False),
                                           "limite": ("integer", "Nombre d'objets", False)}),
     "mesures_economie": (mesures_economie, {"texte": ("string", "Mot à chercher dans l'intitulé (facultatif)", False)}),
+    "amendements_2027": (amendements_2027, {"texte": ("string", "Mot, service ou rubrique à chercher (facultatif)", False),
+                                            "departement": ("string", "Code de département (facultatif)", False)}),
 }
 
 

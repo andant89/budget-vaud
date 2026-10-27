@@ -91,6 +91,7 @@ Les petits modèles locaux appellent les outils moins bien que les grands ; si l
 | `institutions` | budgets du CHUV et des hautes écoles |
 | `investissements` | objets du budget d'investissement |
 | `mesures_economie` | mesures d'économie du budget 2026 |
+| `amendements_2027` | amendements du Conseil d'État au projet 2027 pour compenser l'initiative des 12 % (propositions, avant le vote du Grand Conseil) |
 
 ## Confidentialité et coûts
 

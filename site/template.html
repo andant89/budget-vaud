@@ -132,6 +132,16 @@ table.data tbody tr:hover{background:var(--surface-2)}
 .code{font-family:var(--f-display);font-stretch:75%;color:var(--muted);font-size:12.5px;letter-spacing:.03em}
 .chip{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:1px 6px;border-radius:3px;margin-left:6px;vertical-align:1px}
 .chip.cm{background:var(--accent-soft);color:var(--accent)}
+/* Amendements 2027 */
+.amsplit{display:flex;gap:2px;height:30px;margin:6px 0 8px}
+.amsplit i{display:block;height:100%;border-radius:4px;min-width:3px}
+.amleg{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--fg-2)}
+.amleg span{display:inline-flex;align-items:center;gap:6px}
+.amleg b{display:inline-block;width:10px;height:10px;border-radius:2px}
+.chip.am{background:var(--surface-2);color:var(--s7)}
+#amTbl td.desc{max-width:520px}
+#amTbl tr.grp td{border-top:1px solid var(--axis)}
+
 .chip.sv{background:var(--surface-2);color:var(--up)}
 .dot{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:6px;vertical-align:0}
 .more{margin-top:10px;display:flex;gap:12px;align-items:center;color:var(--fg-2);font-size:13.5px}
@@ -302,6 +312,7 @@ table.mini tr[data-i]{cursor:pointer} table.mini tr[data-i]:hover{background:var
     <button class="tab" role="tab" id="t-in" aria-selected="false" aria-controls="p-in">Institutions</button>
     <button class="tab" role="tab" id="t-sv" aria-selected="false" aria-controls="p-sv">Fiche service</button>
     <button class="tab" role="tab" id="t-ec" aria-selected="false" aria-controls="p-ec">Économies et investissements</button>
+    <button class="tab" role="tab" id="t-am" aria-selected="false" aria-controls="p-am" hidden>Amendements 2027</button>
   </nav>
 
   <div class="yearbar" id="yearbar">
@@ -480,6 +491,21 @@ table.mini tr[data-i]{cursor:pointer} table.mini tr[data-i]:hover{background:var
       <p class="note" id="ivInfo"></p></div>
   </section>
 
+  <section class="panel" id="p-am" role="tabpanel" aria-labelledby="t-am" hidden>
+    <p class="lede" id="amLede"></p>
+    <div class="kpis" id="amKpi"></div>
+    <div class="card sec"><div class="sec-h"><h2>Comment les 272 millions sont compensés</h2><p id="amSplitCap"></p></div>
+      <div class="amsplit" id="amSplit" role="img"></div><div class="amleg" id="amLeg"></div></div>
+    <div class="cols2 sec">
+      <div class="card"><div class="sec-h"><h2>Mesures par département</h2><p>Réduction de charges et recettes nouvelles, en millions</p></div><div class="hbars" id="amDept"></div><p class="note" id="amDeptNote"></p></div>
+      <div class="card"><div class="sec-h"><h2>Plus gros amendements</h2><p>Hors effet de l'initiative, BNS et capitaux propres</p></div><ul class="plain" id="amTop"></ul></div>
+    </div>
+    <div class="sec"><div class="sec-h"><h2>Les 59 amendements</h2><p>Une ligne par rubrique touchée. Cliquez sur une ligne rattachée pour voir sa série complète.</p></div>
+      <div class="controls"><input type="search" id="amQ" placeholder="Rechercher : CHUV, subventions, 3010…" aria-label="Rechercher dans les amendements"><select id="amDep" aria-label="Département"></select><select id="amCat" aria-label="Catégorie"></select></div>
+      <div class="tblwrap"><table class="data" id="amTbl"><thead><tr><th>N°</th><th>Service</th><th>Description</th><th class="r">Effet sur le résultat</th><th class="r">Ligne au projet 2027</th><th class="r">Après amendements</th></tr></thead><tbody></tbody></table></div>
+      <p class="note" id="amInfo"></p></div>
+  </section>
+
   <footer id="foot"></footer>
 </div>
 
@@ -581,10 +607,10 @@ function tipRows(title,rows){return "<b>"+esc(title)+"</b>"+rows.map(r=>`<div cl
 // ---------- tabs ----------
 const tabs=$$(".tab");let curTab="t-ov";
 function openTab(id){curTab=id;try{if(window.goatcounter&&window.goatcounter.count){const tb=document.getElementById(id);window.goatcounter.count({path:"/onglet/"+id.slice(2),title:tb?tb.textContent:id,event:true})}}catch(e){}tabs.forEach(t=>{const on=t.id===id;t.setAttribute("aria-selected",on);$("#"+t.getAttribute("aria-controls")).hidden=!on});store("bv-tab",id);
-  $("#yearbar").hidden=(id==="t-bc"||id==="t-an"||id==="t-in"||id==="t-gu");if($("#cmpNote"))$("#cmpNote").hidden=$("#yearbar").hidden||!$("#cmpNote").textContent;renderTab()}
+  $("#yearbar").hidden=(id==="t-bc"||id==="t-an"||id==="t-in"||id==="t-gu"||id==="t-am");if($("#cmpNote"))$("#cmpNote").hidden=$("#yearbar").hidden||!$("#cmpNote").textContent;renderTab()}
 tabs.forEach(t=>t.addEventListener("click",()=>openTab(t.id)));
 function segInit(id,cb){const el=$(id);el.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;el.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));cb(b.dataset.v)})}
-function renderTab(){({"t-ac":drawHome,"t-gu":()=>{},"t-ov":drawOverview,"t-ex":drawTM,"t-se":runSearch,"t-ev":drawEv,"t-bc":drawBC,"t-an":drawAnalyses,"t-bf":drawBenef,"t-in":drawInst,"t-sv":()=>renderSvc($("#svSel").value),"t-ec":drawEco})[curTab]()}
+function renderTab(){({"t-ac":drawHome,"t-gu":()=>{},"t-ov":drawOverview,"t-ex":drawTM,"t-se":runSearch,"t-ev":drawEv,"t-bc":drawBC,"t-an":drawAnalyses,"t-bf":drawBenef,"t-in":drawInst,"t-sv":()=>renderSvc($("#svSel").value),"t-ec":drawEco,"t-am":drawAm})[curTab]()}
 
 // ---------- year selectors ----------
 const ORDER=[...SER.filter(s=>s[0]==="B").reverse(),...SER.filter(s=>s[0]==="C").reverse()];
@@ -1275,7 +1301,12 @@ function renderSvc(code){
    <div class="card"><div class="sec-h"><h2>Investissements ${yr}</h2><p>${cur[0]==="B"&&inv.length?inv.length+" objets · "+short(inv.reduce((a,x)=>a+x[6],0))+" nets":""}</p></div>${cur[0]!=="B"?'<p class="note">Le budget d\'investissement n\'est disponible que pour les années budgétaires.</p>':inv.length?'<ul class="plain">'+inv.slice(0,10).map(x=>`<li><span>${esc(x[2])}<span class="code" style="display:block">${x[1]} · décret ${esc(x[3])}</span></span><span>${short(x[6])}</span></li>`).join("")+"</ul>"+(inv.length>10?`<p class="note">et ${inv.length-10} autres objets.</p>`:""):'<p class="note">Aucun investissement pour ce service.</p>'}</div>
    <div class="card"><div class="sec-h"><h2>Mesures d'économie ${D.savYears.join(', ')}</h2><p>${meas.length?short(meas.reduce((a,m)=>a+m[1],0))+" au total":""}</p></div>${meas.length?'<ul class="plain">'+meas.map(m=>`<li><span>${esc(m[0])}</span><span>${short(m[1])}</span></li>`).join("")+"</ul>":'<p class="note">Aucune mesure listée pour ce service.</p>'}</div>
   </div>`;
+  const am=AM.filter(a=>a.service===code&&a.categorie.startsWith("mesure"));
+  if(am.length)h+=`<div class="sec"><div class="sec-h"><h2>Amendements 2027 proposés</h2><p>${short(am.reduce((t,a)=>t+a.mesure,0))} au total · proposés par le Conseil d'État le ${amFr(D.amend.date)}, avant le vote du Grand Conseil</p></div>
+   <div class="tblwrap"><table class="data" id="svAm"><thead><tr><th>N°</th><th>Service</th><th>Description</th><th class="r">Effet sur le résultat</th><th class="r">Ligne au projet 2027</th><th class="r">Après amendements</th></tr></thead><tbody>${(()=>{let prev=null;return am.map(a=>{const r=amRow(a,a.amendement!==prev);prev=a.amendement;return r}).join("")})()}</tbody></table></div>
+   ${am.some(a=>a.rattachement.startsWith("transversale"))?'<p class="note">Les mesures transversales imputées à ce service portent sur toute l\'administration.</p>':""}</div>`;
   $("#sheet").innerHTML=h;
+  if($("#svAm"))$("#svAm tbody").onclick=e=>{const tr=e.target.closest("tr[data-i]");if(tr)lineDetail(LINES[+tr.dataset.i])};
   $("#svTbl tbody").onclick=e=>{const tr=e.target.closest("tr[data-i]");if(tr)lineDetail(LINES[+tr.dataset.i])};
   $("#svAll").onclick=()=>{svcF=code;$("#q").value="";$("#fDept").value="";$("#fType").value="";$("#fNat").value="";$("#fSav").checked=false;shown=100;openTab("t-se")}}
 
@@ -1292,7 +1323,55 @@ function drawEco(){drawInvTrack();
   const mm={};Object.entries(D.meas).forEach(([svc,arr])=>arr.forEach(([m,v])=>{if(/LAFin/.test(m))return;mm[m]=mm[m]||{v:0,s:new Set()};mm[m].v+=v;mm[m].s.add(svc)}));
   $("#savList").innerHTML=Object.entries(mm).sort((a,b)=>b[1].v-a[1].v).slice(0,14).map(([m,o])=>`<li><span>${esc(m)}<span class="code" style="display:block">${[...o.s].map(c=>esc(SVC[c].name)).join(" · ")}</span></span><span>${short(o.v)}</span></li>`).join("")}
 
+// ---------- Amendements 2027 ----------
+const AM=D.amend?D.amend.lignes.map(r=>Object.fromEntries(D.amend.cles.map((k,i)=>[k,r[i]]))):[];
+const AMCAT={"mesure départementale":["Mesures départementales","--s1"],"mesure transversale":["Mesures transversales","--s3"],"part BNS supplémentaire":["Part BNS supplémentaire","--s4"],"prélèvement sur les capitaux propres":["Prélèvement sur les capitaux propres","--s7"]};
+const amLine=a=>a.rattachement==="ligne du projet 2027"?LINES.find(l=>l.svc===a.service&&l.rub===a.rubrique):null;
+const amSvcName=a=>SVC[a.service]?SVC[a.service].name:a.service_publie;
+const amFr=d=>new Date(d+"T12:00:00").toLocaleDateString("fr-CH",{day:"numeric",month:"long",year:"numeric"});
+function amRow(a,first){const l=amLine(a);const chip=a.rattachement==="ligne du projet 2027"?"":`<span class="chip am">${a.rattachement.startsWith("transversale")?"transversale":"non rattachée"}</span>`;
+  return `<tr${l?` data-i="${l.i}"`:""}${first?' class="grp"':""}><td>${first?a.amendement:""}</td><td>${esc(amSvcName(a))}<div class="code">${esc(a.departement)} · ${a.service} · ${a.rubrique}</div></td><td class="desc">${esc(a.description)}${chip}</td><td class="r"><span class="pill ${a.effet_sur_resultat<0?"up":""}">${a.effet_sur_resultat>0?"+":""}${grp(a.effet_sur_resultat)}</span></td><td class="r">${a.budget_2027_projet===""?"–":grp(a.budget_2027_projet)}</td><td class="r">${a.budget_2027_amende===""?"–":"<b>"+grp(a.budget_2027_amende)+"</b>"}</td></tr>`}
+function drawAm(){if(!AM.length)return;const M=D.amend;
+  const sum=f=>AM.filter(f).reduce((t,a)=>t+a.effet_sur_resultat,0);
+  const perte=-sum(a=>a.categorie==="effet de l'initiative");
+  const parts=Object.keys(AMCAT).map(c=>[c,sum(a=>a.categorie===c)]);
+  const mes=parts[0][1]+parts[1][1],rec=parts[2][1]+parts[3][1];
+  const res=D.cr.res["B27"];
+  $("#amLede").textContent=`Le ${amFr(M.date)}, le Conseil d'État a publié ${new Set(AM.map(a=>a.amendement)).size} amendements à son projet de budget 2027, pour tenir compte de l'initiative des 12 % acceptée en votation le 27 septembre 2026. Ils doivent encore être votés par le Grand Conseil. Ailleurs dans le tableau de bord, le budget 2027 reste celui de la brochure du projet ; cette page montre ce que les amendements y changeraient.`;
+  $("#amKpi").innerHTML=[
+    ["Recettes fiscales en moins",short(-perte),"impôt sur le revenu et sur la fortune"],
+    ["Mesures",short(mes),`${dec(mes/perte*100,0)} % de la compensation`],
+    ["Recettes supplémentaires",short(rec),`BNS et capitaux propres, ${dec(rec/perte*100,0)} %`],
+    ["Résultat 2027",typeof res==="number"?short(res):"–",`${sum(()=>true)===0?"inchangé : compensation complète":"variation "+short(sum(()=>true))}`]
+  ].map(k=>`<div class="kpi"><div class="k">${k[0]}</div><div class="v num">${k[1]}</div><div class="s">${k[2]}</div></div>`).join("");
+  $("#amSplitCap").textContent="En millions de francs";
+  $("#amSplit").setAttribute("aria-label",parts.map(([c,v])=>`${AMCAT[c][0]} : ${dec(v/1e6,1)} millions`).join(", "));
+  $("#amSplit").innerHTML=parts.map(([c,v])=>`<i class="tipm" style="flex:${v};background:${css(AMCAT[c][1])}" data-tip="${esc(tipRows(AMCAT[c][0],[["Montant",chf(v)],["Part",dec(v/perte*100,1)+" %"]]))}"></i>`).join("");
+  $("#amLeg").innerHTML=parts.map(([c,v])=>`<span><b style="background:${css(AMCAT[c][1])}"></b>${AMCAT[c][0]} <span class="num" style="color:var(--fg)">${dec(v/1e6,1)}</span></span>`).join("");
+  const byD={};AM.filter(a=>a.categorie.startsWith("mesure")).forEach(a=>{const k=a.categorie==="mesure transversale"&&a.service==="050"?"T":a.departement;byD[k]=(byD[k]||0)+a.mesure});
+  const rows=Object.entries(byD).sort((a,b)=>b[1]-a[1]);const mx=Math.max(...rows.map(r=>r[1]));
+  $("#amDept").innerHTML=rows.map(([k,v])=>{const d=DEPTS.find(x=>x.code===k);const name=k==="T"?"Mesures transversales":d?d.name.split(",")[0]:k;
+    const col=k==="T"?css("--s9"):d?dcol(d.id):css("--s9");
+    return `<div class="hbar tipm" data-tip="${esc(tipRows(k==="T"?"Mesures transversales (toute l'administration)":d?d.name:k,[["Montant",chf(v)],["Part des mesures",dec(v/mes*100,1)+" %"]]))}"><span>${k==="T"?"Transversales":esc(k)} <span style="color:var(--muted)">· ${esc(k==="T"?"toute l'administration":name)}</span></span><div class="t"><i style="width:${v/mx*100}%;background:${col}"></i></div><span class="v">${dec(v/1e6,1)}</span></div>`}).join("");
+  $("#amDeptNote").textContent="Les mesures transversales imputées à la Chancellerie (délai de carence, achats de mobilier, honoraires externes, travailleurs temporaires) portent sur toute l'administration ; elles sont regroupées à part. Les décalages d'engagement de nouveaux postes sont comptés dans le département de chaque service.";
+  const byN={};AM.filter(a=>a.categorie.startsWith("mesure")).forEach(a=>{const o=byN[a.amendement]=byN[a.amendement]||{v:0,a};o.v+=a.mesure});
+  $("#amTop").innerHTML=Object.values(byN).sort((a,b)=>b.v-a.v).slice(0,12).map(o=>`<li><span>${esc(o.a.description)}<span class="code" style="display:block">n° ${o.a.amendement} · ${esc(amSvcName(o.a))}</span></span><span>${short(o.v)}</span></li>`).join("");
+  const deps=[...new Set(AM.map(a=>a.departement))];
+  if(!$("#amDep").options.length){
+    $("#amDep").innerHTML=`<option value="">Tous les départements</option>`+DEPTS.filter(d=>deps.includes(d.code)).map(d=>`<option value="${d.code}">${esc(d.code)} · ${esc(d.name)}</option>`).join("");
+    $("#amCat").innerHTML=`<option value="">Toutes les catégories</option>`+[...new Set(AM.map(a=>a.categorie))].map(c=>`<option value="${esc(c)}">${esc(c[0].toUpperCase()+c.slice(1))}</option>`).join("");
+    ["#amQ","#amDep","#amCat"].forEach(id=>$(id).addEventListener("input",amTable));
+    $("#amTbl tbody").onclick=e=>{const tr=e.target.closest("tr[data-i]");if(tr)lineDetail(LINES[+tr.dataset.i])}}
+  amTable();
+  $("#amInfo").innerHTML=`Source : <a href="${M.source}" target="_blank" rel="noopener">annexe 1 du communiqué du Conseil d'État</a> (${amFr(M.date)}), données <code>data/amendements_2027.csv</code>. « Effet sur le résultat » : une réduction de charges ou une hausse de revenus améliore le résultat (+), une baisse de revenus le dégrade (−). La colonne « Après amendements » cumule tous les amendements propres à une même ligne. Les mesures transversales imputées à la Chancellerie et l'ajustement du financement du CHUV (pas de service distinct dans les brochures) ne sont pas rattachés à une ligne.`}
+function amTable(){const q=norm($("#amQ").value||""),dp=$("#amDep").value,ct=$("#amCat").value;
+  const f=AM.filter(a=>(!dp||a.departement===dp)&&(!ct||a.categorie===ct)&&(!q||norm(a.description+" "+amSvcName(a)+" "+a.service_publie+" "+a.service+" "+a.rubrique).includes(q)));
+  let prev=null;$("#amTbl tbody").innerHTML=f.map(a=>{const h=amRow(a,a.amendement!==prev);prev=a.amendement;return h}).join("")||`<tr><td colspan="6" class="note">Aucun amendement ne correspond.</td></tr>`;
+  const tot=f.reduce((t,a)=>t+a.effet_sur_resultat,0);
+  $("#amTbl").setAttribute("aria-label",`${f.length} lignes`);}
+
 // ---------- boot ----------
+if(AM.length)$("#t-am").hidden=false;
 $("#foot").textContent=`Données extraites de ${D.brochures.length} brochures budgétaires de l'État de Vaud (budgets ${D.brochures[0]} à ${D.brochures[D.brochures.length-1]} ; projets du Conseil d'État : ${D.proj.map(s=>Y4(+s.slice(1))).join(", ")}). Chaque brochure donne le budget de l'année, celui de l'année précédente et les comptes d'il y a deux ans. Pour chaque série, la somme des lignes a été contrôlée et retombe exactement sur le résultat officiel de l'exercice. Les services sont classés selon les départements actuels. Lorsque les opérations extraordinaires ne sont pas détaillées dans une brochure, seul leur total (compte de résultat) est repris. Le projet de budget le plus récent ne contient pas les amendements votés ensuite. Les budgets du CHUV et des hautes écoles (annexes) sont présentés dans l'onglet Institutions. Population et inflation : Statistique Vaud et OFS.`;
 document.querySelectorAll(".yrsLab").forEach(e=>e.textContent=YRLAB);
 $("#mastLede").textContent=`Toutes les lignes du budget de fonctionnement de l'État de Vaud : ${BYRS.length} budgets (${Y4(BYRS[0])} à ${Y4(BYRS[BYRS.length-1])}) et ${CYRS.length} exercices de comptes (${Y4(CYRS[0])} à ${Y4(CYRS[CYRS.length-1])}), classés selon l'organisation actuelle des départements.`;

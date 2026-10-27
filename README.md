@@ -36,6 +36,7 @@ L'outil décrit ce que montrent les chiffres. Il ne dit pas ce qu'il faudrait en
 | `effectifs.csv` | service et année | effectif en équivalents plein temps (ETP) |
 | `investissements.csv` | objet d'investissement | année du budget, service, numéro d'objet, libellé, date du décret, dépenses, recettes, dépenses nettes |
 | `mesures_economie.csv` | mesure et rubrique | mesures d'économie détaillées en annexe (brochure 2026) |
+| `amendements_2027.csv` | amendement et rubrique | amendements du Conseil d'État au projet de budget 2027 pour compenser l'initiative des 12 % (7 octobre 2026), avec la ligne du projet concernée et son montant après amendements |
 | `commentaires.csv` | élément de commentaire | détail chiffré et texte des « renseignements complémentaires » |
 | `resultats.csv` | série | résultat officiel, opérations extraordinaires, résultat recalculé et contrôle |
 | `controles.csv` | contrôle | 185 contrôles croisés avec les totaux officiels de chaque brochure |
@@ -64,6 +65,7 @@ Conçu pour que n'importe qui puisse interroger le budget, sans connaissances en
 - **Bénéficiaires** : à qui vont les transferts (ménages, communes, entreprises publiques…) et les subventions nommées dans les commentaires
 - **Institutions** : budgets du CHUV et des hautes écoles, publiés en annexe
 - **Fiche service** et **Économies et investissements**, avec le suivi de chaque objet d'investissement d'un budget à l'autre
+- **Amendements 2027** : les amendements proposés par le Conseil d'État après l'acceptation de l'initiative des 12 %, leur répartition et leur effet ligne par ligne sur le projet de budget
 
 Les termes techniques sont soulignés et expliqués au survol. Une option affiche tous les montants par habitant. Les comparaisons sont guidées : un badge indique si elle est standard (deux budgets successifs), de type prévision et réalisé, ou à interpréter avec prudence. Les montants qui apparaissent, disparaissent ou varient de plus de trois fois sont signalés « à vérifier ».
 
