@@ -109,5 +109,23 @@ class TestAmendements2027(unittest.TestCase):
                                   ("40", "038", "3634"), ("5", "050", "3132"), ("6", "050", "3030")])
 
 
+class TestCommentaires(unittest.TestCase):
+    """Les commentaires d'un service peuvent commencer plusieurs pages après son en-tête."""
+
+    def test_chaque_brochure_commente_le_sscm(self):
+        # Le SSCM (004) perdait ses commentaires en 2026 et 2027 : en-tête en bas de page.
+        annees = {l["annee_brochure"] for l in lire("commentaires.csv")
+                  if l["service"] == "004" and l["rubrique"] == "3010"
+                  and l["element"] == "Division de la Protection civile"}
+        self.assertEqual(annees, {str(a) for a in range(2020, 2028)})
+
+    def test_commentaires_rattaches_a_une_rubrique_du_service(self):
+        rubriques = {(l["annee"], l["service"], l["rubrique"]) for l in lire("lignes.csv")
+                     if l["serie"] == "budget"}
+        com = lire("commentaires.csv")
+        orphelins = [l for l in com if (l["annee_brochure"], l["service"], l["rubrique"]) not in rubriques]
+        self.assertLess(len(orphelins) / len(com), 0.02, "trop de commentaires mal rattachés")
+
+
 if __name__ == "__main__":
     unittest.main()

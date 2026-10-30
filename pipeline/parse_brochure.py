@@ -43,15 +43,17 @@ def parse_year(path, Y):
         for k,(a,_) in enumerate(dept_start):
             if i>=a: d=k+1
         return d
-    services={}; lines=[]; comments={}
+    services={}; lines=[]; comments={}; csvc=None
     for pi in range(dept_start[0][0], recap_i):
         p=pages[pi]; d=dept_of(pi); plines=p.splitlines()
         if 'Renseignements complémentaires' in p:
-            csvc=None; crub=None
+            # Le service courant est conservé d'une page de commentaires à l'autre :
+            # l'en-tête d'un service peut tomber en bas d'une page précédente.
+            crub=None
             for L in plines:
                 s=L.strip()
                 if not s: continue
-                m=re.match(r"^\s{3,}(\d{3}) (\S.*)$",L)
+                m=re.match(r"^\s*(\d{3}) ([A-ZÀ-Ü]\D*)$",L)  # en-tête de service, parfois sans retrait
                 if m and len(L)-len(L.lstrip())<12: csvc=m.group(1); crub=None; continue
                 if re.search(r"(Effectif total|Postes fixes) 20",s): continue
                 if 'Renseignements complémentaires' in s or s.startswith(('Budget 20','Revenu net','Charge nette','Excédent')): continue
